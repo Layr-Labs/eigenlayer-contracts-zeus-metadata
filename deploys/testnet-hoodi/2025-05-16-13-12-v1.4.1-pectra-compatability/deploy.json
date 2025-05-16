@@ -1,7 +1,7 @@
 {
   "name": "2025-05-16-13-12-v1.4.1-pectra-compatability",
   "env": "testnet-hoodi",
-  "segmentId": 4,
+  "segmentId": 5,
   "segments": [
     {
       "type": "eoa",
@@ -82,11 +82,20 @@
       "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
       "confirmed": true,
       "immediateExecutionHash": "0x5ee380f1fbbbf806b360fea4ff3f17df8e7b3db588d0a0f2efa9cc1c1bb4ff4e"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x8d8dde437d52e814bad9294933468b2edc4db8c183ef248d1e4bf8baef4ce5a1",
+      "multisig": "0x6f8459810197cc9fE123BBeB918451757a4fBAc6",
+      "confirmed": true,
+      "immediateExecutionHash": "0xd6b32e952343e5346da70049d85792775447575caa6870ba9e345e96751d05c4"
     }
   ],
   "upgrade": "v1.4.1-pectra-compatability",
   "upgradePath": "script/releases/v1.4.1-pectra-compatability",
-  "phase": "multisig_start",
+  "phase": "script_run",
   "chainId": 560048,
   "startTime": "Fri May 16 2025 13:12:59 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1747415579.188
