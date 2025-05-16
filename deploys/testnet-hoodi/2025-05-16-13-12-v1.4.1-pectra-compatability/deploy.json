@@ -56,7 +56,7 @@
   "metadata": [],
   "upgrade": "v1.4.1-pectra-compatability",
   "upgradePath": "script/releases/v1.4.1-pectra-compatability",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 560048,
   "startTime": "Fri May 16 2025 13:12:59 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1747415579.188
