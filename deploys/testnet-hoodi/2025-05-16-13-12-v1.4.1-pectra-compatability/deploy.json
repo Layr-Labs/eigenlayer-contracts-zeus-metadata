@@ -1,0 +1,63 @@
+{
+  "name": "2025-05-16-13-12-v1.4.1-pectra-compatability",
+  "env": "testnet-hoodi",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-eoa.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgradeAndTimestampSetter.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-queueUnpause.s.sol",
+      "id": 2
+    },
+    {
+      "type": "multisig",
+      "filename": "4-pause.s.sol",
+      "id": 3
+    },
+    {
+      "type": "multisig",
+      "filename": "5-executeUpgradeAndSetTimestampSubmitter.s.sol",
+      "id": 4
+    },
+    {
+      "type": "script",
+      "filename": "6-script/start.sh",
+      "arguments": [
+        {
+          "type": "url",
+          "passBy": "env",
+          "inputType": "text",
+          "name": "BEACON_URL",
+          "prompt": "Enter an ETH2 Beacon RPC URL"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "type": "multisig",
+      "filename": "7-setProofTimestamp.s.sol",
+      "id": 6
+    },
+    {
+      "type": "multisig",
+      "filename": "8-executeUnpause.s.sol",
+      "id": 7
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.4.1-pectra-compatability",
+  "upgradePath": "script/releases/v1.4.1-pectra-compatability",
+  "phase": "",
+  "chainId": 560048,
+  "startTime": "Fri May 16 2025 13:12:59 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1747415579.188
+}
