@@ -1,7 +1,7 @@
 {
   "name": "2025-05-16-13-12-v1.4.1-pectra-compatability",
   "env": "testnet-hoodi",
-  "segmentId": 3,
+  "segmentId": 4,
   "segments": [
     {
       "type": "eoa",
@@ -71,6 +71,17 @@
         }
       ],
       "confirmed": true
+    },
+    null,
+    null,
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x4198c34e5efaa9ece8ac92752edceec518f9d1c31b15e5141d85df3ed9bcf07d",
+      "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
+      "confirmed": true,
+      "immediateExecutionHash": "0x5ee380f1fbbbf806b360fea4ff3f17df8e7b3db588d0a0f2efa9cc1c1bb4ff4e"
     }
   ],
   "upgrade": "v1.4.1-pectra-compatability",
