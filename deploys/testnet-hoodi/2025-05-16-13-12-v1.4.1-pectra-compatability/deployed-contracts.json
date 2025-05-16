@@ -1,0 +1,28 @@
+{
+  "contracts": [
+    {
+      "address": "0x5A0eE5d133eE5E1487A75A520dC0E821d7660810",
+      "contract": "EigenPodManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xfaa0a0600ef132f0616ab3b31d4d529e03543e6287e2fdccc8e863bcdb10ffa3",
+      "lastUpdatedIn": {
+        "name": "2025-05-16-13-12-v1.4.1-pectra-compatability",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xbe2F96Efff467c6773Dc91eA62Ab34C73195a0b5",
+      "contract": "EigenPod_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x89b66524ce4ce37f73e2ab740f09f8fc8b957bd793d3ef3784aee524b32f3509",
+      "lastUpdatedIn": {
+        "name": "2025-05-16-13-12-v1.4.1-pectra-compatability",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}

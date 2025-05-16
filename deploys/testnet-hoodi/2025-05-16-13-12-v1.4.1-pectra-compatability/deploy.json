@@ -53,10 +53,29 @@
       "id": 7
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x5A0eE5d133eE5E1487A75A520dC0E821d7660810",
+          "contract": "EigenPodManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xbe2F96Efff467c6773Dc91eA62Ab34C73195a0b5",
+          "contract": "EigenPod_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.4.1-pectra-compatability",
   "upgradePath": "script/releases/v1.4.1-pectra-compatability",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 560048,
   "startTime": "Fri May 16 2025 13:12:59 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1747415579.188
