@@ -323,30 +323,7 @@
         }
       }
     },
-    "instances": [
-      {
-        "contract": "StrategyBaseTVLLimits",
-        "singleton": false,
-        "address": "0x8b29d91e67b013e855EaFe0ad704aC4Ab086a574",
-        "deployedBytecodeHash": "0x",
-        "lastUpdatedIn": {
-          "name": "",
-          "phase": "",
-          "segment": 0
-        }
-      },
-      {
-        "contract": "StrategyBaseTVLLimits",
-        "singleton": false,
-        "address": "0x424246eF71b01ee33aA33aC590fd9a0855F5eFbc",
-        "deployedBytecodeHash": "0x",
-        "lastUpdatedIn": {
-          "name": "",
-          "phase": "",
-          "segment": 0
-        }
-      }
-    ]
+    "instances": []
   },
   "latestDeployedCommit": "00e5091b3114dbbf9c8077bd696352a5dc0be071",
   "chainId": 11155111
