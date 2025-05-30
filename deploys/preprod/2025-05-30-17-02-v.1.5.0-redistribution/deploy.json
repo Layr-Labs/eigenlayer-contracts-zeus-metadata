@@ -93,12 +93,12 @@
       "signerType": "gnosis.api.eoa",
       "gnosisTransactionHash": "0x6fba795bae65081541b63fcf6eeb9581408ba3ec3c1b431e684e8d0e56cd25c6",
       "multisig": "0x314A6B61B5CBFA79dc7b2c0416e039822E886b54",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v.1.5.0-redistribution",
   "upgradePath": "script/releases/v.1.5.0-redistribution",
-  "phase": "multisig_wait_confirm",
+  "phase": "complete",
   "chainId": 17000,
   "startTime": "Fri May 30 2025 17:02:28 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1748638948.929
