@@ -1,7 +1,7 @@
 {
   "name": "2025-05-30-17-02-v.1.5.0-redistribution",
   "env": "preprod",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -77,6 +77,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0xf4e01645df98647fc04288ca693dcd0f728d0bbd89507ca07e312f46b85edf58",
+      "multisig": "0x6d609cD2812bDA02a75dcABa7DaafE4B20Ff5608",
+      "confirmed": true,
+      "immediateExecutionHash": "0x6e8809a7e9a73ba31b6f75fdce231acf849c67cb16cd66904be1ff16c6b22b17"
     }
   ],
   "upgrade": "v.1.5.0-redistribution",
