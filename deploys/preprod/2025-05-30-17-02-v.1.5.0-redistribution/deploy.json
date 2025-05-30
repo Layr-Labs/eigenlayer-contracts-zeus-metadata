@@ -1,0 +1,29 @@
+{
+  "name": "2025-05-30-17-02-v.1.5.0-redistribution",
+  "env": "preprod",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-executeUpgrade.s.sol",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v.1.5.0-redistribution",
+  "upgradePath": "script/releases/v.1.5.0-redistribution",
+  "phase": "",
+  "chainId": 17000,
+  "startTime": "Fri May 30 2025 17:02:28 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1748638948.929
+}
