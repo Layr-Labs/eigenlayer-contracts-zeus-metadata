@@ -1,7 +1,7 @@
 {
   "name": "2025-05-30-17-02-v.1.5.0-redistribution",
   "env": "preprod",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -76,12 +76,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v.1.5.0-redistribution",
   "upgradePath": "script/releases/v.1.5.0-redistribution",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 17000,
   "startTime": "Fri May 30 2025 17:02:28 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1748638948.929
