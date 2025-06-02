@@ -1,0 +1,9 @@
+{
+  "mutations": [
+    {
+      "next": "0x0AA4F4791872211374d5912B67F5673E757CE430",
+      "name": "slashEscrowProxyAdmin",
+      "internalType": 4
+    }
+  ]
+}
