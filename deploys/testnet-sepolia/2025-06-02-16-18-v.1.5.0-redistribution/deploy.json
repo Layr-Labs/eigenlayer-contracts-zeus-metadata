@@ -1,7 +1,7 @@
 {
   "name": "2025-06-02-16-18-v.1.5.0-redistribution",
   "env": "testnet-sepolia",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -76,12 +76,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v.1.5.0-redistribution",
   "upgradePath": "script/releases/v.1.5.0-redistribution",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 11155111,
   "startTime": "Mon Jun 02 2025 16:18:50 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1748895530.394
