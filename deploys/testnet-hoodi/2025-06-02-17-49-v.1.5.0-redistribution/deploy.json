@@ -1,7 +1,7 @@
 {
   "name": "2025-06-02-17-49-v.1.5.0-redistribution",
   "env": "testnet-hoodi",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -77,6 +77,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0xc021eef895ef51374d8a463c5ae693439a3328fcb7b0feadeb63e8bee5f6d72c",
+      "multisig": "0x8eA6C3Cca1c96967F7B164FfaA5fabede10311A9",
+      "confirmed": true,
+      "immediateExecutionHash": "0x16d1bd1f630861df803f03f9dceb6bb5cde29027793b4ad9fa82915cb540d499"
     }
   ],
   "upgrade": "v.1.5.0-redistribution",
