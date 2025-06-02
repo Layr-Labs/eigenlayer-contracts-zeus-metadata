@@ -1,7 +1,7 @@
 {
   "name": "2025-06-02-17-49-v.1.5.0-redistribution",
   "env": "testnet-hoodi",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -76,12 +76,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v.1.5.0-redistribution",
   "upgradePath": "script/releases/v.1.5.0-redistribution",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 560048,
   "startTime": "Mon Jun 02 2025 17:49:24 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1748900964.693
