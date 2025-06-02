@@ -90,7 +90,7 @@
   ],
   "upgrade": "v.1.5.0-redistribution",
   "upgradePath": "script/releases/v.1.5.0-redistribution",
-  "phase": "multisig_execute",
+  "phase": "multisig_wait_confirm",
   "chainId": 11155111,
   "startTime": "Mon Jun 02 2025 16:18:50 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1748895530.394
