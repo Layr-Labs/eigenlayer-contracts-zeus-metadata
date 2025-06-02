@@ -19,10 +19,69 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x889B040116f453D89e9d6d692Ad70Edd7357420d",
+          "contract": "SlashEscrow_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x42583067658071247ec8CE0A516A58f682002d07",
+          "contract": "SlashEscrowFactory_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x885C0CC8118E428a2C04de58A93eB15Ed4F0e064",
+          "contract": "SlashEscrowFactory_Proxy",
+          "singleton": true
+        },
+        {
+          "address": "0x5ae8152fb88c26ff9ca5C014c94fca3c68029349",
+          "contract": "AllocationManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xC908fAFAE29B5C9F0b5E0Da1d3025b8d6D42bfa0",
+          "contract": "DelegationManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x56BfEb94879F4543E756d26103976c567256034a",
+          "contract": "StrategyManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x0A987C508b0f56154CA534b7Fa5b84863cbcc49d",
+          "contract": "EigenPodManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x09A4c2a9C3Ac0AF6E89BD768220493eBF2F4f929",
+          "contract": "EigenStrategy_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xB4baAfee917fb4449f5ec64804217bccE9f46C67",
+          "contract": "StrategyBase_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x44632dfBdCb6D3E21EF613B0ca8A6A0c618F5a37",
+          "contract": "StrategyBaseTVLLimits_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v.1.5.0-redistribution",
   "upgradePath": "script/releases/v.1.5.0-redistribution",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 560048,
   "startTime": "Mon Jun 02 2025 17:49:24 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1748900964.693

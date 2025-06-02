@@ -1,0 +1,124 @@
+{
+  "contracts": [
+    {
+      "address": "0x889B040116f453D89e9d6d692Ad70Edd7357420d",
+      "contract": "SlashEscrow_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x17555f78b7a94fa854f81bc5d3f25c7bc967e40dcc939b425f72994aa1b981d7",
+      "lastUpdatedIn": {
+        "name": "2025-06-02-17-49-v.1.5.0-redistribution",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x42583067658071247ec8CE0A516A58f682002d07",
+      "contract": "SlashEscrowFactory_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xa93590d2120e444096c305015cf183494ba87b46470c39b5ece6250ea8cabd2a",
+      "lastUpdatedIn": {
+        "name": "2025-06-02-17-49-v.1.5.0-redistribution",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x885C0CC8118E428a2C04de58A93eB15Ed4F0e064",
+      "contract": "SlashEscrowFactory_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0xa93590d2120e444096c305015cf183494ba87b46470c39b5ece6250ea8cabd2a",
+      "lastUpdatedIn": {
+        "name": "2025-06-02-17-49-v.1.5.0-redistribution",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x5ae8152fb88c26ff9ca5C014c94fca3c68029349",
+      "contract": "AllocationManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x55fe267be7ba60b8360fbd69eddccc579d175174356cd3bd7bf1a066b53bb427",
+      "lastUpdatedIn": {
+        "name": "2025-06-02-17-49-v.1.5.0-redistribution",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xC908fAFAE29B5C9F0b5E0Da1d3025b8d6D42bfa0",
+      "contract": "DelegationManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x8036e4447f68aab0b4043c8afd824aad76ab440781c82c7f9363a433d5582062",
+      "lastUpdatedIn": {
+        "name": "2025-06-02-17-49-v.1.5.0-redistribution",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x56BfEb94879F4543E756d26103976c567256034a",
+      "contract": "StrategyManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x0848a2161615ad11ea71b3a7b7e6b527dcb436bef2e0864741a47c7d024d5b25",
+      "lastUpdatedIn": {
+        "name": "2025-06-02-17-49-v.1.5.0-redistribution",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x0A987C508b0f56154CA534b7Fa5b84863cbcc49d",
+      "contract": "EigenPodManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x6bdc1e5ff2154af6deebee2f324a30130579cb996b4220b6184022f4e3d55ee2",
+      "lastUpdatedIn": {
+        "name": "2025-06-02-17-49-v.1.5.0-redistribution",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x09A4c2a9C3Ac0AF6E89BD768220493eBF2F4f929",
+      "contract": "EigenStrategy_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x35e12eb63fe1893c0b29f1acc1e0940744f61f9c5d717ac38ca322a3eb7c6707",
+      "lastUpdatedIn": {
+        "name": "2025-06-02-17-49-v.1.5.0-redistribution",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xB4baAfee917fb4449f5ec64804217bccE9f46C67",
+      "contract": "StrategyBase_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x7a5a6ba9a607fa1d9200187608d372c4cbc611c831af6e4fd8fac0f0fd2435f3",
+      "lastUpdatedIn": {
+        "name": "2025-06-02-17-49-v.1.5.0-redistribution",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x44632dfBdCb6D3E21EF613B0ca8A6A0c618F5a37",
+      "contract": "StrategyBaseTVLLimits_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xb3ab9438ef136007e736fe2512ea4a3dbd0ceb65ead0174e5b1ace74bdfbb1cb",
+      "lastUpdatedIn": {
+        "name": "2025-06-02-17-49-v.1.5.0-redistribution",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}
