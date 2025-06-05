@@ -1,0 +1,20 @@
+{
+  "name": "moocow-and-elip5",
+  "from": "1.5.0",
+  "to": "1.6.0",
+  "phases": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "3-executeUpgrade.s.sol"
+    }
+  ],
+  "commit": "c08c9e849c27910f36f3ab746f3663a18838067f"
+}
