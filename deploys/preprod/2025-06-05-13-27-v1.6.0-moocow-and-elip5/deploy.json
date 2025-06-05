@@ -49,7 +49,7 @@
   ],
   "upgrade": "v1.6.0-moocow-and-elip5",
   "upgradePath": "script/releases/v1.6.0-moocow-and-elip5",
-  "phase": "multisig_execute",
+  "phase": "multisig_wait_confirm",
   "chainId": 17000,
   "startTime": "Thu Jun 05 2025 13:27:53 GMT-0700 (Pacific Daylight Time)",
   "startTimestamp": 1749155273.303
