@@ -1,0 +1,29 @@
+{
+  "name": "2025-06-05-13-27-v1.6.0-moocow-and-elip5",
+  "env": "preprod",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-executeUpgrade.s.sol",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.6.0-moocow-and-elip5",
+  "upgradePath": "script/releases/v1.6.0-moocow-and-elip5",
+  "phase": "",
+  "chainId": 17000,
+  "startTime": "Thu Jun 05 2025 13:27:53 GMT-0700 (Pacific Daylight Time)",
+  "startTimestamp": 1749155273.303
+}
