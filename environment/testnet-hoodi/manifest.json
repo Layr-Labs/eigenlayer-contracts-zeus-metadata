@@ -1,6 +1,6 @@
 {
   "id": "testnet-hoodi",
-  "deployedVersion": "1.5.0",
+  "deployedVersion": "1.6.0",
   "contracts": {
     "static": {
       "BackingEigen_Proxy": {
@@ -37,14 +37,15 @@
         }
       },
       "Eigen_Impl": {
-        "address": "0x45D3f8CC7e6AC1c0891DAfA90CE299Abf0aD9053",
+        "address": "0x63AAe451780090f50Ad323aAEF155F63a29D20f3",
         "contract": "Eigen_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x068b0b9a18abdc48a75d9626e6ae40d6b47dfc3639ba6fb19bdbd1bda397d240",
+        "deployedBytecodeHash": "0xbd8290a2a9051659bb8e65bc1715f8ba32e46126960dfc0fa7d2eb58cc9acc70",
         "lastUpdatedIn": {
-          "name": "2025-04-11-12-14-v0.0.1-gov",
+          "name": "2025-06-06-14-21-v1.6.0-moocow-and-elip5",
           "phase": "eoa_wait_confirm",
-          "segment": 0
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "DelegationManager_Proxy": {
@@ -158,12 +159,12 @@
         }
       },
       "EigenPod_Impl": {
-        "address": "0xbe2F96Efff467c6773Dc91eA62Ab34C73195a0b5",
+        "address": "0x0e19E56E41D42137d00dD4f51EC2F613E50cAcf4",
         "contract": "EigenPod_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x89b66524ce4ce37f73e2ab740f09f8fc8b957bd793d3ef3784aee524b32f3509",
+        "deployedBytecodeHash": "0xb019859087d4e67bd5f88f436c30a1c37ef76e1a26159809a85655752e31ab84",
         "lastUpdatedIn": {
-          "name": "2025-05-16-13-12-v1.4.1-pectra-compatability",
+          "name": "2025-06-06-14-21-v1.6.0-moocow-and-elip5",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -369,6 +370,6 @@
     },
     "instances": []
   },
-  "latestDeployedCommit": "9a95f5a9183dd9e94271ccbaf321c366b09abb0b",
+  "latestDeployedCommit": "c08c9e849c27910f36f3ab746f3663a18838067f",
   "chainId": 560048
 }
