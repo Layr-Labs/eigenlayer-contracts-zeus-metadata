@@ -22,7 +22,7 @@
   "metadata": [],
   "upgrade": "v1.6.0-moocow-and-elip5",
   "upgradePath": "script/releases/v1.6.0-moocow-and-elip5",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 17000,
   "startTime": "Fri Jun 06 2025 13:39:49 GMT-0700 (Pacific Daylight Time)",
   "startTimestamp": 1749242389.422
