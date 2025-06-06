@@ -1,7 +1,7 @@
 {
   "name": "2025-06-06-18-00-v1.6.0-moocow-and-elip5",
   "env": "testnet-sepolia",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -36,12 +36,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.6.0-moocow-and-elip5",
   "upgradePath": "script/releases/v1.6.0-moocow-and-elip5",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 11155111,
   "startTime": "Fri Jun 06 2025 18:00:12 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1749247212.841
