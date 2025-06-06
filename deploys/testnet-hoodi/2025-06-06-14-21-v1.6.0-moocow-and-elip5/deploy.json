@@ -46,11 +46,20 @@
       "multisig": "0x8eA6C3Cca1c96967F7B164FfaA5fabede10311A9",
       "confirmed": true,
       "immediateExecutionHash": "0x213eaf2b237512cea38c7dba42a04c12ed6014126ff88be6b353b04117ef13b9"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0xf9feb15eccdaeb04add43ef7cba2221760d211d237aca8b1fe80a13d836bbcc6",
+      "multisig": "0x6f8459810197cc9fE123BBeB918451757a4fBAc6",
+      "confirmed": true,
+      "immediateExecutionHash": "0x978a116ae100fff6b42630219e07f6284fa4f142a6238170500b4598e1b1a0f6"
     }
   ],
   "upgrade": "v1.6.0-moocow-and-elip5",
   "upgradePath": "script/releases/v1.6.0-moocow-and-elip5",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 560048,
   "startTime": "Fri Jun 06 2025 14:21:27 GMT-0700 (Pacific Daylight Time)",
   "startTimestamp": 1749244887.261
