@@ -1,6 +1,6 @@
 {
   "id": "testnet-sepolia",
-  "deployedVersion": "1.5.0",
+  "deployedVersion": "1.6.0",
   "contracts": {
     "static": {
       "BackingEigen_Proxy": {
@@ -37,14 +37,15 @@
         }
       },
       "Eigen_Impl": {
-        "address": "0xF83a81117AE073B13ce70f37302392BA90F28725",
+        "address": "0x6E59146daB910CB23340aFd6E4f1228284Fa02be",
         "contract": "Eigen_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x068b0b9a18abdc48a75d9626e6ae40d6b47dfc3639ba6fb19bdbd1bda397d240",
+        "deployedBytecodeHash": "0xbd8290a2a9051659bb8e65bc1715f8ba32e46126960dfc0fa7d2eb58cc9acc70",
         "lastUpdatedIn": {
-          "name": "2025-04-09-16-28-v0.0.1-gov",
+          "name": "2025-06-06-18-00-v1.6.0-moocow-and-elip5",
           "phase": "eoa_wait_confirm",
-          "segment": 0
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "DelegationManager_Proxy": {
@@ -147,14 +148,15 @@
         }
       },
       "EigenPod_Impl": {
-        "address": "0xd85d0D9e24dC9af8a517034Caab2db68aD936bCf",
+        "address": "0x5C4866899d1a31ce34c8487DcC8f690cBe6f5910",
         "contract": "EigenPod_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x698f24c19646d3076f57d886f1bbc05b8198c2fc9f03bf2c385387a2372a0c15",
+        "deployedBytecodeHash": "0xb019859087d4e67bd5f88f436c30a1c37ef76e1a26159809a85655752e31ab84",
         "lastUpdatedIn": {
-          "name": "2025-04-09-17-08-v1.3.0-genesis",
+          "name": "2025-06-06-18-00-v1.6.0-moocow-and-elip5",
           "phase": "eoa_wait_confirm",
-          "segment": 0
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "EigenPod_Beacon": {
@@ -368,6 +370,6 @@
     },
     "instances": []
   },
-  "latestDeployedCommit": "9a95f5a9183dd9e94271ccbaf321c366b09abb0b",
+  "latestDeployedCommit": "c08c9e849c27910f36f3ab746f3663a18838067f",
   "chainId": 11155111
 }
