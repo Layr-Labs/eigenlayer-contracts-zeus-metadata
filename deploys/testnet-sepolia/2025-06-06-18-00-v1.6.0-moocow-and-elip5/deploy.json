@@ -1,7 +1,7 @@
 {
   "name": "2025-06-06-18-00-v1.6.0-moocow-and-elip5",
   "env": "testnet-sepolia",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -37,6 +37,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x8a7b5e10f9682bae70cc04194fe274d7a0826ea25721706b02ea9823c05e2da1",
+      "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
+      "confirmed": true,
+      "immediateExecutionHash": "0x9c0ac85ec05a17fa69c64e7ab670d24da6e16c830e57a9316543de5a1f8cd3aa"
     }
   ],
   "upgrade": "v1.6.0-moocow-and-elip5",
