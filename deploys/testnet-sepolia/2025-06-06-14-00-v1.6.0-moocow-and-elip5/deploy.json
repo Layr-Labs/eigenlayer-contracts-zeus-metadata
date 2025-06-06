@@ -1,7 +1,7 @@
 {
   "name": "2025-06-06-14-00-v1.6.0-moocow-and-elip5",
   "env": "testnet-sepolia",
-  "segmentId": 2,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
