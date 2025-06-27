@@ -9,6 +9,7 @@
   "DELEGATION_INIT_PAUSED_STATUS": 0,
   "DEALLOCATION_DELAY": 50,
   "ethPOS": "0x0000000000000000000000000000000000000000",
+  "createX": "0xba5Ed099633D3B313e4D5F7bdc1305d3c28ba5Ed",
   "safeFactory": "0x4e1dcf7ad4e460cfd30791ccc4f9c8a4f820ec67",
   "safeSingleton": "0x41675c099f32341bf84bfc5382af534df5c7461a",
   "safeFallbackHandler": "0xfd0732dc9e303f09fcef3a7388ad10a83459ec99",
@@ -35,8 +36,12 @@
   "communityMultisig": "0x6f8459810197cc9fE123BBeB918451757a4fBAc6",
   "executorMultisig": "0x4FDA8998EC3b7d4b4A612d45FeB8fB36734470f2",
   "beigenExecutorMultisig": "0xC1B0AC92ff49CFdf07DA61B8A6933b744EF26d27",
+  "multichainDeployerMultisig": "0xfddeb637b70c4d11d955456f1239dcd872b2738d",
   "proxyAdmin": "0x56E88cb4f0136fC27D95499dE4BE2acf47946Fa1",
   "beigenProxyAdmin": "0x1a26B23a004C512350d7Dd89056655A80b850199",
   "SLASH_ESCROW_DELAY": 5,
-  "slashEscrowProxyAdmin": "0x18dc7D96d26b4F43ac464349D5D4af0310Ca966b"
+  "slashEscrowProxyAdmin": "0x18dc7D96d26b4F43ac464349D5D4af0310Ca966b",
+  "SOURCE_CHAIN": true,
+  "DESTINATION_CHAIN": true,
+  "CROSS_CHAIN_REGISTRY_INIT_PAUSE_STATUS": 0
 }
