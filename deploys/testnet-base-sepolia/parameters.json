@@ -1,5 +1,8 @@
 {
   "multichainDeployerMultisig": "0xfddeb637b70c4d11d955456f1239dcd872b2738d",
   "DESTINATION_CHAIN": true,
-  "SOURCE_CHAIN": false
+  "SOURCE_CHAIN": false,
+  "proxyAdmin": "0xbe2F96Efff467c6773Dc91eA62Ab34C73195a0b5",
+  "operationsMultisig": "0x4ACA7e09eF90612941A9185A6690Dbe9e39aae8f",
+  "pauserMultisig": "0x2DD9BDDf299C846f61C0105905f9a60ee99242d6"
 }

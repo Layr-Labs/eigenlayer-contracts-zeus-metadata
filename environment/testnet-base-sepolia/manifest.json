@@ -1,10 +1,10 @@
 {
   "id": "testnet-base-sepolia",
-  "deployedVersion": "0.0.0",
+  "deployedVersion": "1.6.0",
   "contracts": {
     "static": {},
     "instances": []
   },
-  "latestDeployedCommit": "",
+  "latestDeployedCommit": "e7675e3aeddd64ad41cdd8dd4e0c7dd557afc5c6",
   "chainId": 84532
 }
