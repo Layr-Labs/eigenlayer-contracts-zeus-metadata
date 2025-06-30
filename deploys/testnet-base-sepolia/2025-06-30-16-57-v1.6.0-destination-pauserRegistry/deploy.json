@@ -1,0 +1,19 @@
+{
+  "name": "2025-06-30-16-57-v1.6.0-destination-pauserRegistry",
+  "env": "testnet-base-sepolia",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol",
+      "id": 0
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.6.0-destination-pauserRegistry",
+  "upgradePath": "script/releases/v1.6.0-destination-pauserRegistry",
+  "phase": "",
+  "chainId": 84532,
+  "startTime": "Mon Jun 30 2025 16:57:56 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1751317076.722
+}
