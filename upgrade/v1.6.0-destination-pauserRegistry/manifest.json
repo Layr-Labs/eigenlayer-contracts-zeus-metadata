@@ -1,0 +1,12 @@
+{
+  "name": "v1.6.0-destination-pauserRegistry",
+  "from": "1.6.0",
+  "to": "1.6.1",
+  "phases": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol"
+    }
+  ],
+  "commit": "0be99b5c39239579f07f11cc41711fafd4829f92"
+}
