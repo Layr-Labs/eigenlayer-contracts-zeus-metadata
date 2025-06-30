@@ -1,0 +1,19 @@
+{
+  "name": "2025-06-30-11-27-v1.6.0-destination-genesis",
+  "env": "testnet-base-sepolia",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol",
+      "id": 0
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.6.0-destination-genesis",
+  "upgradePath": "script/releases/v1.6.0-destination-genesis",
+  "phase": "",
+  "chainId": 84532,
+  "startTime": "Mon Jun 30 2025 11:27:45 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1751297265.281
+}
