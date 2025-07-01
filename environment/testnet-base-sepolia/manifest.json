@@ -1,10 +1,23 @@
 {
   "id": "testnet-base-sepolia",
-  "deployedVersion": "1.6.0",
+  "deployedVersion": "1.6.1",
   "contracts": {
-    "static": {},
+    "static": {
+      "PauserRegistry_Impl": {
+        "address": "0x6ffE77C321a773e2A27B0B0a31C5e1bBda83672B",
+        "contract": "PauserRegistry_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x668a1ceda4ff011347dbfc4b41102a51aa2f50658f1c579730dc3f14d275b9d0",
+        "lastUpdatedIn": {
+          "name": "2025-06-30-21-46-v1.6.0-destination-pauserRegistry",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      }
+    },
     "instances": []
   },
-  "latestDeployedCommit": "e7675e3aeddd64ad41cdd8dd4e0c7dd557afc5c6",
+  "latestDeployedCommit": "dc296fdfd6d6c6162117b34a8bf6c030a496a58f",
   "chainId": 84532
 }
