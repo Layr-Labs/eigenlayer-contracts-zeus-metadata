@@ -1,0 +1,39 @@
+{
+  "name": "2025-07-01-17-49-v1.7.0-multichain",
+  "env": "preprod",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deploySourceChain.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-deployDestinationChainProxies.s.sol",
+      "id": 1
+    },
+    {
+      "type": "eoa",
+      "filename": "3-deployDestinationChainImpls.s.sol",
+      "id": 2
+    },
+    {
+      "type": "multisig",
+      "filename": "4-instantiateDestinationChainProxies.s.sol",
+      "id": 3
+    },
+    {
+      "type": "multisig",
+      "filename": "5-configureCrossChainRegistry.s.sol",
+      "id": 4
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.7.0-multichain",
+  "upgradePath": "script/releases/v1.7.0-multichain",
+  "phase": "",
+  "chainId": 17000,
+  "startTime": "Tue Jul 01 2025 17:49:25 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1751406565.726
+}
