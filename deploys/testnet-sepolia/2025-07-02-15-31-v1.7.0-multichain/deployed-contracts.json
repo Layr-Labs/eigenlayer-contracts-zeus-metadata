@@ -1,0 +1,76 @@
+{
+  "contracts": [
+    {
+      "address": "0xB5622E0194393E52C1D04D536ec623ee3BB3A67C",
+      "contract": "KeyRegistrar_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x4ee659ed1a74c5ea7baee73d6552f937451e75902e550babeceac6fd179a20da",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-31-v1.7.0-multichain",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x78De554Ac8DfF368e3CAa73B3Df8AccCfD92928A",
+      "contract": "KeyRegistrar_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0x4ee659ed1a74c5ea7baee73d6552f937451e75902e550babeceac6fd179a20da",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-31-v1.7.0-multichain",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x8341Ac138EC9F6d2a151B30b0a33A8fE3642B725",
+      "contract": "CrossChainRegistry_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x46d4fe977a51d6831f97a02fa5271cc97aceb0a36c8214c69fb2d2efc0eabcb4",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-31-v1.7.0-multichain",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xe850D8A178777b483D37fD492a476e3E6004C816",
+      "contract": "CrossChainRegistry_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0x46d4fe977a51d6831f97a02fa5271cc97aceb0a36c8214c69fb2d2efc0eabcb4",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-31-v1.7.0-multichain",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x7B2b9DDB281df54065CD5D41c617eab6A3dAEeD7",
+      "contract": "ReleaseManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x9f1439aff74c776d488c3f1574726c52e46cee5bea6a179d09c857464a3f945e",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-31-v1.7.0-multichain",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xd9Cb89F1993292dEC2F973934bC63B0f2A702776",
+      "contract": "ReleaseManager_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0x9f1439aff74c776d488c3f1574726c52e46cee5bea6a179d09c857464a3f945e",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-31-v1.7.0-multichain",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}
