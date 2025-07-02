@@ -1,6 +1,6 @@
 {
   "id": "preprod",
-  "deployedVersion": "1.6.0",
+  "deployedVersion": "1.7.0-rc.0",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -469,6 +469,162 @@
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
+      },
+      "KeyRegistrar_Impl": {
+        "address": "0x6aD916822936A437957dC2fD67504bac2A02fE50",
+        "contract": "KeyRegistrar_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x4ee659ed1a74c5ea7baee73d6552f937451e75902e550babeceac6fd179a20da",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "KeyRegistrar_Proxy": {
+        "address": "0x3a88E780FC9bbC41346aD6f63944F198dFD52a83",
+        "contract": "KeyRegistrar_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x4ee659ed1a74c5ea7baee73d6552f937451e75902e550babeceac6fd179a20da",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "CrossChainRegistry_Impl": {
+        "address": "0xF10D68dF87802e46a7CA1c29eA3f94Dff0114da4",
+        "contract": "CrossChainRegistry_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x46d4fe977a51d6831f97a02fa5271cc97aceb0a36c8214c69fb2d2efc0eabcb4",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "CrossChainRegistry_Proxy": {
+        "address": "0x325663C57A56095abbB3D645a60aEff331074D29",
+        "contract": "CrossChainRegistry_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x46d4fe977a51d6831f97a02fa5271cc97aceb0a36c8214c69fb2d2efc0eabcb4",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "ReleaseManager_Impl": {
+        "address": "0x9FB6E95d3bbFf0C7f999aA1Be871D54D347bA0F6",
+        "contract": "ReleaseManager_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x9f1439aff74c776d488c3f1574726c52e46cee5bea6a179d09c857464a3f945e",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "ReleaseManager_Proxy": {
+        "address": "0x43BA6F5808C892f6F1d301Ed662409F8c9Af5E05",
+        "contract": "ReleaseManager_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x9f1439aff74c776d488c3f1574726c52e46cee5bea6a179d09c857464a3f945e",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "EmptyContract_Impl": {
+        "address": "0x59FF88cfd1180717F6A68073ED54Ba68e2CdC40c",
+        "contract": "EmptyContract_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x7a5c2ea61de4442dc148b8c1841e8d5f2f87ce8a8fe41c791d3c3c21b93a95f0",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "OperatorTableUpdater_Proxy": {
+        "address": "0x4520851E5E3344227271612581f9b0f1AC720c06",
+        "contract": "OperatorTableUpdater_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x1534171dceb72098e0af1515c4676f8db389e75a711025eefc209c145bc18ab6",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "ECDSACertificateVerifier_Proxy": {
+        "address": "0x4DDb187fF298a6838280A61c5C87c0386524e91e",
+        "contract": "ECDSACertificateVerifier_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x5316ab11dcb539704bbf785860fdacc7b54f110d7acb3bc08c9fc5947b7b1829",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "BN254CertificateVerifier_Proxy": {
+        "address": "0xCE2233fC44023E712b6A74480f12e372bD003dbD",
+        "contract": "BN254CertificateVerifier_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0xfc4b92b7895d8107bbc55c01ab4fd4ed60cb6352c9a7d35a526011cced0f55a6",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "OperatorTableUpdater_Impl": {
+        "address": "0xA96f4E2306fB47f8112961d9767A755e8E4f1145",
+        "contract": "OperatorTableUpdater_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x1534171dceb72098e0af1515c4676f8db389e75a711025eefc209c145bc18ab6",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "eoa_wait_confirm",
+          "segment": 2,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "ECDSACertificateVerifier_Impl": {
+        "address": "0xF909dbb7B9e5Db7C7cA2e71d6019AF3cA5Cd0aAC",
+        "contract": "ECDSACertificateVerifier_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x5316ab11dcb539704bbf785860fdacc7b54f110d7acb3bc08c9fc5947b7b1829",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "eoa_wait_confirm",
+          "segment": 2,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "BN254CertificateVerifier_Impl": {
+        "address": "0x9382C94c979a96E7A4ea7DEbD8664Bb158085D7a",
+        "contract": "BN254CertificateVerifier_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0xfc4b92b7895d8107bbc55c01ab4fd4ed60cb6352c9a7d35a526011cced0f55a6",
+        "lastUpdatedIn": {
+          "name": "2025-07-02-13-44-v1.7.0-multichain",
+          "phase": "eoa_wait_confirm",
+          "segment": 2,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
       }
     },
     "instances": [
@@ -606,6 +762,6 @@
       }
     ]
   },
-  "latestDeployedCommit": "c08c9e849c27910f36f3ab746f3663a18838067f",
+  "latestDeployedCommit": "d0bfc8756b8abb3581847b6e73ac9150a066a364",
   "chainId": 17000
 }
