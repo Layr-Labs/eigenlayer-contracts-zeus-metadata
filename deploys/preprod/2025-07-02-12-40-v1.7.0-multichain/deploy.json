@@ -32,7 +32,7 @@
   "metadata": [],
   "upgrade": "v1.7.0-multichain",
   "upgradePath": "script/releases/v1.7.0-multichain",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 17000,
   "startTime": "Wed Jul 02 2025 12:40:44 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1751474444.836
