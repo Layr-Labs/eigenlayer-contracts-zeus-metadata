@@ -1,0 +1,43 @@
+{
+  "safe": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
+  "to": "0xe850D8A178777b483D37fD492a476e3E6004C816",
+  "value": "0",
+  "data": "0x04e98be3000000000000000000000000000000000000000000000000000000000000004000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000aa36a70000000000000000000000000000000000000000000000000000000000014a340000000000000000000000000000000000000000000000000000000000000002000000000000000000000000e12c4cebd680a917271145edbfb091b1bdefd74d000000000000000000000000e12c4cebd680a917271145edbfb091b1bdefd74d",
+  "operation": 0,
+  "gasToken": "0x0000000000000000000000000000000000000000",
+  "safeTxGas": 0,
+  "baseGas": 0,
+  "gasPrice": "0",
+  "refundReceiver": "0x0000000000000000000000000000000000000000",
+  "nonce": 6,
+  "executionDate": null,
+  "submissionDate": "2025-07-02T19:51:12.890150Z",
+  "modified": "2025-07-02T19:51:12.946875Z",
+  "blockNumber": null,
+  "transactionHash": null,
+  "safeTxHash": "0x97b75425f302f217545b55205bb1ed014bda36a7bd76df4505b2ec1a4bbd521e",
+  "proposer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+  "proposedByDelegate": null,
+  "executor": null,
+  "isExecuted": false,
+  "isSuccessful": null,
+  "ethGasPrice": null,
+  "maxFeePerGas": null,
+  "maxPriorityFeePerGas": null,
+  "gasUsed": null,
+  "fee": null,
+  "origin": "{}",
+  "dataDecoded": null,
+  "confirmationsRequired": 1,
+  "confirmations": [
+    {
+      "owner": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "submissionDate": "2025-07-02T19:51:12.946875Z",
+      "transactionHash": null,
+      "signature": "0xc3e80c87dd78f88f500509368a787d8d21625066c79d0a409afa053e3ea37e1d02ac525b1ea7d41114c100ef890cd68c28fb6dde4085347cb34697ef1d40d1d21b",
+      "signatureType": "EOA"
+    }
+  ],
+  "trusted": true,
+  "signatures": null
+}
