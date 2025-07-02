@@ -99,6 +99,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x25c74e5d10237a35b03c72edfaa26c0ae57ee810b71b35bfc11189f0d7481964",
+      "multisig": "0x86DBd13C62C7606EBfcBa1560b907043f7D85279",
+      "confirmed": true,
+      "immediateExecutionHash": "0x2ec35415579b7c7cea32746969f27e6ce6dc820fee41294ad85719ac9430fd41"
     }
   ],
   "upgrade": "v1.7.0-multichain",
