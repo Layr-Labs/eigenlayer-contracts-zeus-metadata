@@ -45,11 +45,34 @@
       "multisig": "0xfdDEB637b70C4D11d955456f1239DCD872B2738d",
       "confirmed": true,
       "immediateExecutionHash": "0x4e5258fc5cc32a0923063fa2fe266a615bd6c61f2a37246cd0bc8f5fe359b8ac"
+    },
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0xa880e13Cfe86209100dC9D7Ccf83a1630D4e1c1A",
+          "contract": "OperatorTableUpdater_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x9Fd7E279f5bD692Dc04792151E14Ad814FC60eC1",
+          "contract": "ECDSACertificateVerifier_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x54A03db2784E3D0aCC08344D05385d0b62d4F432",
+          "contract": "BN254CertificateVerifier_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
     }
   ],
   "upgrade": "v1.7.0-multichain",
   "upgradePath": "script/releases/v1.7.0-multichain",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 84532,
   "startTime": "Wed Jul 02 2025 15:56:37 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1751486197.784

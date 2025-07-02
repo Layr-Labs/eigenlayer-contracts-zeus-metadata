@@ -47,6 +47,42 @@
         "segment": 1,
         "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
       }
+    },
+    {
+      "address": "0xa880e13Cfe86209100dC9D7Ccf83a1630D4e1c1A",
+      "contract": "OperatorTableUpdater_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x1534171dceb72098e0af1515c4676f8db389e75a711025eefc209c145bc18ab6",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-56-v1.7.0-multichain",
+        "phase": "eoa_wait_confirm",
+        "segment": 2,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x9Fd7E279f5bD692Dc04792151E14Ad814FC60eC1",
+      "contract": "ECDSACertificateVerifier_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x5316ab11dcb539704bbf785860fdacc7b54f110d7acb3bc08c9fc5947b7b1829",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-56-v1.7.0-multichain",
+        "phase": "eoa_wait_confirm",
+        "segment": 2,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x54A03db2784E3D0aCC08344D05385d0b62d4F432",
+      "contract": "BN254CertificateVerifier_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xfc4b92b7895d8107bbc55c01ab4fd4ed60cb6352c9a7d35a526011cced0f55a6",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-56-v1.7.0-multichain",
+        "phase": "eoa_wait_confirm",
+        "segment": 2,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
     }
   ]
 }
