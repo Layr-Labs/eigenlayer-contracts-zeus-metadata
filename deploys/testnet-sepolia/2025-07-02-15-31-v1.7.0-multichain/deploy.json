@@ -76,11 +76,16 @@
       "multisig": "0xfdDEB637b70C4D11d955456f1239DCD872B2738d",
       "confirmed": true,
       "immediateExecutionHash": "0xb6fa4cee69730759769acb98baab4c4ed80292622c226e362b0779e1984be0e8"
+    },
+    {
+      "type": "multisig",
+      "signerType": "eoa",
+      "confirmed": false
     }
   ],
   "upgrade": "v1.7.0-multichain",
   "upgradePath": "script/releases/v1.7.0-multichain",
-  "phase": "multisig_start",
+  "phase": "multisig_wait_signers",
   "chainId": 11155111,
   "startTime": "Wed Jul 02 2025 15:31:36 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1751484696.76

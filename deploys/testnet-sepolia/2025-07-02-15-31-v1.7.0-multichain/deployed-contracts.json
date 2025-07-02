@@ -119,6 +119,42 @@
         "segment": 1,
         "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
       }
+    },
+    {
+      "address": "0x500b22e878c116ce3C5A92642c0012A505E82a93",
+      "contract": "OperatorTableUpdater_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x1534171dceb72098e0af1515c4676f8db389e75a711025eefc209c145bc18ab6",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-31-v1.7.0-multichain",
+        "phase": "multisig_start",
+        "segment": 2,
+        "signer": "0x0"
+      }
+    },
+    {
+      "address": "0x6DCA13614865C381a8Dc09F4e34c2a9f4EBFeb16",
+      "contract": "ECDSACertificateVerifier_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x5316ab11dcb539704bbf785860fdacc7b54f110d7acb3bc08c9fc5947b7b1829",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-31-v1.7.0-multichain",
+        "phase": "multisig_start",
+        "segment": 2,
+        "signer": "0x0"
+      }
+    },
+    {
+      "address": "0x81607602EDE18134dA3608c2bd27462DB660cBd2",
+      "contract": "BN254CertificateVerifier_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xfc4b92b7895d8107bbc55c01ab4fd4ed60cb6352c9a7d35a526011cced0f55a6",
+      "lastUpdatedIn": {
+        "name": "2025-07-02-15-31-v1.7.0-multichain",
+        "phase": "multisig_start",
+        "segment": 2,
+        "signer": "0x0"
+      }
     }
   ]
 }
