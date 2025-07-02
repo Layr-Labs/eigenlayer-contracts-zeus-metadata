@@ -88,7 +88,7 @@
   ],
   "upgrade": "v1.7.0-multichain",
   "upgradePath": "script/releases/v1.7.0-multichain",
-  "phase": "multisig_wait_signers",
+  "phase": "complete",
   "chainId": 84532,
   "startTime": "Wed Jul 02 2025 15:56:37 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1751486197.784
