@@ -1,7 +1,7 @@
 {
   "name": "2025-07-02-15-56-v1.7.0-multichain",
   "env": "testnet-base-sepolia",
-  "segmentId": 2,
+  "segmentId": 3,
   "segments": [
     {
       "type": "eoa",
@@ -67,12 +67,21 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x41268b3b0a53643baa3fe72c86dd2128c2ec17c349aa5d24d15d40f640a4cd32",
+      "multisig": "0xfdDEB637b70C4D11d955456f1239DCD872B2738d",
+      "confirmed": true,
+      "immediateExecutionHash": "0x287d86ee9fd9268ca38c6aebe092007ce335cc8d441559791b392252d6b57eb8"
     }
   ],
   "upgrade": "v1.7.0-multichain",
   "upgradePath": "script/releases/v1.7.0-multichain",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 84532,
   "startTime": "Wed Jul 02 2025 15:56:37 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1751486197.784
