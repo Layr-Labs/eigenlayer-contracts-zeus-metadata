@@ -1,7 +1,7 @@
 {
   "name": "2025-07-02-13-44-v1.7.0-multichain",
   "env": "preprod",
-  "segmentId": 3,
+  "segmentId": 4,
   "segments": [
     {
       "type": "eoa",
