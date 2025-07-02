@@ -36,6 +36,15 @@
       "transactions": [],
       "deployments": [],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0xf47b0c0c51283e57f1d870f6f36f26a4b8be6de8a3bb9950228f3122c5b994bc",
+      "multisig": "0xfdDEB637b70C4D11d955456f1239DCD872B2738d",
+      "confirmed": true,
+      "immediateExecutionHash": "0x4e5258fc5cc32a0923063fa2fe266a615bd6c61f2a37246cd0bc8f5fe359b8ac"
     }
   ],
   "upgrade": "v1.7.0-multichain",
