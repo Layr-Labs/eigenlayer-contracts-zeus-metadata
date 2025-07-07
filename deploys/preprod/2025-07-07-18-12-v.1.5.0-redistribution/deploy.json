@@ -1,7 +1,7 @@
 {
   "name": "2025-07-07-18-12-v.1.5.0-redistribution",
   "env": "preprod",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -67,11 +67,20 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x6ca167d679a4e078a8aeaf104d3532a7a33d97226b913a5ddd124bb3580b55db",
+      "multisig": "0x6d609cD2812bDA02a75dcABa7DaafE4B20Ff5608",
+      "confirmed": true,
+      "immediateExecutionHash": "0x0f534e9019aca76d22807512ddf0d184099616e1b58ffb889fc66598a9af9e6c"
     }
   ],
   "upgrade": "v.1.5.0-redistribution",
   "upgradePath": "script/releases/v.1.5.0-redistribution",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 17000,
   "startTime": "Mon Jul 07 2025 18:12:02 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1751926322.386
