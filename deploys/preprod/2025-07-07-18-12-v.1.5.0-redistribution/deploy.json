@@ -1,7 +1,7 @@
 {
   "name": "2025-07-07-18-12-v.1.5.0-redistribution",
   "env": "preprod",
-  "segmentId": 1,
+  "segmentId": 3,
   "segments": [
     {
       "type": "eoa",
