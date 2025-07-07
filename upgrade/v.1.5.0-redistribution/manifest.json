@@ -13,8 +13,12 @@
     },
     {
       "type": "multisig",
-      "filename": "3-executeUpgrade.s.sol"
+      "filename": "3-blacklistTokens.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "4-executeUpgrade.s.sol"
     }
   ],
-  "commit": "9a95f5a9183dd9e94271ccbaf321c366b09abb0b"
+  "commit": "5dbb48339aeef41e11d65c8816f9489e53573fad"
 }
