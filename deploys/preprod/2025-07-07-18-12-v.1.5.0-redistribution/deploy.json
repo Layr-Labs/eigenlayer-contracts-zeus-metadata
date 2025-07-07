@@ -76,6 +76,16 @@
       "multisig": "0x6d609cD2812bDA02a75dcABa7DaafE4B20Ff5608",
       "confirmed": true,
       "immediateExecutionHash": "0x0f534e9019aca76d22807512ddf0d184099616e1b58ffb889fc66598a9af9e6c"
+    },
+    null,
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x9fdc286dcc4787e2840413182aa3f75638e989fbb395cc00ed1828116cdca992",
+      "multisig": "0x314A6B61B5CBFA79dc7b2c0416e039822E886b54",
+      "confirmed": true,
+      "immediateExecutionHash": "0x0f69c1fbdad3cd4390f7d55b17e4640a444591093a3cd542c368458bdcd1af2f"
     }
   ],
   "upgrade": "v.1.5.0-redistribution",
