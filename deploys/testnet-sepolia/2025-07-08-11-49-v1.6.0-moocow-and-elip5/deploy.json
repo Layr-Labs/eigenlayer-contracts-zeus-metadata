@@ -46,6 +46,15 @@
       "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
       "confirmed": true,
       "immediateExecutionHash": "0xe823163e20bbc56f985d1fd7941e68b5eebcb8d36ad81d587cfad26298433d53"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0xb23ff0656159eeaf863ad11f2a5b07546fb499747844b860c14aa201425b2433",
+      "multisig": "0x8eA6C3Cca1c96967F7B164FfaA5fabede10311A9",
+      "confirmed": true,
+      "immediateExecutionHash": "0x95e917e6eaba90907923f3b3faf6e915eff7ffe59102a3f5d20d625a84c4ec98"
     }
   ],
   "upgrade": "v1.6.0-moocow-and-elip5",
