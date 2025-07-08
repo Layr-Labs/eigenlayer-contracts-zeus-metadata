@@ -1,0 +1,28 @@
+{
+  "contracts": [
+    {
+      "address": "0x803DC1763CA2d6B2A139A81773450A9A4ae697F3",
+      "contract": "EigenPod_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xc1c0b10ea0f5bef2e517affac1ec57c7b0d3f21e51eb2b72d8f57f5bee252210",
+      "lastUpdatedIn": {
+        "name": "2025-07-07-19-58-v1.6.0-moocow-and-elip5",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xAC98C915d8295047d79C4964CE29990EA64DB160",
+      "contract": "Eigen_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xbd8290a2a9051659bb8e65bc1715f8ba32e46126960dfc0fa7d2eb58cc9acc70",
+      "lastUpdatedIn": {
+        "name": "2025-07-07-19-58-v1.6.0-moocow-and-elip5",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}
