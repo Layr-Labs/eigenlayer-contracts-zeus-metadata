@@ -24,10 +24,54 @@
       "id": 3
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0xB87AeeA46BB3a3050D277272E33b011922537Db7",
+          "contract": "AllocationManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xa9821F0620D347648f375c597761C7FD16C1b823",
+          "contract": "DelegationManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xf0A8735c26121e6C488ebac65c8fa3fe37cBFCB3",
+          "contract": "StrategyManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x10848d61cE044bcAEE301a28A4C30Ad0a40e88Ae",
+          "contract": "EigenPodManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x535185d24cD1B2e4F7afDe4ee39CF717c00B52B7",
+          "contract": "EigenStrategy_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x3BA4F6973D9ed2f0617C4b15d8CE06155fd6a43b",
+          "contract": "StrategyBase_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x15b98D39f8132f0D77a6bFF11da53DF42cF95ACe",
+          "contract": "StrategyBaseTVLLimits_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v.1.5.0-redistribution",
   "upgradePath": "script/releases/v.1.5.0-redistribution",
-  "phase": "eoa_validate",
+  "phase": "eoa_wait_confirm",
   "chainId": 11155111,
   "startTime": "Tue Jul 08 2025 11:11:09 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1751987469.612
