@@ -19,10 +19,29 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x107339987a46F77598cB563bf63eb8a1C9f5b40e",
+          "contract": "EigenPod_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x7ec6a02235Bf8d8a1fDB894AD2E1573192bfBD6F",
+          "contract": "Eigen_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.6.0-moocow-and-elip5",
   "upgradePath": "script/releases/v1.6.0-moocow-and-elip5",
-  "phase": "eoa_validate",
+  "phase": "eoa_wait_confirm",
   "chainId": 11155111,
   "startTime": "Tue Jul 08 2025 11:49:42 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1751989782.007
