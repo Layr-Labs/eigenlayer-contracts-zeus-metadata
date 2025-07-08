@@ -1,7 +1,7 @@
 {
   "name": "2025-07-08-12-15-v1.6.0-moocow-and-elip5",
   "env": "testnet-hoodi",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -46,6 +46,15 @@
       "multisig": "0x8eA6C3Cca1c96967F7B164FfaA5fabede10311A9",
       "confirmed": true,
       "immediateExecutionHash": "0xd10e95a25919222ca7772fe4406eb3c12e065d43693ac12b7b3f4615c6a42517"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x703dc210a98ca4b20220d088d77b71716890c81093971271b2cbd7b36b9a56c1",
+      "multisig": "0x6f8459810197cc9fE123BBeB918451757a4fBAc6",
+      "confirmed": true,
+      "immediateExecutionHash": "0x84b4d8e1660db57f2bf2f8ef59f58b7fde1fcbcc75464d1e79a78f7d4a1f1a7f"
     }
   ],
   "upgrade": "v1.6.0-moocow-and-elip5",
