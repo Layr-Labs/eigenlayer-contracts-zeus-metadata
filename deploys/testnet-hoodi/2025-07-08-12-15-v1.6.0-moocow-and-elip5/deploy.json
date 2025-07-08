@@ -1,0 +1,29 @@
+{
+  "name": "2025-07-08-12-15-v1.6.0-moocow-and-elip5",
+  "env": "testnet-hoodi",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-executeUpgrade.s.sol",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.6.0-moocow-and-elip5",
+  "upgradePath": "script/releases/v1.6.0-moocow-and-elip5",
+  "phase": "",
+  "chainId": 560048,
+  "startTime": "Tue Jul 08 2025 12:15:26 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1751991326.507
+}
