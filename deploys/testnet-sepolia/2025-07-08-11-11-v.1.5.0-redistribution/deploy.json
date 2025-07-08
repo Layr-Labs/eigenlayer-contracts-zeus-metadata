@@ -1,7 +1,7 @@
 {
   "name": "2025-07-08-11-11-v.1.5.0-redistribution",
   "env": "testnet-sepolia",
-  "segmentId": 2,
+  "segmentId": 3,
   "segments": [
     {
       "type": "eoa",
@@ -82,12 +82,12 @@
       "signerType": "gnosis.api.eoa",
       "gnosisTransactionHash": "0xec3c9dd0c489525504fe59def6df13927481ba5663c1e70d751b87f7efcfe817",
       "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v.1.5.0-redistribution",
   "upgradePath": "script/releases/v.1.5.0-redistribution",
-  "phase": "multisig_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 11155111,
   "startTime": "Tue Jul 08 2025 11:11:09 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1751987469.612
