@@ -1,0 +1,34 @@
+{
+  "name": "2025-07-08-11-11-v.1.5.0-redistribution",
+  "env": "testnet-sepolia",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-blacklistTokens.s.sol",
+      "id": 2
+    },
+    {
+      "type": "multisig",
+      "filename": "4-executeUpgrade.s.sol",
+      "id": 3
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v.1.5.0-redistribution",
+  "upgradePath": "script/releases/v.1.5.0-redistribution",
+  "phase": "",
+  "chainId": 11155111,
+  "startTime": "Tue Jul 08 2025 11:11:09 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1751987469.612
+}
