@@ -67,11 +67,19 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF",
+      "signerType": "gnosis.api.ledger",
+      "gnosisTransactionHash": "0x47c8593ec41b7fa79964abbba0fbf421b27d8a4a5c0850bdc59c3e143fbbf170",
+      "multisig": "0xBE1685C81aA44FF9FB319dD389addd9374383e90",
+      "confirmed": false
     }
   ],
   "upgrade": "v.1.5.0-redistribution",
   "upgradePath": "script/releases/v.1.5.0-redistribution",
-  "phase": "multisig_start",
+  "phase": "multisig_wait_signers",
   "chainId": 1,
   "startTime": "Thu Jul 10 2025 16:03:03 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1752177783.293
