@@ -1,7 +1,7 @@
 {
   "name": "2025-07-10-16-03-v.1.5.0-redistribution",
   "env": "mainnet",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -74,12 +74,12 @@
       "signerType": "gnosis.api.ledger",
       "gnosisTransactionHash": "0x47c8593ec41b7fa79964abbba0fbf421b27d8a4a5c0850bdc59c3e143fbbf170",
       "multisig": "0xBE1685C81aA44FF9FB319dD389addd9374383e90",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v.1.5.0-redistribution",
   "upgradePath": "script/releases/v.1.5.0-redistribution",
-  "phase": "multisig_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 1,
   "startTime": "Thu Jul 10 2025 16:03:03 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1752177783.293
