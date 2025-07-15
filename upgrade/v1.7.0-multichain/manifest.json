@@ -1,7 +1,7 @@
 {
-  "name": "multichain-v1.7.0",
-  "from": ">=1.6.0 <1.7.0",
-  "to": "1.7.0-rc.0",
+  "name": "multichain-v1.7.0-rc.3",
+  "from": "1.7.0-rc.2",
+  "to": "1.7.0-rc.3",
   "phases": [
     {
       "type": "eoa",
@@ -24,5 +24,5 @@
       "filename": "5-configureCrossChainRegistry.s.sol"
     }
   ],
-  "commit": "e272d317a38dcedf60b0d6c9bfcdc2c3f5041707"
+  "commit": "876833173a3ca456785945924fb24e6753d78d6a"
 }
