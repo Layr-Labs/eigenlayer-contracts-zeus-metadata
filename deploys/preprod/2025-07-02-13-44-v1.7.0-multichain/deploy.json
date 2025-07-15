@@ -115,12 +115,12 @@
       "signerType": "gnosis.api.eoa",
       "gnosisTransactionHash": "0x7ffbea5ddf884354a26c25c2574b82c88b1924db217cfcd93fdfce901cf95bf9",
       "multisig": "0x6d609cD2812bDA02a75dcABa7DaafE4B20Ff5608",
-      "confirmed": true
+      "confirmed": false
     }
   ],
   "upgrade": "v1.7.0-multichain",
   "upgradePath": "script/releases/v1.7.0-multichain",
-  "phase": "complete",
+  "phase": "multisig_wait_confirm",
   "chainId": 17000,
   "startTime": "Wed Jul 02 2025 13:44:50 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1751478290.344
