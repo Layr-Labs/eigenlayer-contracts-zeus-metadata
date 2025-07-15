@@ -9,7 +9,7 @@
   "timelockController_BEIGEN": "0x68fa0fB9eDe34745C41d85E2766ee32eBc6cEF0e",
   "beigenExecutorMultisig": "0xFbb2c01A19A85c4C648186a97d879EEA25cE1397",
   "foundationMultisig": "0x9c36f012585c8bb4247eEe18C01Cdfc5f2e90336",
-  "multichainDeployerMultisig": "0x86DBd13C62C7606EBfcBa1560b907043f7D85279",
+  "multichainDeployerMultisig": "0xe3949f0e39bb348ca58292462f07974283c791bd",
   "ethPOS": "0x4242424242424242424242424242424242424242",
   "MultiSendCallOnly": "0x40A2aCCbd92BCA938b02010E17A5b8929b49130D",
   "MIN_WITHDRAWAL_DELAY": 25,
