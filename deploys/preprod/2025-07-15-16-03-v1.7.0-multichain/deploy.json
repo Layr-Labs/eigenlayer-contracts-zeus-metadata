@@ -1,7 +1,7 @@
 {
   "name": "2025-07-15-16-03-v1.7.0-multichain",
   "env": "preprod",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -80,7 +80,7 @@
   ],
   "upgrade": "v1.7.0-multichain",
   "upgradePath": "script/releases/v1.7.0-multichain",
-  "phase": "multisig_start",
+  "phase": "eoa_start",
   "chainId": 17000,
   "startTime": "Tue Jul 15 2025 16:03:53 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1752609833.371
