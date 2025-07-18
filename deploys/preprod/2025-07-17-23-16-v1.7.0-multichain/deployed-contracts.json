@@ -71,6 +71,54 @@
         "segment": 0,
         "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
       }
+    },
+    {
+      "address": "0x384714B76C30C283ec87E25F1bBeEbB01B37FADe",
+      "contract": "EmptyContract_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x7a5c2ea61de4442dc148b8c1841e8d5f2f87ce8a8fe41c791d3c3c21b93a95f0",
+      "lastUpdatedIn": {
+        "name": "2025-07-17-23-16-v1.7.0-multichain",
+        "phase": "multisig_start",
+        "segment": 1,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xD35d262f8de519513590F94D9b197262ce322A58",
+      "contract": "OperatorTableUpdater_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0x155d58fc4c07a44725cda0d911606be6f581e7990b456b896ab25c0d42555bb5",
+      "lastUpdatedIn": {
+        "name": "2025-07-17-23-16-v1.7.0-multichain",
+        "phase": "multisig_start",
+        "segment": 1,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x80cCCcE85569C753adE331C0749B59ca45F710C0",
+      "contract": "ECDSACertificateVerifier_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0x2fd48799f88dd47bda6f9b6a6ea693c2e2a1e3ee7bec5a8cd90909ffd7b293b4",
+      "lastUpdatedIn": {
+        "name": "2025-07-17-23-16-v1.7.0-multichain",
+        "phase": "multisig_start",
+        "segment": 1,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x2a147b325F3EAE5A2C2D752E8988407F9EFEDD75",
+      "contract": "BN254CertificateVerifier_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0xca109c51eac0406e64c993ca97051e979b8784133c4bddaea4586494efcf3280",
+      "lastUpdatedIn": {
+        "name": "2025-07-17-23-16-v1.7.0-multichain",
+        "phase": "multisig_start",
+        "segment": 1,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
     }
   ]
 }
