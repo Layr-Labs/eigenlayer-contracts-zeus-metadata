@@ -1,0 +1,2255 @@
+{
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "_operatorTableUpdater",
+          "type": "address",
+          "internalType": "contract IOperatorTableUpdater"
+        },
+        {
+          "name": "_version",
+          "type": "string",
+          "internalType": "string"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "calculateCertificateDigest",
+      "inputs": [
+        {
+          "name": "referenceTimestamp",
+          "type": "uint32",
+          "internalType": "uint32"
+        },
+        {
+          "name": "messageHash",
+          "type": "bytes32",
+          "internalType": "bytes32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32",
+          "internalType": "bytes32"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "calculateCertificateDigestBytes",
+      "inputs": [
+        {
+          "name": "referenceTimestamp",
+          "type": "uint32",
+          "internalType": "uint32"
+        },
+        {
+          "name": "messageHash",
+          "type": "bytes32",
+          "internalType": "bytes32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes",
+          "internalType": "bytes"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "domainSeparator",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes32",
+          "internalType": "bytes32"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getOperatorCount",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "referenceTimestamp",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getOperatorInfo",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "referenceTimestamp",
+          "type": "uint32",
+          "internalType": "uint32"
+        },
+        {
+          "name": "operatorIndex",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple",
+          "internalType": "struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo",
+          "components": [
+            {
+              "name": "pubkey",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "weights",
+              "type": "uint256[]",
+              "internalType": "uint256[]"
+            }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getOperatorInfos",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "referenceTimestamp",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple[]",
+          "internalType": "struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo[]",
+          "components": [
+            {
+              "name": "pubkey",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "weights",
+              "type": "uint256[]",
+              "internalType": "uint256[]"
+            }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getOperatorSetOwner",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getTotalStakeWeights",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "referenceTimestamp",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256[]",
+          "internalType": "uint256[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "isReferenceTimestampSet",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "referenceTimestamp",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "latestReferenceTimestamp",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "maxOperatorTableStaleness",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "operatorTableUpdater",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IOperatorTableUpdater"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "updateOperatorTable",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "referenceTimestamp",
+          "type": "uint32",
+          "internalType": "uint32"
+        },
+        {
+          "name": "operatorInfos",
+          "type": "tuple[]",
+          "internalType": "struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo[]",
+          "components": [
+            {
+              "name": "pubkey",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "weights",
+              "type": "uint256[]",
+              "internalType": "uint256[]"
+            }
+          ]
+        },
+        {
+          "name": "operatorSetConfig",
+          "type": "tuple",
+          "internalType": "struct ICrossChainRegistryTypes.OperatorSetConfig",
+          "components": [
+            {
+              "name": "owner",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "maxStalenessPeriod",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "verifyCertificate",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "cert",
+          "type": "tuple",
+          "internalType": "struct IECDSACertificateVerifierTypes.ECDSACertificate",
+          "components": [
+            {
+              "name": "referenceTimestamp",
+              "type": "uint32",
+              "internalType": "uint32"
+            },
+            {
+              "name": "messageHash",
+              "type": "bytes32",
+              "internalType": "bytes32"
+            },
+            {
+              "name": "sig",
+              "type": "bytes",
+              "internalType": "bytes"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256[]",
+          "internalType": "uint256[]"
+        },
+        {
+          "name": "",
+          "type": "address[]",
+          "internalType": "address[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "verifyCertificateNominal",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "cert",
+          "type": "tuple",
+          "internalType": "struct IECDSACertificateVerifierTypes.ECDSACertificate",
+          "components": [
+            {
+              "name": "referenceTimestamp",
+              "type": "uint32",
+              "internalType": "uint32"
+            },
+            {
+              "name": "messageHash",
+              "type": "bytes32",
+              "internalType": "bytes32"
+            },
+            {
+              "name": "sig",
+              "type": "bytes",
+              "internalType": "bytes"
+            }
+          ]
+        },
+        {
+          "name": "totalStakeNominalThresholds",
+          "type": "uint256[]",
+          "internalType": "uint256[]"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool",
+          "internalType": "bool"
+        },
+        {
+          "name": "",
+          "type": "address[]",
+          "internalType": "address[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "verifyCertificateProportion",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "cert",
+          "type": "tuple",
+          "internalType": "struct IECDSACertificateVerifierTypes.ECDSACertificate",
+          "components": [
+            {
+              "name": "referenceTimestamp",
+              "type": "uint32",
+              "internalType": "uint32"
+            },
+            {
+              "name": "messageHash",
+              "type": "bytes32",
+              "internalType": "bytes32"
+            },
+            {
+              "name": "sig",
+              "type": "bytes",
+              "internalType": "bytes"
+            }
+          ]
+        },
+        {
+          "name": "totalStakeProportionThresholds",
+          "type": "uint16[]",
+          "internalType": "uint16[]"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool",
+          "internalType": "bool"
+        },
+        {
+          "name": "",
+          "type": "address[]",
+          "internalType": "address[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "version",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "string",
+          "internalType": "string"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "event",
+      "name": "Initialized",
+      "inputs": [
+        {
+          "name": "version",
+          "type": "uint8",
+          "indexed": false,
+          "internalType": "uint8"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "MaxStalenessPeriodUpdated",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "indexed": false,
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "maxStalenessPeriod",
+          "type": "uint32",
+          "indexed": false,
+          "internalType": "uint32"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "OperatorSetOwnerUpdated",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "indexed": false,
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "owner",
+          "type": "address",
+          "indexed": false,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "TableUpdated",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "indexed": false,
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "referenceTimestamp",
+          "type": "uint32",
+          "indexed": false,
+          "internalType": "uint32"
+        },
+        {
+          "name": "operatorInfos",
+          "type": "tuple[]",
+          "indexed": false,
+          "internalType": "struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo[]",
+          "components": [
+            {
+              "name": "pubkey",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "weights",
+              "type": "uint256[]",
+              "internalType": "uint256[]"
+            }
+          ]
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "ArrayLengthMismatch",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "CertificateStale",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidShortString",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidSignature",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidSignatureLength",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "OnlyTableUpdater",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "OperatorCountZero",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ReferenceTimestampDoesNotExist",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "RootDisabled",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "SignatureExpired",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "SignersNotOrdered",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "StringTooLong",
+      "inputs": [
+        {
+          "name": "str",
+          "type": "string",
+          "internalType": "string"
+        }
+      ]
+    },
+    {
+      "type": "error",
+      "name": "TableUpdateStale",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "VerificationFailed",
+      "inputs": []
+    }
+  ],
+  "bytecode": {
+    "object": "0x60c060405234801561000f575f5ffd5b5060405161238238038061238283398101604081905261002e9161016d565b6001600160a01b03821660805280806100468161005b565b60a0525061005490506100a1565b5050610297565b5f5f829050601f8151111561008e578260405163305a27a960e01b8152600401610085919061023c565b60405180910390fd5b805161009982610271565b179392505050565b5f54610100900460ff16156101085760405162461bcd60e51b815260206004820152602760248201527f496e697469616c697a61626c653a20636f6e747261637420697320696e697469604482015266616c697a696e6760c81b6064820152608401610085565b5f5460ff90811614610157575f805460ff191660ff9081179091556040519081527f7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb38474024989060200160405180910390a15b565b634e487b7160e01b5f52604160045260245ffd5b5f5f6040838503121561017e575f5ffd5b82516001600160a01b0381168114610194575f5ffd5b60208401519092506001600160401b038111156101af575f5ffd5b8301601f810185136101bf575f5ffd5b80516001600160401b038111156101d8576101d8610159565b604051601f8201601f19908116603f011681016001600160401b038111828210171561020657610206610159565b60405281815282820160200187101561021d575f5ffd5b8160208401602083015e5f602083830101528093505050509250929050565b602081525f82518060208401528060208501604085015e5f604082850101526040601f19601f83011684010191505092915050565b80516020808301519190811015610291575f198160200360031b1b821691505b50919050565b60805160a0516120b56102cd5f395f818161034201526110af01525f81816101ad015281816103760152610f4d01526120b55ff3fe608060405234801561000f575f5ffd5b5060043610610106575f3560e01c80637c85ac4c1161009e578063be86e0b21161006e578063be86e0b21461026e578063c0da24201461028f578063cd83a72b146102a2578063e49613fc146102c5578063f698da25146102e5575f5ffd5b80637c85ac4c146101fa5780637d1d1f5b1461021a57806380c7d3f31461023a578063848189201461025b575f5ffd5b80635ddb9b5b116100d95780635ddb9b5b1461016d5780636141879e1461019557806368d6e081146101a8578063702ca531146101e7575f5ffd5b8063184674341461010a57806323c2a3cb1461013057806354fd4d501461014357806356d482f514610158575b5f5ffd5b61011d610118366004611685565b6102ed565b6040519081526020015b60405180910390f35b61011d61013e366004611765565b610308565b61014b61033b565b60405161012791906117c5565b61016b610166366004611834565b61036b565b005b61018061017b3660046118a6565b610582565b60405163ffffffff9091168152602001610127565b6101806101a33660046118a6565b6105a8565b6101cf7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610127565b61014b6101f5366004611685565b6105ce565b61020d610208366004611765565b610665565b6040516101279190611915565b61022d610228366004611978565b6107c3565b60405161012791906119cd565b61024d6102483660046119ef565b6109bc565b604051610127929190611a73565b6101cf6102693660046118a6565b6109da565b61028161027c366004611aa0565b610a03565b604051610127929190611b86565b61028161029d366004611ba8565b610aa3565b6102b56102b0366004611765565b610ba5565b6040519015158152602001610127565b6102d86102d3366004611c1e565b610bdb565b6040516101279190611c59565b61011d610d07565b5f6102f883836105ce565b8051906020012090505b92915050565b5f5f61031384610dc7565b5f90815260046020908152604080832063ffffffff8716845290915290205491505092915050565b60606103667f0000000000000000000000000000000000000000000000000000000000000000610e2a565b905090565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146103b45760405163030c1b6b60e11b815260040160405180910390fd5b5f6103cc6103c7368890038801886118a6565b610dc7565b5f8181526003602052604090205490915063ffffffff9081169086161161040657604051632f20889f60e01b815260040160405180910390fd5b5f81815260046020908152604080832063ffffffff8916845290915281208490555b8381101561048e5784848281811061044257610442611c6b565b90506020028101906104549190611c7f565b5f83815260056020908152604080832063ffffffff8b168452825280832085845290915290206104848282611cc8565b5050600101610428565b505f818152600360209081526040909120805463ffffffff191663ffffffff88161790556104be90830183611dcb565b5f8281526001602090815260409182902080546001600160a01b0319166001600160a01b0394909416939093179092556104fd91908401908401611de6565b5f828152600260209081526040808320805463ffffffff191663ffffffff958616179055600682528083209389168352929052819020805460ff19166001179055517f4f588da9ec57976194a79b5594f8f8782923d93013df2b9ed12fe125805011ef90610572908890889088908890611dff565b60405180910390a1505050505050565b5f5f61058d83610dc7565b5f9081526003602052604090205463ffffffff169392505050565b5f5f6105b383610dc7565b5f9081526002602052604090205463ffffffff169392505050565b604080517fda346acb3ce99e7c5132bf8cafb159ad8085970ebfdba78007ef0fe163063d1460208083019190915263ffffffff85168284015260608083018590528351808403820181526080909301909352815191012061062d610d07565b60405161190160f01b602082015260228101919091526042810182905260620160405160208183030381529060405291505092915050565b60605f61067184610dc7565b5f81815260046020908152604080832063ffffffff8089168552925282205492935082166001600160401b038111156106ac576106ac6116ad565b6040519080825280602002602001820160405280156106f157816020015b604080518082019091525f8152606060208201528152602001906001900390816106ca5790505b5090505f5b8263ffffffff168110156107b9575f84815260056020908152604080832063ffffffff8a16845282528083208484528252918290208251808401845281546001600160a01b031681526001820180548551818602810186019096528086529194929385810193929083018282801561078b57602002820191905f5260205f20905b815481526020019060010190808311610777575b5050505050815250508282815181106107a6576107a6611c6b565b60209081029190910101526001016106f6565b5095945050505050565b60605f6107d86103c7368690038601866118a6565b5f8181526003602052604090205490915063ffffffff84811691161461081157604051630cad17b760e31b815260040160405180910390fd5b5f81815260046020908152604080832063ffffffff871684529091529020548061084e57604051631029081560e21b815260040160405180910390fd5b5f82815260056020908152604080832063ffffffff88168452825280832083805290915281206001015490816001600160401b03811115610891576108916116ad565b6040519080825280602002602001820160405280156108ba578160200160208202803683370190505b5090505f5b838110156109b1575f85815260056020908152604080832063ffffffff8b168452825280832084845282528083206001018054825181850281018501909352808352919290919083018282801561093357602002820191905f5260205f20905b81548152602001906001019080831161091f575b509394505f93505050505b81518110801561094d57508481105b156109a75781818151811061096457610964611c6b565b602002602001015184828151811061097e5761097e611c6b565b602002602001018181516109929190611f32565b9052508061099f81611f45565b91505061093e565b50506001016108bf565b509695505050505050565b6060805f5f6109cb8686610e67565b909450925050505b9250929050565b5f5f6109e583610dc7565b5f908152600160205260409020546001600160a01b03169392505050565b5f60605f5f610a128787610e67565b915091508451825114610a385760405163512509d360e11b815260040160405180910390fd5b5f5b8251811015610a9257858181518110610a5557610a55611c6b565b6020026020010151838281518110610a6f57610a6f611c6b565b60200260200101511015610a8a57505f93509150610a9b9050565b600101610a3a565b50600193509150505b935093915050565b5f60605f5f610ab28888610e67565b90925090505f610ac98961022860208b018b611de6565b83519091508614610aed5760405163512509d360e11b815260040160405180910390fd5b5f5b8351811015610b91575f612710898984818110610b0e57610b0e611c6b565b9050602002016020810190610b239190611f5d565b61ffff16848481518110610b3957610b39611c6b565b6020026020010151610b4b9190611cb1565b610b559190611f92565b905080858381518110610b6a57610b6a611c6b565b60200260200101511015610b88575f84965096505050505050610b9c565b50600101610aef565b506001945090925050505b94509492505050565b5f5f610bb084610dc7565b5f90815260066020908152604080832063ffffffff8716845290915290205460ff1691505092915050565b604080518082019091525f8152606060208201525f610bf985610dc7565b5f81815260046020908152604080832063ffffffff891684529091529020549091508310610c6d5760405162461bcd60e51b815260206004820152601c60248201527f4f70657261746f7220696e646578206f7574206f6620626f756e647300000000604482015260640160405180910390fd5b5f81815260056020908152604080832063ffffffff8816845282528083208684528252918290208251808401845281546001600160a01b0316815260018201805485518186028101860190965280865291949293858101939290830182828015610cf457602002820191905f5260205f20905b815481526020019060010190808311610ce0575b5050505050815250509150509392505050565b60408051808201909152600a81526922b4b3b2b72630bcb2b960b11b6020909101525f7f91ab3d17e3a50a9d89e63fd30b92be7f5336b03b287bb946787a83a9d62a27667f71b625cfad44bac63b13dba07f2e1d6084ee04b6f8752101ece6126d584ee6ea610d746110a7565b8051602091820120604051610dac949392309101938452602084019290925260408301526001600160a01b0316606082015260800190565b60405160208183030381529060405280519060200120905090565b5f815f0151826020015163ffffffff16604051602001610e1292919060609290921b6bffffffffffffffffffffffff1916825260a01b6001600160a01b031916601482015260200190565b60405160208183030381529060405261030290611fa5565b60605f610e368361111c565b6040805160208082528183019092529192505f91906020820181803683375050509182525060208101929092525090565b6060805f610e7d6103c7368790038701876118a6565b5f8181526002602052604090205490915063ffffffff161580610ed357505f8181526002602090815260409091205463ffffffff1690610ebf90860186611de6565b610ec99190611fc8565b63ffffffff164211155b610ef05760405163640fcd6b60e11b815260040160405180910390fd5b5f81815260066020908152604082209190610f0d90870187611de6565b63ffffffff16815260208101919091526040015f205460ff16610f4357604051630cad17b760e31b815260040160405180910390fd5b6001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000166364e1df84610f7f6020870187611de6565b6040516001600160e01b031960e084901b16815263ffffffff919091166004820152602401602060405180830381865afa158015610fbf573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610fe39190611fe4565b61100057604051631b14174b60e01b815260040160405180910390fd5b5f61101b6110116020870187611de6565b86602001356102ed565b90505f6110688261102f6040890189612003565b8080601f0160208091040260200160405190810160405280939291908181526020018383808284375f9201919091525061114392505050565b90505f61107c8861022860208a018a611de6565b5190505f6110988561109160208b018b611de6565b858561134a565b99929850919650505050505050565b60605f6110d37f0000000000000000000000000000000000000000000000000000000000000000610e2a565b9050805f815181106110e7576110e7611c6b565b016020908101516040516001600160f81b03199091169181019190915260210160405160208183030381529060405291505090565b5f60ff8216601f81111561030257604051632cd44ac360e21b815260040160405180910390fd5b60605f825111801561116057506041825161115e9190612045565b155b61117d57604051634be6321b60e01b815260040160405180910390fd5b5f6041835161118c9190611f92565b9050806001600160401b038111156111a6576111a66116ad565b6040519080825280602002602001820160405280156111cf578160200160208202803683370190505b5091505f5b8181101561134257604080516041808252608082019092525f916020820181803683370190505090505f5b604181101561126a578581611215856041611cb1565b61121f9190611f32565b8151811061122f5761122f611c6b565b602001015160f81c60f81b82828151811061124c5761124c611c6b565b60200101906001600160f81b03191690815f1a9053506001016111ff565b505f5f6112778884611574565b90925090505f81600481111561128f5761128f612058565b146112ad57604051638baa579f60e01b815260040160405180910390fd5b8315806112ee5750856112c160018661206c565b815181106112d1576112d1611c6b565b60200260200101516001600160a01b0316826001600160a01b0316115b61130b57604051630b550c5760e41b815260040160405180910390fd5b8186858151811061131e5761131e611c6b565b6001600160a01b0392909216602092830291909101909101525050506001016111d4565b505092915050565b5f84815260046020908152604080832063ffffffff87168452909152902054606090826001600160401b03811115611384576113846116ad565b6040519080825280602002602001820160405280156113ad578160200160208202803683370190505b5091505f5b845181101561156a575f8582815181106113ce576113ce611c6b565b602002602001015190505f5f905061140160405180604001604052805f6001600160a01b03168152602001606081525090565b5f5b858110156114ca575f8b815260056020908152604080832063ffffffff8e16845282528083208484528252918290208251808401845281546001600160a01b031681526001820180548551818602810186019096528086529194929385810193929083018282801561149257602002820191905f5260205f20905b81548152602001906001019080831161147e575b5050505050815250509150836001600160a01b0316825f01516001600160a01b0316036114c257600192506114ca565b600101611403565b50816114e95760405163439cc0cd60e01b815260040160405180910390fd5b60208101515f5b8151811080156114ff57508881105b156115595781818151811061151657611516611c6b565b602002602001015188828151811061153057611530611c6b565b602002602001018181516115449190611f32565b9052508061155181611f45565b9150506114f0565b5050600190930192506113b2915050565b5050949350505050565b5f5f82516041036115a8576020830151604084015160608501515f1a61159c878285856115b3565b945094505050506109d3565b505f905060026109d3565b5f807f7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a08311156115e857505f90506003610b9c565b604080515f8082526020820180845289905260ff881692820192909252606081018690526080810185905260019060a0016020604051602081039080840390855afa158015611639573d5f5f3e3d5ffd5b5050604051601f1901519150506001600160a01b038116611661575f60019250925050610b9c565b965f9650945050505050565b803563ffffffff81168114611680575f5ffd5b919050565b5f5f60408385031215611696575f5ffd5b61169f8361166d565b946020939093013593505050565b634e487b7160e01b5f52604160045260245ffd5b604051601f8201601f191681016001600160401b03811182821017156116e9576116e96116ad565b604052919050565b6001600160a01b0381168114611705575f5ffd5b50565b5f60408284031215611718575f5ffd5b604080519081016001600160401b038111828210171561173a5761173a6116ad565b604052905080823561174b816116f1565b81526117596020840161166d565b60208201525092915050565b5f5f60608385031215611776575f5ffd5b6117808484611708565b915061178e6040840161166d565b90509250929050565b5f81518084528060208401602086015e5f602082860101526020601f19601f83011685010191505092915050565b602081525f6117d76020830184611797565b9392505050565b5f604082840312156117ee575f5ffd5b50919050565b5f5f83601f840112611804575f5ffd5b5081356001600160401b0381111561181a575f5ffd5b6020830191508360208260051b85010111156109d3575f5ffd5b5f5f5f5f5f60c08688031215611848575f5ffd5b61185287876117de565b94506118606040870161166d565b935060608601356001600160401b0381111561187a575f5ffd5b611886888289016117f4565b909450925061189a905087608088016117de565b90509295509295909350565b5f604082840312156118b6575f5ffd5b6117d78383611708565b80516001600160a01b03168252602080820151604082850181905281519085018190525f929190910190829060608601905b808310156107b957835182526020820191506020840193506001830192506118f2565b5f602082016020835280845180835260408501915060408160051b8601019250602086015f5b8281101561196c57603f198786030184526119578583516118c0565b9450602093840193919091019060010161193b565b50929695505050505050565b5f5f60608385031215611989575f5ffd5b61178084846117de565b5f8151808452602084019350602083015f5b828110156119c35781518652602095860195909101906001016119a5565b5093949350505050565b602081525f6117d76020830184611993565b5f606082840312156117ee575f5ffd5b5f5f60608385031215611a00575f5ffd5b611a0a84846117de565b915060408301356001600160401b03811115611a24575f5ffd5b611a30858286016119df565b9150509250929050565b5f8151808452602084019350602083015f5b828110156119c35781516001600160a01b0316865260209586019590910190600101611a4c565b604081525f611a856040830185611993565b8281036020840152611a978185611a3a565b95945050505050565b5f5f5f60808486031215611ab2575f5ffd5b611abc85856117de565b925060408401356001600160401b03811115611ad6575f5ffd5b611ae2868287016119df565b92505060608401356001600160401b03811115611afd575f5ffd5b8401601f81018613611b0d575f5ffd5b80356001600160401b03811115611b2657611b266116ad565b8060051b611b36602082016116c1565b91825260208184018101929081019089841115611b51575f5ffd5b6020850194505b83851015611b7757843580835260209586019590935090910190611b58565b80955050505050509250925092565b8215158152604060208201525f611ba06040830184611a3a565b949350505050565b5f5f5f5f60808587031215611bbb575f5ffd5b611bc586866117de565b935060408501356001600160401b03811115611bdf575f5ffd5b611beb878288016119df565b93505060608501356001600160401b03811115611c06575f5ffd5b611c12878288016117f4565b95989497509550505050565b5f5f5f60808486031215611c30575f5ffd5b611c3a8585611708565b9250611c486040850161166d565b929592945050506060919091013590565b602081525f6117d760208301846118c0565b634e487b7160e01b5f52603260045260245ffd5b5f8235603e19833603018112611c93575f5ffd5b9190910192915050565b634e487b7160e01b5f52601160045260245ffd5b808202811582820484141761030257610302611c9d565b8135611cd3816116f1565b81546001600160a01b0319166001600160a01b0391909116178155602082013536839003601e19018112611d05575f5ffd5b820180356001600160401b03811115611d1c575f5ffd5b6020820191508060051b3603821315611d33575f5ffd5b600183016001600160401b03821115611d4e57611d4e6116ad565b68010000000000000000821115611d6757611d676116ad565b805482825580831015611d9c575f828152602090208381019082015b80821015611d99575f8255600182019150611d83565b50505b505f90815260208120905b82811015611dc357833582820155602090930192600101611da7565b505050505050565b5f60208284031215611ddb575f5ffd5b81356117d7816116f1565b5f60208284031215611df6575f5ffd5b6117d78261166d565b5f608082018635611e0f816116f1565b6001600160a01b0316835263ffffffff611e2b6020890161166d565b16602084015263ffffffff861660408401526080606084015283905260a0600584901b83018101908301855f603e1936839003015b87821015611f2357868503609f190184528235818112611e7e575f5ffd5b89018035611e8b816116f1565b6001600160a01b03168652602081013536829003601e19018112611ead575f5ffd5b016020810190356001600160401b03811115611ec7575f5ffd5b8060051b803603831315611ed9575f5ffd5b60406020890181905288018290526001600160fb1b03821115611efa575f5ffd5b808360608a01376060818901019750505050602083019250602084019350600182019150611e60565b50929998505050505050505050565b8082018082111561030257610302611c9d565b5f60018201611f5657611f56611c9d565b5060010190565b5f60208284031215611f6d575f5ffd5b813561ffff811681146117d7575f5ffd5b634e487b7160e01b5f52601260045260245ffd5b5f82611fa057611fa0611f7e565b500490565b805160208083015191908110156117ee575f1960209190910360031b1b16919050565b63ffffffff818116838216019081111561030257610302611c9d565b5f60208284031215611ff4575f5ffd5b815180151581146117d7575f5ffd5b5f5f8335601e19843603018112612018575f5ffd5b8301803591506001600160401b03821115612031575f5ffd5b6020019150368190038213156109d3575f5ffd5b5f8261205357612053611f7e565b500690565b634e487b7160e01b5f52602160045260245ffd5b8181038181111561030257610302611c9d56fea26469706673582212209b91be70668229de0b8601e74a834696da2cbf6a4add4fbe01bbdc50933c237464736f6c634300081b0033",
+    "sourceMap": "548:14502:173:-:0;;;1199:227;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;2254:44:174;;;;1377:8:173;;961:24:167;1377:8:173;961:22:167;:24::i;:::-;950:35;;-1:-1:-1;1397:22:173::2;::::0;-1:-1:-1;1397:20:173::2;:22::i;:::-;1199:227:::0;;548:14502;;1711:286:37;1776:11;1799:17;1825:3;1799:30;;1857:2;1843:4;:11;:16;1839:72;;;1896:3;1882:18;;-1:-1:-1;;;1882:18:37;;;;;;;;:::i;:::-;;;;;;;;1839:72;1977:11;;1960:13;1977:4;1960:13;:::i;:::-;1952:36;;1711:286;-1:-1:-1;;;1711:286:37:o;5939:280:26:-;6007:13;;;;;;;6006:14;5998:66;;;;-1:-1:-1;;;5998:66:26;;2211:2:318;5998:66:26;;;2193:21:318;2250:2;2230:18;;;2223:30;2289:34;2269:18;;;2262:62;-1:-1:-1;;;2340:18:318;;;2333:37;2387:19;;5998:66:26;2009:403:318;5998:66:26;6078:12;;6094:15;6078:12;;;:31;6074:139;;6125:12;:30;;-1:-1:-1;;6125:30:26;6140:15;6125:30;;;;;;6174:28;;2559:36:318;;;6174:28:26;;2547:2:318;2532:18;6174:28:26;;;;;;;6074:139;5939:280::o;14:127:318:-;75:10;70:3;66:20;63:1;56:31;106:4;103:1;96:15;130:4;127:1;120:15;146:1133;266:6;274;327:2;315:9;306:7;302:23;298:32;295:52;;;343:1;340;333:12;295:52;369:16;;-1:-1:-1;;;;;414:31:318;;404:42;;394:70;;460:1;457;450:12;394:70;532:2;517:18;;511:25;483:5;;-1:-1:-1;;;;;;548:30:318;;545:50;;;591:1;588;581:12;545:50;614:22;;667:4;659:13;;655:27;-1:-1:-1;645:55:318;;696:1;693;686:12;645:55;723:9;;-1:-1:-1;;;;;744:30:318;;741:56;;;777:18;;:::i;:::-;826:2;820:9;918:2;880:17;;-1:-1:-1;;876:31:318;;;909:2;872:40;868:54;856:67;;-1:-1:-1;;;;;938:34:318;;974:22;;;935:62;932:88;;;1000:18;;:::i;:::-;1036:2;1029:22;1060;;;1101:15;;;1118:2;1097:24;1094:37;-1:-1:-1;1091:57:318;;;1144:1;1141;1134:12;1091:57;1193:6;1188:2;1184;1180:11;1175:2;1167:6;1163:15;1157:43;1246:1;1241:2;1232:6;1224;1220:19;1216:28;1209:39;1267:6;1257:16;;;;;146:1133;;;;;:::o;1284:418::-;1433:2;1422:9;1415:21;1396:4;1465:6;1459:13;1508:6;1503:2;1492:9;1488:18;1481:34;1567:6;1562:2;1554:6;1550:15;1545:2;1534:9;1530:18;1524:50;1623:1;1618:2;1609:6;1598:9;1594:22;1590:31;1583:42;1693:2;1686;1682:7;1677:2;1669:6;1665:15;1661:29;1650:9;1646:45;1642:54;1634:62;;;1284:418;;;;:::o;1707:297::-;1825:12;;1872:4;1861:16;;;1855:23;;1825:12;1890:16;;1887:111;;;1984:1;1980:6;1970;1964:4;1960:17;1957:1;1953:25;1949:38;1942:5;1938:50;1929:59;;1887:111;;1707:297;;;:::o;2417:184::-;548:14502:173;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561000f575f5ffd5b5060043610610106575f3560e01c80637c85ac4c1161009e578063be86e0b21161006e578063be86e0b21461026e578063c0da24201461028f578063cd83a72b146102a2578063e49613fc146102c5578063f698da25146102e5575f5ffd5b80637c85ac4c146101fa5780637d1d1f5b1461021a57806380c7d3f31461023a578063848189201461025b575f5ffd5b80635ddb9b5b116100d95780635ddb9b5b1461016d5780636141879e1461019557806368d6e081146101a8578063702ca531146101e7575f5ffd5b8063184674341461010a57806323c2a3cb1461013057806354fd4d501461014357806356d482f514610158575b5f5ffd5b61011d610118366004611685565b6102ed565b6040519081526020015b60405180910390f35b61011d61013e366004611765565b610308565b61014b61033b565b60405161012791906117c5565b61016b610166366004611834565b61036b565b005b61018061017b3660046118a6565b610582565b60405163ffffffff9091168152602001610127565b6101806101a33660046118a6565b6105a8565b6101cf7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610127565b61014b6101f5366004611685565b6105ce565b61020d610208366004611765565b610665565b6040516101279190611915565b61022d610228366004611978565b6107c3565b60405161012791906119cd565b61024d6102483660046119ef565b6109bc565b604051610127929190611a73565b6101cf6102693660046118a6565b6109da565b61028161027c366004611aa0565b610a03565b604051610127929190611b86565b61028161029d366004611ba8565b610aa3565b6102b56102b0366004611765565b610ba5565b6040519015158152602001610127565b6102d86102d3366004611c1e565b610bdb565b6040516101279190611c59565b61011d610d07565b5f6102f883836105ce565b8051906020012090505b92915050565b5f5f61031384610dc7565b5f90815260046020908152604080832063ffffffff8716845290915290205491505092915050565b60606103667f0000000000000000000000000000000000000000000000000000000000000000610e2a565b905090565b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146103b45760405163030c1b6b60e11b815260040160405180910390fd5b5f6103cc6103c7368890038801886118a6565b610dc7565b5f8181526003602052604090205490915063ffffffff9081169086161161040657604051632f20889f60e01b815260040160405180910390fd5b5f81815260046020908152604080832063ffffffff8916845290915281208490555b8381101561048e5784848281811061044257610442611c6b565b90506020028101906104549190611c7f565b5f83815260056020908152604080832063ffffffff8b168452825280832085845290915290206104848282611cc8565b5050600101610428565b505f818152600360209081526040909120805463ffffffff191663ffffffff88161790556104be90830183611dcb565b5f8281526001602090815260409182902080546001600160a01b0319166001600160a01b0394909416939093179092556104fd91908401908401611de6565b5f828152600260209081526040808320805463ffffffff191663ffffffff958616179055600682528083209389168352929052819020805460ff19166001179055517f4f588da9ec57976194a79b5594f8f8782923d93013df2b9ed12fe125805011ef90610572908890889088908890611dff565b60405180910390a1505050505050565b5f5f61058d83610dc7565b5f9081526003602052604090205463ffffffff169392505050565b5f5f6105b383610dc7565b5f9081526002602052604090205463ffffffff169392505050565b604080517fda346acb3ce99e7c5132bf8cafb159ad8085970ebfdba78007ef0fe163063d1460208083019190915263ffffffff85168284015260608083018590528351808403820181526080909301909352815191012061062d610d07565b60405161190160f01b602082015260228101919091526042810182905260620160405160208183030381529060405291505092915050565b60605f61067184610dc7565b5f81815260046020908152604080832063ffffffff8089168552925282205492935082166001600160401b038111156106ac576106ac6116ad565b6040519080825280602002602001820160405280156106f157816020015b604080518082019091525f8152606060208201528152602001906001900390816106ca5790505b5090505f5b8263ffffffff168110156107b9575f84815260056020908152604080832063ffffffff8a16845282528083208484528252918290208251808401845281546001600160a01b031681526001820180548551818602810186019096528086529194929385810193929083018282801561078b57602002820191905f5260205f20905b815481526020019060010190808311610777575b5050505050815250508282815181106107a6576107a6611c6b565b60209081029190910101526001016106f6565b5095945050505050565b60605f6107d86103c7368690038601866118a6565b5f8181526003602052604090205490915063ffffffff84811691161461081157604051630cad17b760e31b815260040160405180910390fd5b5f81815260046020908152604080832063ffffffff871684529091529020548061084e57604051631029081560e21b815260040160405180910390fd5b5f82815260056020908152604080832063ffffffff88168452825280832083805290915281206001015490816001600160401b03811115610891576108916116ad565b6040519080825280602002602001820160405280156108ba578160200160208202803683370190505b5090505f5b838110156109b1575f85815260056020908152604080832063ffffffff8b168452825280832084845282528083206001018054825181850281018501909352808352919290919083018282801561093357602002820191905f5260205f20905b81548152602001906001019080831161091f575b509394505f93505050505b81518110801561094d57508481105b156109a75781818151811061096457610964611c6b565b602002602001015184828151811061097e5761097e611c6b565b602002602001018181516109929190611f32565b9052508061099f81611f45565b91505061093e565b50506001016108bf565b509695505050505050565b6060805f5f6109cb8686610e67565b909450925050505b9250929050565b5f5f6109e583610dc7565b5f908152600160205260409020546001600160a01b03169392505050565b5f60605f5f610a128787610e67565b915091508451825114610a385760405163512509d360e11b815260040160405180910390fd5b5f5b8251811015610a9257858181518110610a5557610a55611c6b565b6020026020010151838281518110610a6f57610a6f611c6b565b60200260200101511015610a8a57505f93509150610a9b9050565b600101610a3a565b50600193509150505b935093915050565b5f60605f5f610ab28888610e67565b90925090505f610ac98961022860208b018b611de6565b83519091508614610aed5760405163512509d360e11b815260040160405180910390fd5b5f5b8351811015610b91575f612710898984818110610b0e57610b0e611c6b565b9050602002016020810190610b239190611f5d565b61ffff16848481518110610b3957610b39611c6b565b6020026020010151610b4b9190611cb1565b610b559190611f92565b905080858381518110610b6a57610b6a611c6b565b60200260200101511015610b88575f84965096505050505050610b9c565b50600101610aef565b506001945090925050505b94509492505050565b5f5f610bb084610dc7565b5f90815260066020908152604080832063ffffffff8716845290915290205460ff1691505092915050565b604080518082019091525f8152606060208201525f610bf985610dc7565b5f81815260046020908152604080832063ffffffff891684529091529020549091508310610c6d5760405162461bcd60e51b815260206004820152601c60248201527f4f70657261746f7220696e646578206f7574206f6620626f756e647300000000604482015260640160405180910390fd5b5f81815260056020908152604080832063ffffffff8816845282528083208684528252918290208251808401845281546001600160a01b0316815260018201805485518186028101860190965280865291949293858101939290830182828015610cf457602002820191905f5260205f20905b815481526020019060010190808311610ce0575b5050505050815250509150509392505050565b60408051808201909152600a81526922b4b3b2b72630bcb2b960b11b6020909101525f7f91ab3d17e3a50a9d89e63fd30b92be7f5336b03b287bb946787a83a9d62a27667f71b625cfad44bac63b13dba07f2e1d6084ee04b6f8752101ece6126d584ee6ea610d746110a7565b8051602091820120604051610dac949392309101938452602084019290925260408301526001600160a01b0316606082015260800190565b60405160208183030381529060405280519060200120905090565b5f815f0151826020015163ffffffff16604051602001610e1292919060609290921b6bffffffffffffffffffffffff1916825260a01b6001600160a01b031916601482015260200190565b60405160208183030381529060405261030290611fa5565b60605f610e368361111c565b6040805160208082528183019092529192505f91906020820181803683375050509182525060208101929092525090565b6060805f610e7d6103c7368790038701876118a6565b5f8181526002602052604090205490915063ffffffff161580610ed357505f8181526002602090815260409091205463ffffffff1690610ebf90860186611de6565b610ec99190611fc8565b63ffffffff164211155b610ef05760405163640fcd6b60e11b815260040160405180910390fd5b5f81815260066020908152604082209190610f0d90870187611de6565b63ffffffff16815260208101919091526040015f205460ff16610f4357604051630cad17b760e31b815260040160405180910390fd5b6001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000166364e1df84610f7f6020870187611de6565b6040516001600160e01b031960e084901b16815263ffffffff919091166004820152602401602060405180830381865afa158015610fbf573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610fe39190611fe4565b61100057604051631b14174b60e01b815260040160405180910390fd5b5f61101b6110116020870187611de6565b86602001356102ed565b90505f6110688261102f6040890189612003565b8080601f0160208091040260200160405190810160405280939291908181526020018383808284375f9201919091525061114392505050565b90505f61107c8861022860208a018a611de6565b5190505f6110988561109160208b018b611de6565b858561134a565b99929850919650505050505050565b60605f6110d37f0000000000000000000000000000000000000000000000000000000000000000610e2a565b9050805f815181106110e7576110e7611c6b565b016020908101516040516001600160f81b03199091169181019190915260210160405160208183030381529060405291505090565b5f60ff8216601f81111561030257604051632cd44ac360e21b815260040160405180910390fd5b60605f825111801561116057506041825161115e9190612045565b155b61117d57604051634be6321b60e01b815260040160405180910390fd5b5f6041835161118c9190611f92565b9050806001600160401b038111156111a6576111a66116ad565b6040519080825280602002602001820160405280156111cf578160200160208202803683370190505b5091505f5b8181101561134257604080516041808252608082019092525f916020820181803683370190505090505f5b604181101561126a578581611215856041611cb1565b61121f9190611f32565b8151811061122f5761122f611c6b565b602001015160f81c60f81b82828151811061124c5761124c611c6b565b60200101906001600160f81b03191690815f1a9053506001016111ff565b505f5f6112778884611574565b90925090505f81600481111561128f5761128f612058565b146112ad57604051638baa579f60e01b815260040160405180910390fd5b8315806112ee5750856112c160018661206c565b815181106112d1576112d1611c6b565b60200260200101516001600160a01b0316826001600160a01b0316115b61130b57604051630b550c5760e41b815260040160405180910390fd5b8186858151811061131e5761131e611c6b565b6001600160a01b0392909216602092830291909101909101525050506001016111d4565b505092915050565b5f84815260046020908152604080832063ffffffff87168452909152902054606090826001600160401b03811115611384576113846116ad565b6040519080825280602002602001820160405280156113ad578160200160208202803683370190505b5091505f5b845181101561156a575f8582815181106113ce576113ce611c6b565b602002602001015190505f5f905061140160405180604001604052805f6001600160a01b03168152602001606081525090565b5f5b858110156114ca575f8b815260056020908152604080832063ffffffff8e16845282528083208484528252918290208251808401845281546001600160a01b031681526001820180548551818602810186019096528086529194929385810193929083018282801561149257602002820191905f5260205f20905b81548152602001906001019080831161147e575b5050505050815250509150836001600160a01b0316825f01516001600160a01b0316036114c257600192506114ca565b600101611403565b50816114e95760405163439cc0cd60e01b815260040160405180910390fd5b60208101515f5b8151811080156114ff57508881105b156115595781818151811061151657611516611c6b565b602002602001015188828151811061153057611530611c6b565b602002602001018181516115449190611f32565b9052508061155181611f45565b9150506114f0565b5050600190930192506113b2915050565b5050949350505050565b5f5f82516041036115a8576020830151604084015160608501515f1a61159c878285856115b3565b945094505050506109d3565b505f905060026109d3565b5f807f7fffffffffffffffffffffffffffffff5d576e7357a4501ddfe92f46681b20a08311156115e857505f90506003610b9c565b604080515f8082526020820180845289905260ff881692820192909252606081018690526080810185905260019060a0016020604051602081039080840390855afa158015611639573d5f5f3e3d5ffd5b5050604051601f1901519150506001600160a01b038116611661575f60019250925050610b9c565b965f9650945050505050565b803563ffffffff81168114611680575f5ffd5b919050565b5f5f60408385031215611696575f5ffd5b61169f8361166d565b946020939093013593505050565b634e487b7160e01b5f52604160045260245ffd5b604051601f8201601f191681016001600160401b03811182821017156116e9576116e96116ad565b604052919050565b6001600160a01b0381168114611705575f5ffd5b50565b5f60408284031215611718575f5ffd5b604080519081016001600160401b038111828210171561173a5761173a6116ad565b604052905080823561174b816116f1565b81526117596020840161166d565b60208201525092915050565b5f5f60608385031215611776575f5ffd5b6117808484611708565b915061178e6040840161166d565b90509250929050565b5f81518084528060208401602086015e5f602082860101526020601f19601f83011685010191505092915050565b602081525f6117d76020830184611797565b9392505050565b5f604082840312156117ee575f5ffd5b50919050565b5f5f83601f840112611804575f5ffd5b5081356001600160401b0381111561181a575f5ffd5b6020830191508360208260051b85010111156109d3575f5ffd5b5f5f5f5f5f60c08688031215611848575f5ffd5b61185287876117de565b94506118606040870161166d565b935060608601356001600160401b0381111561187a575f5ffd5b611886888289016117f4565b909450925061189a905087608088016117de565b90509295509295909350565b5f604082840312156118b6575f5ffd5b6117d78383611708565b80516001600160a01b03168252602080820151604082850181905281519085018190525f929190910190829060608601905b808310156107b957835182526020820191506020840193506001830192506118f2565b5f602082016020835280845180835260408501915060408160051b8601019250602086015f5b8281101561196c57603f198786030184526119578583516118c0565b9450602093840193919091019060010161193b565b50929695505050505050565b5f5f60608385031215611989575f5ffd5b61178084846117de565b5f8151808452602084019350602083015f5b828110156119c35781518652602095860195909101906001016119a5565b5093949350505050565b602081525f6117d76020830184611993565b5f606082840312156117ee575f5ffd5b5f5f60608385031215611a00575f5ffd5b611a0a84846117de565b915060408301356001600160401b03811115611a24575f5ffd5b611a30858286016119df565b9150509250929050565b5f8151808452602084019350602083015f5b828110156119c35781516001600160a01b0316865260209586019590910190600101611a4c565b604081525f611a856040830185611993565b8281036020840152611a978185611a3a565b95945050505050565b5f5f5f60808486031215611ab2575f5ffd5b611abc85856117de565b925060408401356001600160401b03811115611ad6575f5ffd5b611ae2868287016119df565b92505060608401356001600160401b03811115611afd575f5ffd5b8401601f81018613611b0d575f5ffd5b80356001600160401b03811115611b2657611b266116ad565b8060051b611b36602082016116c1565b91825260208184018101929081019089841115611b51575f5ffd5b6020850194505b83851015611b7757843580835260209586019590935090910190611b58565b80955050505050509250925092565b8215158152604060208201525f611ba06040830184611a3a565b949350505050565b5f5f5f5f60808587031215611bbb575f5ffd5b611bc586866117de565b935060408501356001600160401b03811115611bdf575f5ffd5b611beb878288016119df565b93505060608501356001600160401b03811115611c06575f5ffd5b611c12878288016117f4565b95989497509550505050565b5f5f5f60808486031215611c30575f5ffd5b611c3a8585611708565b9250611c486040850161166d565b929592945050506060919091013590565b602081525f6117d760208301846118c0565b634e487b7160e01b5f52603260045260245ffd5b5f8235603e19833603018112611c93575f5ffd5b9190910192915050565b634e487b7160e01b5f52601160045260245ffd5b808202811582820484141761030257610302611c9d565b8135611cd3816116f1565b81546001600160a01b0319166001600160a01b0391909116178155602082013536839003601e19018112611d05575f5ffd5b820180356001600160401b03811115611d1c575f5ffd5b6020820191508060051b3603821315611d33575f5ffd5b600183016001600160401b03821115611d4e57611d4e6116ad565b68010000000000000000821115611d6757611d676116ad565b805482825580831015611d9c575f828152602090208381019082015b80821015611d99575f8255600182019150611d83565b50505b505f90815260208120905b82811015611dc357833582820155602090930192600101611da7565b505050505050565b5f60208284031215611ddb575f5ffd5b81356117d7816116f1565b5f60208284031215611df6575f5ffd5b6117d78261166d565b5f608082018635611e0f816116f1565b6001600160a01b0316835263ffffffff611e2b6020890161166d565b16602084015263ffffffff861660408401526080606084015283905260a0600584901b83018101908301855f603e1936839003015b87821015611f2357868503609f190184528235818112611e7e575f5ffd5b89018035611e8b816116f1565b6001600160a01b03168652602081013536829003601e19018112611ead575f5ffd5b016020810190356001600160401b03811115611ec7575f5ffd5b8060051b803603831315611ed9575f5ffd5b60406020890181905288018290526001600160fb1b03821115611efa575f5ffd5b808360608a01376060818901019750505050602083019250602084019350600182019150611e60565b50929998505050505050505050565b8082018082111561030257610302611c9d565b5f60018201611f5657611f56611c9d565b5060010190565b5f60208284031215611f6d575f5ffd5b813561ffff811681146117d7575f5ffd5b634e487b7160e01b5f52601260045260245ffd5b5f82611fa057611fa0611f7e565b500490565b805160208083015191908110156117ee575f1960209190910360031b1b16919050565b63ffffffff818116838216019081111561030257610302611c9d565b5f60208284031215611ff4575f5ffd5b815180151581146117d7575f5ffd5b5f5f8335601e19843603018112612018575f5ffd5b8301803591506001600160401b03821115612031575f5ffd5b6020019150368190038213156109d3575f5ffd5b5f8261205357612053611f7e565b500690565b634e487b7160e01b5f52602160045260245ffd5b8181038181111561030257610302611c9d56fea26469706673582212209b91be70668229de0b8601e74a834696da2cbf6a4add4fbe01bbdc50933c237464736f6c634300081b0033",
+    "sourceMap": "548:14502:173:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;14835:213;;;;;;:::i;:::-;;:::i;:::-;;;585:25:318;;;573:2;558:18;14835:213:173;;;;;;;;10524:264;;;;;;:::i;:::-;;:::i;1031:106:167:-;;;:::i;:::-;;;;;;;:::i;1558:1218:173:-;;;;;;:::i;:::-;;:::i;:::-;;8737:229;;;;;;:::i;:::-;;:::i;:::-;;;4599:10:318;4587:23;;;4569:42;;4557:2;4542:18;8737:229:173;4425:192:318;8463:224:173;;;;;;:::i;:::-;;:::i;1033:59:174:-;;;;;;;;-1:-1:-1;;;;;4817:32:318;;;4799:51;;4787:2;4772:18;1033:59:174;4622:234:318;14441:342:173;;;;;;:::i;:::-;;:::i;12889:577::-;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;9415:1058::-;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;10839:367::-;;;;;;:::i;:::-;;:::i;:::-;;;;;;;;:::i;8196:217::-;;;;;;:::i;:::-;;:::i;12169:668::-;;;;;;:::i;:::-;;:::i;:::-;;;;;;;;:::i;11257:861::-;;;;;;:::i;:::-;;:::i;9016:278::-;;;;;;:::i;:::-;;:::i;:::-;;;12230:14:318;;12223:22;12205:41;;12193:2;12178:18;9016:278:173;12065:187:318;13518:443:173;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;14013:376::-;;;:::i;14835:213::-;14940:7;14976:64;15008:18;15028:11;14976:31;:64::i;:::-;14966:75;;;;;;14959:82;;14835:213;;;;;:::o;10524:264::-;10654:7;10673:22;10698:17;:11;:15;:17::i;:::-;10732:29;;;;:13;:29;;;;;;;;:49;;;;;;;;;;;;-1:-1:-1;;10524:264:173;;;;:::o;1031:106:167:-;1079:13;1111:19;:8;:17;:19::i;:::-;1104:26;;1031:106;:::o;1558:1218:173:-;813:10;-1:-1:-1;;;;;835:20:173;813:43;;805:72;;;;-1:-1:-1;;;805:72:173;;;;;;;;;;;;1812:22:::1;1837:17;:15;;::::0;;::::1;::::0;::::1;:11:::0;:15:::1;:::i;:::-;;:17::i;:::-;1984:42;::::0;;;:26:::1;:42;::::0;;;;;1812;;-1:-1:-1;1984:42:173::1;::::0;;::::1;1963:63:::0;;::::1;;1955:92;;;;-1:-1:-1::0;;;1955:92:173::1;;;;;;;;;;;;2099:29;::::0;;;:13:::1;:29;::::0;;;;;;;:49:::1;::::0;::::1;::::0;;;;;;;:72;;;2241:148:::1;2261:24:::0;;::::1;2241:148;;;2362:13;;2376:1;2362:16;;;;;;;:::i;:::-;;;;;;;;;;;;:::i;:::-;2306:30;::::0;;;:14:::1;:30;::::0;;;;;;;:50:::1;::::0;::::1;::::0;;;;;;;:53;;;;;;;;:72:::1;::::0;:53;:72:::1;:::i;:::-;-1:-1:-1::0;;2287:3:173::1;;2241:148;;;-1:-1:-1::0;2399:42:173::1;::::0;;;:26:::1;:42;::::0;;;;;;;:63;;-1:-1:-1;;2399:63:173::1;;::::0;::::1;;::::0;;2509:23:::1;::::0;;::::1;::::0;::::1;:::i;:::-;2472:34;::::0;;;:18:::1;:34;::::0;;;;;;;;:60;;-1:-1:-1;;;;;;2472:60:173::1;-1:-1:-1::0;;;;;2472:60:173;;;::::1;::::0;;;::::1;::::0;;;2581:36:::1;::::0;;;;;;::::1;;:::i;:::-;2542;::::0;;;:20:::1;:36;::::0;;;;;;;:75;;-1:-1:-1;;2542:75:173::1;;::::0;;::::1;;::::0;;2627:23:::1;:39:::0;;;;;:59;;::::1;::::0;;;;;;;;:66;;-1:-1:-1;;2627:66:173::1;-1:-1:-1::0;2627:66:173::1;::::0;;2709:60;::::1;::::0;::::1;::::0;2722:11;;2627:59;;2755:13;;;;2709:60:::1;:::i;:::-;;;;;;;;1802:974;1558:1218:::0;;;;;:::o;8737:229::-;8840:6;8858:22;8883:17;:11;:15;:17::i;:::-;8917:42;;;;:26;:42;;;;;;;;;8737:229;-1:-1:-1;;;8737:229:173:o;8463:224::-;8567:6;8585:22;8610:17;:11;:15;:17::i;:::-;8644:36;;;;:20;:36;;;;;;;;;8463:224;-1:-1:-1;;;8463:224:173:o;14441:342::-;14628:71;;;620:76:174;14628:71:173;;;;18524:25:318;;;;18597:10;18585:23;;18565:18;;;18558:51;14573:12:173;18625:18:318;;;18618:34;;;14628:71:173;;;;;;;;;18497:18:318;;;;14628:71:173;;;14618:82;;;;;14746:17;:15;:17::i;:::-;14717:59;;-1:-1:-1;;;14717:59:173;;;18921:27:318;18964:11;;;18957:27;;;;19000:12;;;18993:28;;;19037:12;;14717:59:173;;;;;;;;;;;;14710:66;;;14441:342;;;;:::o;12889:577::-;13019:26;13057:22;13082:17;:11;:15;:17::i;:::-;13109:19;13138:29;;;:13;:29;;;;;;;;:49;;;;;;;;;;;13057:42;;-1:-1:-1;13241:37:173;;-1:-1:-1;;;;;13241:37:173;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;;;;;;;13241:37:173;;;;;;;;;;;;;;;-1:-1:-1;13198:80:173;-1:-1:-1;13294:9:173;13289:140;13313:12;13309:16;;:1;:16;13289:140;;;13365:30;;;;:14;:30;;;;;;;;:50;;;;;;;;;;:53;;;;;;;;;13346:72;;;;;;;;;-1:-1:-1;;;;;13346:72:173;;;;;;;;;;;;;;;;;;;;;;;;;13365:53;;13346:72;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:13;13360:1;13346:16;;;;;;;;:::i;:::-;;;;;;;;;;:72;13327:3;;13289:140;;;-1:-1:-1;13446:13:173;12889:577;-1:-1:-1;;;;;12889:577:173:o;9415:1058::-;9549:16;9577:22;9602:17;:15;;;;;;;:11;:15;:::i;:17::-;9637:42;;;;:26;:42;;;;;;;;-1:-1:-1;9637:64:173;;;;:42;;:64;9629:107;;;;-1:-1:-1;;;9629:107:173;;;;;;;;;;;;9747:21;9771:29;;;:13;:29;;;;;;;;:49;;;;;;;;;;;9838:17;9830:47;;;;-1:-1:-1;;;9830:47:173;;;;;;;;;;;;9962:23;9988:30;;;:14;:30;;;;;;;;:50;;;;;;;;;;:53;;;;;;;;:61;;:68;;;-1:-1:-1;;;;;10098:30:173;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;10098:30:173;-1:-1:-1;10067:61:173;-1:-1:-1;10143:9:173;10138:300;10162:13;10158:1;:17;10138:300;;;10196:24;10223:30;;;:14;:30;;;;;;;;:50;;;;;;;;;;:53;;;;;;;;:61;;10196:88;;;;;;;;;;;;;;;;;;;10223:61;;10196:88;;;10223:61;10196:88;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;10196:88:173;;-1:-1:-1;10304:9:173;;-1:-1:-1;;;;10299:129:173;10323:7;:14;10319:1;:18;:41;;;;;10345:15;10341:1;:19;10319:41;10299:129;;;10403:7;10411:1;10403:10;;;;;;;;:::i;:::-;;;;;;;10385:11;10397:1;10385:14;;;;;;;;:::i;:::-;;;;;;:28;;;;;;;:::i;:::-;;;-1:-1:-1;10362:3:173;;;;:::i;:::-;;;;10299:129;;;-1:-1:-1;;10177:3:173;;10138:300;;;-1:-1:-1;10455:11:173;9415:1058;-1:-1:-1;;;;;;9415:1058:173:o;10839:367::-;10977:16;10995;11024:40;11066:24;11106:42;11130:11;11143:4;11106:23;:42::i;:::-;11023:125;;-1:-1:-1;11023:125:173;-1:-1:-1;;;10839:367:173;;;;;;:::o;8196:217::-;8294:7;8313:22;8338:17;:11;:15;:17::i;:::-;8372:34;;;;:18;:34;;;;;;-1:-1:-1;;;;;8372:34:173;;8196:217;-1:-1:-1;;;8196:217:173:o;12169:668::-;12368:4;12374:16;12403:29;12434:24;12462:42;12486:11;12499:4;12462:23;:42::i;:::-;12402:102;;;;12545:27;:34;12522:12;:19;:57;12514:89;;;;-1:-1:-1;;;12514:89:173;;;;;;;;;;;;12619:9;12614:184;12638:12;:19;12634:1;:23;12614:184;;;12700:27;12728:1;12700:30;;;;;;;;:::i;:::-;;;;;;;12682:12;12695:1;12682:15;;;;;;;;:::i;:::-;;;;;;;:48;12678:110;;;-1:-1:-1;12758:5:173;;-1:-1:-1;12765:7:173;-1:-1:-1;12750:23:173;;-1:-1:-1;12750:23:173;12678:110;12659:3;;12614:184;;;-1:-1:-1;12816:4:173;;-1:-1:-1;12822:7:173;-1:-1:-1;;12169:668:173;;;;;;;:::o;11257:861::-;11463:4;11469:16;11498:29;11529:24;11557:42;11581:11;11594:4;11557:23;:42::i;:::-;11497:102;;-1:-1:-1;11497:102:173;-1:-1:-1;11610:28:173;11641:58;11662:11;11675:23;;;;:4;:23;:::i;11641:58::-;11717:19;;11610:89;;-1:-1:-1;11717:60:173;;11709:92;;;;-1:-1:-1;;;11709:92:173;;;;;;;;;;;;11817:9;11812:268;11836:12;:19;11832:1;:23;11812:268;;;11876:17;484:6:174;11914:30:173;;11945:1;11914:33;;;;;;;:::i;:::-;;;;;;;;;;;;;;:::i;:::-;11897:50;;:11;11909:1;11897:14;;;;;;;;:::i;:::-;;;;;;;:50;;;;:::i;:::-;11896:70;;;;:::i;:::-;11876:90;;12003:9;11985:12;11998:1;11985:15;;;;;;;;:::i;:::-;;;;;;;:27;11981:89;;;12040:5;12047:7;12032:23;;;;;;;;;;;11981:89;-1:-1:-1;11857:3:173;;11812:268;;;-1:-1:-1;12097:4:173;;-1:-1:-1;12103:7:173;;-1:-1:-1;;;11257:861:173;;;;;;;;:::o;9016:278::-;9153:4;9169:22;9194:17;:11;:15;:17::i;:::-;9228:39;;;;:23;:39;;;;;;;;:59;;;;;;;;;;;;;;-1:-1:-1;;9016:278:173;;;;:::o;13518:443::-;-1:-1:-1;;;;;;;;;;;;;;;;;13714:22:173;13739:17;:11;:15;:17::i;:::-;13790:29;;;;:13;:29;;;;;;;;:49;;;;;;;;;;;13714:42;;-1:-1:-1;13774:65:173;;13766:106;;;;-1:-1:-1;;;13766:106:173;;20066:2:318;13766:106:173;;;20048:21:318;20105:2;20085:18;;;20078:30;20144;20124:18;;;20117:58;20192:18;;13766:106:173;;;;;;;;13889:30;;;;:14;:30;;;;;;;;:50;;;;;;;;;;:65;;;;;;;;;13882:72;;;;;;;;;-1:-1:-1;;;;;13882:72:173;;;;;;;;;;;;;;;;;;;;;;;;;13889:65;;13882:72;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;13518:443;;;;;:::o;14013:376::-;14256:19;;;;;;;;;;;;-1:-1:-1;;;14256:19:173;;;;;14118:7;871:79:174;14246:30:173;14310:15;:13;:15::i;:::-;14294:33;;;;;;;14167:205;;;;;;14353:4;;14167:205;20452:25:318;;;20508:2;20493:18;;20486:34;;;;20551:2;20536:18;;20529:34;-1:-1:-1;;;;;20599:32:318;20594:2;20579:18;;20572:60;20439:3;20424:19;;20221:417;14167:205:173;;;;;;;;;;;;;14144:238;;;;;;14137:245;;14013:376;:::o;399:154:162:-;472:7;523:2;:6;;;538:2;:5;;;531:13;;506:39;;;;;;;;20818:2:318;20814:15;;;;-1:-1:-1;;20810:53:318;20798:66;;20920:3;20898:16;-1:-1:-1;;;;;;20894:59:318;20889:2;20880:12;;20873:81;20979:2;20970:12;;20643:345;506:39:162;;;;;;;;;;;;;498:48;;;:::i;2081:405:37:-;2140:13;2165:11;2179:16;2190:4;2179:10;:16::i;:::-;2303:14;;;2314:2;2303:14;;;;;;;;;2165:30;;-1:-1:-1;2283:17:37;;2303:14;;;;;;;;;-1:-1:-1;;;2393:16:37;;;-1:-1:-1;2438:4:37;2429:14;;2422:28;;;;-1:-1:-1;2393:16:37;2081:405::o;3159:1542:173:-;3303:16;;3349:22;3374:17;:15;;;;;;;:11;:15;:::i;:17::-;3479:36;;;;:20;:36;;;;;;3349:42;;-1:-1:-1;3479:36:173;;:41;;:142;;-1:-1:-1;3585:36:173;;;;:20;:36;;;;;;;;;;;;3559:23;;;;:4;:23;:::i;:::-;:62;;;;:::i;:::-;3540:81;;:15;:81;;3479:142;3458:205;;;;-1:-1:-1;;;3458:205:173;;;;;;;;;;;;3736:39;;;;:23;:39;;;;;;;;;3776:23;;;;:4;:23;:::i;:::-;3736:64;;;;;;;;;;;;;-1:-1:-1;3736:64:173;;;;3728:107;;;;-1:-1:-1;;;3728:107:173;;;;;;;;;;;;-1:-1:-1;;;;;3946:20:173;:43;;3990:23;;;;:4;:23;:::i;:::-;3946:68;;-1:-1:-1;;;;;;3946:68:173;;;;;;;;4587:23:318;;;;3946:68:173;;;4569:42:318;4542:18;;3946:68:173;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;3938:93;;;;-1:-1:-1;;;3938:93:173;;;;;;;;;;;;4103:22;4128:69;4155:23;;;;:4;:23;:::i;:::-;4180:4;:16;;;4128:26;:69::i;:::-;4103:94;-1:-1:-1;4240:24:173;4267:42;4103:94;4300:8;;;;:4;:8;:::i;:::-;4267:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;4267:16:173;;-1:-1:-1;;;4267:42:173:i;:::-;4240:69;-1:-1:-1;4408:21:173;4432:58;4453:11;4466:23;;;;:4;:23;:::i;4432:58::-;:65;;-1:-1:-1;4507:40:173;4562:80;4578:14;4594:23;;;;:4;:23;:::i;:::-;4619:7;4628:13;4562:15;:80::i;:::-;4507:135;4686:7;;-1:-1:-1;3159:1542:173;;-1:-1:-1;;;;;;;3159:1542:173:o;1357:170:167:-;1405:13;1430:14;1453:19;:8;:17;:19::i;:::-;1430:43;;1514:1;1516;1514:4;;;;;;;;:::i;:::-;;;;;;;1497:22;;-1:-1:-1;;;;;;1514:4:167;;;1497:22;;;22402:39:318;;;;22457:11;;1497:22:167;;;;;;;;;;;;1483:37;;;1357:170;:::o;2558:245:37:-;2619:7;2691:4;2655:40;;2718:2;2709:11;;2705:69;;;2743:20;;-1:-1:-1;;;2743:20:37;;;;;;;;;;;5127:1101:173;5247:24;5397:1;5377:10;:17;:21;:52;;;;;5422:2;5402:10;:17;:22;;;;:::i;:::-;:27;5377:52;5369:87;;;;-1:-1:-1;;;5369:87:173;;;;;;;;;;;;5467:22;5512:2;5492:10;:17;:22;;;;:::i;:::-;5467:47;;5548:14;-1:-1:-1;;;;;5534:29:173;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;5534:29:173;-1:-1:-1;5524:39:173;-1:-1:-1;5579:9:173;5574:623;5598:14;5594:1;:18;5574:623;;;5658:13;;;5668:2;5658:13;;;;;;;;;5633:22;;5658:13;;;;;;;;;;-1:-1:-1;;5633:38:173;-1:-1:-1;5690:9:173;5685:103;5709:2;5705:1;:6;5685:103;;;5751:10;5771:1;5762:6;:1;5766:2;5762:6;:::i;:::-;:10;;;;:::i;:::-;5751:22;;;;;;;;:::i;:::-;;;;;;;;;5736:9;5746:1;5736:12;;;;;;;;:::i;:::-;;;;:37;-1:-1:-1;;;;;5736:37:173;;;;;;;;-1:-1:-1;5713:3:173;;5685:103;;;;5837:17;5856:22;5882:43;5899:14;5915:9;5882:16;:43::i;:::-;5836:89;;-1:-1:-1;5836:89:173;-1:-1:-1;5954:26:173;5947:3;:33;;;;;;;;:::i;:::-;;5939:62;;;;-1:-1:-1;;;5939:62:173;;;;;;;;;;;;6091:6;;;:36;;-1:-1:-1;6113:7:173;6121:5;6125:1;6121;:5;:::i;:::-;6113:14;;;;;;;;:::i;:::-;;;;;;;-1:-1:-1;;;;;6101:26:173;:9;-1:-1:-1;;;;;6101:26:173;;6091:36;6083:66;;;;-1:-1:-1;;;6083:66:173;;;;;;;;;;;;6177:9;6164:7;6172:1;6164:10;;;;;;;;:::i;:::-;-1:-1:-1;;;;;6164:22:173;;;;:10;;;;;;;;;;;:22;-1:-1:-1;;;5614:3:173;;5574:623;;;;6207:14;5127:1101;;;;:::o;6671:1398::-;6909:21;6933:29;;;:13;:29;;;;;;;;:49;;;;;;;;;;;6857:40;;7033:13;-1:-1:-1;;;;;7019:28:173;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;7019:28:173;-1:-1:-1;6993:54:173;-1:-1:-1;7104:9:173;7099:964;7123:7;:14;7119:1;:18;7099:964;;;7158:14;7175:7;7183:1;7175:10;;;;;;;;:::i;:::-;;;;;;;7158:27;;7251:15;7269:5;7251:23;;7288:37;-1:-1:-1;;;;;;;;;;;;;;;;;;;;;;;;;7288:37:173;7345:9;7340:282;7364:13;7360:1;:17;7340:282;;;7417:30;;;;:14;:30;;;;;;;;:50;;;;;;;;;;:53;;;;;;;;;7402:68;;;;;;;;;-1:-1:-1;;;;;7402:68:173;;;;;;;;;;;;;;;;;;;;;;;;;7417:53;;7402:68;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;7515:6;-1:-1:-1;;;;;7492:29:173;:12;:19;;;-1:-1:-1;;;;;7492:29:173;;7488:120;;7558:4;7545:17;;7584:5;;7488:120;7379:3;;7340:282;;;;7703:10;7698:77;;7740:20;;-1:-1:-1;;;7740:20:173;;;;;;;;;;;7698:77;7880:20;;;;7853:24;7914:139;7938:7;:14;7934:1;:18;:39;;;;;7960:13;7956:1;:17;7934:39;7914:139;;;8028:7;8036:1;8028:10;;;;;;;;:::i;:::-;;;;;;;7998:23;8022:1;7998:26;;;;;;;;:::i;:::-;;;;;;:40;;;;;;;:::i;:::-;;;-1:-1:-1;7975:3:173;;;;:::i;:::-;;;;7914:139;;;-1:-1:-1;;7139:3:173;;;;;-1:-1:-1;7099:964:173;;-1:-1:-1;;7099:964:173;;;6899:1170;6671:1398;;;;;;:::o;2145:730:77:-;2226:7;2235:12;2263:9;:16;2283:2;2263:22;2259:610;;2599:4;2584:20;;2578:27;2648:4;2633:20;;2627:27;2705:4;2690:20;;2684:27;2301:9;2676:36;2746:25;2757:4;2676:36;2578:27;2627;2746:10;:25::i;:::-;2739:32;;;;;;;;;2259:610;-1:-1:-1;2818:1:77;;-1:-1:-1;2822:35:77;2802:56;;5009:1456;5097:7;;6021:66;6008:79;;6004:161;;;-1:-1:-1;6119:1:77;;-1:-1:-1;6123:30:77;6103:51;;6004:161;6276:24;;;6259:14;6276:24;;;;;;;;;23088:25:318;;;23161:4;23149:17;;23129:18;;;23122:45;;;;23183:18;;;23176:34;;;23226:18;;;23219:34;;;6276:24:77;;23060:19:318;;6276:24:77;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;6276:24:77;;-1:-1:-1;;6276:24:77;;;-1:-1:-1;;;;;;;6314:20:77;;6310:101;;6366:1;6370:29;6350:50;;;;;;;6310:101;6429:6;6437:20;;-1:-1:-1;5009:1456:77;-1:-1:-1;;;;;5009:1456:77:o;14:163:318:-;81:20;;141:10;130:22;;120:33;;110:61;;167:1;164;157:12;110:61;14:163;;;:::o;182:252::-;249:6;257;310:2;298:9;289:7;285:23;281:32;278:52;;;326:1;323;316:12;278:52;349:28;367:9;349:28;:::i;:::-;339:38;424:2;409:18;;;;396:32;;-1:-1:-1;;;182:252:318:o;621:127::-;682:10;677:3;673:20;670:1;663:31;713:4;710:1;703:15;737:4;734:1;727:15;753:275;824:2;818:9;889:2;870:13;;-1:-1:-1;;866:27:318;854:40;;-1:-1:-1;;;;;909:34:318;;945:22;;;906:62;903:88;;;971:18;;:::i;:::-;1007:2;1000:22;753:275;;-1:-1:-1;753:275:318:o;1033:131::-;-1:-1:-1;;;;;1108:31:318;;1098:42;;1088:70;;1154:1;1151;1144:12;1088:70;1033:131;:::o;1169:578::-;1227:5;1275:4;1263:9;1258:3;1254:19;1250:30;1247:50;;;1293:1;1290;1283:12;1247:50;1346:4;1340:11;;;1378:17;;-1:-1:-1;;;;;1410:34:318;;1446:22;;;1407:62;1404:88;;;1472:18;;:::i;:::-;1508:4;1501:24;1543:6;-1:-1:-1;1543:6:318;1573:23;;1605:33;1573:23;1605:33;:::i;:::-;1647:23;;1703:37;1736:2;1721:18;;1703:37;:::i;:::-;1698:2;1690:6;1686:15;1679:62;;1169:578;;;;:::o;1752:308::-;1849:6;1857;1910:2;1898:9;1889:7;1885:23;1881:32;1878:52;;;1926:1;1923;1916:12;1878:52;1949:49;1990:7;1979:9;1949:49;:::i;:::-;1939:59;;2017:37;2050:2;2039:9;2035:18;2017:37;:::i;:::-;2007:47;;1752:308;;;;;:::o;2247:289::-;2289:3;2327:5;2321:12;2354:6;2349:3;2342:19;2410:6;2403:4;2396:5;2392:16;2385:4;2380:3;2376:14;2370:47;2462:1;2455:4;2446:6;2441:3;2437:16;2433:27;2426:38;2525:4;2518:2;2514:7;2509:2;2501:6;2497:15;2493:29;2488:3;2484:39;2480:50;2473:57;;;2247:289;;;;:::o;2541:220::-;2690:2;2679:9;2672:21;2653:4;2710:45;2751:2;2740:9;2736:18;2728:6;2710:45;:::i;:::-;2702:53;2541:220;-1:-1:-1;;;2541:220:318:o;2766:159::-;2830:5;2875:2;2866:6;2861:3;2857:16;2853:25;2850:45;;;2891:1;2888;2881:12;2850:45;-1:-1:-1;2913:6:318;2766:159;-1:-1:-1;2766:159:318:o;2930:393::-;3019:8;3029:6;3083:3;3076:4;3068:6;3064:17;3060:27;3050:55;;3101:1;3098;3091:12;3050:55;-1:-1:-1;3124:20:318;;-1:-1:-1;;;;;3156:30:318;;3153:50;;;3199:1;3196;3189:12;3153:50;3236:4;3228:6;3224:17;3212:29;;3296:3;3289:4;3279:6;3276:1;3272:14;3264:6;3260:27;3256:38;3253:47;3250:67;;;3313:1;3310;3303:12;3328:851;3548:6;3556;3564;3572;3580;3633:3;3621:9;3612:7;3608:23;3604:33;3601:53;;;3650:1;3647;3640:12;3601:53;3673:58;3723:7;3712:9;3673:58;:::i;:::-;3663:68;;3750:37;3783:2;3772:9;3768:18;3750:37;:::i;:::-;3740:47;;3838:2;3827:9;3823:18;3810:32;-1:-1:-1;;;;;3857:6:318;3854:30;3851:50;;;3897:1;3894;3887:12;3851:50;3936:96;4024:7;4015:6;4004:9;4000:22;3936:96;:::i;:::-;4051:8;;-1:-1:-1;3910:122:318;-1:-1:-1;4105:68:318;;-1:-1:-1;4165:7:318;4159:3;4144:19;;4105:68;:::i;:::-;4095:78;;3328:851;;;;;;;;:::o;4184:236::-;4273:6;4326:2;4314:9;4305:7;4301:23;4297:32;4294:52;;;4342:1;4339;4332:12;4294:52;4365:49;4406:7;4395:9;4365:49;:::i;5084:660::-;5213:12;;-1:-1:-1;;;;;5209:38:318;5197:51;;5294:4;5283:16;;;5277:23;5183:4;5316:14;;;5309:28;;;5386:19;;5174:14;;;5414:20;;;5144:3;;5487:23;;;;;5144:3;;5461:2;5452:12;;;5538:179;5552:6;5549:1;5546:13;5538:179;;;5621:6;5615:13;5608:5;5601:28;5662:4;5655:5;5651:16;5642:25;;5702:4;5694:6;5690:17;5680:27;;5574:1;5571;5567:9;5562:14;;5538:179;;5749:852;5963:4;6011:2;6000:9;5996:18;6041:2;6030:9;6023:21;6064:6;6099;6093:13;6130:6;6122;6115:22;6168:2;6157:9;6153:18;6146:25;;6230:2;6220:6;6217:1;6213:14;6202:9;6198:30;6194:39;6180:53;;6268:2;6260:6;6256:15;6289:1;6299:273;6313:6;6310:1;6307:13;6299:273;;;6406:2;6402:7;6390:9;6382:6;6378:22;6374:36;6369:3;6362:49;6434:58;6485:6;6476;6470:13;6434:58;:::i;:::-;6424:68;-1:-1:-1;6527:2:318;6550:12;;;;6515:15;;;;;6335:1;6328:9;6299:273;;;-1:-1:-1;6589:6:318;;5749:852;-1:-1:-1;;;;;;5749:852:318:o;6606:319::-;6705:6;6713;6766:2;6754:9;6745:7;6741:23;6737:32;6734:52;;;6782:1;6779;6772:12;6734:52;6805:58;6855:7;6844:9;6805:58;:::i;6930:420::-;6983:3;7021:5;7015:12;7048:6;7043:3;7036:19;7080:4;7075:3;7071:14;7064:21;;7119:4;7112:5;7108:16;7142:1;7152:173;7166:6;7163:1;7160:13;7152:173;;;7227:13;;7215:26;;7270:4;7261:14;;;;7298:17;;;;7188:1;7181:9;7152:173;;;-1:-1:-1;7341:3:318;;6930:420;-1:-1:-1;;;;6930:420:318:o;7355:261::-;7534:2;7523:9;7516:21;7497:4;7554:56;7606:2;7595:9;7591:18;7583:6;7554:56;:::i;7621:164::-;7690:5;7735:2;7726:6;7721:3;7717:16;7713:25;7710:45;;;7751:1;7748;7741:12;7790:510;7927:6;7935;7988:2;7976:9;7967:7;7963:23;7959:32;7956:52;;;8004:1;8001;7994:12;7956:52;8027:58;8077:7;8066:9;8027:58;:::i;:::-;8017:68;;8136:2;8125:9;8121:18;8108:32;-1:-1:-1;;;;;8155:6:318;8152:30;8149:50;;;8195:1;8192;8185:12;8149:50;8218:76;8286:7;8277:6;8266:9;8262:22;8218:76;:::i;:::-;8208:86;;;7790:510;;;;;:::o;8305:446::-;8358:3;8396:5;8390:12;8423:6;8418:3;8411:19;8455:4;8450:3;8446:14;8439:21;;8494:4;8487:5;8483:16;8517:1;8527:199;8541:6;8538:1;8535:13;8527:199;;;8606:13;;-1:-1:-1;;;;;8602:39:318;8590:52;;8671:4;8662:14;;;;8699:17;;;;8638:1;8556:9;8527:199;;8756:465;9013:2;9002:9;8995:21;8976:4;9039:56;9091:2;9080:9;9076:18;9068:6;9039:56;:::i;:::-;9143:9;9135:6;9131:22;9126:2;9115:9;9111:18;9104:50;9171:44;9208:6;9200;9171:44;:::i;:::-;9163:52;8756:465;-1:-1:-1;;;;;8756:465:318:o;9434:1407::-;9605:6;9613;9621;9674:3;9662:9;9653:7;9649:23;9645:33;9642:53;;;9691:1;9688;9681:12;9642:53;9714:58;9764:7;9753:9;9714:58;:::i;:::-;9704:68;;9823:2;9812:9;9808:18;9795:32;-1:-1:-1;;;;;9842:6:318;9839:30;9836:50;;;9882:1;9879;9872:12;9836:50;9905:76;9973:7;9964:6;9953:9;9949:22;9905:76;:::i;:::-;9895:86;;;10034:2;10023:9;10019:18;10006:32;-1:-1:-1;;;;;10053:8:318;10050:32;10047:52;;;10095:1;10092;10085:12;10047:52;10118:24;;10173:4;10165:13;;10161:27;-1:-1:-1;10151:55:318;;10202:1;10199;10192:12;10151:55;10242:2;10229:16;-1:-1:-1;;;;;10260:6:318;10257:30;10254:56;;;10290:18;;:::i;:::-;10336:6;10333:1;10329:14;10363:30;10387:4;10383:2;10379:13;10363:30;:::i;:::-;10427:19;;;10471:4;10503:11;;;10499:22;;;10462:14;;;;10533:19;;;10530:39;;;10565:1;10562;10555:12;10530:39;10597:4;10593:2;10589:13;10578:24;;10611:200;10627:6;10622:3;10619:15;10611:200;;;10719:17;;10749:18;;;10796:4;10644:14;;;;10719:17;;-1:-1:-1;10787:14:318;;;;10611:200;;;10830:5;10820:15;;;;;;;9434:1407;;;;;:::o;10846:342::-;11061:6;11054:14;11047:22;11036:9;11029:41;11106:2;11101;11090:9;11086:18;11079:30;11010:4;11126:56;11178:2;11167:9;11163:18;11155:6;11126:56;:::i;:::-;11118:64;10846:342;-1:-1:-1;;;;10846:342:318:o;11193:867::-;11365:6;11373;11381;11389;11442:3;11430:9;11421:7;11417:23;11413:33;11410:53;;;11459:1;11456;11449:12;11410:53;11482:58;11532:7;11521:9;11482:58;:::i;:::-;11472:68;;11591:2;11580:9;11576:18;11563:32;-1:-1:-1;;;;;11610:6:318;11607:30;11604:50;;;11650:1;11647;11640:12;11604:50;11673:76;11741:7;11732:6;11721:9;11717:22;11673:76;:::i;:::-;11663:86;;;11802:2;11791:9;11787:18;11774:32;-1:-1:-1;;;;;11821:8:318;11818:32;11815:52;;;11863:1;11860;11853:12;11815:52;11902:98;11992:7;11981:8;11970:9;11966:24;11902:98;:::i;:::-;11193:867;;;;-1:-1:-1;12019:8:318;-1:-1:-1;;;;11193:867:318:o;12257:423::-;12363:6;12371;12379;12432:3;12420:9;12411:7;12407:23;12403:33;12400:53;;;12449:1;12446;12439:12;12400:53;12472:49;12513:7;12502:9;12472:49;:::i;:::-;12462:59;;12540:37;12573:2;12562:9;12558:18;12540:37;:::i;:::-;12257:423;;12530:47;;-1:-1:-1;;;12646:2:318;12631:18;;;;12618:32;;12257:423::o;12685:290::-;12886:2;12875:9;12868:21;12849:4;12906:63;12965:2;12954:9;12950:18;12942:6;12906:63;:::i;12980:127::-;13041:10;13036:3;13032:20;13029:1;13022:31;13072:4;13069:1;13062:15;13096:4;13093:1;13086:15;13112:335;13216:4;13274:11;13261:25;13368:2;13364:7;13353:8;13337:14;13333:29;13329:43;13309:18;13305:68;13295:96;;13387:1;13384;13377:12;13295:96;13408:33;;;;;13112:335;-1:-1:-1;;13112:335:318:o;13452:127::-;13513:10;13508:3;13504:20;13501:1;13494:31;13544:4;13541:1;13534:15;13568:4;13565:1;13558:15;13584:168;13657:9;;;13688;;13705:15;;;13699:22;;13685:37;13675:71;;13726:18;;:::i;13894:1650::-;14081:5;14068:19;14096:33;14121:7;14096:33;:::i;:::-;14158:11;;-1:-1:-1;;;;;;14154:54:318;-1:-1:-1;;;;;14210:33:318;;;;14151:93;14138:107;;14304:2;14293:14;;14280:28;14359:14;14355:26;;;-1:-1:-1;;14351:40:318;14327:65;;14317:93;;14406:1;14403;14396:12;14317:93;14431:30;;14484:18;;-1:-1:-1;;;;;14514:30:318;;14511:50;;;14557:1;14554;14547:12;14511:50;14594:2;14588:4;14584:13;14570:27;;14648:6;14645:1;14641:14;14625;14621:35;14613:6;14609:48;14606:68;;;14670:1;14667;14660:12;14606:68;14704:1;14698:4;14694:12;-1:-1:-1;;;;;14721:6:318;14718:30;14715:56;;;14751:18;;:::i;:::-;14794:20;14786:6;14783:32;14780:58;;;14818:18;;:::i;:::-;14867:3;14861:10;14892:6;14887:3;14880:19;14922:6;14914;14911:18;14908:288;;;14959:1;14952:14;;;15004:4;14991:18;;15075:17;;;;15032;;15105:81;15123:2;15116:5;15113:13;15105:81;;;15182:1;15175:5;15168:16;15149:1;15142:5;15138:13;15129:22;;15105:81;;;15109:3;;14908:288;-1:-1:-1;13841:1:318;13834:14;;;13878:4;13865:18;;;15322:216;15336:6;15333:1;15330:13;15322:216;;;15425:20;;15503:15;;;15496:32;15480:2;15468:15;;;;15358:1;15351:9;15322:216;;;15326:3;;;;13894:1650;;:::o;15549:247::-;15608:6;15661:2;15649:9;15640:7;15636:23;15632:32;15629:52;;;15677:1;15674;15667:12;15629:52;15716:9;15703:23;15735:31;15760:5;15735:31;:::i;15801:184::-;15859:6;15912:2;15900:9;15891:7;15887:23;15883:32;15880:52;;;15928:1;15925;15918:12;15880:52;15951:28;15969:9;15951:28;:::i;15990:2329::-;16332:4;16380:3;16369:9;16365:19;16419:6;16406:20;16435:31;16460:5;16435:31;:::i;:::-;-1:-1:-1;;;;;16493:31:318;16475:50;;16605:10;16567:36;16597:4;16585:17;;16567:36;:::i;:::-;16563:53;16556:4;16541:20;;16534:83;16665:10;16653:23;;16648:2;16633:18;;16626:51;16713:3;16708:2;16693:18;;16686:31;16752:22;;;16805:3;16855:1;16851:14;;;16836:30;;16832:40;;;16790:19;;16895:6;-1:-1:-1;;;16947:14:318;16943:27;;;16939:41;16989:1301;17003:6;17000:1;16997:13;16989:1301;;;17068:22;;;-1:-1:-1;;17064:37:318;17052:50;;17141:20;;17184:27;;;17174:55;;17225:1;17222;17215:12;17174:55;17257:31;;17316:21;;17350:33;17316:21;17350:33;:::i;:::-;-1:-1:-1;;;;;17411:33:318;17396:49;;17512:4;17499:18;;17486:32;17575:14;17571:28;;;-1:-1:-1;;17567:42:318;17541:69;;17531:97;;17624:1;17621;17614:12;17531:97;17656:34;17779:4;17766:18;;;17717:21;-1:-1:-1;;;;;17800:30:318;;17797:50;;;17843:1;17840;17833:12;17797:50;17877:6;17874:1;17870:14;17933:2;17917:14;17913:23;17904:7;17900:37;17897:57;;;17950:1;17947;17940:12;17897:57;17993:2;17986:4;17974:17;;17967:29;;;18016:15;;18009:31;;;-1:-1:-1;;;;;18056:31:318;;18053:51;;;18100:1;18097;18090:12;18053:51;18156:2;18147:7;18142:2;18134:6;18130:15;18117:42;18203:2;18198;18190:6;18186:15;18182:24;18172:34;;;;;18241:4;18233:6;18229:17;18219:27;;18275:4;18270:3;18266:14;18259:21;;17025:1;17022;17018:9;17013:14;;16989:1301;;;-1:-1:-1;18307:6:318;;15990:2329;-1:-1:-1;;;;;;;;;15990:2329:318:o;19060:125::-;19125:9;;;19146:10;;;19143:36;;;19159:18;;:::i;19190:135::-;19229:3;19250:17;;;19247:43;;19270:18;;:::i;:::-;-1:-1:-1;19317:1:318;19306:13;;19190:135::o;19330:272::-;19388:6;19441:2;19429:9;19420:7;19416:23;19412:32;19409:52;;;19457:1;19454;19447:12;19409:52;19496:9;19483:23;19546:6;19539:5;19535:18;19528:5;19525:29;19515:57;;19568:1;19565;19558:12;19607:127;19668:10;19663:3;19659:20;19656:1;19649:31;19699:4;19696:1;19689:15;19723:4;19720:1;19713:15;19739:120;19779:1;19805;19795:35;;19810:18;;:::i;:::-;-1:-1:-1;19844:9:318;;19739:120::o;20993:297::-;21111:12;;21158:4;21147:16;;;21141:23;;21111:12;21176:16;;21173:111;;;-1:-1:-1;;21250:4:318;21246:17;;;;21243:1;21239:25;21235:38;21224:50;;20993:297;-1:-1:-1;20993:297:318:o;21295:167::-;21390:10;21363:18;;;21383;;;21359:43;;21414:19;;21411:45;;;21436:18;;:::i;21467:277::-;21534:6;21587:2;21575:9;21566:7;21562:23;21558:32;21555:52;;;21603:1;21600;21593:12;21555:52;21635:9;21629:16;21688:5;21681:13;21674:21;21667:5;21664:32;21654:60;;21710:1;21707;21700:12;21749:521;21826:4;21832:6;21892:11;21879:25;21986:2;21982:7;21971:8;21955:14;21951:29;21947:43;21927:18;21923:68;21913:96;;22005:1;22002;21995:12;21913:96;22032:33;;22084:20;;;-1:-1:-1;;;;;;22116:30:318;;22113:50;;;22159:1;22156;22149:12;22113:50;22192:4;22180:17;;-1:-1:-1;22223:14:318;22219:27;;;22209:38;;22206:58;;;22260:1;22257;22250:12;22479:112;22511:1;22537;22527:35;;22542:18;;:::i;:::-;-1:-1:-1;22576:9:318;;22479:112::o;22596:127::-;22657:10;22652:3;22648:20;22645:1;22638:31;22688:4;22685:1;22678:15;22712:4;22709:1;22702:15;22728:128;22795:9;;;22816:11;;;22813:37;;;22830:18;;:::i",
+    "linkReferences": {},
+    "immutableReferences": {
+      "91395": [
+        {
+          "start": 834,
+          "length": 32
+        },
+        {
+          "start": 4271,
+          "length": 32
+        }
+      ],
+      "94663": [
+        {
+          "start": 429,
+          "length": 32
+        },
+        {
+          "start": 886,
+          "length": 32
+        },
+        {
+          "start": 3917,
+          "length": 32
+        }
+      ]
+    }
+  },
+  "methodIdentifiers": {
+    "calculateCertificateDigest(uint32,bytes32)": "18467434",
+    "calculateCertificateDigestBytes(uint32,bytes32)": "702ca531",
+    "domainSeparator()": "f698da25",
+    "getOperatorCount((address,uint32),uint32)": "23c2a3cb",
+    "getOperatorInfo((address,uint32),uint32,uint256)": "e49613fc",
+    "getOperatorInfos((address,uint32),uint32)": "7c85ac4c",
+    "getOperatorSetOwner((address,uint32))": "84818920",
+    "getTotalStakeWeights((address,uint32),uint32)": "7d1d1f5b",
+    "isReferenceTimestampSet((address,uint32),uint32)": "cd83a72b",
+    "latestReferenceTimestamp((address,uint32))": "5ddb9b5b",
+    "maxOperatorTableStaleness((address,uint32))": "6141879e",
+    "operatorTableUpdater()": "68d6e081",
+    "updateOperatorTable((address,uint32),uint32,(address,uint256[])[],(address,uint32))": "56d482f5",
+    "verifyCertificate((address,uint32),(uint32,bytes32,bytes))": "80c7d3f3",
+    "verifyCertificateNominal((address,uint32),(uint32,bytes32,bytes),uint256[])": "be86e0b2",
+    "verifyCertificateProportion((address,uint32),(uint32,bytes32,bytes),uint16[])": "c0da2420",
+    "version()": "54fd4d50"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IOperatorTableUpdater\",\"name\":\"_operatorTableUpdater\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_version\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"ArrayLengthMismatch\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"CertificateStale\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidShortString\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidSignature\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidSignatureLength\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyTableUpdater\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OperatorCountZero\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"ReferenceTimestampDoesNotExist\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"RootDisabled\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SignatureExpired\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"SignersNotOrdered\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"str\",\"type\":\"string\"}],\"name\":\"StringTooLong\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"TableUpdateStale\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"VerificationFailed\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"version\",\"type\":\"uint8\"}],\"name\":\"Initialized\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"indexed\":false,\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"indexed\":false,\"internalType\":\"uint32\",\"name\":\"maxStalenessPeriod\",\"type\":\"uint32\"}],\"name\":\"MaxStalenessPeriodUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"indexed\":false,\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"}],\"name\":\"OperatorSetOwnerUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"indexed\":false,\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"indexed\":false,\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"pubkey\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"weights\",\"type\":\"uint256[]\"}],\"indexed\":false,\"internalType\":\"struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo[]\",\"name\":\"operatorInfos\",\"type\":\"tuple[]\"}],\"name\":\"TableUpdated\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"},{\"internalType\":\"bytes32\",\"name\":\"messageHash\",\"type\":\"bytes32\"}],\"name\":\"calculateCertificateDigest\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"},{\"internalType\":\"bytes32\",\"name\":\"messageHash\",\"type\":\"bytes32\"}],\"name\":\"calculateCertificateDigestBytes\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"domainSeparator\",\"outputs\":[{\"internalType\":\"bytes32\",\"name\":\"\",\"type\":\"bytes32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"}],\"name\":\"getOperatorCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"},{\"internalType\":\"uint256\",\"name\":\"operatorIndex\",\"type\":\"uint256\"}],\"name\":\"getOperatorInfo\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"pubkey\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"weights\",\"type\":\"uint256[]\"}],\"internalType\":\"struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"}],\"name\":\"getOperatorInfos\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"pubkey\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"weights\",\"type\":\"uint256[]\"}],\"internalType\":\"struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"getOperatorSetOwner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"}],\"name\":\"getTotalStakeWeights\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"}],\"name\":\"isReferenceTimestampSet\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"latestReferenceTimestamp\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"maxOperatorTableStaleness\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"operatorTableUpdater\",\"outputs\":[{\"internalType\":\"contract IOperatorTableUpdater\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"pubkey\",\"type\":\"address\"},{\"internalType\":\"uint256[]\",\"name\":\"weights\",\"type\":\"uint256[]\"}],\"internalType\":\"struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo[]\",\"name\":\"operatorInfos\",\"type\":\"tuple[]\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"maxStalenessPeriod\",\"type\":\"uint32\"}],\"internalType\":\"struct ICrossChainRegistryTypes.OperatorSetConfig\",\"name\":\"operatorSetConfig\",\"type\":\"tuple\"}],\"name\":\"updateOperatorTable\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"},{\"internalType\":\"bytes32\",\"name\":\"messageHash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"sig\",\"type\":\"bytes\"}],\"internalType\":\"struct IECDSACertificateVerifierTypes.ECDSACertificate\",\"name\":\"cert\",\"type\":\"tuple\"}],\"name\":\"verifyCertificate\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"},{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"},{\"internalType\":\"bytes32\",\"name\":\"messageHash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"sig\",\"type\":\"bytes\"}],\"internalType\":\"struct IECDSACertificateVerifierTypes.ECDSACertificate\",\"name\":\"cert\",\"type\":\"tuple\"},{\"internalType\":\"uint256[]\",\"name\":\"totalStakeNominalThresholds\",\"type\":\"uint256[]\"}],\"name\":\"verifyCertificateNominal\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"},{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"uint32\",\"name\":\"referenceTimestamp\",\"type\":\"uint32\"},{\"internalType\":\"bytes32\",\"name\":\"messageHash\",\"type\":\"bytes32\"},{\"internalType\":\"bytes\",\"name\":\"sig\",\"type\":\"bytes\"}],\"internalType\":\"struct IECDSACertificateVerifierTypes.ECDSACertificate\",\"name\":\"cert\",\"type\":\"tuple\"},{\"internalType\":\"uint16[]\",\"name\":\"totalStakeProportionThresholds\",\"type\":\"uint16[]\"}],\"name\":\"verifyCertificateProportion\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"},{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"version\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"Implements ECDSA signature verification with operator information caching\",\"events\":{\"Initialized(uint8)\":{\"details\":\"Triggered when the contract has been initialized or reinitialized.\"}},\"kind\":\"dev\",\"methods\":{\"calculateCertificateDigest(uint32,bytes32)\":{\"details\":\"This function is public to allow offchain tools to calculate the same digestNote: This does not support smart contract based signatures for multichainThis is a chain-agnostic digest, so it can be used to verify certificates across      multiple destination chains\",\"params\":{\"messageHash\":\"The message hash\",\"referenceTimestamp\":\"The reference timestamp\"},\"returns\":{\"_0\":\"The EIP-712 digest\"}},\"calculateCertificateDigestBytes(uint32,bytes32)\":{\"details\":\"This function is public to allow offchain tools to calculate the same digestNote: This does not support smart contract based signatures for multichainThis is a chain-agnostic digest, so it can be used to verify certificates across      multiple destination chainsThis function returns the raw bytes of the digest, which still need to be hashed      before signing with ECDSA\",\"params\":{\"messageHash\":\"The message hash\",\"referenceTimestamp\":\"The reference timestamp\"},\"returns\":{\"_0\":\"The EIP-712 digest\"}},\"constructor\":{\"details\":\"Disables initializers to prevent implementation initialization\",\"params\":{\"_operatorTableUpdater\":\"Address authorized to update operator tables\",\"_version\":\"The version string for the SignatureUtilsMixin\"}},\"domainSeparator()\":{\"details\":\"This function overrides the base domainSeparator to not include chainId to replay      certificates across multiple destination chains\",\"returns\":{\"_0\":\"The domain separator hash without chainId\"}},\"getOperatorCount((address,uint32),uint32)\":{\"details\":\"Returns 0 if the reference timestamp is not set or the number of operators is 0\",\"params\":{\"operatorSet\":\"The operator set to get the number of operators for\",\"referenceTimestamp\":\"The reference timestamp\"},\"returns\":{\"_0\":\"The number of operators\"}},\"getOperatorInfo((address,uint32),uint32,uint256)\":{\"params\":{\"operatorIndex\":\"The index of the operator\",\"operatorSet\":\"The operator set\",\"referenceTimestamp\":\"The reference timestamp\"},\"returns\":{\"_0\":\"The operator info, empty if the operatorSet has not been updated for the given reference timestamp\"}},\"getOperatorInfos((address,uint32),uint32)\":{\"params\":{\"operatorSet\":\"The operator set\",\"referenceTimestamp\":\"The reference timestamp\"},\"returns\":{\"_0\":\"The operator infos, empty if the operatorSet has not been updated for the given reference timestamp\"}},\"getOperatorSetOwner((address,uint32))\":{\"details\":\"The owner of the OperatorSet is not used by this contract, but can be used by periphery contracts      to gate access control for on-chain operations\",\"params\":{\"operatorSet\":\"The operatorSet to get the owner of\"},\"returns\":{\"_0\":\"The owner\"}},\"getTotalStakeWeights((address,uint32),uint32)\":{\"details\":\"This function requires the reference timestamp to be set\",\"params\":{\"operatorSet\":\"The operator set to calculate stakes for\",\"referenceTimestamp\":\"The reference timestamp\"},\"returns\":{\"_0\":\"The sum of stake weights for each stake type, empty if the operatorSet has not been updated for the given reference timestamp\"}},\"isReferenceTimestampSet((address,uint32),uint32)\":{\"details\":\"The reference timestamp is set when the operator table is updated\",\"params\":{\"operatorSet\":\"The operatorSet to check\",\"referenceTimestamp\":\"The reference timestamp to check\"},\"returns\":{\"_0\":\"Whether the reference timestamp has been updated\"}},\"latestReferenceTimestamp((address,uint32))\":{\"details\":\"The latest reference timestamp is set when the operator table is updated\",\"params\":{\"operatorSet\":\"The operatorSet to get the latest reference timestamp of\"},\"returns\":{\"_0\":\"The latest reference timestamp, 0 if the operatorSet has never been updated\"}},\"maxOperatorTableStaleness((address,uint32))\":{\"details\":\"A staleness period of 0 allows for certificates to be verified against any timestamp in the pastStaleness periods should not be greater than 0 and less than the update cadence of the `OperatorTables`, since      certificates would be unable to be validated against\",\"params\":{\"operatorSet\":\"The operatorSet to get the max staleness period of\"},\"returns\":{\"_0\":\"The max staleness period\"}},\"updateOperatorTable((address,uint32),uint32,(address,uint256[])[],(address,uint32))\":{\"details\":\"Only callable by the `OperatorTableUpdater`The `referenceTimestamp` must correspond to a reference timestamp for a globalTableRoot stored in the `OperatorTableUpdater`The `referenceTimestamp` must be greater than the latest reference timestamp for the given operatorSet\",\"params\":{\"operatorInfos\":\"the operatorInfos to update the operator table with\",\"operatorSet\":\"the operatorSet to update the operator table for\",\"operatorSetConfig\":\"the configuration of the operatorSet\",\"referenceTimestamp\":\"the timestamp at which the operatorInfos were sourced\"}},\"verifyCertificate((address,uint32),(uint32,bytes32,bytes))\":{\"details\":\"This function DOES NOT support smart contact signatures\",\"params\":{\"cert\":\"a certificate\",\"operatorSet\":\"the operatorSet that the certificate is for\"},\"returns\":{\"_0\":\"total stake weight that signed the certificate for each stake type. Each index corresponds to a stake type in the `weights` array in the `ECDSAOperatorInfo`\",\"_1\":\"array of addresses that signed the certificate\"}},\"verifyCertificateNominal((address,uint32),(uint32,bytes32,bytes),uint256[])\":{\"params\":{\"cert\":\"a certificate\",\"operatorSet\":\"the operatorSet that the certificate is for\",\"totalStakeNominalThresholds\":\"the nominal amount of total stake weight that the signed stake of the certificate should meet. Each index corresponds to a stake type in the `weights` array in the `ECDSAOperatorInfo`\"},\"returns\":{\"_0\":\"Whether or not the certificate is valid and meets thresholds\",\"_1\":\"array of addresses that signed the certificate\"}},\"verifyCertificateProportion((address,uint32),(uint32,bytes32,bytes),uint16[])\":{\"params\":{\"cert\":\"a certificate\",\"operatorSet\":\"the operatorSet to verify the certificate for\",\"totalStakeProportionThresholds\":\"the proportion, in BPS, of total stake weight that the signed stake of the certificate should meet. Each index corresponds to a stake type in the `weights` array in the `ECDSAOperatorInfo`\"},\"returns\":{\"_0\":\"Whether or not the certificate is valid and meets thresholds\",\"_1\":\"array of addresses that signed the certificate\"}},\"version()\":{\"returns\":{\"_0\":\"The version string in SemVer format (e.g., \\\"1.1.1\\\")\"}}},\"title\":\"ECDSACertificateVerifier\",\"version\":1},\"userdoc\":{\"errors\":{\"ArrayLengthMismatch()\":[{\"notice\":\"Thrown when array lengths mismatch\"}],\"CertificateStale()\":[{\"notice\":\"Thrown when the certificate is too stale, per the max staleness period of the operatorSet\"}],\"InvalidSignature()\":[{\"notice\":\"Thrown when a signature is invalid.\"}],\"InvalidSignatureLength()\":[{\"notice\":\"Thrown when the signature length is invalid\"}],\"OnlyTableUpdater()\":[{\"notice\":\"Thrown when the table updater is not caller\"}],\"OperatorCountZero()\":[{\"notice\":\"Thrown when the operator count is zero\"}],\"ReferenceTimestampDoesNotExist()\":[{\"notice\":\"Thrown when the reference timestamp does not exist\"}],\"RootDisabled()\":[{\"notice\":\"Thrown when the global table root is disabled\"}],\"SignatureExpired()\":[{\"notice\":\"Thrown when a signature has expired.\"}],\"SignersNotOrdered()\":[{\"notice\":\"Thrown when the signatures are not ordered by signer address\"}],\"TableUpdateStale()\":[{\"notice\":\"Thrown when the table update is stale\"}],\"VerificationFailed()\":[{\"notice\":\"Thrown when certificate verification fails\"}]},\"events\":{\"MaxStalenessPeriodUpdated((address,uint32),uint32)\":{\"notice\":\"Emitted when the max staleness period of an operatorSet is updated\"},\"OperatorSetOwnerUpdated((address,uint32),address)\":{\"notice\":\"Emitted when the owner of an operatorSet is updated\"},\"TableUpdated((address,uint32),uint32,(address,uint256[])[])\":{\"notice\":\"Emitted when an ECDSA table is updated\"}},\"kind\":\"user\",\"methods\":{\"calculateCertificateDigest(uint32,bytes32)\":{\"notice\":\"Calculate the EIP-712 digest for a certificate\"},\"calculateCertificateDigestBytes(uint32,bytes32)\":{\"notice\":\"Calculate the EIP-712 digest bytes for a certificate\"},\"constructor\":{\"notice\":\"Constructor for the certificate verifier\"},\"domainSeparator()\":{\"notice\":\"Override domainSeparator to not include chainId\"},\"getOperatorCount((address,uint32),uint32)\":{\"notice\":\"Get the number of operators at a given reference timestamp\"},\"getOperatorInfo((address,uint32),uint32,uint256)\":{\"notice\":\"Get a single operator info by index\"},\"getOperatorInfos((address,uint32),uint32)\":{\"notice\":\"Get operator infos for a timestamp\"},\"getOperatorSetOwner((address,uint32))\":{\"notice\":\"The address of the owner of the OperatorSet\"},\"getTotalStakeWeights((address,uint32),uint32)\":{\"notice\":\"Get the total stake weights for all operators at a given reference timestamp\"},\"isReferenceTimestampSet((address,uint32),uint32)\":{\"notice\":\"Whether the operator table has been updated for a given reference timestamp\"},\"latestReferenceTimestamp((address,uint32))\":{\"notice\":\"The latest reference timestamp of the operator table for a given operatorSet. This value is         updated each time an operator table is updated\"},\"maxOperatorTableStaleness((address,uint32))\":{\"notice\":\"The max staleness period of the operator table for a given operatorSet. This value is AVS-set and         transported by the multichain protocol\"},\"updateOperatorTable((address,uint32),uint32,(address,uint256[])[],(address,uint32))\":{\"notice\":\"updates the operator table\"},\"verifyCertificate((address,uint32),(uint32,bytes32,bytes))\":{\"notice\":\"verifies a certificate\"},\"verifyCertificateNominal((address,uint32),(uint32,bytes32,bytes),uint256[])\":{\"notice\":\"verifies a certificate and makes sure that the signed stakes meet provided nominal stake thresholds\"},\"verifyCertificateProportion((address,uint32),(uint32,bytes32,bytes),uint16[])\":{\"notice\":\"verifies a certificate and makes sure that the signed stakes meet provided portions of the total stake weight on the AVS\"},\"version()\":{\"notice\":\"Returns the semantic version string of the contract.\"}},\"notice\":\"Verifies ECDSA certificates across multiple operator sets\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/contracts/multichain/ECDSACertificateVerifier.sol\":\"ECDSACertificateVerifier\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable-v4.9.0/\",\":@openzeppelin/=lib/openzeppelin-contracts-v4.9.0/\",\":ds-test/=lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts-upgradeable-v4.9.0/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable-v4.9.0/=lib/openzeppelin-contracts-upgradeable-v4.9.0/\",\":openzeppelin-contracts-v4.9.0/=lib/openzeppelin-contracts-v4.9.0/\",\":openzeppelin/=lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/\",\":zeus-templates/=lib/zeus-templates/src/\"]},\"sources\":{\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/interfaces/IERC1271Upgradeable.sol\":{\"keccak256\":\"0x4473c09c087ee1a48c5547b23799c0474b2e08cde6fec5921c628171c4ebcdc0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6d92614db0b346b756af8ba9bd0098db81b031026361635fb4f55a420254637d\",\"dweb:/ipfs/QmVviVD57zX54ny1zvVsksfYF9RantBwVyJBTdHqPywFuP\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/proxy/utils/Initializable.sol\":{\"keccak256\":\"0x89be10e757d242e9b18d5a32c9fbe2019f6d63052bbe46397a430a1d60d7f794\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f103ee2e4aecd37aac6ceefe670709cdd7613dee25fa2d4d9feaf7fc0aaa155e\",\"dweb:/ipfs/QmRiNZLoJk5k3HPMYGPGjZFd2ke1ZxjhJZkM45Ec9GH9hv\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/AddressUpgradeable.sol\":{\"keccak256\":\"0x9c80f545915582e63fe206c6ce27cbe85a86fc10b9cd2a0e8c9488fb7c2ee422\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://310136ad60820af4177a11a61d77a3686faf5fca4942b600e08fc940db38396b\",\"dweb:/ipfs/QmbCzMNSTL7Zi7M4UCSqBrkHtp4jjxUnGbkneCZKdR1qeq\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/ShortStringsUpgradeable.sol\":{\"keccak256\":\"0x4e34d967d14c25ef92ef1d4f7a8761949941f46c8f068923bd59d6e09c23b822\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a4643a5a7f8f7794f502d5fc6576ec09c10732680b93b44ca1899b6f32e7d5de\",\"dweb:/ipfs/QmVQShpVY4y2Z6XY4ErtkQeNpbGEAcAQXrBeKSti4rX4UB\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/StorageSlotUpgradeable.sol\":{\"keccak256\":\"0x07ac95acad040f1fb1f6120dd0aa5f702db69446e95f82613721879d30de0908\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a9df9de7b5da1d1bd3d4b6c073d0174bc4211db60e794a321c8cb5d4eae34685\",\"dweb:/ipfs/QmWe49zj65jayrCe9jZpoWhYUZ1RiwSxyU2s7SBZnMztVy\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/StringsUpgradeable.sol\":{\"keccak256\":\"0xb96dc79b65b7c37937919dcdb356a969ce0aa2e8338322bf4dc027a3c9c9a7eb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f8613145881436fc0480fff22da4868d611e2b0c0c3da083334eb4362ce1945a\",\"dweb:/ipfs/QmPqpP3YeRbBdTJRe6Gv2eGsUaANf4J6RwTNRW36iYahfV\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/cryptography/ECDSAUpgradeable.sol\":{\"keccak256\":\"0xa014f65d84b02827055d99993ccdbfb4b56b2c9e91eb278d82a93330659d06e4\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://50a7e716a74f3d48a7f549086faa94afcd58b9f18ac8e9f74af4571f3a1d8d5c\",\"dweb:/ipfs/QmTkDNWkq5o9Cv2jS7s6JvSmsPBkeunZhPe7Z2njGL31wo\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/cryptography/SignatureCheckerUpgradeable.sol\":{\"keccak256\":\"0x7c3cbce7cec023937ebbae16ca73e569979b4d63bbcd471f0db6b17d5fc6d1df\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4cc5c84a415a35e3c7ddac82bb3970508921a0ed4ebd14061f13986821b5cb6b\",\"dweb:/ipfs/QmZChGnVgcSWgGazTakqcmkHQq8bn1LDyG3b67Fh9fLbed\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/math/MathUpgradeable.sol\":{\"keccak256\":\"0x2bc0007987c229ae7624eb29be6a9b84f6a6a5872f76248b15208b131ea41c4e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2b2835c737d073ef8b82a4cc246495a9740f43e7ff2cf130906b2449ff9bfb91\",\"dweb:/ipfs/QmSCWfNoSvvTN57ic7o1RW6NqSxxGAqbBTnLKc7QHe27qB\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/math/SignedMathUpgradeable.sol\":{\"keccak256\":\"0x88f6b7bba3ee33eeb741f9a0f5bc98b6e6e352d0fe4905377bb328590f84095a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://88ace2d60f265752f18903d839910be4e4e104340b2957678585b812447825d4\",\"dweb:/ipfs/QmXFkNxMc3AAGzhs2wUEZyErWQjsvoTGyYjuU5oZkFki5Z\"]},\"lib/openzeppelin-contracts-v4.9.0/contracts/utils/Strings.sol\":{\"keccak256\":\"0x3088eb2868e8d13d89d16670b5f8612c4ab9ff8956272837d8e90106c59c14a0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b81d9ff6559ea5c47fc573e17ece6d9ba5d6839e213e6ebc3b4c5c8fe4199d7f\",\"dweb:/ipfs/QmPCW1bFisUzJkyjroY3yipwfism9RRCigCcK1hbXtVM8n\"]},\"lib/openzeppelin-contracts-v4.9.0/contracts/utils/cryptography/ECDSA.sol\":{\"keccak256\":\"0x809bc3edb4bcbef8263fa616c1b60ee0004b50a8a1bfa164d8f57fd31f520c58\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://8b93a1e39a4a19eba1600b92c96f435442db88cac91e315c8291547a2a7bcfe2\",\"dweb:/ipfs/QmTm34KVe6uZBZwq8dZDNWwPcm24qBJdxqL3rPxBJ4LrMv\"]},\"lib/openzeppelin-contracts-v4.9.0/contracts/utils/math/Math.sol\":{\"keccak256\":\"0xe4455ac1eb7fc497bb7402579e7b4d64d928b846fce7d2b6fde06d366f21c2b3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cc8841b3cd48ad125e2f46323c8bad3aa0e88e399ec62acb9e57efa7e7c8058c\",\"dweb:/ipfs/QmSqE4mXHA2BXW58deDbXE8MTcsL5JSKNDbm23sVQxRLPS\"]},\"lib/openzeppelin-contracts-v4.9.0/contracts/utils/math/SignedMath.sol\":{\"keccak256\":\"0xf92515413956f529d95977adc9b0567d583c6203fc31ab1c23824c35187e3ddc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://c50fcc459e49a9858b6d8ad5f911295cb7c9ab57567845a250bf0153f84a95c7\",\"dweb:/ipfs/QmcEW85JRzvDkQggxiBBLVAasXWdkhEysqypj9EaB6H2g6\"]},\"src/contracts/interfaces/IBN254CertificateVerifier.sol\":{\"keccak256\":\"0x7752b30f86aa336ef2fe520e4a44077c3ea8c7eab0e2d10ce72c7418447f11b4\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://a930bb2a3c66072b5387e1645a0bad9b867a6d0b4251a070cb32f2194d9dd63d\",\"dweb:/ipfs/Qmdpwp4j19P2WkmtYUTFj5GveCm35zHjfEU81zJqwJpmYr\"]},\"src/contracts/interfaces/IBaseCertificateVerifier.sol\":{\"keccak256\":\"0x73868ac5e03f51617288695fe3e78dbd9595f7131b4db32419ada6941e12711f\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://c94787fdcc69a43642d0b72c006994aae6dd26e0fcde7cfc175a44d8303b7565\",\"dweb:/ipfs/QmQeaQWds1kSCymh6HYPKBjFMfSDfHUCZREC6khbbNyLA4\"]},\"src/contracts/interfaces/ICrossChainRegistry.sol\":{\"keccak256\":\"0x0b14b4dec4978bd42a8a1483b430854a773f8cbbe09981833055fe260dd04750\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://42828bc630691170efa41caceecf8146f81f1b400cd3fbe2a49a1ab791a722d5\",\"dweb:/ipfs/QmaW3Hey61bXYLwFnBpRPATJqfKZKvZgzZyRtqkaKCGw51\"]},\"src/contracts/interfaces/IECDSACertificateVerifier.sol\":{\"keccak256\":\"0x3f92435ab10774d48d05ee7c76aca07b221dd6681d2d8384ad297a9c1f099a3e\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://a38a48bebad8614520d4d9e606b3f27d5375fb5827c7acd68a29f36a96f004d0\",\"dweb:/ipfs/QmPbTK68MEEnnzJytdH21oiLrRXE82Sdr8X3nxvsQmJHwf\"]},\"src/contracts/interfaces/IKeyRegistrar.sol\":{\"keccak256\":\"0xfbcc4034cb09f2f5c791538f197f0b0cd58179788cc97d4f62c57d89b47332b8\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://b286eda2e253a1d377f7ddf7ff3c774649867948dd6264213c543ce0d597638c\",\"dweb:/ipfs/QmXKVD8JmT8nK9BULUbhY6M2GciRa3d7GP9EiN2zFdHdJF\"]},\"src/contracts/interfaces/IOperatorTableCalculator.sol\":{\"keccak256\":\"0xaf9b4bd05cbd4fbd5c466c50ed00f3a11d2f549449a3f247a82595497c39451b\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://d1a15978f7d282beea242a4e9771df4b5f8e2af4b38eaf04e3ab02510cafa51e\",\"dweb:/ipfs/QmVjaydhAzDgeJ1rxakWLoqo9WpGfVh7ajmFYsQZBrPQ16\"]},\"src/contracts/interfaces/IOperatorTableUpdater.sol\":{\"keccak256\":\"0x1f0c91e7c7453439b42fdcffe98c943744d486ff3a0fb42f55919dd6dc2907db\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://71d9476038c553db7ef8e01251b5924b19e4fea705959171c97d0f1c11d1f9bc\",\"dweb:/ipfs/QmaNZHaBn93mL7hextMFyr4PqnWPbaCaiHyFeHQZXCHEmz\"]},\"src/contracts/interfaces/ISemVerMixin.sol\":{\"keccak256\":\"0xa7cfe506856653310b402b73baca96af947897c02b5b35a310640443e1332791\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://e23941c3b825e02e3521dbbae63c5b58fb48d17125669fc0cd3c8d5a8c272d6e\",\"dweb:/ipfs/QmaPfH8XkpT1nsEdJe34YbQCwBf1Gq89EvUPvG1wPforZa\"]},\"src/contracts/interfaces/ISignatureUtilsMixin.sol\":{\"keccak256\":\"0x5223940241400e601b40ef9b544569262aa96cd9b05efd41fdaa4eb815d1b95b\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://c993c65dbb74ecf6428aa73535a01a5663f4f4f536611e070b2e78937c19af10\",\"dweb:/ipfs/QmaDsP63uGvoXjrGPYtbcZyUPEEspq9QChZeP1BYrn6FcE\"]},\"src/contracts/libraries/BN254.sol\":{\"keccak256\":\"0x24cd24d441907f69ab7dbe002e06f656dd8434235cffd59c97b8438c6a9a98fc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://074aa5523e2fe3e6f1b74fb207e08b41d2f6de34412da10e81d7f0b4720942cc\",\"dweb:/ipfs/QmWvdpuvZGeKdEtzaCoAP2gvpggRBwh1cUs4fdWjV9DwW6\"]},\"src/contracts/libraries/OperatorSetLib.sol\":{\"keccak256\":\"0x551df2d7984470e6eaa774d058c3f2af0175044b720aa53a6a156c90881f1812\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://eedb749fda40d45b8803694665d96fb5bec3b010d25cff4baad6e796ac690e41\",\"dweb:/ipfs/QmUNG8gmC6CjrdazKbwqt7fyaBGNbqeEUA4iFka49egGZx\"]},\"src/contracts/mixins/SemVerMixin.sol\":{\"keccak256\":\"0xbc950c1589c05a76d7c0fec82ad11d15567e2cf8d98770a19963461603f99648\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://d483b91672739d608ea510bc1b0f486c13264a50c001c0fa9c909b0282e22546\",\"dweb:/ipfs/QmdByvG58PAG44LWhXKxyrLpHdsr8epaTcEGhfzhH7ssHc\"]},\"src/contracts/mixins/SignatureUtilsMixin.sol\":{\"keccak256\":\"0x99633a417aaf4f3af1c9d432921f30a9723a4d7257546cf5c963dc23ca8f436a\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://ed3046a8aa6c4bbd5be361e8505c3c61c1f54f02d0337c8344d3f9bf1f745542\",\"dweb:/ipfs/QmPcJeQn5vMGaJEwkNCKoeDvEH1a1koMNUy6rgdsccVuky\"]},\"src/contracts/multichain/ECDSACertificateVerifier.sol\":{\"keccak256\":\"0xb29f3c1a981a6c3aa9e13288986c1461321321fd8654587f0aa550f9b58e22ae\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://1e08a376755f2144737f2b7ba10513ec0c6c60b83597b0e9b2cb3ea3d26122dc\",\"dweb:/ipfs/QmPEXPDDukpPoX2LXM62PLDLc9P6R2jLxPMBQPbhrucJcH\"]},\"src/contracts/multichain/ECDSACertificateVerifierStorage.sol\":{\"keccak256\":\"0x0459aab6651ab4bd728169a8cf633b0a84e303d7cc71e346dbe8b4d7042a7249\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://8718db8308141265c70b98cadf6b4c168453645a9264d89c0a36db2d01405fbd\",\"dweb:/ipfs/QmRCwvTXsag95TgV1jBE6fLKZBpvaTSugcH9m5jE3XZQnC\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.27+commit.40a35a09"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract IOperatorTableUpdater",
+              "name": "_operatorTableUpdater",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "_version",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ArrayLengthMismatch"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "CertificateStale"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidShortString"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidSignature"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidSignatureLength"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "OnlyTableUpdater"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "OperatorCountZero"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ReferenceTimestampDoesNotExist"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "RootDisabled"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "SignatureExpired"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "SignersNotOrdered"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "str",
+              "type": "string"
+            }
+          ],
+          "type": "error",
+          "name": "StringTooLong"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "TableUpdateStale"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "VerificationFailed"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "version",
+              "type": "uint8",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Initialized",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ],
+              "indexed": false
+            },
+            {
+              "internalType": "uint32",
+              "name": "maxStalenessPeriod",
+              "type": "uint32",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "MaxStalenessPeriodUpdated",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ],
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "owner",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "OperatorSetOwnerUpdated",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ],
+              "indexed": false
+            },
+            {
+              "internalType": "uint32",
+              "name": "referenceTimestamp",
+              "type": "uint32",
+              "indexed": false
+            },
+            {
+              "internalType": "struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo[]",
+              "name": "operatorInfos",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "pubkey",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "weights",
+                  "type": "uint256[]"
+                }
+              ],
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "TableUpdated",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "referenceTimestamp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "messageHash",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "calculateCertificateDigest",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "referenceTimestamp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "bytes32",
+              "name": "messageHash",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "calculateCertificateDigestBytes",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "domainSeparator",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "uint32",
+              "name": "referenceTimestamp",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorCount",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "uint32",
+              "name": "referenceTimestamp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "operatorIndex",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorInfo",
+          "outputs": [
+            {
+              "internalType": "struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "pubkey",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "weights",
+                  "type": "uint256[]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "uint32",
+              "name": "referenceTimestamp",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorInfos",
+          "outputs": [
+            {
+              "internalType": "struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo[]",
+              "name": "",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "pubkey",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "weights",
+                  "type": "uint256[]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorSetOwner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "uint32",
+              "name": "referenceTimestamp",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTotalStakeWeights",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "uint32",
+              "name": "referenceTimestamp",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "isReferenceTimestampSet",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "latestReferenceTimestamp",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "maxOperatorTableStaleness",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "operatorTableUpdater",
+          "outputs": [
+            {
+              "internalType": "contract IOperatorTableUpdater",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "uint32",
+              "name": "referenceTimestamp",
+              "type": "uint32"
+            },
+            {
+              "internalType": "struct IOperatorTableCalculatorTypes.ECDSAOperatorInfo[]",
+              "name": "operatorInfos",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "pubkey",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint256[]",
+                  "name": "weights",
+                  "type": "uint256[]"
+                }
+              ]
+            },
+            {
+              "internalType": "struct ICrossChainRegistryTypes.OperatorSetConfig",
+              "name": "operatorSetConfig",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "owner",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "maxStalenessPeriod",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "updateOperatorTable"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "struct IECDSACertificateVerifierTypes.ECDSACertificate",
+              "name": "cert",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "referenceTimestamp",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "messageHash",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "sig",
+                  "type": "bytes"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "verifyCertificate",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "address[]",
+              "name": "",
+              "type": "address[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "struct IECDSACertificateVerifierTypes.ECDSACertificate",
+              "name": "cert",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "referenceTimestamp",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "messageHash",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "sig",
+                  "type": "bytes"
+                }
+              ]
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "totalStakeNominalThresholds",
+              "type": "uint256[]"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "verifyCertificateNominal",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            },
+            {
+              "internalType": "address[]",
+              "name": "",
+              "type": "address[]"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "struct IECDSACertificateVerifierTypes.ECDSACertificate",
+              "name": "cert",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "uint32",
+                  "name": "referenceTimestamp",
+                  "type": "uint32"
+                },
+                {
+                  "internalType": "bytes32",
+                  "name": "messageHash",
+                  "type": "bytes32"
+                },
+                {
+                  "internalType": "bytes",
+                  "name": "sig",
+                  "type": "bytes"
+                }
+              ]
+            },
+            {
+              "internalType": "uint16[]",
+              "name": "totalStakeProportionThresholds",
+              "type": "uint16[]"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "verifyCertificateProportion",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            },
+            {
+              "internalType": "address[]",
+              "name": "",
+              "type": "address[]"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "version",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "calculateCertificateDigest(uint32,bytes32)": {
+            "details": "This function is public to allow offchain tools to calculate the same digestNote: This does not support smart contract based signatures for multichainThis is a chain-agnostic digest, so it can be used to verify certificates across      multiple destination chains",
+            "params": {
+              "messageHash": "The message hash",
+              "referenceTimestamp": "The reference timestamp"
+            },
+            "returns": {
+              "_0": "The EIP-712 digest"
+            }
+          },
+          "calculateCertificateDigestBytes(uint32,bytes32)": {
+            "details": "This function is public to allow offchain tools to calculate the same digestNote: This does not support smart contract based signatures for multichainThis is a chain-agnostic digest, so it can be used to verify certificates across      multiple destination chainsThis function returns the raw bytes of the digest, which still need to be hashed      before signing with ECDSA",
+            "params": {
+              "messageHash": "The message hash",
+              "referenceTimestamp": "The reference timestamp"
+            },
+            "returns": {
+              "_0": "The EIP-712 digest"
+            }
+          },
+          "constructor": {
+            "details": "Disables initializers to prevent implementation initialization",
+            "params": {
+              "_operatorTableUpdater": "Address authorized to update operator tables",
+              "_version": "The version string for the SignatureUtilsMixin"
+            }
+          },
+          "domainSeparator()": {
+            "details": "This function overrides the base domainSeparator to not include chainId to replay      certificates across multiple destination chains",
+            "returns": {
+              "_0": "The domain separator hash without chainId"
+            }
+          },
+          "getOperatorCount((address,uint32),uint32)": {
+            "details": "Returns 0 if the reference timestamp is not set or the number of operators is 0",
+            "params": {
+              "operatorSet": "The operator set to get the number of operators for",
+              "referenceTimestamp": "The reference timestamp"
+            },
+            "returns": {
+              "_0": "The number of operators"
+            }
+          },
+          "getOperatorInfo((address,uint32),uint32,uint256)": {
+            "params": {
+              "operatorIndex": "The index of the operator",
+              "operatorSet": "The operator set",
+              "referenceTimestamp": "The reference timestamp"
+            },
+            "returns": {
+              "_0": "The operator info, empty if the operatorSet has not been updated for the given reference timestamp"
+            }
+          },
+          "getOperatorInfos((address,uint32),uint32)": {
+            "params": {
+              "operatorSet": "The operator set",
+              "referenceTimestamp": "The reference timestamp"
+            },
+            "returns": {
+              "_0": "The operator infos, empty if the operatorSet has not been updated for the given reference timestamp"
+            }
+          },
+          "getOperatorSetOwner((address,uint32))": {
+            "details": "The owner of the OperatorSet is not used by this contract, but can be used by periphery contracts      to gate access control for on-chain operations",
+            "params": {
+              "operatorSet": "The operatorSet to get the owner of"
+            },
+            "returns": {
+              "_0": "The owner"
+            }
+          },
+          "getTotalStakeWeights((address,uint32),uint32)": {
+            "details": "This function requires the reference timestamp to be set",
+            "params": {
+              "operatorSet": "The operator set to calculate stakes for",
+              "referenceTimestamp": "The reference timestamp"
+            },
+            "returns": {
+              "_0": "The sum of stake weights for each stake type, empty if the operatorSet has not been updated for the given reference timestamp"
+            }
+          },
+          "isReferenceTimestampSet((address,uint32),uint32)": {
+            "details": "The reference timestamp is set when the operator table is updated",
+            "params": {
+              "operatorSet": "The operatorSet to check",
+              "referenceTimestamp": "The reference timestamp to check"
+            },
+            "returns": {
+              "_0": "Whether the reference timestamp has been updated"
+            }
+          },
+          "latestReferenceTimestamp((address,uint32))": {
+            "details": "The latest reference timestamp is set when the operator table is updated",
+            "params": {
+              "operatorSet": "The operatorSet to get the latest reference timestamp of"
+            },
+            "returns": {
+              "_0": "The latest reference timestamp, 0 if the operatorSet has never been updated"
+            }
+          },
+          "maxOperatorTableStaleness((address,uint32))": {
+            "details": "A staleness period of 0 allows for certificates to be verified against any timestamp in the pastStaleness periods should not be greater than 0 and less than the update cadence of the `OperatorTables`, since      certificates would be unable to be validated against",
+            "params": {
+              "operatorSet": "The operatorSet to get the max staleness period of"
+            },
+            "returns": {
+              "_0": "The max staleness period"
+            }
+          },
+          "updateOperatorTable((address,uint32),uint32,(address,uint256[])[],(address,uint32))": {
+            "details": "Only callable by the `OperatorTableUpdater`The `referenceTimestamp` must correspond to a reference timestamp for a globalTableRoot stored in the `OperatorTableUpdater`The `referenceTimestamp` must be greater than the latest reference timestamp for the given operatorSet",
+            "params": {
+              "operatorInfos": "the operatorInfos to update the operator table with",
+              "operatorSet": "the operatorSet to update the operator table for",
+              "operatorSetConfig": "the configuration of the operatorSet",
+              "referenceTimestamp": "the timestamp at which the operatorInfos were sourced"
+            }
+          },
+          "verifyCertificate((address,uint32),(uint32,bytes32,bytes))": {
+            "details": "This function DOES NOT support smart contact signatures",
+            "params": {
+              "cert": "a certificate",
+              "operatorSet": "the operatorSet that the certificate is for"
+            },
+            "returns": {
+              "_0": "total stake weight that signed the certificate for each stake type. Each index corresponds to a stake type in the `weights` array in the `ECDSAOperatorInfo`",
+              "_1": "array of addresses that signed the certificate"
+            }
+          },
+          "verifyCertificateNominal((address,uint32),(uint32,bytes32,bytes),uint256[])": {
+            "params": {
+              "cert": "a certificate",
+              "operatorSet": "the operatorSet that the certificate is for",
+              "totalStakeNominalThresholds": "the nominal amount of total stake weight that the signed stake of the certificate should meet. Each index corresponds to a stake type in the `weights` array in the `ECDSAOperatorInfo`"
+            },
+            "returns": {
+              "_0": "Whether or not the certificate is valid and meets thresholds",
+              "_1": "array of addresses that signed the certificate"
+            }
+          },
+          "verifyCertificateProportion((address,uint32),(uint32,bytes32,bytes),uint16[])": {
+            "params": {
+              "cert": "a certificate",
+              "operatorSet": "the operatorSet to verify the certificate for",
+              "totalStakeProportionThresholds": "the proportion, in BPS, of total stake weight that the signed stake of the certificate should meet. Each index corresponds to a stake type in the `weights` array in the `ECDSAOperatorInfo`"
+            },
+            "returns": {
+              "_0": "Whether or not the certificate is valid and meets thresholds",
+              "_1": "array of addresses that signed the certificate"
+            }
+          },
+          "version()": {
+            "returns": {
+              "_0": "The version string in SemVer format (e.g., \"1.1.1\")"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "calculateCertificateDigest(uint32,bytes32)": {
+            "notice": "Calculate the EIP-712 digest for a certificate"
+          },
+          "calculateCertificateDigestBytes(uint32,bytes32)": {
+            "notice": "Calculate the EIP-712 digest bytes for a certificate"
+          },
+          "constructor": {
+            "notice": "Constructor for the certificate verifier"
+          },
+          "domainSeparator()": {
+            "notice": "Override domainSeparator to not include chainId"
+          },
+          "getOperatorCount((address,uint32),uint32)": {
+            "notice": "Get the number of operators at a given reference timestamp"
+          },
+          "getOperatorInfo((address,uint32),uint32,uint256)": {
+            "notice": "Get a single operator info by index"
+          },
+          "getOperatorInfos((address,uint32),uint32)": {
+            "notice": "Get operator infos for a timestamp"
+          },
+          "getOperatorSetOwner((address,uint32))": {
+            "notice": "The address of the owner of the OperatorSet"
+          },
+          "getTotalStakeWeights((address,uint32),uint32)": {
+            "notice": "Get the total stake weights for all operators at a given reference timestamp"
+          },
+          "isReferenceTimestampSet((address,uint32),uint32)": {
+            "notice": "Whether the operator table has been updated for a given reference timestamp"
+          },
+          "latestReferenceTimestamp((address,uint32))": {
+            "notice": "The latest reference timestamp of the operator table for a given operatorSet. This value is         updated each time an operator table is updated"
+          },
+          "maxOperatorTableStaleness((address,uint32))": {
+            "notice": "The max staleness period of the operator table for a given operatorSet. This value is AVS-set and         transported by the multichain protocol"
+          },
+          "updateOperatorTable((address,uint32),uint32,(address,uint256[])[],(address,uint32))": {
+            "notice": "updates the operator table"
+          },
+          "verifyCertificate((address,uint32),(uint32,bytes32,bytes))": {
+            "notice": "verifies a certificate"
+          },
+          "verifyCertificateNominal((address,uint32),(uint32,bytes32,bytes),uint256[])": {
+            "notice": "verifies a certificate and makes sure that the signed stakes meet provided nominal stake thresholds"
+          },
+          "verifyCertificateProportion((address,uint32),(uint32,bytes32,bytes),uint16[])": {
+            "notice": "verifies a certificate and makes sure that the signed stakes meet provided portions of the total stake weight on the AVS"
+          },
+          "version()": {
+            "notice": "Returns the semantic version string of the contract."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable-v4.9.0/",
+        "@openzeppelin/=lib/openzeppelin-contracts-v4.9.0/",
+        "ds-test/=lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts-upgradeable-v4.9.0/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable-v4.9.0/=lib/openzeppelin-contracts-upgradeable-v4.9.0/",
+        "openzeppelin-contracts-v4.9.0/=lib/openzeppelin-contracts-v4.9.0/",
+        "openzeppelin/=lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/",
+        "zeus-templates/=lib/zeus-templates/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/contracts/multichain/ECDSACertificateVerifier.sol": "ECDSACertificateVerifier"
+      },
+      "evmVersion": "cancun",
+      "libraries": {}
+    },
+    "sources": {
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/interfaces/IERC1271Upgradeable.sol": {
+        "keccak256": "0x4473c09c087ee1a48c5547b23799c0474b2e08cde6fec5921c628171c4ebcdc0",
+        "urls": [
+          "bzz-raw://6d92614db0b346b756af8ba9bd0098db81b031026361635fb4f55a420254637d",
+          "dweb:/ipfs/QmVviVD57zX54ny1zvVsksfYF9RantBwVyJBTdHqPywFuP"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/proxy/utils/Initializable.sol": {
+        "keccak256": "0x89be10e757d242e9b18d5a32c9fbe2019f6d63052bbe46397a430a1d60d7f794",
+        "urls": [
+          "bzz-raw://f103ee2e4aecd37aac6ceefe670709cdd7613dee25fa2d4d9feaf7fc0aaa155e",
+          "dweb:/ipfs/QmRiNZLoJk5k3HPMYGPGjZFd2ke1ZxjhJZkM45Ec9GH9hv"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/AddressUpgradeable.sol": {
+        "keccak256": "0x9c80f545915582e63fe206c6ce27cbe85a86fc10b9cd2a0e8c9488fb7c2ee422",
+        "urls": [
+          "bzz-raw://310136ad60820af4177a11a61d77a3686faf5fca4942b600e08fc940db38396b",
+          "dweb:/ipfs/QmbCzMNSTL7Zi7M4UCSqBrkHtp4jjxUnGbkneCZKdR1qeq"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/ShortStringsUpgradeable.sol": {
+        "keccak256": "0x4e34d967d14c25ef92ef1d4f7a8761949941f46c8f068923bd59d6e09c23b822",
+        "urls": [
+          "bzz-raw://a4643a5a7f8f7794f502d5fc6576ec09c10732680b93b44ca1899b6f32e7d5de",
+          "dweb:/ipfs/QmVQShpVY4y2Z6XY4ErtkQeNpbGEAcAQXrBeKSti4rX4UB"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/StorageSlotUpgradeable.sol": {
+        "keccak256": "0x07ac95acad040f1fb1f6120dd0aa5f702db69446e95f82613721879d30de0908",
+        "urls": [
+          "bzz-raw://a9df9de7b5da1d1bd3d4b6c073d0174bc4211db60e794a321c8cb5d4eae34685",
+          "dweb:/ipfs/QmWe49zj65jayrCe9jZpoWhYUZ1RiwSxyU2s7SBZnMztVy"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/StringsUpgradeable.sol": {
+        "keccak256": "0xb96dc79b65b7c37937919dcdb356a969ce0aa2e8338322bf4dc027a3c9c9a7eb",
+        "urls": [
+          "bzz-raw://f8613145881436fc0480fff22da4868d611e2b0c0c3da083334eb4362ce1945a",
+          "dweb:/ipfs/QmPqpP3YeRbBdTJRe6Gv2eGsUaANf4J6RwTNRW36iYahfV"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/cryptography/ECDSAUpgradeable.sol": {
+        "keccak256": "0xa014f65d84b02827055d99993ccdbfb4b56b2c9e91eb278d82a93330659d06e4",
+        "urls": [
+          "bzz-raw://50a7e716a74f3d48a7f549086faa94afcd58b9f18ac8e9f74af4571f3a1d8d5c",
+          "dweb:/ipfs/QmTkDNWkq5o9Cv2jS7s6JvSmsPBkeunZhPe7Z2njGL31wo"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/cryptography/SignatureCheckerUpgradeable.sol": {
+        "keccak256": "0x7c3cbce7cec023937ebbae16ca73e569979b4d63bbcd471f0db6b17d5fc6d1df",
+        "urls": [
+          "bzz-raw://4cc5c84a415a35e3c7ddac82bb3970508921a0ed4ebd14061f13986821b5cb6b",
+          "dweb:/ipfs/QmZChGnVgcSWgGazTakqcmkHQq8bn1LDyG3b67Fh9fLbed"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/math/MathUpgradeable.sol": {
+        "keccak256": "0x2bc0007987c229ae7624eb29be6a9b84f6a6a5872f76248b15208b131ea41c4e",
+        "urls": [
+          "bzz-raw://2b2835c737d073ef8b82a4cc246495a9740f43e7ff2cf130906b2449ff9bfb91",
+          "dweb:/ipfs/QmSCWfNoSvvTN57ic7o1RW6NqSxxGAqbBTnLKc7QHe27qB"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/math/SignedMathUpgradeable.sol": {
+        "keccak256": "0x88f6b7bba3ee33eeb741f9a0f5bc98b6e6e352d0fe4905377bb328590f84095a",
+        "urls": [
+          "bzz-raw://88ace2d60f265752f18903d839910be4e4e104340b2957678585b812447825d4",
+          "dweb:/ipfs/QmXFkNxMc3AAGzhs2wUEZyErWQjsvoTGyYjuU5oZkFki5Z"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-v4.9.0/contracts/utils/Strings.sol": {
+        "keccak256": "0x3088eb2868e8d13d89d16670b5f8612c4ab9ff8956272837d8e90106c59c14a0",
+        "urls": [
+          "bzz-raw://b81d9ff6559ea5c47fc573e17ece6d9ba5d6839e213e6ebc3b4c5c8fe4199d7f",
+          "dweb:/ipfs/QmPCW1bFisUzJkyjroY3yipwfism9RRCigCcK1hbXtVM8n"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-v4.9.0/contracts/utils/cryptography/ECDSA.sol": {
+        "keccak256": "0x809bc3edb4bcbef8263fa616c1b60ee0004b50a8a1bfa164d8f57fd31f520c58",
+        "urls": [
+          "bzz-raw://8b93a1e39a4a19eba1600b92c96f435442db88cac91e315c8291547a2a7bcfe2",
+          "dweb:/ipfs/QmTm34KVe6uZBZwq8dZDNWwPcm24qBJdxqL3rPxBJ4LrMv"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-v4.9.0/contracts/utils/math/Math.sol": {
+        "keccak256": "0xe4455ac1eb7fc497bb7402579e7b4d64d928b846fce7d2b6fde06d366f21c2b3",
+        "urls": [
+          "bzz-raw://cc8841b3cd48ad125e2f46323c8bad3aa0e88e399ec62acb9e57efa7e7c8058c",
+          "dweb:/ipfs/QmSqE4mXHA2BXW58deDbXE8MTcsL5JSKNDbm23sVQxRLPS"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-v4.9.0/contracts/utils/math/SignedMath.sol": {
+        "keccak256": "0xf92515413956f529d95977adc9b0567d583c6203fc31ab1c23824c35187e3ddc",
+        "urls": [
+          "bzz-raw://c50fcc459e49a9858b6d8ad5f911295cb7c9ab57567845a250bf0153f84a95c7",
+          "dweb:/ipfs/QmcEW85JRzvDkQggxiBBLVAasXWdkhEysqypj9EaB6H2g6"
+        ],
+        "license": "MIT"
+      },
+      "src/contracts/interfaces/IBN254CertificateVerifier.sol": {
+        "keccak256": "0x7752b30f86aa336ef2fe520e4a44077c3ea8c7eab0e2d10ce72c7418447f11b4",
+        "urls": [
+          "bzz-raw://a930bb2a3c66072b5387e1645a0bad9b867a6d0b4251a070cb32f2194d9dd63d",
+          "dweb:/ipfs/Qmdpwp4j19P2WkmtYUTFj5GveCm35zHjfEU81zJqwJpmYr"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IBaseCertificateVerifier.sol": {
+        "keccak256": "0x73868ac5e03f51617288695fe3e78dbd9595f7131b4db32419ada6941e12711f",
+        "urls": [
+          "bzz-raw://c94787fdcc69a43642d0b72c006994aae6dd26e0fcde7cfc175a44d8303b7565",
+          "dweb:/ipfs/QmQeaQWds1kSCymh6HYPKBjFMfSDfHUCZREC6khbbNyLA4"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/ICrossChainRegistry.sol": {
+        "keccak256": "0x0b14b4dec4978bd42a8a1483b430854a773f8cbbe09981833055fe260dd04750",
+        "urls": [
+          "bzz-raw://42828bc630691170efa41caceecf8146f81f1b400cd3fbe2a49a1ab791a722d5",
+          "dweb:/ipfs/QmaW3Hey61bXYLwFnBpRPATJqfKZKvZgzZyRtqkaKCGw51"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IECDSACertificateVerifier.sol": {
+        "keccak256": "0x3f92435ab10774d48d05ee7c76aca07b221dd6681d2d8384ad297a9c1f099a3e",
+        "urls": [
+          "bzz-raw://a38a48bebad8614520d4d9e606b3f27d5375fb5827c7acd68a29f36a96f004d0",
+          "dweb:/ipfs/QmPbTK68MEEnnzJytdH21oiLrRXE82Sdr8X3nxvsQmJHwf"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IKeyRegistrar.sol": {
+        "keccak256": "0xfbcc4034cb09f2f5c791538f197f0b0cd58179788cc97d4f62c57d89b47332b8",
+        "urls": [
+          "bzz-raw://b286eda2e253a1d377f7ddf7ff3c774649867948dd6264213c543ce0d597638c",
+          "dweb:/ipfs/QmXKVD8JmT8nK9BULUbhY6M2GciRa3d7GP9EiN2zFdHdJF"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IOperatorTableCalculator.sol": {
+        "keccak256": "0xaf9b4bd05cbd4fbd5c466c50ed00f3a11d2f549449a3f247a82595497c39451b",
+        "urls": [
+          "bzz-raw://d1a15978f7d282beea242a4e9771df4b5f8e2af4b38eaf04e3ab02510cafa51e",
+          "dweb:/ipfs/QmVjaydhAzDgeJ1rxakWLoqo9WpGfVh7ajmFYsQZBrPQ16"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IOperatorTableUpdater.sol": {
+        "keccak256": "0x1f0c91e7c7453439b42fdcffe98c943744d486ff3a0fb42f55919dd6dc2907db",
+        "urls": [
+          "bzz-raw://71d9476038c553db7ef8e01251b5924b19e4fea705959171c97d0f1c11d1f9bc",
+          "dweb:/ipfs/QmaNZHaBn93mL7hextMFyr4PqnWPbaCaiHyFeHQZXCHEmz"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/ISemVerMixin.sol": {
+        "keccak256": "0xa7cfe506856653310b402b73baca96af947897c02b5b35a310640443e1332791",
+        "urls": [
+          "bzz-raw://e23941c3b825e02e3521dbbae63c5b58fb48d17125669fc0cd3c8d5a8c272d6e",
+          "dweb:/ipfs/QmaPfH8XkpT1nsEdJe34YbQCwBf1Gq89EvUPvG1wPforZa"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/ISignatureUtilsMixin.sol": {
+        "keccak256": "0x5223940241400e601b40ef9b544569262aa96cd9b05efd41fdaa4eb815d1b95b",
+        "urls": [
+          "bzz-raw://c993c65dbb74ecf6428aa73535a01a5663f4f4f536611e070b2e78937c19af10",
+          "dweb:/ipfs/QmaDsP63uGvoXjrGPYtbcZyUPEEspq9QChZeP1BYrn6FcE"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/libraries/BN254.sol": {
+        "keccak256": "0x24cd24d441907f69ab7dbe002e06f656dd8434235cffd59c97b8438c6a9a98fc",
+        "urls": [
+          "bzz-raw://074aa5523e2fe3e6f1b74fb207e08b41d2f6de34412da10e81d7f0b4720942cc",
+          "dweb:/ipfs/QmWvdpuvZGeKdEtzaCoAP2gvpggRBwh1cUs4fdWjV9DwW6"
+        ],
+        "license": "MIT"
+      },
+      "src/contracts/libraries/OperatorSetLib.sol": {
+        "keccak256": "0x551df2d7984470e6eaa774d058c3f2af0175044b720aa53a6a156c90881f1812",
+        "urls": [
+          "bzz-raw://eedb749fda40d45b8803694665d96fb5bec3b010d25cff4baad6e796ac690e41",
+          "dweb:/ipfs/QmUNG8gmC6CjrdazKbwqt7fyaBGNbqeEUA4iFka49egGZx"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/mixins/SemVerMixin.sol": {
+        "keccak256": "0xbc950c1589c05a76d7c0fec82ad11d15567e2cf8d98770a19963461603f99648",
+        "urls": [
+          "bzz-raw://d483b91672739d608ea510bc1b0f486c13264a50c001c0fa9c909b0282e22546",
+          "dweb:/ipfs/QmdByvG58PAG44LWhXKxyrLpHdsr8epaTcEGhfzhH7ssHc"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/mixins/SignatureUtilsMixin.sol": {
+        "keccak256": "0x99633a417aaf4f3af1c9d432921f30a9723a4d7257546cf5c963dc23ca8f436a",
+        "urls": [
+          "bzz-raw://ed3046a8aa6c4bbd5be361e8505c3c61c1f54f02d0337c8344d3f9bf1f745542",
+          "dweb:/ipfs/QmPcJeQn5vMGaJEwkNCKoeDvEH1a1koMNUy6rgdsccVuky"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/multichain/ECDSACertificateVerifier.sol": {
+        "keccak256": "0xb29f3c1a981a6c3aa9e13288986c1461321321fd8654587f0aa550f9b58e22ae",
+        "urls": [
+          "bzz-raw://1e08a376755f2144737f2b7ba10513ec0c6c60b83597b0e9b2cb3ea3d26122dc",
+          "dweb:/ipfs/QmPEXPDDukpPoX2LXM62PLDLc9P6R2jLxPMBQPbhrucJcH"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/multichain/ECDSACertificateVerifierStorage.sol": {
+        "keccak256": "0x0459aab6651ab4bd728169a8cf633b0a84e303d7cc71e346dbe8b4d7042a7249",
+        "urls": [
+          "bzz-raw://8718db8308141265c70b98cadf6b4c168453645a9264d89c0a36db2d01405fbd",
+          "dweb:/ipfs/QmRCwvTXsag95TgV1jBE6fLKZBpvaTSugcH9m5jE3XZQnC"
+        ],
+        "license": "BUSL-1.1"
+      }
+    },
+    "version": 1
+  },
+  "id": 173
+}
