@@ -1,7 +1,7 @@
 {
   "name": "2025-07-17-23-16-v1.7.0-multichain",
   "env": "preprod",
-  "segmentId": 3,
+  "segmentId": 4,
   "segments": [
     {
       "type": "eoa",
@@ -99,6 +99,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0xb9e0278068bd23522f7ca47999c8a8350a51e33565bae6322111d8ebcf4c9c84",
+      "multisig": "0x011aF0ABDBcffBF879de4E1F1F8e346bDCAc0653",
+      "confirmed": true,
+      "immediateExecutionHash": "0xd51f625b89e56461413d8af1aa94f7a5a722dbc600dbcb18735565e57b7a3690"
     }
   ],
   "upgrade": "v1.7.0-multichain",
