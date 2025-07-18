@@ -80,7 +80,7 @@
   ],
   "upgrade": "v1.7.0-multichain",
   "upgradePath": "script/releases/v1.7.0-multichain",
-  "phase": "eoa_validate",
+  "phase": "eoa_start",
   "chainId": 17000,
   "startTime": "Thu Jul 17 2025 23:16:12 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1752808572.963
