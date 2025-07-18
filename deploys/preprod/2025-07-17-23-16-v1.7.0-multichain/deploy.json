@@ -29,10 +29,49 @@
       "id": 4
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0xfdA65fB442A1aDC8ef974a79886f1698fd5b4Ec6",
+          "contract": "KeyRegistrar_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x2647069A19B3ffaD96FAe9278B9a1368dEC83d27",
+          "contract": "KeyRegistrar_Proxy",
+          "singleton": true
+        },
+        {
+          "address": "0xf63787A0fA1f500C67934AA1b37594106306F31d",
+          "contract": "CrossChainRegistry_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x275a472Bf5569a9241d1B3dBeD830a0D9E1f9C47",
+          "contract": "CrossChainRegistry_Proxy",
+          "singleton": true
+        },
+        {
+          "address": "0x7C97D630B09AF723b5722607B996Bdfa1F6A973d",
+          "contract": "ReleaseManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x7da89a7d9767eDceEB6adE3d7F0f9BA4b6872944",
+          "contract": "ReleaseManager_Proxy",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.7.0-multichain",
   "upgradePath": "script/releases/v1.7.0-multichain",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 17000,
   "startTime": "Thu Jul 17 2025 23:16:12 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1752808572.963
