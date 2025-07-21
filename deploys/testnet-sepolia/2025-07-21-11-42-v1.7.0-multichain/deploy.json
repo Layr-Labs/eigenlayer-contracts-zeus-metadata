@@ -1,7 +1,7 @@
 {
   "name": "2025-07-21-11-42-v1.7.0-multichain",
   "env": "testnet-sepolia",
-  "segmentId": 3,
+  "segmentId": 4,
   "segments": [
     {
       "type": "eoa",
@@ -99,6 +99,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0xe07dcce48483e2d1f63fbde16abac0452b2fd3b33f996a113b4200ab6ff712e4",
+      "multisig": "0xA591635DE4C254BD3fa9C9Db9000eA6488344C28",
+      "confirmed": true,
+      "immediateExecutionHash": "0x2953d33062ddff9af150d31843cc1c760eff6217fc05cfe4499b88087c416e4b"
     }
   ],
   "upgrade": "v1.7.0-multichain",
