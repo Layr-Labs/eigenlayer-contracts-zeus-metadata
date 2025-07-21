@@ -65,12 +65,12 @@
       "signerType": "gnosis.api.web",
       "gnosisTransactionHash": "0xb7ecc1571c23a971617a20a95a8574166ec8adca1de7a0f298b807d5b01f4452",
       "multisig": "0x461854d84Ee845F905e0eCf6C288DDEEb4A9533F",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.6.0-moocow-and-elip5",
   "upgradePath": "script/releases/v1.6.0-moocow-and-elip5",
-  "phase": "multisig_wait_confirm",
+  "phase": "complete",
   "chainId": 1,
   "startTime": "Fri Jul 11 2025 12:06:10 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1752249970.322
