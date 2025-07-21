@@ -77,11 +77,18 @@
       "multisig": "0xA591635DE4C254BD3fa9C9Db9000eA6488344C28",
       "confirmed": true,
       "immediateExecutionHash": "0xa0f053a2c7bbe61bdf6ac4ce7122e887bb3c049ca953e53e4eefabefb2f70591"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "multisig": "0x4ACA7e09eF90612941A9185A6690Dbe9e39aae8f",
+      "confirmed": true
     }
   ],
   "upgrade": "v1.7.0-multichain",
   "upgradePath": "script/releases/v1.7.0-multichain",
-  "phase": "multisig_start",
+  "phase": "multisig_wait_signers",
   "chainId": 84532,
   "startTime": "Mon Jul 21 2025 12:11:53 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1753114313.233
