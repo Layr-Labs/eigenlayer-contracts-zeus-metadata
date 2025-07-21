@@ -1,10 +1,6 @@
 {
   "id": "testnet-sepolia",
-<<<<<<< HEAD
   "deployedVersion": "1.7.0-rc.2",
-=======
-  "deployedVersion": "1.6.0",
->>>>>>> parent of 18517bb (Deploy 2025-07-02-15-31-v1.7.0-multichain completed!)
   "contracts": {
     "static": {
       "BackingEigen_Proxy": {
