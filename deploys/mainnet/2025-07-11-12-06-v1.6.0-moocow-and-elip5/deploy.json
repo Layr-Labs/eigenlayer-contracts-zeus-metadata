@@ -17,6 +17,11 @@
       "type": "multisig",
       "filename": "3-executeUpgrade.s.sol",
       "id": 2
+    },
+    {
+      "type": "multisig",
+      "filename": "4-executeMoocow.s.sol",
+      "id": 3
     }
   ],
   "metadata": [
