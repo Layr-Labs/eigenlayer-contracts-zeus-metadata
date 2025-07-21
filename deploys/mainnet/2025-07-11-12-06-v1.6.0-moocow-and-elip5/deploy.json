@@ -1,7 +1,7 @@
 {
   "name": "2025-07-11-12-06-v1.6.0-moocow-and-elip5",
   "env": "mainnet",
-  "segmentId": 2,
+  "segmentId": 3,
   "segments": [
     {
       "type": "eoa",
@@ -57,12 +57,12 @@
       "signerType": "gnosis.api.web",
       "gnosisTransactionHash": "0x8b0a829ab47f8d99bc374967e951a2b7390a340a35c26c38aa0346db294dddef",
       "multisig": "0x461854d84Ee845F905e0eCf6C288DDEEb4A9533F",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.6.0-moocow-and-elip5",
   "upgradePath": "script/releases/v1.6.0-moocow-and-elip5",
-  "phase": "multisig_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 1,
   "startTime": "Fri Jul 11 2025 12:06:10 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1752249970.322
