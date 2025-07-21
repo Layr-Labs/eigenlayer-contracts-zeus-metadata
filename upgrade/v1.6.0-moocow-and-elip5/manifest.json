@@ -14,7 +14,11 @@
     {
       "type": "multisig",
       "filename": "3-executeUpgrade.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "4-executeMoocow.s.sol"
     }
   ],
-  "commit": "350d23a9ed56a388cee1a6ae17c278b3206230d2"
+  "commit": "cf22b3906a5e667d2c9baba39133a25211805e26"
 }
