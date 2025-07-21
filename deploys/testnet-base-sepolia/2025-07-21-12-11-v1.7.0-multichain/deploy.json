@@ -1,7 +1,7 @@
 {
   "name": "2025-07-21-12-11-v1.7.0-multichain",
   "env": "testnet-base-sepolia",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -35,12 +35,12 @@
       "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
       "transactions": [],
       "deployments": [],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.7.0-multichain",
   "upgradePath": "script/releases/v1.7.0-multichain",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 84532,
   "startTime": "Mon Jul 21 2025 12:11:53 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1753114313.233
