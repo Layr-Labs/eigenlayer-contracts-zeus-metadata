@@ -35,7 +35,7 @@
   "communityMultisig": "0x6f8459810197cc9fE123BBeB918451757a4fBAc6",
   "executorMultisig": "0x4FDA8998EC3b7d4b4A612d45FeB8fB36734470f2",
   "beigenExecutorMultisig": "0xC1B0AC92ff49CFdf07DA61B8A6933b744EF26d27",
-  "multichainDeployerMultisig": "0xfddeb637b70c4d11d955456f1239dcd872b2738d",
+  "multichainDeployerMultisig": "0xA591635DE4C254BD3fa9C9Db9000eA6488344C28",
   "proxyAdmin": "0x56E88cb4f0136fC27D95499dE4BE2acf47946Fa1",
   "beigenProxyAdmin": "0x1a26B23a004C512350d7Dd89056655A80b850199",
   "SLASH_ESCROW_DELAY": 5,
