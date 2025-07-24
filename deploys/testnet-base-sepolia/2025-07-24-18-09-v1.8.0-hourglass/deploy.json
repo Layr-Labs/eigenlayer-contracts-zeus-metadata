@@ -1,0 +1,29 @@
+{
+  "name": "2025-07-24-18-09-v1.8.0-hourglass",
+  "env": "testnet-base-sepolia",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "multisig",
+      "filename": "1-deployDestinationChainProxies.s.sol",
+      "id": 0
+    },
+    {
+      "type": "eoa",
+      "filename": "2-deployDestinationChainImpls.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-instantiateDestinationChainProxies.s.sol",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.8.0-hourglass",
+  "upgradePath": "script/releases/v1.8.0-hourglass",
+  "phase": "",
+  "chainId": 84532,
+  "startTime": "Thu Jul 24 2025 18:09:34 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1753394974.491
+}
