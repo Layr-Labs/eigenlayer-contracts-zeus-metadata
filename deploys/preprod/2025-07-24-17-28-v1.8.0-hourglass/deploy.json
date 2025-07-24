@@ -1,0 +1,29 @@
+{
+  "name": "2025-07-24-17-28-v1.8.0-hourglass",
+  "env": "preprod",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "multisig",
+      "filename": "1-deployDestinationChainProxies.s.sol",
+      "id": 0
+    },
+    {
+      "type": "eoa",
+      "filename": "2-deployDestinationChainImpls.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-instantiateDestinationChainProxies.s.sol",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.8.0-hourglass",
+  "upgradePath": "script/releases/v1.8.0-hourglass",
+  "phase": "",
+  "chainId": 17000,
+  "startTime": "Thu Jul 24 2025 17:28:22 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1753392502.999
+}
