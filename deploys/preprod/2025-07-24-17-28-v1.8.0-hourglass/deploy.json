@@ -41,11 +41,20 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x3093f9c82102e8847790e2a3156b3424dd98569024c7961f8cd3d7f4ce5ccf6e",
+      "multisig": "0x011aF0ABDBcffBF879de4E1F1F8e346bDCAc0653",
+      "confirmed": true,
+      "immediateExecutionHash": "0xbd6b0e17a99cde3288e65c9d1d5076b460b3f5fc7f2a737eef69c700ee875235"
     }
   ],
   "upgrade": "v1.8.0-hourglass",
   "upgradePath": "script/releases/v1.8.0-hourglass",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 17000,
   "startTime": "Thu Jul 24 2025 17:28:22 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1753392502.999
