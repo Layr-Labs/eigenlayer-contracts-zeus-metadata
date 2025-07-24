@@ -28,11 +28,24 @@
       "multisig": "0xA591635DE4C254BD3fa9C9Db9000eA6488344C28",
       "confirmed": true,
       "immediateExecutionHash": "0xc02e0172d7d7678b2274be46437a0ba2f6b7d8f3b2d8e721e317d24ac506b489"
+    },
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0xA30aFa32052428225F930f128e3835a2c73a1537",
+          "contract": "TaskMailbox_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
     }
   ],
   "upgrade": "v1.8.0-hourglass",
   "upgradePath": "script/releases/v1.8.0-hourglass",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 11155111,
   "startTime": "Thu Jul 24 2025 17:59:41 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1753394381.006
