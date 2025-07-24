@@ -32,7 +32,7 @@
   ],
   "upgrade": "v1.8.0-hourglass",
   "upgradePath": "script/releases/v1.8.0-hourglass",
-  "phase": "eoa_validate",
+  "phase": "eoa_start",
   "chainId": 11155111,
   "startTime": "Thu Jul 24 2025 17:59:41 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1753394381.006
