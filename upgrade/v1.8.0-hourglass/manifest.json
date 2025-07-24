@@ -1,6 +1,6 @@
 {
   "name": "hourglass-v1.8.0",
-  "from": ">=1.7.0 <1.8.0",
+  "from": ">=1.7.0",
   "to": "1.8.0-rc.0",
   "phases": [
     {
@@ -16,5 +16,5 @@
       "filename": "3-instantiateDestinationChainProxies.s.sol"
     }
   ],
-  "commit": "a248525eebefe16324b7d7c83df464eb3cb0b700"
+  "commit": "c66e5b6a91b5fab69652963d2e3c069aa5fa7157"
 }
