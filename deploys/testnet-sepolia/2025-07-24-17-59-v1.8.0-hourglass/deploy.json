@@ -1,7 +1,7 @@
 {
   "name": "2025-07-24-17-59-v1.8.0-hourglass",
   "env": "testnet-sepolia",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "multisig",
@@ -40,12 +40,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.8.0-hourglass",
   "upgradePath": "script/releases/v1.8.0-hourglass",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 11155111,
   "startTime": "Thu Jul 24 2025 17:59:41 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1753394381.006
