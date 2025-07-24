@@ -1,7 +1,7 @@
 {
   "name": "2025-07-24-18-09-v1.8.0-hourglass",
   "env": "testnet-base-sepolia",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "multisig",
@@ -19,10 +19,20 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0xa1be574c4d95c76fb7d5ea4816fe4b7382a934a2147cacc236b829f7739ca77f",
+      "multisig": "0xA591635DE4C254BD3fa9C9Db9000eA6488344C28",
+      "confirmed": true,
+      "immediateExecutionHash": "0xc02e0172d7d7678b2274be46437a0ba2f6b7d8f3b2d8e721e317d24ac506b489"
+    }
+  ],
   "upgrade": "v1.8.0-hourglass",
   "upgradePath": "script/releases/v1.8.0-hourglass",
-  "phase": "",
+  "phase": "eoa_validate",
   "chainId": 84532,
   "startTime": "Thu Jul 24 2025 18:09:34 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1753394974.491

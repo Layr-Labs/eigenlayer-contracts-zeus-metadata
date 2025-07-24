@@ -1,0 +1,16 @@
+{
+    "contracts": [
+      {
+        "address": "0xB99CC53e8db7018f557606C2a5B066527bF96b26",
+        "contract": "TaskMailbox_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0xc2097bb5ef7c789641b730e39d03e5ba3973c8980dcd7e4f0eb13ee52ed3333f",
+        "lastUpdatedIn": {
+          "name": "2025-07-24-17-59-v1.8.0-hourglass",
+          "phase": "multisig_start",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      }
+    ]
+  }
