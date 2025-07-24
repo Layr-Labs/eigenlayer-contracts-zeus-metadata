@@ -1,6 +1,6 @@
 {
   "id": "preprod",
-  "deployedVersion": "1.7.0-rc.3",
+  "deployedVersion": "1.8.0-rc.0",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -625,6 +625,30 @@
           "segment": 2,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
+      },
+      "TaskMailbox_Proxy": {
+        "address": "0xf4A4765121119552CCAabb8Ae5E6997e83b3B96d",
+        "contract": "TaskMailbox_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0xc2097bb5ef7c789641b730e39d03e5ba3973c8980dcd7e4f0eb13ee52ed3333f",
+        "lastUpdatedIn": {
+          "name": "2025-07-24-17-28-v1.8.0-hourglass",
+          "phase": "multisig_start",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "TaskMailbox_Impl": {
+        "address": "0x17679A0D0adD20225600AB78292f93B6F4c76B06",
+        "contract": "TaskMailbox_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0xc2097bb5ef7c789641b730e39d03e5ba3973c8980dcd7e4f0eb13ee52ed3333f",
+        "lastUpdatedIn": {
+          "name": "2025-07-24-17-28-v1.8.0-hourglass",
+          "phase": "eoa_wait_confirm",
+          "segment": 1,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
       }
     },
     "instances": [
@@ -762,6 +786,6 @@
       }
     ]
   },
-  "latestDeployedCommit": "fbfd00ca3cb212d8fb4a95f2451616de9d1882fe",
+  "latestDeployedCommit": "2e605fc5e19ebeb975fd1e35fd25a9381b1bf408",
   "chainId": 17000
 }
