@@ -14,6 +14,6 @@
   "upgradePath": "script/releases/v1.6.0-multichain-genesis",
   "phase": "",
   "chainId": 8453,
-  "startTime": "Fri Aug 01 2025 16:39:18 GMT-0400 (Eastern Daylight Time)",
-  "startTimestamp": 1754080758.11
+  "startTime": "Fri Aug 01 2025 16:39:48 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1754080788.474
 }
