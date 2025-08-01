@@ -21,12 +21,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.6.0-multichain-genesis",
   "upgradePath": "script/releases/v1.6.0-multichain-genesis",
-  "phase": "eoa_wait_confirm",
+  "phase": "complete",
   "chainId": 8453,
   "startTime": "Fri Aug 01 2025 18:18:38 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1754086718.772
