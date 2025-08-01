@@ -1,0 +1,19 @@
+{
+  "mutations": [
+    {
+      "next": "0x548242d5e4e680EdF418fB0b91Bb8EB286478f70",
+      "name": "proxyAdmin",
+      "internalType": 4
+    },
+    {
+      "next": "0xb384702114E5D73353D2a9FB2494e22DE2BD3B5f",
+      "name": "operationsMultisig",
+      "internalType": 4
+    },
+    {
+      "next": "0x2Cd36260E28325D2050C366AA2678843288f7e4c",
+      "name": "pauserMultisig",
+      "internalType": 4
+    }
+  ]
+}
