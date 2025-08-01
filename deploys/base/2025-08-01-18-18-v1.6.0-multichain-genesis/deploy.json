@@ -9,10 +9,24 @@
       "id": 0
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0xb1754226917e866c1701f1d9F9E135D88f2e86ea",
+          "contract": "PauserRegistry_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.6.0-multichain-genesis",
   "upgradePath": "script/releases/v1.6.0-multichain-genesis",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 8453,
   "startTime": "Fri Aug 01 2025 18:18:38 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1754086718.772
