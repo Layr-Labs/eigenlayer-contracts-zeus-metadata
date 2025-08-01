@@ -1,7 +1,4 @@
 {
   "SOURCE_CHAIN": false,
-  "DESTINATION_CHAIN": true,
-  "proxyAdmin": "0x2d66064a86f286e8fB5da804ec692Cc7b8881120",
-  "operationsMultisig": "0x574b3A4DB74977f1712C8B4FBA82D310d9826fD9",
-  "pauserMultisig": "0x06300853ce7800F3a693506F5840799dda38DD3e"
+  "DESTINATION_CHAIN": true
 }
