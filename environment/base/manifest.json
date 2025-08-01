@@ -1,10 +1,23 @@
 {
   "id": "base",
-  "deployedVersion": "0.0.0",
+  "deployedVersion": "1.6.0",
   "contracts": {
-    "static": {},
+    "static": {
+      "PauserRegistry_Impl": {
+        "address": "0xb1754226917e866c1701f1d9F9E135D88f2e86ea",
+        "contract": "PauserRegistry_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x668a1ceda4ff011347dbfc4b41102a51aa2f50658f1c579730dc3f14d275b9d0",
+        "lastUpdatedIn": {
+          "name": "2025-08-01-18-18-v1.6.0-multichain-genesis",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
+      }
+    },
     "instances": []
   },
-  "latestDeployedCommit": "",
+  "latestDeployedCommit": "81a4052a492d10ad37e81929b8668c85f3ce1e0a",
   "chainId": 8453
 }
