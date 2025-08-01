@@ -1,0 +1,19 @@
+{
+  "name": "2025-08-01-17-06-v1.6.0-multichain-genesis",
+  "env": "base",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol",
+      "id": 0
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.6.0-multichain-genesis",
+  "upgradePath": "script/releases/v1.6.0-multichain-genesis",
+  "phase": "",
+  "chainId": 8453,
+  "startTime": "Fri Aug 01 2025 17:06:44 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1754082404.67
+}
