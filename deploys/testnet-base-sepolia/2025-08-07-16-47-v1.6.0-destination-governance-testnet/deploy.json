@@ -17,7 +17,7 @@
   "metadata": [],
   "upgrade": "v1.6.0-destination-governance-testnet",
   "upgradePath": "script/releases/v1.6.0-destination-governance-testnet",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 84532,
   "startTime": "Thu Aug 07 2025 16:47:40 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1754599660.907
