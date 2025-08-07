@@ -21,11 +21,20 @@
       "transactions": [],
       "deployments": [],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x4cbe2c631bb0516de13b537ecf65bbfd076889aa4a9e32242cdd018dd456b8c3",
+      "multisig": "0x4ACA7e09eF90612941A9185A6690Dbe9e39aae8f",
+      "confirmed": true,
+      "immediateExecutionHash": "0x6f9df8863db24661e1a9e6f676bdb64b97c451b6ed0648f30f34c7400f10f3d8"
     }
   ],
   "upgrade": "v1.6.0-destination-governance-testnet",
   "upgradePath": "script/releases/v1.6.0-destination-governance-testnet",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 84532,
   "startTime": "Thu Aug 07 2025 16:47:40 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1754599660.907
