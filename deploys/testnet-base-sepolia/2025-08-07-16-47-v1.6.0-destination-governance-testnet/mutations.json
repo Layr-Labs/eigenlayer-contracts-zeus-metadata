@@ -1,0 +1,24 @@
+{
+  "mutations": [
+    {
+      "next": "0xB043055dd967A382577c2f5261fA6428f2905c15",
+      "name": "timelockController",
+      "internalType": 4
+    },
+    {
+      "next": "0xf96adA2BF73A6f8Df1dbe21F52cb0Cfd63d3032D",
+      "name": "protocolCouncilMultisig",
+      "internalType": 4
+    },
+    {
+      "next": "0x12288e04Ca73d67F8FAA9fFdC10D0d57e71BB886",
+      "name": "communityMultisig",
+      "internalType": 4
+    },
+    {
+      "next": "0xfA74797E64FeB6A4D95d624f6822224C93e613aa",
+      "name": "executorMultisig",
+      "internalType": 4
+    }
+  ]
+}
