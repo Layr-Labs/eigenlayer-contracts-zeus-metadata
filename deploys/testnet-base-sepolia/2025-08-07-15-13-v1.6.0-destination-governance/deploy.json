@@ -17,7 +17,7 @@
   "metadata": [],
   "upgrade": "v1.6.0-destination-governance",
   "upgradePath": "script/releases/v1.6.0-destination-governance",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 84532,
   "startTime": "Thu Aug 07 2025 15:13:34 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1754594014.988
