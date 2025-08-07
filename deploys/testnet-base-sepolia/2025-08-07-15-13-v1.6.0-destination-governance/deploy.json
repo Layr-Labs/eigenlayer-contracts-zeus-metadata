@@ -1,7 +1,7 @@
 {
   "name": "2025-08-07-15-13-v1.6.0-destination-governance",
   "env": "testnet-base-sepolia",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -20,12 +20,12 @@
       "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
       "transactions": [],
       "deployments": [],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.6.0-destination-governance",
   "upgradePath": "script/releases/v1.6.0-destination-governance",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 84532,
   "startTime": "Thu Aug 07 2025 15:13:34 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1754594014.988
