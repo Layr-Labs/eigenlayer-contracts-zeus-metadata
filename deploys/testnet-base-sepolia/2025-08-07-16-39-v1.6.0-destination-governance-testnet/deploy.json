@@ -1,0 +1,24 @@
+{
+  "name": "2025-08-07-16-39-v1.6.0-destination-governance-testnet",
+  "env": "testnet-base-sepolia",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployGovernance.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-transferOwnership.s.sol",
+      "id": 1
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.6.0-destination-governance-testnet",
+  "upgradePath": "script/releases/v1.6.0-destination-governance-testnet",
+  "phase": "",
+  "chainId": 84532,
+  "startTime": "Thu Aug 07 2025 16:39:00 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1754599140.841
+}
