@@ -21,11 +21,19 @@
       "transactions": [],
       "deployments": [],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF",
+      "signerType": "gnosis.api.ledger",
+      "gnosisTransactionHash": "0xef398c81f1f07803d0b5e6a2739d7d6e3a0bf998a31ed56f6db94a0b4c5419ce",
+      "multisig": "0x8eD55c7640497Db15aC32c698c1a06E2E604d865",
+      "confirmed": false
     }
   ],
   "upgrade": "v1.6.0-destination-governance-mainnet",
   "upgradePath": "script/releases/v1.6.0-destination-governance-mainnet",
-  "phase": "multisig_start",
+  "phase": "multisig_wait_signers",
   "chainId": 8453,
   "startTime": "Mon Aug 18 2025 13:51:17 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1755539477.345
