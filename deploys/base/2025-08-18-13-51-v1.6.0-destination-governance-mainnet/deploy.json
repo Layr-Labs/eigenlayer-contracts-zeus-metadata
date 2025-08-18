@@ -1,0 +1,24 @@
+{
+  "name": "2025-08-18-13-51-v1.6.0-destination-governance-mainnet",
+  "env": "base",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployGovernance.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-validateOwnership.s.sol",
+      "id": 1
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.6.0-destination-governance-mainnet",
+  "upgradePath": "script/releases/v1.6.0-destination-governance-mainnet",
+  "phase": "",
+  "chainId": 8453,
+  "startTime": "Mon Aug 18 2025 13:51:17 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1755539477.345
+}
