@@ -14,10 +14,18 @@
       "id": 1
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907",
+      "transactions": [],
+      "deployments": [],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.6.0-destination-governance-mainnet",
   "upgradePath": "script/releases/v1.6.0-destination-governance-mainnet",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 8453,
   "startTime": "Mon Aug 18 2025 13:51:17 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1755539477.345
