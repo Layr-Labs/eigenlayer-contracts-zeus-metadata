@@ -1,0 +1,16 @@
+{
+  "name": "v1.6.0-destination-governance-mainnet",
+  "from": ">0.0.0",
+  "to": "1.6.0",
+  "phases": [
+    {
+      "type": "eoa",
+      "filename": "1-deployGovernance.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "2-validateOwnership.s.sol"
+    }
+  ],
+  "commit": "0ef8e83e58503e3ebc1d9a4f0a278b2b99628542"
+}
