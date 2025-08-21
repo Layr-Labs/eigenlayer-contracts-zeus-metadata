@@ -21,11 +21,18 @@
       "transactions": [],
       "deployments": [],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0x792e42f05E87Fb9D8b8F9FdFC598B1de20507964",
+      "signerType": "gnosis.onchain.ledger",
+      "multisig": "0xa3053EF25F1F7d9D55a7655372B8a31D0f40eCA9",
+      "confirmed": true
     }
   ],
   "upgrade": "v1.6.0-multichain-deployer",
   "upgradePath": "script/releases/v1.6.0-multichain-deployer",
-  "phase": "multisig_start",
+  "phase": "multisig_wait_signers",
   "chainId": 1,
   "startTime": "Wed Aug 20 2025 15:02:09 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1755716529.92
