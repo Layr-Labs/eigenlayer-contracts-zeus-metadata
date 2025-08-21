@@ -32,7 +32,7 @@
   ],
   "upgrade": "v1.6.0-multichain-deployer",
   "upgradePath": "script/releases/v1.6.0-multichain-deployer",
-  "phase": "multisig_wait_signers",
+  "phase": "complete",
   "chainId": 1,
   "startTime": "Wed Aug 20 2025 15:02:09 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1755716529.92
