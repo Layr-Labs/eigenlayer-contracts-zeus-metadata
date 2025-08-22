@@ -1,0 +1,66 @@
+{
+  "safe": "0x8eD55c7640497Db15aC32c698c1a06E2E604d865",
+  "to": "0xDb0052E272D1D126617c36A9D6d65C801d1549CE",
+  "value": "0",
+  "data": "0xf2fde38b0000000000000000000000005d808608ad70873ca4de50f83416264dc15264c2",
+  "operation": 0,
+  "gasToken": "0x0000000000000000000000000000000000000000",
+  "safeTxGas": 0,
+  "baseGas": 0,
+  "gasPrice": "0",
+  "refundReceiver": "0x0000000000000000000000000000000000000000",
+  "nonce": 0,
+  "executionDate": "2025-08-22T16:09:33Z",
+  "submissionDate": "2025-08-18T18:16:23.782827Z",
+  "modified": "2025-08-22T16:09:37.820291Z",
+  "blockNumber": 34544813,
+  "transactionHash": "0x72614de6f970b5aabb9e4b026dee9c172551dc8e492b8d75419ee10067a6b4f9",
+  "safeTxHash": "0xef398c81f1f07803d0b5e6a2739d7d6e3a0bf998a31ed56f6db94a0b4c5419ce",
+  "proposer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF",
+  "proposedByDelegate": null,
+  "executor": "0xB3aA47edBc9A1178B56bB55D1a9E3821845870e8",
+  "isExecuted": true,
+  "isSuccessful": true,
+  "ethGasPrice": "60655522",
+  "maxFeePerGas": "83593551",
+  "maxPriorityFeePerGas": "3310449",
+  "gasUsed": 100386,
+  "fee": "6088965231492",
+  "origin": "{}",
+  "dataDecoded": {
+    "method": "transferOwnership",
+    "parameters": [
+      {
+        "name": "newOwner",
+        "type": "address",
+        "value": "0x5d808608Ad70873ca4dE50F83416264dc15264C2"
+      }
+    ]
+  },
+  "confirmationsRequired": 3,
+  "confirmations": [
+    {
+      "owner": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF",
+      "submissionDate": "2025-08-18T18:16:23.817513Z",
+      "transactionHash": null,
+      "signature": "0x421ec92c46e55b1c1a63574c19077b8088f30c3690b907d78af186bf2e59019a4032364b4f8f901b6d5369d5f0e3e1369734028de8650c5ba6494799ef7c36941b",
+      "signatureType": "EOA"
+    },
+    {
+      "owner": "0xE31ad7cFD94bD74C40b53160aA0E8A0b6D340830",
+      "submissionDate": "2025-08-19T20:26:31.032039Z",
+      "transactionHash": null,
+      "signature": "0x924d86f06e7325c4e633d0ae4ec4793dc33b3271aa84e71df2b28c39cf22217474c09925907726aaa6f4e397c369c8f62f0a9537c736c3317a46368387eb20f11b",
+      "signatureType": "EOA"
+    },
+    {
+      "owner": "0x957236B539bfA49b650B66426BcaFbF477C1c334",
+      "submissionDate": "2025-08-22T13:55:43.677697Z",
+      "transactionHash": null,
+      "signature": "0x21d77cf00c04be1297b64aef305cbaf0abd90abb2e94774aa4da3afdb331f54809fa6344478f0aab90af1d8319f64940c4416e44380b8db699f94bff22eb60e21c",
+      "signatureType": "EOA"
+    }
+  ],
+  "trusted": true,
+  "signatures": "0x21d77cf00c04be1297b64aef305cbaf0abd90abb2e94774aa4da3afdb331f54809fa6344478f0aab90af1d8319f64940c4416e44380b8db699f94bff22eb60e21c421ec92c46e55b1c1a63574c19077b8088f30c3690b907d78af186bf2e59019a4032364b4f8f901b6d5369d5f0e3e1369734028de8650c5ba6494799ef7c36941b924d86f06e7325c4e633d0ae4ec4793dc33b3271aa84e71df2b28c39cf22217474c09925907726aaa6f4e397c369c8f62f0a9537c736c3317a46368387eb20f11b"
+}

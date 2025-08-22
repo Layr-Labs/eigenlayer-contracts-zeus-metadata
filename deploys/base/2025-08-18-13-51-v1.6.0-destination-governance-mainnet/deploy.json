@@ -33,7 +33,7 @@
   ],
   "upgrade": "v1.6.0-destination-governance-mainnet",
   "upgradePath": "script/releases/v1.6.0-destination-governance-mainnet",
-  "phase": "multisig_wait_signers",
+  "phase": "multisig_wait_confirm",
   "chainId": 8453,
   "startTime": "Mon Aug 18 2025 13:51:17 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1755539477.345
