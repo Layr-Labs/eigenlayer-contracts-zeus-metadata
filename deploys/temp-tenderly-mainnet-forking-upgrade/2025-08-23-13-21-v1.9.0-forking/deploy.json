@@ -1,0 +1,34 @@
+{
+  "name": "2025-08-23-13-21-v1.9.0-forking",
+  "env": "temp-tenderly-mainnet-forking-upgrade",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-executeUpgrade.s.sol",
+      "id": 2
+    },
+    {
+      "type": "multisig",
+      "filename": "4-configureStrategyFactory.s.sol",
+      "id": 3
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.9.0-forking",
+  "upgradePath": "script/releases/v1.9.0-forking",
+  "phase": "",
+  "chainId": 1,
+  "startTime": "Sat Aug 23 2025 13:21:32 GMT-0700 (Pacific Daylight Time)",
+  "startTimestamp": 1755980492.062
+}
