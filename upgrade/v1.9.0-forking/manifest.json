@@ -1,0 +1,24 @@
+{
+  "name": "forking-v1.9.0",
+  "from": ">=1.6.0 <1.9.0",
+  "to": "1.9.0-rc.0",
+  "phases": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "3-executeUpgrade.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "4-configureStrategyFactory.s.sol"
+    }
+  ],
+  "commit": "db991953cbf925b5d331df0e3dd783ea553ddd18"
+}
