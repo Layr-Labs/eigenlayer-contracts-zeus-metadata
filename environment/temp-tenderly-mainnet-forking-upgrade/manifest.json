@@ -1,6 +1,6 @@
 {
   "id": "temp-tenderly-mainnet-forking-upgrade",
-  "deployedVersion": "0.0.0",
+  "deployedVersion": "1.6.0",
   "contracts": {
     "static": {},
     "instances": []
