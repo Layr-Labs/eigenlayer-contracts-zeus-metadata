@@ -1,0 +1,40 @@
+{
+  "contracts": [
+    {
+      "address": "0xA491972d3b9Ba3da8a4E5A44F84D3D5b0268375E",
+      "contract": "KeyRegistrar_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x79eee62b15dafce1e71900b12be7a530c557d8bea08f90c8c7d85dc272d08ef2",
+      "lastUpdatedIn": {
+        "name": "2025-08-27-14-29-v1.8.0-multichain-testnet-final",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xab7e99E1eC6A8318203A61c43fFE321956E029cF",
+      "contract": "CrossChainRegistry_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xcdbc03d669eaaeb5c9f08cb9f1b0410ac02ea8f08121806e664f6186abacf2bb",
+      "lastUpdatedIn": {
+        "name": "2025-08-27-14-29-v1.8.0-multichain-testnet-final",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x5fcF3162b12611F2769e5F99F881db720BA6dAec",
+      "contract": "ReleaseManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x8d51864097e240e35467b60fff9047c07a68d60f59c63dcc3553dac013e27be5",
+      "lastUpdatedIn": {
+        "name": "2025-08-27-14-29-v1.8.0-multichain-testnet-final",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}
