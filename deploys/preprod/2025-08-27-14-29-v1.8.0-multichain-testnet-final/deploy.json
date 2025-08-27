@@ -112,11 +112,20 @@
       "multisig": "0x6d609cD2812bDA02a75dcABa7DaafE4B20Ff5608",
       "confirmed": true,
       "immediateExecutionHash": "0x2b79236a7cdcd126f5253ccd6275c3c00f2389909dc6d81a616331221ee21c66"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0xee08d923f974047dac7b852a7b0e1e7cda05ed9d0b1e7a37e00c01c171b2f850",
+      "multisig": "0x314A6B61B5CBFA79dc7b2c0416e039822E886b54",
+      "confirmed": true,
+      "immediateExecutionHash": "0xd4eb90f5e73174cce719ed0bbb16fbfa4c7646e55641d615be46dfc3286605fe"
     }
   ],
   "upgrade": "v1.8.0-multichain-testnet-final",
   "upgradePath": "script/releases/v1.8.0-multichain-testnet-final",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 17000,
   "startTime": "Wed Aug 27 2025 14:29:57 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1756319397.119
