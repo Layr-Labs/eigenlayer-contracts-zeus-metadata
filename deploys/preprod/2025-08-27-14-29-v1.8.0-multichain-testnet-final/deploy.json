@@ -1,7 +1,7 @@
 {
   "name": "2025-08-27-14-29-v1.8.0-multichain-testnet-final",
   "env": "preprod",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -57,6 +57,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x97078c9fb576163e713883ccddde49e1b204a37b29b463470897b598840aa140",
+      "multisig": "0x6d609cD2812bDA02a75dcABa7DaafE4B20Ff5608",
+      "confirmed": true,
+      "immediateExecutionHash": "0x0b80009933117942ec9f8c87a5ac16dcb37b41bc520a677b0c726ffbc44f6555"
     }
   ],
   "upgrade": "v1.8.0-multichain-testnet-final",
