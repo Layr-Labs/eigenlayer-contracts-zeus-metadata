@@ -1,7 +1,7 @@
 {
   "name": "2025-08-27-14-29-v1.8.0-multichain-testnet-final",
   "env": "preprod",
-  "segmentId": 2,
+  "segmentId": 3,
   "segments": [
     {
       "type": "eoa",
@@ -66,11 +66,20 @@
       "multisig": "0x6d609cD2812bDA02a75dcABa7DaafE4B20Ff5608",
       "confirmed": true,
       "immediateExecutionHash": "0x0b80009933117942ec9f8c87a5ac16dcb37b41bc520a677b0c726ffbc44f6555"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x93bbba679471341bffdaf7517a7c9b39a420afc29ca4cbceb69df20bd3e19fb8",
+      "multisig": "0x314A6B61B5CBFA79dc7b2c0416e039822E886b54",
+      "confirmed": true,
+      "immediateExecutionHash": "0x528fc0e16d9b70ec2f6cd88c6553e7554f1abd04ea6d154bd504a8117b6acc33"
     }
   ],
   "upgrade": "v1.8.0-multichain-testnet-final",
   "upgradePath": "script/releases/v1.8.0-multichain-testnet-final",
-  "phase": "multisig_start",
+  "phase": "eoa_validate",
   "chainId": 17000,
   "startTime": "Wed Aug 27 2025 14:29:57 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1756319397.119
