@@ -1,0 +1,44 @@
+{
+  "name": "2025-08-28-15-20-v1.8.0-multichain-testnet-final",
+  "env": "testnet-sepolia",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deploySourceChain.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueSourceChain.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-executeSourceChain.s.sol",
+      "id": 2
+    },
+    {
+      "type": "eoa",
+      "filename": "4-deployDestinationChain.s.sol",
+      "id": 3
+    },
+    {
+      "type": "multisig",
+      "filename": "5-queueDestinationChain.s.sol",
+      "id": 4
+    },
+    {
+      "type": "multisig",
+      "filename": "6-executeDestinationChain.s.sol",
+      "id": 5
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.8.0-multichain-testnet-final",
+  "upgradePath": "script/releases/v1.8.0-multichain-testnet-final",
+  "phase": "",
+  "chainId": 11155111,
+  "startTime": "Thu Aug 28 2025 15:20:42 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1756408842.108
+}
