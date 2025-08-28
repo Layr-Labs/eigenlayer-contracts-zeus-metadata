@@ -1,7 +1,7 @@
 {
   "name": "2025-08-28-16-48-v1.6.1-moocow-updates",
   "env": "mainnet",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -26,12 +26,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.6.1-moocow-updates",
   "upgradePath": "script/releases/v1.6.1-moocow-updates",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 1,
   "startTime": "Thu Aug 28 2025 16:48:34 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1756414114.059
