@@ -37,7 +37,7 @@
   "metadata": [],
   "upgrade": "v1.8.0-multichain-testnet-final",
   "upgradePath": "script/releases/v1.8.0-multichain-testnet-final",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 11155111,
   "startTime": "Thu Aug 28 2025 15:20:42 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1756408842.108
