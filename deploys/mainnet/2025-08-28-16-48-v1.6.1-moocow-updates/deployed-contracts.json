@@ -1,0 +1,16 @@
+{
+  "contracts": [
+    {
+      "address": "0x792FfeA0D8734695670697f8b9f03DE3F666419D",
+      "contract": "EigenPod_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xcaddaae1ad6c094926cb7fb362f6ca0510f6e6f81db66373aacc58b23931e445",
+      "lastUpdatedIn": {
+        "name": "2025-08-28-16-48-v1.6.1-moocow-updates",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    }
+  ]
+}
