@@ -1,7 +1,7 @@
 {
   "name": "2025-08-28-15-20-v1.8.0-multichain-testnet-final",
   "env": "testnet-sepolia",
-  "segmentId": 2,
+  "segmentId": 3,
   "segments": [
     {
       "type": "eoa",
@@ -72,12 +72,12 @@
       "signerType": "gnosis.api.eoa",
       "gnosisTransactionHash": "0xc42edf41793e882fb57d79905bd9b4b32c50b5cb22980c90ed1d9c68578bf108",
       "multisig": "0x8eA6C3Cca1c96967F7B164FfaA5fabede10311A9",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.8.0-multichain-testnet-final",
   "upgradePath": "script/releases/v1.8.0-multichain-testnet-final",
-  "phase": "multisig_wait_confirm",
+  "phase": "eoa_validate",
   "chainId": 11155111,
   "startTime": "Thu Aug 28 2025 15:20:42 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1756408842.108
