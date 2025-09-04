@@ -14,10 +14,24 @@
       "id": 1
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0x6c64B7DD01aB73ABEaf8D79f906C9C608f2D4033",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x9506718248Df1AbBc0d83d0f92b9BEB063aAf0FB",
+          "contract": "EigenPod_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.6.1-moocow-updates",
   "upgradePath": "script/releases/v1.6.1-moocow-updates",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 17000,
   "startTime": "Thu Sep 04 2025 11:43:34 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1757000614.427
