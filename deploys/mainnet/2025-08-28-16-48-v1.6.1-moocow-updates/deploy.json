@@ -27,11 +27,19 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0x792e42f05E87Fb9D8b8F9FdFC598B1de20507964",
+      "signerType": "gnosis.onchain.ledger",
+      "gnosisTransactionHash": "0x000084a634b49261a83fc81e18b1d8e6c1aa35ab0bc61a2ecbd11d4306df074e",
+      "multisig": "0xFEA47018D632A77bA579846c840d5706705Dc598",
+      "confirmed": true
     }
   ],
   "upgrade": "v1.6.1-moocow-updates",
   "upgradePath": "script/releases/v1.6.1-moocow-updates",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 1,
   "startTime": "Thu Aug 28 2025 16:48:34 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1756414114.059
