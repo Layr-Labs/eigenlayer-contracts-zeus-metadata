@@ -17,7 +17,7 @@
   "metadata": [],
   "upgrade": "v1.6.1-moocow-updates",
   "upgradePath": "script/releases/v1.6.1-moocow-updates",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 11155111,
   "startTime": "Thu Sep 04 2025 10:44:08 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1756997048.525
