@@ -27,11 +27,20 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0x574d0d7ac5f6c7a182e2d75f89ccb80a04e398bfd61814a0d0b7f4cf8d1aecf8",
+      "multisig": "0xB87a8A3512ACb7245a37C24Ca190Ab712BeBE24D",
+      "confirmed": true,
+      "immediateExecutionHash": "0x791121d6076db46650bce8949e20e0d5b1cdf67bb88423796c2e709464f597b7"
     }
   ],
   "upgrade": "v1.6.1-moocow-updates",
   "upgradePath": "script/releases/v1.6.1-moocow-updates",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 560048,
   "startTime": "Thu Sep 04 2025 10:39:46 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1756996786.119
