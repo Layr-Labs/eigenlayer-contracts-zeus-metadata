@@ -1,6 +1,6 @@
 {
   "id": "mainnet",
-  "deployedVersion": "1.6.0",
+  "deployedVersion": "1.6.1",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
