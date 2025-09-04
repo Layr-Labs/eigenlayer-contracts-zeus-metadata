@@ -1,7 +1,7 @@
 {
   "name": "2025-09-04-11-43-v1.6.1-moocow-updates",
   "env": "testnet",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -26,12 +26,21 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0x6c64B7DD01aB73ABEaf8D79f906C9C608f2D4033",
+      "signerType": "gnosis.onchain",
+      "gnosisTransactionHash": "0xcd213e97faedee59bdbe3e49b5ea57d9087b279e5b0d87ecd2406a54efb203fe",
+      "multisig": "0xCb8d2f9e55Bc7B1FA9d089f9aC80C583D2BDD5F7",
+      "confirmed": true,
+      "immediateExecutionHash": "0xe45109aa7073d0bb4f35aa53f293d7f5f523e9ade7769ff47fdf25631db4cd4b"
     }
   ],
   "upgrade": "v1.6.1-moocow-updates",
   "upgradePath": "script/releases/v1.6.1-moocow-updates",
-  "phase": "eoa_wait_confirm",
+  "phase": "complete",
   "chainId": 17000,
   "startTime": "Thu Sep 04 2025 11:43:34 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1757000614.427
