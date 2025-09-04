@@ -12,7 +12,7 @@
   "metadata": [],
   "upgrade": "v1.8.0-singletonDeploys",
   "upgradePath": "script/releases/v1.8.0-singletonDeploys",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 560048,
   "startTime": "Thu Sep 04 2025 12:31:37 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1757003497.822
