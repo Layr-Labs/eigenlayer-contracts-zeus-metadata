@@ -1,6 +1,6 @@
 {
   "id": "testnet",
-  "deployedVersion": "1.7.0-rc.1",
+  "deployedVersion": "1.8.0",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -62,15 +62,15 @@
         }
       },
       "EigenPod_Impl": {
-        "address": "0x2742bd43b254f0199Bb5020CB477Ff9Ad3A80aD9",
+        "address": "0x9506718248Df1AbBc0d83d0f92b9BEB063aAf0FB",
         "contract": "EigenPod_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xb019859087d4e67bd5f88f436c30a1c37ef76e1a26159809a85655752e31ab84",
+        "deployedBytecodeHash": "0xcaddaae1ad6c094926cb7fb362f6ca0510f6e6f81db66373aacc58b23931e445",
         "lastUpdatedIn": {
-          "name": "2025-06-06-13-39-v1.6.0-moocow-and-elip5",
+          "name": "2025-09-04-11-43-v1.6.1-moocow-updates",
           "phase": "eoa_wait_confirm",
           "segment": 0,
-          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+          "signer": "0x6c64B7DD01aB73ABEaf8D79f906C9C608f2D4033"
         }
       },
       "EigenPodManager_Proxy": {
@@ -534,6 +534,6 @@
       }
     ]
   },
-  "latestDeployedCommit": "5dbb48339aeef41e11d65c8816f9489e53573fad",
+  "latestDeployedCommit": "22c354c3a1ef23470f6c81754a58df22a5629c4f",
   "chainId": 17000
 }
