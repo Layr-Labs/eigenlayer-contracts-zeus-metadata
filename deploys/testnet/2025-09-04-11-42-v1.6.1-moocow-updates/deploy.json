@@ -1,0 +1,24 @@
+{
+  "name": "2025-09-04-11-42-v1.6.1-moocow-updates",
+  "env": "testnet",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-executeUpgrade.s.sol",
+      "id": 1
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.6.1-moocow-updates",
+  "upgradePath": "script/releases/v1.6.1-moocow-updates",
+  "phase": "",
+  "chainId": 17000,
+  "startTime": "Thu Sep 04 2025 11:42:32 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1757000552.9
+}
