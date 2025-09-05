@@ -1,0 +1,24 @@
+{
+  "name": "2025-09-05-13-59-v1.6.0-multichain-deployer",
+  "env": "base",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployMultichainDeployer.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-transferDeployerOwnership.s.sol",
+      "id": 1
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.6.0-multichain-deployer",
+  "upgradePath": "script/releases/v1.6.0-multichain-deployer",
+  "phase": "",
+  "chainId": 8453,
+  "startTime": "Fri Sep 05 2025 13:59:13 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1757095153.366
+}
