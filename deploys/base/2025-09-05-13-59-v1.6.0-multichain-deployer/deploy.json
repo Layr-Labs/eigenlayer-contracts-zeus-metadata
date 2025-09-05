@@ -14,10 +14,18 @@
       "id": 1
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907",
+      "transactions": [],
+      "deployments": [],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.6.0-multichain-deployer",
   "upgradePath": "script/releases/v1.6.0-multichain-deployer",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 8453,
   "startTime": "Fri Sep 05 2025 13:59:13 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1757095153.366
