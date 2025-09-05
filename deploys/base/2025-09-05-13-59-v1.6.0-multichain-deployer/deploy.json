@@ -1,7 +1,7 @@
 {
   "name": "2025-09-05-13-59-v1.6.0-multichain-deployer",
   "env": "base",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -20,12 +20,12 @@
       "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907",
       "transactions": [],
       "deployments": [],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.6.0-multichain-deployer",
   "upgradePath": "script/releases/v1.6.0-multichain-deployer",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 8453,
   "startTime": "Fri Sep 05 2025 13:59:13 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1757095153.366
