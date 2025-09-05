@@ -21,11 +21,20 @@
       "transactions": [],
       "deployments": [],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0x792e42f05E87Fb9D8b8F9FdFC598B1de20507964",
+      "signerType": "gnosis.onchain.ledger",
+      "gnosisTransactionHash": "0x1fd930db01a577e24629013b96e48886dc4e94292f80b450051ccaf44b6312ee",
+      "multisig": "0xa3053EF25F1F7d9D55a7655372B8a31D0f40eCA9",
+      "confirmed": true,
+      "immediateExecutionHash": "0xb416fd7d96dfb0eb335d36094eb1289d33681bf9db2c63e8d956953fca1ade96"
     }
   ],
   "upgrade": "v1.6.0-multichain-deployer",
   "upgradePath": "script/releases/v1.6.0-multichain-deployer",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 8453,
   "startTime": "Fri Sep 05 2025 13:59:13 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1757095153.366
