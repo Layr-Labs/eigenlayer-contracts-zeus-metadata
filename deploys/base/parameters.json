@@ -5,6 +5,7 @@
   "operationsMultisig": "0x8eD55c7640497Db15aC32c698c1a06E2E604d865",
   "pauserMultisig": "0x1a051eF1524cbaEa57Ca04319ef93fE78903D5E6",
   "MAX_TASK_SLA": 604800,
+  "TABLE_UPDATE_CADENCE": 604800,
   "timelockController": "0xE48D7CaeC1790b293667e4bB2dE1E00536F2bABd",
   "protocolCouncilMultisig": "0x841B988aaEafce13b6456ff34015FBc42Aedb7e6",
   "communityMultisig": "0xC107547924C7D1d3E2d10eA8DF534BBfC5F373e6",
