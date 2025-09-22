@@ -44,7 +44,7 @@
   ],
   "upgrade": "v1.8.1-hourglass-testnet-replay-fix",
   "upgradePath": "script/releases/v1.8.1-hourglass-testnet-replay-fix",
-  "phase": "multisig_wait_signers",
+  "phase": "multisig_execute",
   "chainId": 84532,
   "startTime": "Mon Sep 22 2025 16:42:23 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758573743.418
