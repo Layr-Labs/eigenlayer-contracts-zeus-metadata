@@ -1,7 +1,7 @@
 {
   "name": "2025-09-22-16-42-v1.8.1-hourglass-testnet-replay-fix",
   "env": "testnet-base-sepolia",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -39,12 +39,12 @@
       "signerType": "gnosis.api.eoa",
       "gnosisTransactionHash": "0x4ac1e1eaa47460171b8f60c90d1e441371d1ff3c84fadeab0e9a762980e4e1fb",
       "multisig": "0x4ACA7e09eF90612941A9185A6690Dbe9e39aae8f",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.8.1-hourglass-testnet-replay-fix",
   "upgradePath": "script/releases/v1.8.1-hourglass-testnet-replay-fix",
-  "phase": "multisig_execute",
+  "phase": "multisig_start",
   "chainId": 84532,
   "startTime": "Mon Sep 22 2025 16:42:23 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758573743.418
