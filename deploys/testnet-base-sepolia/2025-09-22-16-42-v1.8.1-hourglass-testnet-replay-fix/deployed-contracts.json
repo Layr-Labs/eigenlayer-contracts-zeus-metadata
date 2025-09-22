@@ -1,0 +1,16 @@
+{
+  "contracts": [
+    {
+      "address": "0x4B1481fFF061A0099408e71702b40Fe0932080Bc",
+      "contract": "TaskMailbox_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x1d4cc5d3708c5697ff71cc06fb92601f47ffacca031c6c7105dce13dafcfc652",
+      "lastUpdatedIn": {
+        "name": "2025-09-22-16-42-v1.8.1-hourglass-testnet-replay-fix",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}
