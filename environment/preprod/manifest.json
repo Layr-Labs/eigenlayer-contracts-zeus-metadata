@@ -1,6 +1,6 @@
 {
   "id": "preprod",
-  "deployedVersion": "1.8.0",
+  "deployedVersion": "1.8.1",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -639,14 +639,14 @@
         }
       },
       "TaskMailbox_Impl": {
-        "address": "0xe2d7a789202666BB6b95925D3eC64081AC570Ae9",
+        "address": "0x82210d8937d2c2Abf45b63A4b5bFc73C76b53637",
         "contract": "TaskMailbox_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xc8443afc5605ed5adf65d86724b60de74a5d9cae197c7338e759209aa95fbaec",
+        "deployedBytecodeHash": "0x1d4cc5d3708c5697ff71cc06fb92601f47ffacca031c6c7105dce13dafcfc652",
         "lastUpdatedIn": {
-          "name": "2025-08-27-14-29-v1.8.0-multichain-testnet-final",
+          "name": "2025-09-22-16-06-v1.8.1-hourglass-testnet-replay-fix",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
+          "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       }
@@ -786,6 +786,6 @@
       }
     ]
   },
-  "latestDeployedCommit": "22c354c3a1ef23470f6c81754a58df22a5629c4f",
+  "latestDeployedCommit": "8bdc90929fa28f37c7126a8851edfa7947e2ea0f",
   "chainId": 17000
 }
