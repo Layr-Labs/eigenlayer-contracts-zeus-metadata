@@ -22,7 +22,7 @@
   "metadata": [],
   "upgrade": "v1.8.1-hourglass-testnet-replay-fix",
   "upgradePath": "script/releases/v1.8.1-hourglass-testnet-replay-fix",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 17000,
   "startTime": "Mon Sep 22 2025 16:06:30 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758571590.074
