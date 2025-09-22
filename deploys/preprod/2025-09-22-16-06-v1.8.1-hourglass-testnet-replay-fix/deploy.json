@@ -41,11 +41,20 @@
       "multisig": "0x6d609cD2812bDA02a75dcABa7DaafE4B20Ff5608",
       "confirmed": true,
       "immediateExecutionHash": "0xc0c5912c2297bf5015780c174239617e572e929d52710d1d1b236f23b7ae9d16"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xb4726f41a996553d6282b1687a73ac06e7248c3e9c73154db04ee3d0a7060a0b",
+      "multisig": "0x314A6B61B5CBFA79dc7b2c0416e039822E886b54",
+      "confirmed": true,
+      "immediateExecutionHash": "0xab30238a18ae207494ad0e690c168d95aa93d8fdcfe07e5a267a7f7276d49ff3"
     }
   ],
   "upgrade": "v1.8.1-hourglass-testnet-replay-fix",
   "upgradePath": "script/releases/v1.8.1-hourglass-testnet-replay-fix",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 17000,
   "startTime": "Mon Sep 22 2025 16:06:30 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758571590.074
