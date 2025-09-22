@@ -1,7 +1,7 @@
 {
   "name": "2025-09-22-16-06-v1.8.1-hourglass-testnet-replay-fix",
   "env": "preprod",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -32,6 +32,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x48c801ad834f0db7ecbc473679086e544ebd31503013b84eca4ad2a876feef8d",
+      "multisig": "0x6d609cD2812bDA02a75dcABa7DaafE4B20Ff5608",
+      "confirmed": true,
+      "immediateExecutionHash": "0xc0c5912c2297bf5015780c174239617e572e929d52710d1d1b236f23b7ae9d16"
     }
   ],
   "upgrade": "v1.8.1-hourglass-testnet-replay-fix",
