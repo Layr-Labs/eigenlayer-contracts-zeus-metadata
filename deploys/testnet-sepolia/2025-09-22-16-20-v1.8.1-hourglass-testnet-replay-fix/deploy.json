@@ -1,7 +1,7 @@
 {
   "name": "2025-09-22-16-20-v1.8.1-hourglass-testnet-replay-fix",
   "env": "testnet-sepolia",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -31,12 +31,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.8.1-hourglass-testnet-replay-fix",
   "upgradePath": "script/releases/v1.8.1-hourglass-testnet-replay-fix",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 11155111,
   "startTime": "Mon Sep 22 2025 16:20:30 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758572430.344
