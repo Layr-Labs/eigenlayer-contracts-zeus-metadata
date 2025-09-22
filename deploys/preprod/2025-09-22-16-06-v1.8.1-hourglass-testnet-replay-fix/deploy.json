@@ -1,0 +1,29 @@
+{
+  "name": "2025-09-22-16-06-v1.8.1-hourglass-testnet-replay-fix",
+  "env": "preprod",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployTaskMailboxImpl.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueTaskMailboxUpgrade.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-executeTaskMailboxUpgrade.s.sol",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.8.1-hourglass-testnet-replay-fix",
+  "upgradePath": "script/releases/v1.8.1-hourglass-testnet-replay-fix",
+  "phase": "",
+  "chainId": 17000,
+  "startTime": "Mon Sep 22 2025 16:06:30 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1758571590.074
+}
