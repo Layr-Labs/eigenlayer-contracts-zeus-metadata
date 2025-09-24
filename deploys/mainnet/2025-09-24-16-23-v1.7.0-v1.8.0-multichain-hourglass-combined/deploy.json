@@ -113,11 +113,19 @@
       "multisig": "0xa3053EF25F1F7d9D55a7655372B8a31D0f40eCA9",
       "confirmed": true,
       "immediateExecutionHash": "0x90c9bc6461c8c0e09d410b8bb3e929f4f721fe97ca4b2aab3a30268a1412e373"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF",
+      "signerType": "gnosis.api.ledger",
+      "gnosisTransactionHash": "0x458dc18ce9ddd97377c9cfbaf7ffdc821974747604ebfcde5a9a0145ee828a37",
+      "multisig": "0xBE1685C81aA44FF9FB319dD389addd9374383e90",
+      "confirmed": false
     }
   ],
   "upgrade": "v1.7.0-v1.8.0-multichain-hourglass-combined",
   "upgradePath": "script/releases/v1.7.0-v1.8.0-multichain-hourglass-combined",
-  "phase": "multisig_start",
+  "phase": "multisig_wait_signers",
   "chainId": 1,
   "startTime": "Wed Sep 24 2025 16:23:48 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758745428.624
