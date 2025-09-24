@@ -1,7 +1,7 @@
 {
   "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
   "env": "mainnet",
-  "segmentId": 3,
+  "segmentId": 4,
   "segments": [
     {
       "type": "eoa",
@@ -104,6 +104,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF",
+      "signerType": "gnosis.onchain.ledger",
+      "gnosisTransactionHash": "0x7929c2ba3fa1f91fed1d262d673cc11dee049b2f7134de006c2546cdd022a5f0",
+      "multisig": "0xa3053EF25F1F7d9D55a7655372B8a31D0f40eCA9",
+      "confirmed": true,
+      "immediateExecutionHash": "0x90c9bc6461c8c0e09d410b8bb3e929f4f721fe97ca4b2aab3a30268a1412e373"
     }
   ],
   "upgrade": "v1.7.0-v1.8.0-multichain-hourglass-combined",
