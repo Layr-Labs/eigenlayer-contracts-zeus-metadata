@@ -27,7 +27,7 @@
   "metadata": [],
   "upgrade": "holesky-piv2",
   "upgradePath": "script/deploy/holesky-piv2",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 17000,
   "startTime": "Tue Sep 23 2025 23:23:13 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758684193.104
