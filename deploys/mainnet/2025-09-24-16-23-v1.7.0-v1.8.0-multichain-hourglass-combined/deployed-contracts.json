@@ -1,0 +1,76 @@
+{
+  "contracts": [
+    {
+      "address": "0x047bEc3D8C19D70BA81d61a48Bf9dC63A3E9136b",
+      "contract": "KeyRegistrar_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x79eee62b15dafce1e71900b12be7a530c557d8bea08f90c8c7d85dc272d08ef2",
+      "lastUpdatedIn": {
+        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x54f4bC6bDEbe479173a2bbDc31dD7178408A57A4",
+      "contract": "KeyRegistrar_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0x79eee62b15dafce1e71900b12be7a530c557d8bea08f90c8c7d85dc272d08ef2",
+      "lastUpdatedIn": {
+        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x18e7389659De5dd24adfb0f432591973799B1ba4",
+      "contract": "CrossChainRegistry_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xcdbc03d669eaaeb5c9f08cb9f1b0410ac02ea8f08121806e664f6186abacf2bb",
+      "lastUpdatedIn": {
+        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x9376A5863F2193cdE13e1aB7c678F22554E2Ea2b",
+      "contract": "CrossChainRegistry_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0xcdbc03d669eaaeb5c9f08cb9f1b0410ac02ea8f08121806e664f6186abacf2bb",
+      "lastUpdatedIn": {
+        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x888fE518e321301975A21A7ffE0C898d453c58A3",
+      "contract": "ReleaseManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x8d51864097e240e35467b60fff9047c07a68d60f59c63dcc3553dac013e27be5",
+      "lastUpdatedIn": {
+        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0xeDA3CAd031c0cf367cF3f517Ee0DC98F9bA80C8F",
+      "contract": "ReleaseManager_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0x8d51864097e240e35467b60fff9047c07a68d60f59c63dcc3553dac013e27be5",
+      "lastUpdatedIn": {
+        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    }
+  ]
+}
