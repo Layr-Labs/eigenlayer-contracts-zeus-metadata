@@ -1,0 +1,24 @@
+{
+  "name": "TokenHopperDeploy",
+  "from": ">=1.8.0",
+  "to": "1.8.1",
+  "phases": [
+    {
+      "type": "eoa",
+      "filename": "1-eoa.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueGrantMintingRights.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "3-setRewardsPermission.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "4-executeGrantMintingRights.s.sol"
+    }
+  ],
+  "commit": "86f2f617b394a56668c2a98af50e0f61e7480669"
+}
