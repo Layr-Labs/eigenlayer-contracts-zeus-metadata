@@ -1,6 +1,6 @@
 {
   "id": "testnet",
-  "deployedVersion": "1.8.0",
+  "deployedVersion": "1.8.1",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -582,6 +582,6 @@
       }
     ]
   },
-  "latestDeployedCommit": "d1d884c3404e0179591c4eacfa3c123507571ce3",
+  "latestDeployedCommit": "86f2f617b394a56668c2a98af50e0f61e7480669",
   "chainId": 17000
 }
