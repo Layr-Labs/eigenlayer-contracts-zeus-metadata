@@ -1,7 +1,7 @@
 {
   "name": "2025-09-23-23-23-holesky-piv2",
   "env": "testnet",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -31,6 +31,15 @@
       "transactions": [],
       "deployments": [],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0x6c64B7DD01aB73ABEaf8D79f906C9C608f2D4033",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xedd5b8de84a324467c1bfb132168bc0635d1941b47d488c0ff1edc5ca83eb479",
+      "multisig": "0xfaEF7338b7490b9E272d80A1a39f4657cAf2b97d",
+      "confirmed": true,
+      "immediateExecutionHash": "0x0ae53da4d4809ad5182db57b923675a583455de4ed4a4315d8ba2723fa09a559"
     }
   ],
   "upgrade": "holesky-piv2",
