@@ -1,7 +1,7 @@
 {
   "name": "2025-09-23-23-23-holesky-piv2",
   "env": "testnet",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -30,12 +30,12 @@
       "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
       "transactions": [],
       "deployments": [],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "holesky-piv2",
   "upgradePath": "script/deploy/holesky-piv2",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 17000,
   "startTime": "Tue Sep 23 2025 23:23:13 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758684193.104
