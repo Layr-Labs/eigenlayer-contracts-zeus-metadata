@@ -59,6 +59,54 @@
         "segment": 1,
         "signer": "0x957236B539bfA49b650B66426BcaFbF477C1c334"
       }
+    },
+    {
+      "address": "0xEd18bAa093164fF477996c4b957F806b4A0ffdA9",
+      "contract": "OperatorTableUpdater_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x13cae3713e5c1009271a5bc5c88584974188e2928118c25b24632389cd196936",
+      "lastUpdatedIn": {
+        "name": "2025-09-24-17-07-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 2,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x3cf9F2F82AAB604C347ec03A5C642D6a9eac1b3C",
+      "contract": "ECDSACertificateVerifier_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x59c56f0220ea8d1417df8b786b04cc1fce0ca0cdb5544b6e327d6e601d96c966",
+      "lastUpdatedIn": {
+        "name": "2025-09-24-17-07-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 2,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x48F0a11AADc9c687410A3664A4fDD61DAf6904Ec",
+      "contract": "BN254CertificateVerifier_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x482e15100b37d9883a1c36ff7cfaaf5b02c9f7397bb40763b05bae675b43ee36",
+      "lastUpdatedIn": {
+        "name": "2025-09-24-17-07-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 2,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x9c2A1F3a47b2f6607a8511DF753F7B8Ca952c84A",
+      "contract": "TaskMailbox_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x1d4cc5d3708c5697ff71cc06fb92601f47ffacca031c6c7105dce13dafcfc652",
+      "lastUpdatedIn": {
+        "name": "2025-09-24-17-07-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 2,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
     }
   ]
 }
