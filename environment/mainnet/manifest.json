@@ -314,186 +314,186 @@
           "segment": 0,
           "signer": "0x4DA954dd93601A29B09bEe1EB0651492b7c08Cf4"
         }
-      }
-    },
-    "KeyRegistrar_Impl": {
-      "address": "0x047bEc3D8C19D70BA81d61a48Bf9dC63A3E9136b",
-      "contract": "KeyRegistrar_Impl",
-      "singleton": true,
-      "deployedBytecodeHash": "0x79eee62b15dafce1e71900b12be7a530c557d8bea08f90c8c7d85dc272d08ef2",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "eoa_wait_confirm",
-        "segment": 0,
-        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
-      }
-    },
-    "KeyRegistrar_Proxy": {
-      "address": "0x54f4bC6bDEbe479173a2bbDc31dD7178408A57A4",
-      "contract": "KeyRegistrar_Proxy",
-      "singleton": true,
-      "deployedBytecodeHash": "0x79eee62b15dafce1e71900b12be7a530c557d8bea08f90c8c7d85dc272d08ef2",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "eoa_wait_confirm",
-        "segment": 0,
-        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
-      }
-    },
-    "CrossChainRegistry_Impl": {
-      "address": "0x18e7389659De5dd24adfb0f432591973799B1ba4",
-      "contract": "CrossChainRegistry_Impl",
-      "singleton": true,
-      "deployedBytecodeHash": "0xcdbc03d669eaaeb5c9f08cb9f1b0410ac02ea8f08121806e664f6186abacf2bb",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "eoa_wait_confirm",
-        "segment": 0,
-        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
-      }
-    },
-    "CrossChainRegistry_Proxy": {
-      "address": "0x9376A5863F2193cdE13e1aB7c678F22554E2Ea2b",
-      "contract": "CrossChainRegistry_Proxy",
-      "singleton": true,
-      "deployedBytecodeHash": "0xcdbc03d669eaaeb5c9f08cb9f1b0410ac02ea8f08121806e664f6186abacf2bb",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "eoa_wait_confirm",
-        "segment": 0,
-        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
-      }
-    },
-    "ReleaseManager_Impl": {
-      "address": "0x888fE518e321301975A21A7ffE0C898d453c58A3",
-      "contract": "ReleaseManager_Impl",
-      "singleton": true,
-      "deployedBytecodeHash": "0x8d51864097e240e35467b60fff9047c07a68d60f59c63dcc3553dac013e27be5",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "eoa_wait_confirm",
-        "segment": 0,
-        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
-      }
-    },
-    "ReleaseManager_Proxy": {
-      "address": "0xeDA3CAd031c0cf367cF3f517Ee0DC98F9bA80C8F",
-      "contract": "ReleaseManager_Proxy",
-      "singleton": true,
-      "deployedBytecodeHash": "0x8d51864097e240e35467b60fff9047c07a68d60f59c63dcc3553dac013e27be5",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "eoa_wait_confirm",
-        "segment": 0,
-        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
-      }
-    },
-    "EmptyContract_Impl": {
-      "address": "0x70323BC7261136A002ab392F921D67ea52096dCf",
-      "contract": "EmptyContract_Impl",
-      "singleton": true,
-      "deployedBytecodeHash": "0x1472c63e0515b330600ce99e235cfe65b08e3eaaa539fa6d4fb502c14078a093",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "multisig_start",
-        "segment": 1,
-        "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF"
-      }
-    },
-    "OperatorTableUpdater_Proxy": {
-      "address": "0x5557E1fE3068A1e823cE5Dcd052c6C352E2617B5",
-      "contract": "OperatorTableUpdater_Proxy",
-      "singleton": true,
-      "deployedBytecodeHash": "0x13cae3713e5c1009271a5bc5c88584974188e2928118c25b24632389cd196936",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "multisig_start",
-        "segment": 1,
-        "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF"
-      }
-    },
-    "ECDSACertificateVerifier_Proxy": {
-      "address": "0xd0930ee96D07de4F9d493c259232222e46B6EC25",
-      "contract": "ECDSACertificateVerifier_Proxy",
-      "singleton": true,
-      "deployedBytecodeHash": "0x59c56f0220ea8d1417df8b786b04cc1fce0ca0cdb5544b6e327d6e601d96c966",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "multisig_start",
-        "segment": 1,
-        "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF"
-      }
-    },
-    "BN254CertificateVerifier_Proxy": {
-      "address": "0x3F55654b2b2b86bB11bE2f72657f9C33bf88120A",
-      "contract": "BN254CertificateVerifier_Proxy",
-      "singleton": true,
-      "deployedBytecodeHash": "0x482e15100b37d9883a1c36ff7cfaaf5b02c9f7397bb40763b05bae675b43ee36",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "multisig_start",
-        "segment": 1,
-        "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF"
-      }
-    },
-    "TaskMailbox_Proxy": {
-      "address": "0x132b466d9d5723531F68797519DfED701aC2C749",
-      "contract": "TaskMailbox_Proxy",
-      "singleton": true,
-      "deployedBytecodeHash": "0x1d4cc5d3708c5697ff71cc06fb92601f47ffacca031c6c7105dce13dafcfc652",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "multisig_start",
-        "segment": 1,
-        "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF"
-      }
-    },
-    "OperatorTableUpdater_Impl": {
-      "address": "0x64ad668f6Ca7104E452041555a857CCE6267f22b",
-      "contract": "OperatorTableUpdater_Impl",
-      "singleton": true,
-      "deployedBytecodeHash": "0x13cae3713e5c1009271a5bc5c88584974188e2928118c25b24632389cd196936",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "eoa_wait_confirm",
-        "segment": 2,
-        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
-      }
-    },
-    "ECDSACertificateVerifier_Impl": {
-      "address": "0x6A74CA72cdF26F3E8a9684E0Ef2F36d1bd2AA1A6",
-      "contract": "ECDSACertificateVerifier_Impl",
-      "singleton": true,
-      "deployedBytecodeHash": "0x59c56f0220ea8d1417df8b786b04cc1fce0ca0cdb5544b6e327d6e601d96c966",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "eoa_wait_confirm",
-        "segment": 2,
-        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
-      }
-    },
-    "BN254CertificateVerifier_Impl": {
-      "address": "0x7b8231f0652943734682C87C01D3169b19006c66",
-      "contract": "BN254CertificateVerifier_Impl",
-      "singleton": true,
-      "deployedBytecodeHash": "0x482e15100b37d9883a1c36ff7cfaaf5b02c9f7397bb40763b05bae675b43ee36",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "eoa_wait_confirm",
-        "segment": 2,
-        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
-      }
-    },
-    "TaskMailbox_Impl": {
-      "address": "0x76106801F287236Abe0799B1FAb7f7F39AD50150",
-      "contract": "TaskMailbox_Impl",
-      "singleton": true,
-      "deployedBytecodeHash": "0x1d4cc5d3708c5697ff71cc06fb92601f47ffacca031c6c7105dce13dafcfc652",
-      "lastUpdatedIn": {
-        "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
-        "phase": "eoa_wait_confirm",
-        "segment": 2,
-        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      },
+      "KeyRegistrar_Impl": {
+        "address": "0x047bEc3D8C19D70BA81d61a48Bf9dC63A3E9136b",
+        "contract": "KeyRegistrar_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x79eee62b15dafce1e71900b12be7a530c557d8bea08f90c8c7d85dc272d08ef2",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
+      },
+      "KeyRegistrar_Proxy": {
+        "address": "0x54f4bC6bDEbe479173a2bbDc31dD7178408A57A4",
+        "contract": "KeyRegistrar_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x79eee62b15dafce1e71900b12be7a530c557d8bea08f90c8c7d85dc272d08ef2",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
+      },
+      "CrossChainRegistry_Impl": {
+        "address": "0x18e7389659De5dd24adfb0f432591973799B1ba4",
+        "contract": "CrossChainRegistry_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0xcdbc03d669eaaeb5c9f08cb9f1b0410ac02ea8f08121806e664f6186abacf2bb",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
+      },
+      "CrossChainRegistry_Proxy": {
+        "address": "0x9376A5863F2193cdE13e1aB7c678F22554E2Ea2b",
+        "contract": "CrossChainRegistry_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0xcdbc03d669eaaeb5c9f08cb9f1b0410ac02ea8f08121806e664f6186abacf2bb",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
+      },
+      "ReleaseManager_Impl": {
+        "address": "0x888fE518e321301975A21A7ffE0C898d453c58A3",
+        "contract": "ReleaseManager_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x8d51864097e240e35467b60fff9047c07a68d60f59c63dcc3553dac013e27be5",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
+      },
+      "ReleaseManager_Proxy": {
+        "address": "0xeDA3CAd031c0cf367cF3f517Ee0DC98F9bA80C8F",
+        "contract": "ReleaseManager_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x8d51864097e240e35467b60fff9047c07a68d60f59c63dcc3553dac013e27be5",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
+      },
+      "EmptyContract_Impl": {
+        "address": "0x70323BC7261136A002ab392F921D67ea52096dCf",
+        "contract": "EmptyContract_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x1472c63e0515b330600ce99e235cfe65b08e3eaaa539fa6d4fb502c14078a093",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF"
+        }
+      },
+      "OperatorTableUpdater_Proxy": {
+        "address": "0x5557E1fE3068A1e823cE5Dcd052c6C352E2617B5",
+        "contract": "OperatorTableUpdater_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x13cae3713e5c1009271a5bc5c88584974188e2928118c25b24632389cd196936",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF"
+        }
+      },
+      "ECDSACertificateVerifier_Proxy": {
+        "address": "0xd0930ee96D07de4F9d493c259232222e46B6EC25",
+        "contract": "ECDSACertificateVerifier_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x59c56f0220ea8d1417df8b786b04cc1fce0ca0cdb5544b6e327d6e601d96c966",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF"
+        }
+      },
+      "BN254CertificateVerifier_Proxy": {
+        "address": "0x3F55654b2b2b86bB11bE2f72657f9C33bf88120A",
+        "contract": "BN254CertificateVerifier_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x482e15100b37d9883a1c36ff7cfaaf5b02c9f7397bb40763b05bae675b43ee36",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF"
+        }
+      },
+      "TaskMailbox_Proxy": {
+        "address": "0x132b466d9d5723531F68797519DfED701aC2C749",
+        "contract": "TaskMailbox_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x1d4cc5d3708c5697ff71cc06fb92601f47ffacca031c6c7105dce13dafcfc652",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF"
+        }
+      },
+      "OperatorTableUpdater_Impl": {
+        "address": "0x64ad668f6Ca7104E452041555a857CCE6267f22b",
+        "contract": "OperatorTableUpdater_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x13cae3713e5c1009271a5bc5c88584974188e2928118c25b24632389cd196936",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 2,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
+      },
+      "ECDSACertificateVerifier_Impl": {
+        "address": "0x6A74CA72cdF26F3E8a9684E0Ef2F36d1bd2AA1A6",
+        "contract": "ECDSACertificateVerifier_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x59c56f0220ea8d1417df8b786b04cc1fce0ca0cdb5544b6e327d6e601d96c966",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 2,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
+      },
+      "BN254CertificateVerifier_Impl": {
+        "address": "0x7b8231f0652943734682C87C01D3169b19006c66",
+        "contract": "BN254CertificateVerifier_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x482e15100b37d9883a1c36ff7cfaaf5b02c9f7397bb40763b05bae675b43ee36",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 2,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
+      },
+      "TaskMailbox_Impl": {
+        "address": "0x76106801F287236Abe0799B1FAb7f7F39AD50150",
+        "contract": "TaskMailbox_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x1d4cc5d3708c5697ff71cc06fb92601f47ffacca031c6c7105dce13dafcfc652",
+        "lastUpdatedIn": {
+          "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 2,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
       }
     },
     "instances": [
