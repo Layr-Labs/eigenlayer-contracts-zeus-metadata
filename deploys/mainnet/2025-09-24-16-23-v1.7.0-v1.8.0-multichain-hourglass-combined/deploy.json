@@ -1,7 +1,7 @@
 {
   "name": "2025-09-24-16-23-v1.7.0-v1.8.0-multichain-hourglass-combined",
   "env": "mainnet",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -67,11 +67,20 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF",
+      "signerType": "gnosis.onchain.ledger",
+      "gnosisTransactionHash": "0x270c508a176524eed902701f7a6d57028e7568cde3fa28e58a7c2a9cb1745e80",
+      "multisig": "0xa3053EF25F1F7d9D55a7655372B8a31D0f40eCA9",
+      "confirmed": true,
+      "immediateExecutionHash": "0xfb191ca97fcb9b1c3a316ce9448a9881063aa47fcfb46e6734f32e01f85055a6"
     }
   ],
   "upgrade": "v1.7.0-v1.8.0-multichain-hourglass-combined",
   "upgradePath": "script/releases/v1.7.0-v1.8.0-multichain-hourglass-combined",
-  "phase": "multisig_start",
+  "phase": "eoa_validate",
   "chainId": 1,
   "startTime": "Wed Sep 24 2025 16:23:48 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758745428.624
