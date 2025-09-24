@@ -1,0 +1,16 @@
+{
+  "mutations": [
+    {
+      "prev": "0xDF0b0E50598Ad86CA0cfCB2A5B70243172ddB87a",
+      "next": "0x4Ec7CfE2aCcc9C41269AaeF3E898dDe5218a692C",
+      "name": "actionGenerator",
+      "internalType": 4
+    },
+    {
+      "prev": "0x1D95fb363ee0f2CbF5ccDebA1a4B2e975dE2A51C",
+      "next": "0xaFeBB8FD7f169aE523c431De66a35Eb7941993e1",
+      "name": "tokenHopper",
+      "internalType": 4
+    }
+  ]
+}
