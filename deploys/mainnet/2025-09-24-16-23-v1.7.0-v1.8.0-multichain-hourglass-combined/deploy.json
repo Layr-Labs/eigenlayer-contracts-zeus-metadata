@@ -76,11 +76,39 @@
       "multisig": "0xa3053EF25F1F7d9D55a7655372B8a31D0f40eCA9",
       "confirmed": true,
       "immediateExecutionHash": "0xfb191ca97fcb9b1c3a316ce9448a9881063aa47fcfb46e6734f32e01f85055a6"
+    },
+    {
+      "type": "eoa",
+      "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x64ad668f6Ca7104E452041555a857CCE6267f22b",
+          "contract": "OperatorTableUpdater_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x6A74CA72cdF26F3E8a9684E0Ef2F36d1bd2AA1A6",
+          "contract": "ECDSACertificateVerifier_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x7b8231f0652943734682C87C01D3169b19006c66",
+          "contract": "BN254CertificateVerifier_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x76106801F287236Abe0799B1FAb7f7F39AD50150",
+          "contract": "TaskMailbox_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
     }
   ],
   "upgrade": "v1.7.0-v1.8.0-multichain-hourglass-combined",
   "upgradePath": "script/releases/v1.7.0-v1.8.0-multichain-hourglass-combined",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 1,
   "startTime": "Wed Sep 24 2025 16:23:48 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758745428.624
