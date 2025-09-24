@@ -29,10 +29,18 @@
       "id": 4
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907",
+      "transactions": [],
+      "deployments": [],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.7.0-v1.8.0-multichain-hourglass-combined",
   "upgradePath": "script/releases/v1.7.0-v1.8.0-multichain-hourglass-combined",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 8453,
   "startTime": "Wed Sep 24 2025 17:07:13 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758748033.62
