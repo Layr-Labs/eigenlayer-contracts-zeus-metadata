@@ -1,0 +1,28 @@
+{
+  "contracts": [
+    {
+      "address": "0x0903a99b35424069b31Ea690CA8BDaDcc02BE4E5",
+      "contract": "RewardAllStakersActionGenerator_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x666e436a29b6f1094f08de5744b507ade7eca9d0901a64d774c3e2fd729b38e7",
+      "lastUpdatedIn": {
+        "name": "2025-09-26-11-20-init-deploy",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x3374D2E654FFBFEcd35D3F2Ac3e915B394DD7E7d",
+      "contract": "TokenHopper_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x86601f1add199b66737a9ec0bc1e1ea1bfe84682401f5f3109670d0e859e9277",
+      "lastUpdatedIn": {
+        "name": "2025-09-26-11-20-init-deploy",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    }
+  ]
+}

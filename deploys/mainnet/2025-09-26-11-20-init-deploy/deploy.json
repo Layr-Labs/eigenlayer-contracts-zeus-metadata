@@ -24,10 +24,29 @@
       "id": 3
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x0903a99b35424069b31Ea690CA8BDaDcc02BE4E5",
+          "contract": "RewardAllStakersActionGenerator_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x3374D2E654FFBFEcd35D3F2Ac3e915B394DD7E7d",
+          "contract": "TokenHopper_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "init-deploy",
   "upgradePath": "script/deploy/init-deploy",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 1,
   "startTime": "Fri Sep 26 2025 11:20:22 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758900022.374
