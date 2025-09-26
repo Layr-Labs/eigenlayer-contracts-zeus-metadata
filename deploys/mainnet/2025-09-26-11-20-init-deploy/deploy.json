@@ -1,7 +1,7 @@
 {
   "name": "2025-09-26-11-20-init-deploy",
   "env": "mainnet",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -41,12 +41,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "init-deploy",
   "upgradePath": "script/deploy/init-deploy",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 1,
   "startTime": "Fri Sep 26 2025 11:20:22 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758900022.374
