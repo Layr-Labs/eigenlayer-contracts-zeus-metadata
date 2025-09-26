@@ -1,7 +1,7 @@
 {
-  "name": "TokenHopperDeploy",
-  "from": "1.4.1",
-  "to": "1.4.1",
+  "name": "PIV2",
+  "from": ">=1.8.0",
+  "to": "1.8.1",
   "phases": [
     {
       "type": "eoa",
@@ -20,5 +20,5 @@
       "filename": "4-executeGrantMintingRights.s.sol"
     }
   ],
-  "commit": "3ce620530b1314a88292007b547accf828663e7a"
+  "commit": "d5b22bd31c56689679de04e9c06aa764df051fc4"
 }
