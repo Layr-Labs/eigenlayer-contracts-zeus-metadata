@@ -13,12 +13,16 @@
     },
     {
       "type": "multisig",
-      "filename": "3-setRewardsPermission.s.sol"
+      "filename": "3-setRewardsPermissionPt1.s.sol"
     },
     {
       "type": "multisig",
-      "filename": "4-executeGrantMintingRights.s.sol"
+      "filename": "4-setRewardsPermissionPt2.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "5-executeGrantMintingRights.s.sol"
     }
   ],
-  "commit": "d5b22bd31c56689679de04e9c06aa764df051fc4"
+  "commit": "6e654b82a01e808834cfdee51096afc5cf85a2f2"
 }
