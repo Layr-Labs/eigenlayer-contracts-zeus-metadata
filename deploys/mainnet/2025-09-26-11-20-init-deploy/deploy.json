@@ -1,7 +1,7 @@
 {
   "name": "2025-09-26-11-20-init-deploy",
   "env": "mainnet",
-  "segmentId": 3,
+  "segmentId": 4,
   "segments": [
     {
       "type": "eoa",
@@ -70,12 +70,12 @@
       "signerType": "gnosis.api.ledger",
       "gnosisTransactionHash": "0x5b583f91f8d50c107d0db1fc8791271bb716f7064e31af01041b0fee7c496cc2",
       "multisig": "0xBE1685C81aA44FF9FB319dD389addd9374383e90",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "init-deploy",
   "upgradePath": "script/deploy/init-deploy",
-  "phase": "multisig_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 1,
   "startTime": "Fri Sep 26 2025 11:20:22 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758900022.374
