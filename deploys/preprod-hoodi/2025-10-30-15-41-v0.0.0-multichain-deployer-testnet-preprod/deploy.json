@@ -15,12 +15,12 @@
       "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
       "transactions": [],
       "deployments": [],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v0.0.0-multichain-deployer-testnet-preprod",
   "upgradePath": "script/releases/v0.0.0-multichain-deployer-testnet-preprod",
-  "phase": "eoa_wait_confirm",
+  "phase": "complete",
   "chainId": 560048,
   "startTime": "Thu Oct 30 2025 15:41:19 GMT-0700 (Pacific Daylight Time)",
   "startTimestamp": 1761864079.687
