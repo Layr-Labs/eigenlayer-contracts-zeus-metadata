@@ -1,0 +1,9 @@
+{
+  "mutations": [
+    {
+      "next": "0x011aF0ABDBcffBF879de4E1F1F8e346bDCAc0653",
+      "name": "multichainDeployerMultisig",
+      "internalType": 4
+    }
+  ]
+}
