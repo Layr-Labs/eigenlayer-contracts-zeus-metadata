@@ -1,0 +1,19 @@
+{
+  "name": "2025-10-30-15-41-v0.0.0-multichain-deployer-testnet-preprod",
+  "env": "preprod-hoodi",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployMultichainDeployer.s.sol",
+      "id": 0
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v0.0.0-multichain-deployer-testnet-preprod",
+  "upgradePath": "script/releases/v0.0.0-multichain-deployer-testnet-preprod",
+  "phase": "",
+  "chainId": 560048,
+  "startTime": "Thu Oct 30 2025 15:41:19 GMT-0700 (Pacific Daylight Time)",
+  "startTimestamp": 1761864079.687
+}
