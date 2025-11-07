@@ -243,11 +243,20 @@
       "multisig": "0x0132adD08860485Cf243B473aB0E912154C565C3",
       "confirmed": true,
       "immediateExecutionHash": "0xa3f778b4245c385d0be852e8d3105c6b7b35b8718054dba87a1ddf4a1ec9c56a"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xc7f4ee3df7c8cf37f2a7633723d021e703db05a13f486fb0b6142d315ee18481",
+      "multisig": "0x88A001Dc1E5C7470c1CC44f455AF45458850024E",
+      "confirmed": true,
+      "immediateExecutionHash": "0x6e88d79e012331dced295da53d8d0294b11136722ba133f3b9d6c52cd6b4f38a"
     }
   ],
   "upgrade": "v1.6.0-protocol-from-scratch",
   "upgradePath": "script/releases/v1.6.0-protocol-from-scratch",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 560048,
   "startTime": "Fri Nov 07 2025 17:02:50 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1762552970.247
