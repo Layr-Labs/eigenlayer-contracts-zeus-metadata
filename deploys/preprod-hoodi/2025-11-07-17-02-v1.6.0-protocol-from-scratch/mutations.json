@@ -34,6 +34,11 @@
       "next": "0x88A001Dc1E5C7470c1CC44f455AF45458850024E",
       "name": "operationsMultisig",
       "internalType": 4
+    },
+    {
+      "next": "0xd484b2176869da018B8c67B6FB8821668682bF2e",
+      "name": "pauserMultisig",
+      "internalType": 4
     }
   ]
 }

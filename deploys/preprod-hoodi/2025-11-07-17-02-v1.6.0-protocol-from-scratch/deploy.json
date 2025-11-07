@@ -46,11 +46,24 @@
       "transactions": [],
       "deployments": [],
       "confirmed": true
+    },
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x46FD358774D75e92337fd023B2fA0177Bcc8C37C",
+          "contract": "PauserRegistry_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
     }
   ],
   "upgrade": "v1.6.0-protocol-from-scratch",
   "upgradePath": "script/releases/v1.6.0-protocol-from-scratch",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 560048,
   "startTime": "Fri Nov 07 2025 17:02:50 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1762552970.247

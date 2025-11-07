@@ -1,3 +1,16 @@
 {
-  "contracts": []
+  "contracts": [
+    {
+      "address": "0x46FD358774D75e92337fd023B2fA0177Bcc8C37C",
+      "contract": "PauserRegistry_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x3f16842bb839083ecafe9dab7237a1c4d5af0f78ac3d7b3762aeda4a78e82526",
+      "lastUpdatedIn": {
+        "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+        "phase": "eoa_wait_confirm",
+        "segment": 1,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
 }
