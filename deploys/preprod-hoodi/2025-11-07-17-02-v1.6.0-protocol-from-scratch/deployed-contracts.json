@@ -11,6 +11,54 @@
         "segment": 1,
         "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
       }
+    },
+    {
+      "address": "0x17656c1A5BB0EAA4b2e266B6D72a31d46f3934a7",
+      "contract": "BackingEigen_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0x3007f191306e0dc83d49ddb57742958c290e9161f905710307d1615e233d75c3",
+      "lastUpdatedIn": {
+        "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+        "phase": "eoa_wait_confirm",
+        "segment": 2,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xbd03Cc1a0D7075E5dbebC4b1e6aFE66233397328",
+      "contract": "Eigen_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0xcf7f5a5401d20ab864a3216f4770197d459e0ff2479c4c4d41a8ec5eaea53ab1",
+      "lastUpdatedIn": {
+        "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+        "phase": "eoa_wait_confirm",
+        "segment": 2,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xc81E7d65D751A918fDAE808da96D15196015743C",
+      "contract": "BackingEigen_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x3007f191306e0dc83d49ddb57742958c290e9161f905710307d1615e233d75c3",
+      "lastUpdatedIn": {
+        "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+        "phase": "eoa_wait_confirm",
+        "segment": 2,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x781d4cD2b37a1A71fde0cb9f0450C9C71eAd4C32",
+      "contract": "Eigen_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xcf7f5a5401d20ab864a3216f4770197d459e0ff2479c4c4d41a8ec5eaea53ab1",
+      "lastUpdatedIn": {
+        "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+        "phase": "eoa_wait_confirm",
+        "segment": 2,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
     }
   ]
 }

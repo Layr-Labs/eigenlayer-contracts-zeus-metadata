@@ -39,6 +39,16 @@
       "next": "0xd484b2176869da018B8c67B6FB8821668682bF2e",
       "name": "pauserMultisig",
       "internalType": 4
+    },
+    {
+      "next": "0x8bf94ab4fc027C1D653859CF83b61890c432EdFa",
+      "name": "beigenProxyAdmin",
+      "internalType": 4
+    },
+    {
+      "next": "0xBB745129d0498c602cf15D021347DD0F739540a2",
+      "name": "proxyAdmin",
+      "internalType": 4
     }
   ]
 }
