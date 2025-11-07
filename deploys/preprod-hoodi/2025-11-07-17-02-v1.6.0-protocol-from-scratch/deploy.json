@@ -1,7 +1,7 @@
 {
   "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
   "env": "preprod-hoodi",
-  "segmentId": 4,
+  "segmentId": 5,
   "segments": [
     {
       "type": "eoa",
@@ -225,6 +225,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xf9f5af9281f5f3ca2f1e32eed1c2faf09a2384812ac49c416725eefcccc8411e",
+      "multisig": "0x88A001Dc1E5C7470c1CC44f455AF45458850024E",
+      "confirmed": true,
+      "immediateExecutionHash": "0x374e6a648a0ecf99dbc5028b04af1a400c50d059675cc52070dceacbba890284"
     }
   ],
   "upgrade": "v1.6.0-protocol-from-scratch",
