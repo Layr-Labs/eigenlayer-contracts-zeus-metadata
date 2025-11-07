@@ -1,0 +1,49 @@
+{
+  "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+  "env": "preprod-hoodi",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployGovernance.s.sol",
+      "id": 0
+    },
+    {
+      "type": "eoa",
+      "filename": "2-deployPauser.s.sol",
+      "id": 1
+    },
+    {
+      "type": "eoa",
+      "filename": "3-deployToken.s.sol",
+      "id": 2
+    },
+    {
+      "type": "eoa",
+      "filename": "4-deployCore.s.sol",
+      "id": 3
+    },
+    {
+      "type": "multisig",
+      "filename": "5-queueUpgrade.s.sol",
+      "id": 4
+    },
+    {
+      "type": "multisig",
+      "filename": "6-executeUpgrade.s.sol",
+      "id": 5
+    },
+    {
+      "type": "multisig",
+      "filename": "7-setForkTimestamp.s.sol",
+      "id": 6
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.6.0-protocol-from-scratch",
+  "upgradePath": "script/releases/v1.6.0-protocol-from-scratch",
+  "phase": "",
+  "chainId": 560048,
+  "startTime": "Fri Nov 07 2025 17:02:50 GMT-0500 (Eastern Standard Time)",
+  "startTimestamp": 1762552970.247
+}
