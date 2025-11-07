@@ -1,7 +1,7 @@
 {
   "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
   "env": "preprod-hoodi",
-  "segmentId": 2,
+  "segmentId": 3,
   "segments": [
     {
       "type": "eoa",
@@ -86,12 +86,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.6.0-protocol-from-scratch",
   "upgradePath": "script/releases/v1.6.0-protocol-from-scratch",
-  "phase": "eoa_wait_confirm",
+  "phase": "eoa_validate",
   "chainId": 560048,
   "startTime": "Fri Nov 07 2025 17:02:50 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1762552970.247
