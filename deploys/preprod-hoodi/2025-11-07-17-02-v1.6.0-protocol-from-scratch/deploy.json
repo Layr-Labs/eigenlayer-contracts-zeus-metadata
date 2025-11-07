@@ -50,7 +50,7 @@
   ],
   "upgrade": "v1.6.0-protocol-from-scratch",
   "upgradePath": "script/releases/v1.6.0-protocol-from-scratch",
-  "phase": "eoa_validate",
+  "phase": "eoa_start",
   "chainId": 560048,
   "startTime": "Fri Nov 07 2025 17:02:50 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1762552970.247
