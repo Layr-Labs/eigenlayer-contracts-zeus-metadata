@@ -1,7 +1,7 @@
 {
   "name": "2025-11-10-12-32-v1.7.0-v1.8.0-multichain-hourglass-combined",
   "env": "preprod-hoodi",
-  "segmentId": 3,
+  "segmentId": 4,
   "segments": [
     {
       "type": "eoa",
@@ -84,6 +84,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x864ff03dc37c9302dec3dd3b03925147a2bdfac9aa271ec1ea6702980ccbbb21",
+      "multisig": "0x011aF0ABDBcffBF879de4E1F1F8e346bDCAc0653",
+      "confirmed": true,
+      "immediateExecutionHash": "0x609dddef1ef62da3cc5c965159696e2a30461a09efb70a6e84951f588bcd71ac"
     }
   ],
   "upgrade": "v1.7.0-v1.8.0-multichain-hourglass-combined",
