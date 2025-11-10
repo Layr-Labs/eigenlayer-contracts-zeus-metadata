@@ -1,0 +1,39 @@
+{
+  "name": "2025-11-10-12-32-v1.7.0-v1.8.0-multichain-hourglass-combined",
+  "env": "preprod-hoodi",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deploySourceChain.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-deployDestinationChainProxies.s.sol",
+      "id": 1
+    },
+    {
+      "type": "eoa",
+      "filename": "3-deployDestinationChainImpls.s.sol",
+      "id": 2
+    },
+    {
+      "type": "multisig",
+      "filename": "4-instantiateDestinationChainProxies.s.sol",
+      "id": 3
+    },
+    {
+      "type": "multisig",
+      "filename": "5-configureCrossChainRegistry.s.sol",
+      "id": 4
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.7.0-v1.8.0-multichain-hourglass-combined",
+  "upgradePath": "script/releases/v1.7.0-v1.8.0-multichain-hourglass-combined",
+  "phase": "",
+  "chainId": 560048,
+  "startTime": "Mon Nov 10 2025 12:32:32 GMT-0500 (Eastern Standard Time)",
+  "startTimestamp": 1762795952.146
+}
