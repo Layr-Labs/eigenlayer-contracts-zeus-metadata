@@ -29,10 +29,29 @@
       "id": 4
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x2D492266E23B0455b0CABB9B2B445a26C5BCc4d8",
+          "contract": "CrossChainRegistry_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x6890FA72E678768c2B5C1E6cB34f6B477a4aa1a3",
+          "contract": "CrossChainRegistry_Proxy",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.7.0-v1.8.0-multichain-hourglass-combined",
   "upgradePath": "script/releases/v1.7.0-v1.8.0-multichain-hourglass-combined",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 560048,
   "startTime": "Mon Nov 10 2025 12:32:57 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1762795977.162
