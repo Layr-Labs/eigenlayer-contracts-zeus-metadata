@@ -10,5 +10,6 @@
   "protocolCouncilMultisig": "0x841B988aaEafce13b6456ff34015FBc42Aedb7e6",
   "communityMultisig": "0xC107547924C7D1d3E2d10eA8DF534BBfC5F373e6",
   "executorMultisig": "0x5d808608Ad70873ca4dE50F83416264dc15264C2",
-  "multichainDeployerMultisig": "0xa3053EF25F1F7d9D55a7655372B8a31D0f40eCA9"
+  "multichainDeployerMultisig": "0xa3053EF25F1F7d9D55a7655372B8a31D0f40eCA9",
+  "MultiSendCallOnly": "0x40A2aCCbd92BCA938b02010E17A5b8929b49130D"
 }
