@@ -1,6 +1,6 @@
 {
   "id": "testnet-hoodi",
-  "deployedVersion": "0.0.0",
+  "deployedVersion": "1.8.1",
   "contracts": {
     "static": {
       "BackingEigen_Proxy": {
@@ -414,10 +414,142 @@
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
+      },
+      "CrossChainRegistry_Impl": {
+        "address": "0x0c3A120d0890B8C5C9fA92dC19DF9b63BEfE6E89",
+        "contract": "CrossChainRegistry_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x721f61b9d12bb4561de1d201be2acc4b3a82b909f916f6af128bf9e01e2d0bb7",
+        "lastUpdatedIn": {
+          "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "CrossChainRegistry_Proxy": {
+        "address": "0x9269432451965996bE7796582C062Cb0795D3e8b",
+        "contract": "CrossChainRegistry_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x721f61b9d12bb4561de1d201be2acc4b3a82b909f916f6af128bf9e01e2d0bb7",
+        "lastUpdatedIn": {
+          "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "EmptyContract_Impl": {
+        "address": "0xa6192470D7D4c39f8F392167ADde283F60b34E15",
+        "contract": "EmptyContract_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x1472c63e0515b330600ce99e235cfe65b08e3eaaa539fa6d4fb502c14078a093",
+        "lastUpdatedIn": {
+          "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "OperatorTableUpdater_Proxy": {
+        "address": "0xB02A15c6Bd0882b35e9936A9579f35FB26E11476",
+        "contract": "OperatorTableUpdater_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x76bff53979c9fe2b86582e114a84711c7acd61a6698f38bf420b595f86ecba12",
+        "lastUpdatedIn": {
+          "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "ECDSACertificateVerifier_Proxy": {
+        "address": "0xb3Cd1A457dEa9A9A6F6406c6419B1c326670A96F",
+        "contract": "ECDSACertificateVerifier_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0xeaed212556c8d7104aff5f6258e81459bbcd9d9961a2b9709f3da285afd5b411",
+        "lastUpdatedIn": {
+          "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "BN254CertificateVerifier_Proxy": {
+        "address": "0xff58A373c18268F483C1F5cA03Cf885c0C43373a",
+        "contract": "BN254CertificateVerifier_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0xc0060b2daaf06cf876a32272e519681fab911d6a176393cbe6ee210f16cb0e3d",
+        "lastUpdatedIn": {
+          "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "TaskMailbox_Proxy": {
+        "address": "0xB99CC53e8db7018f557606C2a5B066527bF96b26",
+        "contract": "TaskMailbox_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x592e2c975fd92f0cd5194248759927534883fd985bcaff9a7e4e9458e68c48e5",
+        "lastUpdatedIn": {
+          "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "multisig_start",
+          "segment": 1,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "OperatorTableUpdater_Impl": {
+        "address": "0x54Df6bCd0AAdA1831c2F8113D87ac7a5013A00B9",
+        "contract": "OperatorTableUpdater_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x76bff53979c9fe2b86582e114a84711c7acd61a6698f38bf420b595f86ecba12",
+        "lastUpdatedIn": {
+          "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 2,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "ECDSACertificateVerifier_Impl": {
+        "address": "0x624979129e2Db3Fcf8B1CD78341d8E0fD97751e8",
+        "contract": "ECDSACertificateVerifier_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0xeaed212556c8d7104aff5f6258e81459bbcd9d9961a2b9709f3da285afd5b411",
+        "lastUpdatedIn": {
+          "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 2,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "BN254CertificateVerifier_Impl": {
+        "address": "0xF21873C85e2CC2b5E7742Bd9D9a4B2731D6B402c",
+        "contract": "BN254CertificateVerifier_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0xc0060b2daaf06cf876a32272e519681fab911d6a176393cbe6ee210f16cb0e3d",
+        "lastUpdatedIn": {
+          "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 2,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "TaskMailbox_Impl": {
+        "address": "0xb4178e6587490d9d2cb3e607aEeB876Bc2b84636",
+        "contract": "TaskMailbox_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x592e2c975fd92f0cd5194248759927534883fd985bcaff9a7e4e9458e68c48e5",
+        "lastUpdatedIn": {
+          "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "phase": "eoa_wait_confirm",
+          "segment": 2,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
       }
     },
     "instances": []
   },
-  "latestDeployedCommit": "138c10e4053191f9e04d74abffc0fb9d43610405",
+  "latestDeployedCommit": "0428df26c603fb9ce401913e899f579bfff45ca8",
   "chainId": 560048
 }
