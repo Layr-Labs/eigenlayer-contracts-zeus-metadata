@@ -9,10 +9,18 @@
       "id": 0
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v0.0.0-multichain-deployer-testnet-preprod",
   "upgradePath": "script/releases/v0.0.0-multichain-deployer-testnet-preprod",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 560048,
   "startTime": "Thu Nov 13 2025 12:33:28 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1763055208.744
