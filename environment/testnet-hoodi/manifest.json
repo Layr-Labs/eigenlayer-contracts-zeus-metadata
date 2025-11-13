@@ -1,6 +1,6 @@
 {
   "id": "testnet-hoodi",
-  "deployedVersion": "1.8.0",
+  "deployedVersion": "0.0.0",
   "contracts": {
     "static": {
       "BackingEigen_Proxy": {
@@ -418,6 +418,6 @@
     },
     "instances": []
   },
-  "latestDeployedCommit": "d1d884c3404e0179591c4eacfa3c123507571ce3",
+  "latestDeployedCommit": "138c10e4053191f9e04d74abffc0fb9d43610405",
   "chainId": 560048
 }
