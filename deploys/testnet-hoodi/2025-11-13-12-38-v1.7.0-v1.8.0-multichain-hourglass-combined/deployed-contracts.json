@@ -1,0 +1,28 @@
+{
+  "contracts": [
+    {
+      "address": "0x0c3A120d0890B8C5C9fA92dC19DF9b63BEfE6E89",
+      "contract": "CrossChainRegistry_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x721f61b9d12bb4561de1d201be2acc4b3a82b909f916f6af128bf9e01e2d0bb7",
+      "lastUpdatedIn": {
+        "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x9269432451965996bE7796582C062Cb0795D3e8b",
+      "contract": "CrossChainRegistry_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0x721f61b9d12bb4561de1d201be2acc4b3a82b909f916f6af128bf9e01e2d0bb7",
+      "lastUpdatedIn": {
+        "name": "2025-11-13-12-38-v1.7.0-v1.8.0-multichain-hourglass-combined",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2716 @@
+{
+  "abi": [
+    {
+      "type": "constructor",
+      "inputs": [
+        {
+          "name": "_allocationManager",
+          "type": "address",
+          "internalType": "contract IAllocationManager"
+        },
+        {
+          "name": "_keyRegistrar",
+          "type": "address",
+          "internalType": "contract IKeyRegistrar"
+        },
+        {
+          "name": "_permissionController",
+          "type": "address",
+          "internalType": "contract IPermissionController"
+        },
+        {
+          "name": "_pauserRegistry",
+          "type": "address",
+          "internalType": "contract IPauserRegistry"
+        },
+        {
+          "name": "_version",
+          "type": "string",
+          "internalType": "string"
+        }
+      ],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "addChainIDsToWhitelist",
+      "inputs": [
+        {
+          "name": "chainIDs",
+          "type": "uint256[]",
+          "internalType": "uint256[]"
+        },
+        {
+          "name": "operatorTableUpdaters",
+          "type": "address[]",
+          "internalType": "address[]"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "allocationManager",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IAllocationManager"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "calculateOperatorTableBytes",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bytes",
+          "internalType": "bytes"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "createGenerationReservation",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "operatorTableCalculator",
+          "type": "address",
+          "internalType": "contract IOperatorTableCalculator"
+        },
+        {
+          "name": "config",
+          "type": "tuple",
+          "internalType": "struct ICrossChainRegistryTypes.OperatorSetConfig",
+          "components": [
+            {
+              "name": "owner",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "maxStalenessPeriod",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "getActiveGenerationReservationCount",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getActiveGenerationReservations",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple[]",
+          "internalType": "struct OperatorSet[]",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getActiveGenerationReservationsByRange",
+      "inputs": [
+        {
+          "name": "startIndex",
+          "type": "uint256",
+          "internalType": "uint256"
+        },
+        {
+          "name": "endIndex",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple[]",
+          "internalType": "struct OperatorSet[]",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getOperatorSetConfig",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "tuple",
+          "internalType": "struct ICrossChainRegistryTypes.OperatorSetConfig",
+          "components": [
+            {
+              "name": "owner",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "maxStalenessPeriod",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getOperatorTableCalculator",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IOperatorTableCalculator"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getSupportedChains",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256[]",
+          "internalType": "uint256[]"
+        },
+        {
+          "name": "",
+          "type": "address[]",
+          "internalType": "address[]"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "getTableUpdateCadence",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "hasActiveGenerationReservation",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "initialize",
+      "inputs": [
+        {
+          "name": "initialOwner",
+          "type": "address",
+          "internalType": "address"
+        },
+        {
+          "name": "initialTableUpdateCadence",
+          "type": "uint32",
+          "internalType": "uint32"
+        },
+        {
+          "name": "initialPausedStatus",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "keyRegistrar",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IKeyRegistrar"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "owner",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "pause",
+      "inputs": [
+        {
+          "name": "newPausedStatus",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "pauseAll",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "paused",
+      "inputs": [
+        {
+          "name": "index",
+          "type": "uint8",
+          "internalType": "uint8"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool",
+          "internalType": "bool"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "paused",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "pauserRegistry",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IPauserRegistry"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "permissionController",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "address",
+          "internalType": "contract IPermissionController"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "function",
+      "name": "removeChainIDsFromWhitelist",
+      "inputs": [
+        {
+          "name": "chainIDs",
+          "type": "uint256[]",
+          "internalType": "uint256[]"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "removeGenerationReservation",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "renounceOwnership",
+      "inputs": [],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "setOperatorSetConfig",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "config",
+          "type": "tuple",
+          "internalType": "struct ICrossChainRegistryTypes.OperatorSetConfig",
+          "components": [
+            {
+              "name": "owner",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "maxStalenessPeriod",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "setOperatorTableCalculator",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "operatorTableCalculator",
+          "type": "address",
+          "internalType": "contract IOperatorTableCalculator"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "setTableUpdateCadence",
+      "inputs": [
+        {
+          "name": "tableUpdateCadence",
+          "type": "uint32",
+          "internalType": "uint32"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "transferOwnership",
+      "inputs": [
+        {
+          "name": "newOwner",
+          "type": "address",
+          "internalType": "address"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "unpause",
+      "inputs": [
+        {
+          "name": "newPausedStatus",
+          "type": "uint256",
+          "internalType": "uint256"
+        }
+      ],
+      "outputs": [],
+      "stateMutability": "nonpayable"
+    },
+    {
+      "type": "function",
+      "name": "version",
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "",
+          "type": "string",
+          "internalType": "string"
+        }
+      ],
+      "stateMutability": "view"
+    },
+    {
+      "type": "event",
+      "name": "ChainIDAddedToWhitelist",
+      "inputs": [
+        {
+          "name": "chainID",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        },
+        {
+          "name": "operatorTableUpdater",
+          "type": "address",
+          "indexed": false,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "ChainIDRemovedFromWhitelist",
+      "inputs": [
+        {
+          "name": "chainID",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "GenerationReservationCreated",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "indexed": false,
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "GenerationReservationRemoved",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "indexed": false,
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Initialized",
+      "inputs": [
+        {
+          "name": "version",
+          "type": "uint8",
+          "indexed": false,
+          "internalType": "uint8"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "OperatorSetConfigRemoved",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "indexed": false,
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "OperatorSetConfigSet",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "indexed": false,
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "config",
+          "type": "tuple",
+          "indexed": false,
+          "internalType": "struct ICrossChainRegistryTypes.OperatorSetConfig",
+          "components": [
+            {
+              "name": "owner",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "maxStalenessPeriod",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "OperatorTableCalculatorRemoved",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "indexed": false,
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "OperatorTableCalculatorSet",
+      "inputs": [
+        {
+          "name": "operatorSet",
+          "type": "tuple",
+          "indexed": false,
+          "internalType": "struct OperatorSet",
+          "components": [
+            {
+              "name": "avs",
+              "type": "address",
+              "internalType": "address"
+            },
+            {
+              "name": "id",
+              "type": "uint32",
+              "internalType": "uint32"
+            }
+          ]
+        },
+        {
+          "name": "operatorTableCalculator",
+          "type": "address",
+          "indexed": false,
+          "internalType": "contract IOperatorTableCalculator"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "OwnershipTransferred",
+      "inputs": [
+        {
+          "name": "previousOwner",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "newOwner",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Paused",
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "newPausedStatus",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "TableUpdateCadenceSet",
+      "inputs": [
+        {
+          "name": "tableUpdateCadence",
+          "type": "uint32",
+          "indexed": false,
+          "internalType": "uint32"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "event",
+      "name": "Unpaused",
+      "inputs": [
+        {
+          "name": "account",
+          "type": "address",
+          "indexed": true,
+          "internalType": "address"
+        },
+        {
+          "name": "newPausedStatus",
+          "type": "uint256",
+          "indexed": false,
+          "internalType": "uint256"
+        }
+      ],
+      "anonymous": false
+    },
+    {
+      "type": "error",
+      "name": "ArrayLengthMismatch",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ChainIDAlreadyWhitelisted",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "ChainIDNotWhitelisted",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "CurrentlyPaused",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "EmptyChainIDsArray",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "GenerationReservationAlreadyExists",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "GenerationReservationDoesNotExist",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InputAddressZero",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidChainId",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidEndIndex",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidNewPausedStatus",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidOperatorSet",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidPermissions",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidRange",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidShortString",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidStalenessPeriod",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "InvalidTableUpdateCadence",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "KeyTypeNotSet",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "OnlyPauser",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "OnlyUnpauser",
+      "inputs": []
+    },
+    {
+      "type": "error",
+      "name": "StringTooLong",
+      "inputs": [
+        {
+          "name": "str",
+          "type": "string",
+          "internalType": "string"
+        }
+      ]
+    }
+  ],
+  "bytecode": {
+    "object": "0x610120604052348015610010575f5ffd5b5060405161281438038061281483398101604081905261002f916101c1565b80838686856001600160a01b03811661005b576040516339b190bb60e11b815260040160405180910390fd5b6001600160a01b0390811660805291821660a052811660c0521660e05261008181610098565b610100525061008e6100de565b5050505050610319565b5f5f829050601f815111156100cb578260405163305a27a960e01b81526004016100c291906102be565b60405180910390fd5b80516100d6826102f3565b179392505050565b5f54610100900460ff16156101455760405162461bcd60e51b815260206004820152602760248201527f496e697469616c697a61626c653a20636f6e747261637420697320696e697469604482015266616c697a696e6760c81b60648201526084016100c2565b5f5460ff90811614610194575f805460ff191660ff9081179091556040519081527f7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb38474024989060200160405180910390a15b565b6001600160a01b03811681146101aa575f5ffd5b50565b634e487b7160e01b5f52604160045260245ffd5b5f5f5f5f5f60a086880312156101d5575f5ffd5b85516101e081610196565b60208701519095506101f181610196565b604087015190945061020281610196565b606087015190935061021381610196565b60808701519092506001600160401b0381111561022e575f5ffd5b8601601f8101881361023e575f5ffd5b80516001600160401b03811115610257576102576101ad565b604051601f8201601f19908116603f011681016001600160401b0381118282101715610285576102856101ad565b6040528181528282016020018a101561029c575f5ffd5b8160208401602083015e5f602083830101528093505050509295509295909350565b602081525f82518060208401528060208501604085015e5f604082850101526040601f19601f83011684010191505092915050565b80516020808301519190811015610313575f198160200360031b1b821691505b50919050565b60805160a05160c05160e0516101005161247f6103955f395f610b7201525f81816102e601526117d701525f818161028701528181610a29015261112201525f81816103ee015281816107920152818161092201528181610c05015261107901525f81816103800152818161170b0152611a9b015261247f5ff3fe608060405234801561000f575f5ffd5b50600436106101d1575f3560e01c8063715018a6116100fe578063ca8aa7c71161009e578063d9a6729e1161006e578063d9a6729e1461044b578063dfbd9dfd1461045e578063f2fde38b14610471578063fabc1cbc14610484575f5ffd5b8063ca8aa7c7146103e9578063d09b978b14610410578063d504491114610425578063d6db9e2514610438575f5ffd5b80638da5cb5b116100d95780638da5cb5b146103a2578063ac505f4b146103b3578063b186a60e146103cb578063c4bffe2b146103d3575f5ffd5b8063715018a61461036057806375e4b53914610368578063886f11951461037b575f5ffd5b80633ec45c7e11610174578063595c6a6711610144578063595c6a67146103105780635ac86ab7146103185780635c975abb1461033b5780636c55a37f1461034d575f5ffd5b80633ec45c7e1461028257806341ee6d0e146102c15780634657e26a146102e157806354fd4d5014610308575f5ffd5b80631ca9142a116101af5780631ca9142a1461021057806321fa7fdc14610223578063277e1e621461024c57806336b200de1461025f575f5ffd5b806304e98be3146101d55780630f19aaef146101ea578063136439dd146101fd575b5f5ffd5b6101e86101e3366004611d72565b610497565b005b6101e86101f8366004611e0a565b6105db565b6101e861020b366004611e46565b610701565b6101e861021e366004611e73565b61073b565b610236610231366004611f4c565b61086b565b6040516102439190611f84565b60405180910390f35b6101e861025a366004611f92565b6108cb565b61027261026d366004611f4c565b610a09565b6040519015158152602001610243565b6102a97f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610243565b6102d46102cf366004611fc5565b610a24565b604051610243919061200d565b6102a97f000000000000000000000000000000000000000000000000000000000000000081565b6102d4610b6b565b6101e8610b9b565b61027261032636600461201f565b606654600160ff9092169190911b9081161490565b6066545b604051908152602001610243565b6101e861035b366004611fc5565b610baf565b6101e8610dd2565b6102a9610376366004611f4c565b610de3565b6102a97f000000000000000000000000000000000000000000000000000000000000000081565b6033546001600160a01b03166102a9565b609e5460405163ffffffff9091168152602001610243565b61033f610e0f565b6103db610e1a565b60405161024392919061203f565b6102a97f000000000000000000000000000000000000000000000000000000000000000081565b610418610f30565b60405161024391906120c8565b6101e8610433366004612115565b611023565b6101e8610446366004612159565b611269565b610418610459366004612172565b61127d565b6101e861046c366004612192565b6113c7565b6101e861047f3660046121d1565b61146d565b6101e8610492366004611e46565b6114e3565b61049f611550565b60036104aa816115aa565b8382146104ca5760405163512509d360e11b815260040160405180910390fd5b5f5b848110156105d3575f8686838181106104e7576104e76121ec565b905060200201359050805f0361051057604051633d23e4d160e11b815260040160405180910390fd5b61054481868685818110610526576105266121ec565b905060200201602081019061053b91906121d1565b609b91906115d5565b610561576040516324bf631b60e11b815260040160405180910390fd5b7f7a0a76d85b582b17996dd7371a407aa7a79b870db8539247fba315c7b6beff6281868685818110610595576105956121ec565b90506020020160208101906105aa91906121d1565b604080519283526001600160a01b0390911660208301520160405180910390a1506001016104cc565b505050505050565b5f54610100900460ff16158080156105f957505f54600160ff909116105b806106125750303b15801561061257505f5460ff166001145b61067a5760405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b60648201526084015b60405180910390fd5b5f805460ff19166001179055801561069b575f805461ff0019166101001790555b6106a4846115f4565b6106ad83611645565b6106b6826116b9565b80156106fb575f805461ff0019169055604051600181527f7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb38474024989060200160405180910390a15b50505050565b6107096116f6565b606654818116811461072e5760405163c61dca5d60e01b815260040160405180910390fd5b610737826116b9565b5050565b6001610746816115aa565b61075360208401846121d1565b61075c81611799565b6107795760405163932d94f760e01b815260040160405180910390fd5b6040516304c1b8eb60e31b815284906001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063260dc758906107c7908490600401612231565b602060405180830381865afa1580156107e2573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610806919061223f565b61082357604051631fb1705560e21b815260040160405180910390fd5b8461083661026d36839003830183611f4c565b61085357604051634d2baea960e11b815260040160405180910390fd5b6105d361086536889003880188611f4c565b86611843565b604080518082019091525f8082526020820152609a5f61088a846118bd565b815260208082019290925260409081015f208151808301909252546001600160a01b0381168252600160a01b900463ffffffff169181019190915292915050565b60026108d6816115aa565b6108e360208401846121d1565b6108ec81611799565b6109095760405163932d94f760e01b815260040160405180910390fd5b6040516304c1b8eb60e31b815284906001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063260dc75890610957908490600401612231565b602060405180830381865afa158015610972573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610996919061223f565b6109b357604051631fb1705560e21b815260040160405180910390fd5b846109c661026d36839003830183611f4c565b6109e357604051634d2baea960e11b815260040160405180910390fd5b6105d36109f536889003880188611f4c565b610a0436889003880188611f4c565b611920565b5f610a1e610a16836118bd565b6097906119e9565b92915050565b6060817f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316637cffe48c846040518263ffffffff1660e01b8152600401610a739190612231565b602060405180830381865afa158015610a8e573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610ab2919061225e565b610ac461023136869003860186611f4c565b610ad661037636879003870187611f4c565b6001600160a01b03166341ee6d0e866040518263ffffffff1660e01b8152600401610b019190612231565b5f60405180830381865afa158015610b1b573d5f5f3e3d5ffd5b505050506040513d5f823e601f3d908101601f19168201604052610b42919081019061227c565b604051602001610b559493929190612324565b6040516020818303038152906040529050919050565b6060610b967f0000000000000000000000000000000000000000000000000000000000000000611a00565b905090565b610ba36116f6565b610bad5f196116b9565b565b5f610bb9816115aa565b610bc660208301836121d1565b610bcf81611799565b610bec5760405163932d94f760e01b815260040160405180910390fd5b6040516304c1b8eb60e31b815283906001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063260dc75890610c3a908490600401612231565b602060405180830381865afa158015610c55573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610c79919061223f565b610c9657604051631fb1705560e21b815260040160405180910390fd5b83610ca961026d36839003830183611f4c565b610cc657604051634d2baea960e11b815260040160405180910390fd5b5f610cde610cd936889003880188611f4c565b6118bd565b5f818152609960205260409081902080546001600160a01b0319169055519091507fd7811913efd5d98fc7ea0d1fdd022b3d31987815360842d05b1d1cf55578d16a90610d2c908890612231565b60405180910390a15f818152609a60205260409081902080546001600160c01b0319169055517f210a1118a869246162804e2a7f21ef808ebd93f4be7ed512014fe29a7a8be02e90610d7f908890612231565b60405180910390a1610d92609782611a3d565b507f4ffdfdd59e9e1e3c301608788f78dd458e61cb8c045ca92b62a7b484c80824fb86604051610dc29190612231565b60405180910390a1505050505050565b610dda611550565b610bad5f6115f4565b5f60995f610df0846118bd565b815260208101919091526040015f20546001600160a01b031692915050565b5f610b966097611a48565b6060805f610e28609b611a51565b90505f8167ffffffffffffffff811115610e4457610e44611ea9565b604051908082528060200260200182016040528015610e6d578160200160208202803683370190505b5090505f8267ffffffffffffffff811115610e8a57610e8a611ea9565b604051908082528060200260200182016040528015610eb3578160200160208202803683370190505b5090505f5b83811015610f25575f80610ecd609b84611a5b565b9150915081858481518110610ee457610ee46121ec565b60200260200101818152505080848481518110610f0357610f036121ec565b6001600160a01b03909216602092830291909101909101525050600101610eb8565b509094909350915050565b60605f610f3d6097611a48565b90505f8167ffffffffffffffff811115610f5957610f59611ea9565b604051908082528060200260200182016040528015610f9d57816020015b604080518082019091525f8082526020820152815260200190600190039081610f775790505b5090505f5b8281101561101c575f610fb6609783611a78565b90505f610ff282604080518082019091525f80825260208201525060408051808201909152606082901c815263ffffffff909116602082015290565b905080848481518110611007576110076121ec565b60209081029190910101525050600101610fa2565b5092915050565b5f61102d816115aa565b61103a60208501856121d1565b61104381611799565b6110605760405163932d94f760e01b815260040160405180910390fd5b6040516304c1b8eb60e31b815285906001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063260dc758906110ae908490600401612231565b602060405180830381865afa1580156110c9573d5f5f3e3d5ffd5b505050506040513d601f19601f820116820180604052508101906110ed919061223f565b61110a57604051631fb1705560e21b815260040160405180910390fd5b5f604051631f3ff92360e21b81526001600160a01b037f00000000000000000000000000000000000000000000000000000000000000001690637cffe48c90611157908a90600401612231565b602060405180830381865afa158015611172573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190611196919061225e565b60028111156111a7576111a7612310565b036111c55760405163e57cacbd60e01b815260040160405180910390fd5b6111e26111da610cd936899003890189611f4c565b609790611a83565b6111ff57604051631883461560e01b815260040160405180910390fd5b7f4fb6efec7dd60036ce3a7af8d5c48425019daa0fb61eb471a966a7ac2c6fa6a68660405161122e9190612231565b60405180910390a161124861086536889003880188611f4c565b6105d361125a36889003880188611f4c565b610a0436879003870187611f4c565b611271611550565b61127a81611645565b50565b6060818311156112a05760405163561ce9bb60e01b815260040160405180910390fd5b6112aa6097611a48565b8211156112ca576040516302da361360e61b815260040160405180910390fd5b5f6112d58484612390565b90505f8167ffffffffffffffff8111156112f1576112f1611ea9565b60405190808252806020026020018201604052801561133557816020015b604080518082019091525f808252602082015281526020019060019003908161130f5790505b5090505f5b828110156113be575f61135861135083896123a3565b609790611a78565b90505f61139482604080518082019091525f80825260208201525060408051808201909152606082901c815263ffffffff909116602082015290565b9050808484815181106113a9576113a96121ec565b6020908102919091010152505060010161133a565b50949350505050565b6113cf611550565b60036113da816115aa565b5f5b828110156106fb575f8484838181106113f7576113f76121ec565b90506020020135905061141481609b611a8e90919063ffffffff16565b6114315760405163b3f92ba160e01b815260040160405180910390fd5b6040518181527f6824d36084ecf2cd819b137cb5d837cc6e73afce1e0e348c9fdecaa81d0341e59060200160405180910390a1506001016113dc565b611475611550565b6001600160a01b0381166114da5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610671565b61127a816115f4565b6114eb611a99565b606654801982198116146115125760405163c61dca5d60e01b815260040160405180910390fd5b606682905560405182815233907f3582d1828e26bf56bd801502bc021ac0bc8afb57c826e4986b45593c8fad389c9060200160405180910390a25050565b6033546001600160a01b03163314610bad5760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e65726044820152606401610671565b606654600160ff83161b9081160361127a5760405163840a48d560e01b815260040160405180910390fd5b5f6115ea84846001600160a01b038516611b4a565b90505b9392505050565b603380546001600160a01b038381166001600160a01b0319831681179093556040519116919082907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0905f90a35050565b5f8163ffffffff161161166b576040516316d98e1b60e31b815260040160405180910390fd5b609e805463ffffffff191663ffffffff83169081179091556040519081527f4fbcd0cca70015b33db8af4aa4f2bd6fd6c1efa9460b8e2333f252c1467a63279060200160405180910390a150565b606681905560405181815233907fab40a374bc51de372200a8bc981af8c9ecdc08dfdaef0bb6e09f88f3c616ef3d9060200160405180910390a250565b60405163237dfb4760e11b81523360048201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316906346fbf68e90602401602060405180830381865afa158015611758573d5f5f3e3d5ffd5b505050506040513d601f19601f8201168201806040525081019061177c919061223f565b610bad57604051631d77d47760e21b815260040160405180910390fd5b604051631beb2b9760e31b81526001600160a01b0382811660048301523360248301523060448301525f80356001600160e01b0319166064840152917f00000000000000000000000000000000000000000000000000000000000000009091169063df595cb8906084016020604051808303815f875af115801561181f573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610a1e919061223f565b8060995f611850856118bd565b81526020019081526020015f205f6101000a8154816001600160a01b0302191690836001600160a01b031602179055507f7f7ccafd92d20fdb39dee184a0dce002a9da420ed0def461f2a027abc9b3f6df82826040516118b19291906123b6565b60405180910390a15050565b5f815f0151826020015163ffffffff1660405160200161190892919060609290921b6bffffffffffffffffffffffff1916825260a01b6001600160a01b031916601482015260200190565b604051602081830303815290604052610a1e906123dc565b602081015163ffffffff1615806119475750609e54602082015163ffffffff918216911610155b61196457604051632e46483160e11b815260040160405180910390fd5b80609a5f611971856118bd565b815260208082019290925260409081015f2083518154949093015163ffffffff16600160a01b026001600160c01b03199094166001600160a01b0390931692909217929092179055517f3147846ee526009000671c20380b856a633345691300f82585f90034715cf0e2906118b190849084906123ff565b5f81815260018301602052604081205415156115ed565b60605f611a0c83611b66565b6040805160208082528183019092529192505f91906020820181803683375050509182525060208101929092525090565b5f6115ed8383611b8d565b5f610a1e825490565b5f610a1e82611c70565b5f808080611a698686611c7a565b909450925050505b9250929050565b5f6115ed8383611ca3565b5f6115ed8383611cc9565b5f6115ed8383611d15565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031663eab66d7a6040518163ffffffff1660e01b8152600401602060405180830381865afa158015611af5573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190611b19919061241a565b6001600160a01b0316336001600160a01b031614610bad5760405163794821ff60e01b815260040160405180910390fd5b5f82815260028401602052604081208290556115ea8484611a83565b5f60ff8216601f811115610a1e57604051632cd44ac360e21b815260040160405180910390fd5b5f8181526001830160205260408120548015611c67575f611baf600183612390565b85549091505f90611bc290600190612390565b9050818114611c21575f865f018281548110611be057611be06121ec565b905f5260205f200154905080875f018481548110611c0057611c006121ec565b5f918252602080832090910192909255918252600188019052604090208390555b8554869080611c3257611c32612435565b600190038181905f5260205f20015f90559055856001015f8681526020019081526020015f205f905560019350505050610a1e565b5f915050610a1e565b5f610a1e82611a48565b5f8080611c878585611a78565b5f81815260029690960160205260409095205494959350505050565b5f825f018281548110611cb857611cb86121ec565b905f5260205f200154905092915050565b5f818152600183016020526040812054611d0e57508154600181810184555f848152602080822090930184905584548482528286019093526040902091909155610a1e565b505f610a1e565b5f81815260028301602052604081208190556115ed8383611a3d565b5f5f83601f840112611d41575f5ffd5b50813567ffffffffffffffff811115611d58575f5ffd5b6020830191508360208260051b8501011115611a71575f5ffd5b5f5f5f5f60408587031215611d85575f5ffd5b843567ffffffffffffffff811115611d9b575f5ffd5b611da787828801611d31565b909550935050602085013567ffffffffffffffff811115611dc6575f5ffd5b611dd287828801611d31565b95989497509550505050565b6001600160a01b038116811461127a575f5ffd5b803563ffffffff81168114611e05575f5ffd5b919050565b5f5f5f60608486031215611e1c575f5ffd5b8335611e2781611dde565b9250611e3560208501611df2565b929592945050506040919091013590565b5f60208284031215611e56575f5ffd5b5035919050565b5f60408284031215611e6d575f5ffd5b50919050565b5f5f60608385031215611e84575f5ffd5b611e8e8484611e5d565b91506040830135611e9e81611dde565b809150509250929050565b634e487b7160e01b5f52604160045260245ffd5b604051601f8201601f1916810167ffffffffffffffff81118282101715611ee657611ee6611ea9565b604052919050565b5f60408284031215611efe575f5ffd5b6040805190810167ffffffffffffffff81118282101715611f2157611f21611ea9565b6040529050808235611f3281611dde565b8152611f4060208401611df2565b60208201525092915050565b5f60408284031215611f5c575f5ffd5b6115ed8383611eee565b80516001600160a01b0316825260209081015163ffffffff16910152565b60408101610a1e8284611f66565b5f5f60808385031215611fa3575f5ffd5b611fad8484611e5d565b9150611fbc8460408501611e5d565b90509250929050565b5f60408284031215611fd5575f5ffd5b6115ed8383611e5d565b5f81518084528060208401602086015e5f602082860101526020601f19601f83011685010191505092915050565b602081525f6115ed6020830184611fdf565b5f6020828403121561202f575f5ffd5b813560ff811681146115ed575f5ffd5b604080825283519082018190525f9060208501906060840190835b8181101561207857835183526020938401939092019160010161205a565b5050838103602080860191909152855180835291810192508501905f5b818110156120bc5782516001600160a01b0316845260209384019390920191600101612095565b50919695505050505050565b602080825282518282018190525f918401906040840190835b8181101561210a576120f4838551611f66565b60209390930192604092909201916001016120e1565b509095945050505050565b5f5f5f60a08486031215612127575f5ffd5b6121318585611e5d565b9250604084013561214181611dde565b91506121508560608601611e5d565b90509250925092565b5f60208284031215612169575f5ffd5b6115ed82611df2565b5f5f60408385031215612183575f5ffd5b50508035926020909101359150565b5f5f602083850312156121a3575f5ffd5b823567ffffffffffffffff8111156121b9575f5ffd5b6121c585828601611d31565b90969095509350505050565b5f602082840312156121e1575f5ffd5b81356115ed81611dde565b634e487b7160e01b5f52603260045260245ffd5b803561220b81611dde565b6001600160a01b0316825263ffffffff61222760208301611df2565b1660208301525050565b60408101610a1e8284612200565b5f6020828403121561224f575f5ffd5b815180151581146115ed575f5ffd5b5f6020828403121561226e575f5ffd5b8151600381106115ed575f5ffd5b5f6020828403121561228c575f5ffd5b815167ffffffffffffffff8111156122a2575f5ffd5b8201601f810184136122b2575f5ffd5b805167ffffffffffffffff8111156122cc576122cc611ea9565b6122df601f8201601f1916602001611ebd565b8181528560208385010111156122f3575f5ffd5b8160208401602083015e5f91810160200191909152949350505050565b634e487b7160e01b5f52602160045260245ffd5b61232e8186612200565b5f6003851061234b57634e487b7160e01b5f52602160045260245ffd5b84604083015261235e6060830185611f66565b60c060a083015261237260c0830184611fdf565b9695505050505050565b634e487b7160e01b5f52601160045260245ffd5b81810381811115610a1e57610a1e61237c565b80820180821115610a1e57610a1e61237c565b606081016123c48285611f66565b6001600160a01b039290921660409190910152919050565b80516020808301519190811015611e6d575f1960209190910360031b1b16919050565b6080810161240d8285611f66565b6115ed6040830184611f66565b5f6020828403121561242a575f5ffd5b81516115ed81611dde565b634e487b7160e01b5f52603160045260245ffdfea26469706673582212204a66187c822cf8883196722425d6a199eb25caad0350f5c28fa5162b58fd508364736f6c634300081b0033",
+    "sourceMap": "726:12551:193:-:0;;;2286:461;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;2694:8;2617:21;2548:18;2568:13;2657:15;-1:-1:-1;;;;;3618:38:201;;3610:67;;;;-1:-1:-1;;;3610:67:201;;;;;;;;;;;;-1:-1:-1;;;;;3687:32:201;;;;;2742:38:194;;;;;2790:28;;;;501:44:188;;;961:24:189;:8;:22;:24::i;:::-;950:35;;-1:-1:-1;2718:22:193::4;:20;:22::i;:::-;2286:461:::0;;;;;726:12551;;1711:286:37;1776:11;1799:17;1825:3;1799:30;;1857:2;1843:4;:11;:16;1839:72;;;1896:3;1882:18;;-1:-1:-1;;;1882:18:37;;;;;;;;:::i;:::-;;;;;;;;1839:72;1977:11;;1960:13;1977:4;1960:13;:::i;:::-;1952:36;;1711:286;-1:-1:-1;;;1711:286:37:o;5939:280:26:-;6007:13;;;;;;;6006:14;5998:66;;;;-1:-1:-1;;;5998:66:26;;2888:2:330;5998:66:26;;;2870:21:330;2927:2;2907:18;;;2900:30;2966:34;2946:18;;;2939:62;-1:-1:-1;;;3017:18:330;;;3010:37;3064:19;;5998:66:26;2686:403:330;5998:66:26;6078:12;;6094:15;6078:12;;;:31;6074:139;;6125:12;:30;;-1:-1:-1;;6125:30:26;6140:15;6125:30;;;;;;6174:28;;3236:36:330;;;6174:28:26;;3224:2:330;3209:18;6174:28:26;;;;;;;6074:139;5939:280::o;14:151:330:-;-1:-1:-1;;;;;109:31:330;;99:42;;89:70;;155:1;152;145:12;89:70;14:151;:::o;170:127::-;231:10;226:3;222:20;219:1;212:31;262:4;259:1;252:15;286:4;283:1;276:15;302:1654;525:6;533;541;549;557;610:3;598:9;589:7;585:23;581:33;578:53;;;627:1;624;617:12;578:53;659:9;653:16;678:51;723:5;678:51;:::i;:::-;798:2;783:18;;777:25;748:5;;-1:-1:-1;811:53:330;777:25;811:53;:::i;:::-;935:2;920:18;;914:25;883:7;;-1:-1:-1;948:53:330;914:25;948:53;:::i;:::-;1072:2;1057:18;;1051:25;1020:7;;-1:-1:-1;1085:53:330;1051:25;1085:53;:::i;:::-;1208:3;1193:19;;1187:26;1157:7;;-1:-1:-1;;;;;;1225:30:330;;1222:50;;;1268:1;1265;1258:12;1222:50;1291:22;;1344:4;1336:13;;1332:27;-1:-1:-1;1322:55:330;;1373:1;1370;1363:12;1322:55;1400:9;;-1:-1:-1;;;;;1421:30:330;;1418:56;;;1454:18;;:::i;:::-;1503:2;1497:9;1595:2;1557:17;;-1:-1:-1;;1553:31:330;;;1586:2;1549:40;1545:54;1533:67;;-1:-1:-1;;;;;1615:34:330;;1651:22;;;1612:62;1609:88;;;1677:18;;:::i;:::-;1713:2;1706:22;1737;;;1778:15;;;1795:2;1774:24;1771:37;-1:-1:-1;1768:57:330;;;1821:1;1818;1811:12;1768:57;1870:6;1865:2;1861;1857:11;1852:2;1844:6;1840:15;1834:43;1923:1;1918:2;1909:6;1901;1897:19;1893:28;1886:39;1944:6;1934:16;;;;;302:1654;;;;;;;;:::o;1961:418::-;2110:2;2099:9;2092:21;2073:4;2142:6;2136:13;2185:6;2180:2;2169:9;2165:18;2158:34;2244:6;2239:2;2231:6;2227:15;2222:2;2211:9;2207:18;2201:50;2300:1;2295:2;2286:6;2275:9;2271:22;2267:31;2260:42;2370:2;2363;2359:7;2354:2;2346:6;2342:15;2338:29;2327:9;2323:45;2319:54;2311:62;;;1961:418;;;;:::o;2384:297::-;2502:12;;2549:4;2538:16;;;2532:23;;2502:12;2567:16;;2564:111;;;2661:1;2657:6;2647;2641:4;2637:17;2634:1;2630:25;2626:38;2619:5;2615:50;2606:59;;2564:111;;2384:297;;;:::o;3094:184::-;726:12551:193;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561000f575f5ffd5b50600436106101d1575f3560e01c8063715018a6116100fe578063ca8aa7c71161009e578063d9a6729e1161006e578063d9a6729e1461044b578063dfbd9dfd1461045e578063f2fde38b14610471578063fabc1cbc14610484575f5ffd5b8063ca8aa7c7146103e9578063d09b978b14610410578063d504491114610425578063d6db9e2514610438575f5ffd5b80638da5cb5b116100d95780638da5cb5b146103a2578063ac505f4b146103b3578063b186a60e146103cb578063c4bffe2b146103d3575f5ffd5b8063715018a61461036057806375e4b53914610368578063886f11951461037b575f5ffd5b80633ec45c7e11610174578063595c6a6711610144578063595c6a67146103105780635ac86ab7146103185780635c975abb1461033b5780636c55a37f1461034d575f5ffd5b80633ec45c7e1461028257806341ee6d0e146102c15780634657e26a146102e157806354fd4d5014610308575f5ffd5b80631ca9142a116101af5780631ca9142a1461021057806321fa7fdc14610223578063277e1e621461024c57806336b200de1461025f575f5ffd5b806304e98be3146101d55780630f19aaef146101ea578063136439dd146101fd575b5f5ffd5b6101e86101e3366004611d72565b610497565b005b6101e86101f8366004611e0a565b6105db565b6101e861020b366004611e46565b610701565b6101e861021e366004611e73565b61073b565b610236610231366004611f4c565b61086b565b6040516102439190611f84565b60405180910390f35b6101e861025a366004611f92565b6108cb565b61027261026d366004611f4c565b610a09565b6040519015158152602001610243565b6102a97f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b039091168152602001610243565b6102d46102cf366004611fc5565b610a24565b604051610243919061200d565b6102a97f000000000000000000000000000000000000000000000000000000000000000081565b6102d4610b6b565b6101e8610b9b565b61027261032636600461201f565b606654600160ff9092169190911b9081161490565b6066545b604051908152602001610243565b6101e861035b366004611fc5565b610baf565b6101e8610dd2565b6102a9610376366004611f4c565b610de3565b6102a97f000000000000000000000000000000000000000000000000000000000000000081565b6033546001600160a01b03166102a9565b609e5460405163ffffffff9091168152602001610243565b61033f610e0f565b6103db610e1a565b60405161024392919061203f565b6102a97f000000000000000000000000000000000000000000000000000000000000000081565b610418610f30565b60405161024391906120c8565b6101e8610433366004612115565b611023565b6101e8610446366004612159565b611269565b610418610459366004612172565b61127d565b6101e861046c366004612192565b6113c7565b6101e861047f3660046121d1565b61146d565b6101e8610492366004611e46565b6114e3565b61049f611550565b60036104aa816115aa565b8382146104ca5760405163512509d360e11b815260040160405180910390fd5b5f5b848110156105d3575f8686838181106104e7576104e76121ec565b905060200201359050805f0361051057604051633d23e4d160e11b815260040160405180910390fd5b61054481868685818110610526576105266121ec565b905060200201602081019061053b91906121d1565b609b91906115d5565b610561576040516324bf631b60e11b815260040160405180910390fd5b7f7a0a76d85b582b17996dd7371a407aa7a79b870db8539247fba315c7b6beff6281868685818110610595576105956121ec565b90506020020160208101906105aa91906121d1565b604080519283526001600160a01b0390911660208301520160405180910390a1506001016104cc565b505050505050565b5f54610100900460ff16158080156105f957505f54600160ff909116105b806106125750303b15801561061257505f5460ff166001145b61067a5760405162461bcd60e51b815260206004820152602e60248201527f496e697469616c697a61626c653a20636f6e747261637420697320616c72656160448201526d191e481a5b9a5d1a585b1a5e995960921b60648201526084015b60405180910390fd5b5f805460ff19166001179055801561069b575f805461ff0019166101001790555b6106a4846115f4565b6106ad83611645565b6106b6826116b9565b80156106fb575f805461ff0019169055604051600181527f7f26b83ff96e1f2b6a682f133852f6798a09c465da95921460cefb38474024989060200160405180910390a15b50505050565b6107096116f6565b606654818116811461072e5760405163c61dca5d60e01b815260040160405180910390fd5b610737826116b9565b5050565b6001610746816115aa565b61075360208401846121d1565b61075c81611799565b6107795760405163932d94f760e01b815260040160405180910390fd5b6040516304c1b8eb60e31b815284906001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063260dc758906107c7908490600401612231565b602060405180830381865afa1580156107e2573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610806919061223f565b61082357604051631fb1705560e21b815260040160405180910390fd5b8461083661026d36839003830183611f4c565b61085357604051634d2baea960e11b815260040160405180910390fd5b6105d361086536889003880188611f4c565b86611843565b604080518082019091525f8082526020820152609a5f61088a846118bd565b815260208082019290925260409081015f208151808301909252546001600160a01b0381168252600160a01b900463ffffffff169181019190915292915050565b60026108d6816115aa565b6108e360208401846121d1565b6108ec81611799565b6109095760405163932d94f760e01b815260040160405180910390fd5b6040516304c1b8eb60e31b815284906001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063260dc75890610957908490600401612231565b602060405180830381865afa158015610972573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610996919061223f565b6109b357604051631fb1705560e21b815260040160405180910390fd5b846109c661026d36839003830183611f4c565b6109e357604051634d2baea960e11b815260040160405180910390fd5b6105d36109f536889003880188611f4c565b610a0436889003880188611f4c565b611920565b5f610a1e610a16836118bd565b6097906119e9565b92915050565b6060817f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316637cffe48c846040518263ffffffff1660e01b8152600401610a739190612231565b602060405180830381865afa158015610a8e573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610ab2919061225e565b610ac461023136869003860186611f4c565b610ad661037636879003870187611f4c565b6001600160a01b03166341ee6d0e866040518263ffffffff1660e01b8152600401610b019190612231565b5f60405180830381865afa158015610b1b573d5f5f3e3d5ffd5b505050506040513d5f823e601f3d908101601f19168201604052610b42919081019061227c565b604051602001610b559493929190612324565b6040516020818303038152906040529050919050565b6060610b967f0000000000000000000000000000000000000000000000000000000000000000611a00565b905090565b610ba36116f6565b610bad5f196116b9565b565b5f610bb9816115aa565b610bc660208301836121d1565b610bcf81611799565b610bec5760405163932d94f760e01b815260040160405180910390fd5b6040516304c1b8eb60e31b815283906001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063260dc75890610c3a908490600401612231565b602060405180830381865afa158015610c55573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610c79919061223f565b610c9657604051631fb1705560e21b815260040160405180910390fd5b83610ca961026d36839003830183611f4c565b610cc657604051634d2baea960e11b815260040160405180910390fd5b5f610cde610cd936889003880188611f4c565b6118bd565b5f818152609960205260409081902080546001600160a01b0319169055519091507fd7811913efd5d98fc7ea0d1fdd022b3d31987815360842d05b1d1cf55578d16a90610d2c908890612231565b60405180910390a15f818152609a60205260409081902080546001600160c01b0319169055517f210a1118a869246162804e2a7f21ef808ebd93f4be7ed512014fe29a7a8be02e90610d7f908890612231565b60405180910390a1610d92609782611a3d565b507f4ffdfdd59e9e1e3c301608788f78dd458e61cb8c045ca92b62a7b484c80824fb86604051610dc29190612231565b60405180910390a1505050505050565b610dda611550565b610bad5f6115f4565b5f60995f610df0846118bd565b815260208101919091526040015f20546001600160a01b031692915050565b5f610b966097611a48565b6060805f610e28609b611a51565b90505f8167ffffffffffffffff811115610e4457610e44611ea9565b604051908082528060200260200182016040528015610e6d578160200160208202803683370190505b5090505f8267ffffffffffffffff811115610e8a57610e8a611ea9565b604051908082528060200260200182016040528015610eb3578160200160208202803683370190505b5090505f5b83811015610f25575f80610ecd609b84611a5b565b9150915081858481518110610ee457610ee46121ec565b60200260200101818152505080848481518110610f0357610f036121ec565b6001600160a01b03909216602092830291909101909101525050600101610eb8565b509094909350915050565b60605f610f3d6097611a48565b90505f8167ffffffffffffffff811115610f5957610f59611ea9565b604051908082528060200260200182016040528015610f9d57816020015b604080518082019091525f8082526020820152815260200190600190039081610f775790505b5090505f5b8281101561101c575f610fb6609783611a78565b90505f610ff282604080518082019091525f80825260208201525060408051808201909152606082901c815263ffffffff909116602082015290565b905080848481518110611007576110076121ec565b60209081029190910101525050600101610fa2565b5092915050565b5f61102d816115aa565b61103a60208501856121d1565b61104381611799565b6110605760405163932d94f760e01b815260040160405180910390fd5b6040516304c1b8eb60e31b815285906001600160a01b037f0000000000000000000000000000000000000000000000000000000000000000169063260dc758906110ae908490600401612231565b602060405180830381865afa1580156110c9573d5f5f3e3d5ffd5b505050506040513d601f19601f820116820180604052508101906110ed919061223f565b61110a57604051631fb1705560e21b815260040160405180910390fd5b5f604051631f3ff92360e21b81526001600160a01b037f00000000000000000000000000000000000000000000000000000000000000001690637cffe48c90611157908a90600401612231565b602060405180830381865afa158015611172573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190611196919061225e565b60028111156111a7576111a7612310565b036111c55760405163e57cacbd60e01b815260040160405180910390fd5b6111e26111da610cd936899003890189611f4c565b609790611a83565b6111ff57604051631883461560e01b815260040160405180910390fd5b7f4fb6efec7dd60036ce3a7af8d5c48425019daa0fb61eb471a966a7ac2c6fa6a68660405161122e9190612231565b60405180910390a161124861086536889003880188611f4c565b6105d361125a36889003880188611f4c565b610a0436879003870187611f4c565b611271611550565b61127a81611645565b50565b6060818311156112a05760405163561ce9bb60e01b815260040160405180910390fd5b6112aa6097611a48565b8211156112ca576040516302da361360e61b815260040160405180910390fd5b5f6112d58484612390565b90505f8167ffffffffffffffff8111156112f1576112f1611ea9565b60405190808252806020026020018201604052801561133557816020015b604080518082019091525f808252602082015281526020019060019003908161130f5790505b5090505f5b828110156113be575f61135861135083896123a3565b609790611a78565b90505f61139482604080518082019091525f80825260208201525060408051808201909152606082901c815263ffffffff909116602082015290565b9050808484815181106113a9576113a96121ec565b6020908102919091010152505060010161133a565b50949350505050565b6113cf611550565b60036113da816115aa565b5f5b828110156106fb575f8484838181106113f7576113f76121ec565b90506020020135905061141481609b611a8e90919063ffffffff16565b6114315760405163b3f92ba160e01b815260040160405180910390fd5b6040518181527f6824d36084ecf2cd819b137cb5d837cc6e73afce1e0e348c9fdecaa81d0341e59060200160405180910390a1506001016113dc565b611475611550565b6001600160a01b0381166114da5760405162461bcd60e51b815260206004820152602660248201527f4f776e61626c653a206e6577206f776e657220697320746865207a65726f206160448201526564647265737360d01b6064820152608401610671565b61127a816115f4565b6114eb611a99565b606654801982198116146115125760405163c61dca5d60e01b815260040160405180910390fd5b606682905560405182815233907f3582d1828e26bf56bd801502bc021ac0bc8afb57c826e4986b45593c8fad389c9060200160405180910390a25050565b6033546001600160a01b03163314610bad5760405162461bcd60e51b815260206004820181905260248201527f4f776e61626c653a2063616c6c6572206973206e6f7420746865206f776e65726044820152606401610671565b606654600160ff83161b9081160361127a5760405163840a48d560e01b815260040160405180910390fd5b5f6115ea84846001600160a01b038516611b4a565b90505b9392505050565b603380546001600160a01b038381166001600160a01b0319831681179093556040519116919082907f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0905f90a35050565b5f8163ffffffff161161166b576040516316d98e1b60e31b815260040160405180910390fd5b609e805463ffffffff191663ffffffff83169081179091556040519081527f4fbcd0cca70015b33db8af4aa4f2bd6fd6c1efa9460b8e2333f252c1467a63279060200160405180910390a150565b606681905560405181815233907fab40a374bc51de372200a8bc981af8c9ecdc08dfdaef0bb6e09f88f3c616ef3d9060200160405180910390a250565b60405163237dfb4760e11b81523360048201527f00000000000000000000000000000000000000000000000000000000000000006001600160a01b0316906346fbf68e90602401602060405180830381865afa158015611758573d5f5f3e3d5ffd5b505050506040513d601f19601f8201168201806040525081019061177c919061223f565b610bad57604051631d77d47760e21b815260040160405180910390fd5b604051631beb2b9760e31b81526001600160a01b0382811660048301523360248301523060448301525f80356001600160e01b0319166064840152917f00000000000000000000000000000000000000000000000000000000000000009091169063df595cb8906084016020604051808303815f875af115801561181f573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190610a1e919061223f565b8060995f611850856118bd565b81526020019081526020015f205f6101000a8154816001600160a01b0302191690836001600160a01b031602179055507f7f7ccafd92d20fdb39dee184a0dce002a9da420ed0def461f2a027abc9b3f6df82826040516118b19291906123b6565b60405180910390a15050565b5f815f0151826020015163ffffffff1660405160200161190892919060609290921b6bffffffffffffffffffffffff1916825260a01b6001600160a01b031916601482015260200190565b604051602081830303815290604052610a1e906123dc565b602081015163ffffffff1615806119475750609e54602082015163ffffffff918216911610155b61196457604051632e46483160e11b815260040160405180910390fd5b80609a5f611971856118bd565b815260208082019290925260409081015f2083518154949093015163ffffffff16600160a01b026001600160c01b03199094166001600160a01b0390931692909217929092179055517f3147846ee526009000671c20380b856a633345691300f82585f90034715cf0e2906118b190849084906123ff565b5f81815260018301602052604081205415156115ed565b60605f611a0c83611b66565b6040805160208082528183019092529192505f91906020820181803683375050509182525060208101929092525090565b5f6115ed8383611b8d565b5f610a1e825490565b5f610a1e82611c70565b5f808080611a698686611c7a565b909450925050505b9250929050565b5f6115ed8383611ca3565b5f6115ed8383611cc9565b5f6115ed8383611d15565b7f00000000000000000000000000000000000000000000000000000000000000006001600160a01b031663eab66d7a6040518163ffffffff1660e01b8152600401602060405180830381865afa158015611af5573d5f5f3e3d5ffd5b505050506040513d601f19601f82011682018060405250810190611b19919061241a565b6001600160a01b0316336001600160a01b031614610bad5760405163794821ff60e01b815260040160405180910390fd5b5f82815260028401602052604081208290556115ea8484611a83565b5f60ff8216601f811115610a1e57604051632cd44ac360e21b815260040160405180910390fd5b5f8181526001830160205260408120548015611c67575f611baf600183612390565b85549091505f90611bc290600190612390565b9050818114611c21575f865f018281548110611be057611be06121ec565b905f5260205f200154905080875f018481548110611c0057611c006121ec565b5f918252602080832090910192909255918252600188019052604090208390555b8554869080611c3257611c32612435565b600190038181905f5260205f20015f90559055856001015f8681526020019081526020015f205f905560019350505050610a1e565b5f915050610a1e565b5f610a1e82611a48565b5f8080611c878585611a78565b5f81815260029690960160205260409095205494959350505050565b5f825f018281548110611cb857611cb86121ec565b905f5260205f200154905092915050565b5f818152600183016020526040812054611d0e57508154600181810184555f848152602080822090930184905584548482528286019093526040902091909155610a1e565b505f610a1e565b5f81815260028301602052604081208190556115ed8383611a3d565b5f5f83601f840112611d41575f5ffd5b50813567ffffffffffffffff811115611d58575f5ffd5b6020830191508360208260051b8501011115611a71575f5ffd5b5f5f5f5f60408587031215611d85575f5ffd5b843567ffffffffffffffff811115611d9b575f5ffd5b611da787828801611d31565b909550935050602085013567ffffffffffffffff811115611dc6575f5ffd5b611dd287828801611d31565b95989497509550505050565b6001600160a01b038116811461127a575f5ffd5b803563ffffffff81168114611e05575f5ffd5b919050565b5f5f5f60608486031215611e1c575f5ffd5b8335611e2781611dde565b9250611e3560208501611df2565b929592945050506040919091013590565b5f60208284031215611e56575f5ffd5b5035919050565b5f60408284031215611e6d575f5ffd5b50919050565b5f5f60608385031215611e84575f5ffd5b611e8e8484611e5d565b91506040830135611e9e81611dde565b809150509250929050565b634e487b7160e01b5f52604160045260245ffd5b604051601f8201601f1916810167ffffffffffffffff81118282101715611ee657611ee6611ea9565b604052919050565b5f60408284031215611efe575f5ffd5b6040805190810167ffffffffffffffff81118282101715611f2157611f21611ea9565b6040529050808235611f3281611dde565b8152611f4060208401611df2565b60208201525092915050565b5f60408284031215611f5c575f5ffd5b6115ed8383611eee565b80516001600160a01b0316825260209081015163ffffffff16910152565b60408101610a1e8284611f66565b5f5f60808385031215611fa3575f5ffd5b611fad8484611e5d565b9150611fbc8460408501611e5d565b90509250929050565b5f60408284031215611fd5575f5ffd5b6115ed8383611e5d565b5f81518084528060208401602086015e5f602082860101526020601f19601f83011685010191505092915050565b602081525f6115ed6020830184611fdf565b5f6020828403121561202f575f5ffd5b813560ff811681146115ed575f5ffd5b604080825283519082018190525f9060208501906060840190835b8181101561207857835183526020938401939092019160010161205a565b5050838103602080860191909152855180835291810192508501905f5b818110156120bc5782516001600160a01b0316845260209384019390920191600101612095565b50919695505050505050565b602080825282518282018190525f918401906040840190835b8181101561210a576120f4838551611f66565b60209390930192604092909201916001016120e1565b509095945050505050565b5f5f5f60a08486031215612127575f5ffd5b6121318585611e5d565b9250604084013561214181611dde565b91506121508560608601611e5d565b90509250925092565b5f60208284031215612169575f5ffd5b6115ed82611df2565b5f5f60408385031215612183575f5ffd5b50508035926020909101359150565b5f5f602083850312156121a3575f5ffd5b823567ffffffffffffffff8111156121b9575f5ffd5b6121c585828601611d31565b90969095509350505050565b5f602082840312156121e1575f5ffd5b81356115ed81611dde565b634e487b7160e01b5f52603260045260245ffd5b803561220b81611dde565b6001600160a01b0316825263ffffffff61222760208301611df2565b1660208301525050565b60408101610a1e8284612200565b5f6020828403121561224f575f5ffd5b815180151581146115ed575f5ffd5b5f6020828403121561226e575f5ffd5b8151600381106115ed575f5ffd5b5f6020828403121561228c575f5ffd5b815167ffffffffffffffff8111156122a2575f5ffd5b8201601f810184136122b2575f5ffd5b805167ffffffffffffffff8111156122cc576122cc611ea9565b6122df601f8201601f1916602001611ebd565b8181528560208385010111156122f3575f5ffd5b8160208401602083015e5f91810160200191909152949350505050565b634e487b7160e01b5f52602160045260245ffd5b61232e8186612200565b5f6003851061234b57634e487b7160e01b5f52602160045260245ffd5b84604083015261235e6060830185611f66565b60c060a083015261237260c0830184611fdf565b9695505050505050565b634e487b7160e01b5f52601160045260245ffd5b81810381811115610a1e57610a1e61237c565b80820180821115610a1e57610a1e61237c565b606081016123c48285611f66565b6001600160a01b039290921660409190910152919050565b80516020808301519190811015611e6d575f1960209190910360031b1b16919050565b6080810161240d8285611f66565b6115ed6040830184611f66565b5f6020828403121561242a575f5ffd5b81516115ed81611dde565b634e487b7160e01b5f52603160045260245ffdfea26469706673582212204a66187c822cf8883196722425d6a199eb25caad0350f5c28fa5162b58fd508364736f6c634300081b0033",
+    "sourceMap": "726:12551:193:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;6477:700;;;;;;:::i;:::-;;:::i;:::-;;3051:311;;;;;;:::i;:::-;;:::i;3762:401:201:-;;;;;;:::i;:::-;;:::i;5471:485:193:-;;;;;;:::i;:::-;;:::i;11685:185::-;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;;;;;;;;6002:429;;;;;;:::i;:::-;;:::i;10428:194::-;;;;;;:::i;:::-;;:::i;:::-;;;5010:14:330;;5003:22;4985:41;;4973:2;4958:18;10428:194:193;4845:187:330;1774:43:194;;;;;;;;-1:-1:-1;;;;;5224:32:330;;;5206:51;;5194:2;5179:18;1774:43:194;5037:226:330;11916:395:193;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;354:59:188:-;;;;;1031:106:189;;;:::i;4199:85:201:-;;;:::i;4933:163::-;;;;;;:::i;:::-;5065:7;;5036:1;:10;;;;;;;;5065:14;;;5064:24;;4933:163;4810:87;4883:7;;4810:87;;;6919:25:330;;;6907:2;6892:18;4810:87:201;6773:177:330;4523:902:193;;;;;;:::i;:::-;;:::i;2064:101:20:-;;;:::i;11442:197:193:-;;;;;;:::i;:::-;;:::i;1964:47:201:-;;;;;1441:85:20;1513:6;;-1:-1:-1;;;;;1513:6:20;1441:85;;12981:107:193;13062:19;;12981:107;;13062:19;;;;7782:42:330;;7770:2;7755:18;12981:107:193;7638:192:330;13134:141:193;;;:::i;12357:578::-;;;:::i;:::-;;;;;;;;:::i;1657:53:194:-;;;;;9861:521:193;;;:::i;:::-;;;;;;;:::i;3489:988::-;;;;;;:::i;:::-;;:::i;7704:150::-;;;;;;:::i;:::-;;:::i;10668:728::-;;;;;;:::i;:::-;;:::i;7223:435::-;;;;;;:::i;:::-;;:::i;2314:198:20:-;;;;;;:::i;:::-;;:::i;4320:454:201:-;;;;;;:::i;:::-;;:::i;6477:700:193:-;1334:13:20;:11;:13::i;:::-;1568:1:194::1;2960:30:201;2984:5;2960:23;:30::i;:::-;6681:47:193::0;;::::2;6673:79;;;;-1:-1:-1::0;;;6673:79:193::2;;;;;;;;;;;;6768:9;6763:408;6783:19:::0;;::::2;6763:408;;;6823:15;6841:8;;6850:1;6841:11;;;;;;;:::i;:::-;;;;;;;6823:29;;6907:7;6918:1;6907:12:::0;6899:39:::2;;;;-1:-1:-1::0;;;6899:39:193::2;;;;;;;;;;;;6993:59;7018:7;7027:21;;7049:1;7027:24;;;;;;;:::i;:::-;;;;;;;;;;;;;;:::i;:::-;6993:20;::::0;:59;:24:::2;:59::i;:::-;6985:97;;;;-1:-1:-1::0;;;6985:97:193::2;;;;;;;;;;;;7102:58;7126:7;7135:21;;7157:1;7135:24;;;;;;;:::i;:::-;;;;;;;;;;;;;;:::i;:::-;7102:58;::::0;;12058:25:330;;;-1:-1:-1;;;;;12119:32:330;;;12114:2;12099:18;;12092:60;12031:18;7102:58:193::2;;;;;;;-1:-1:-1::0;6804:3:193::2;;6763:408;;;;1357:1:20::1;6477:700:193::0;;;;:::o;3051:311::-;3279:19:26;3302:13;;;;;;3301:14;;3347:34;;;;-1:-1:-1;3365:12:26;;3380:1;3365:12;;;;:16;3347:34;3346:108;;;-1:-1:-1;3426:4:26;1713:19:34;:23;;;3387:66:26;;-1:-1:-1;3436:12:26;;;;;:17;3387:66;3325:201;;;;-1:-1:-1;;;3325:201:26;;12365:2:330;3325:201:26;;;12347:21:330;12404:2;12384:18;;;12377:30;12443:34;12423:18;;;12416:62;-1:-1:-1;;;12494:18:330;;;12487:44;12548:19;;3325:201:26;;;;;;;;;3536:12;:16;;-1:-1:-1;;3536:16:26;3551:1;3536:16;;;3562:65;;;;3596:13;:20;;-1:-1:-1;;3596:20:26;;;;;3562:65;3217:32:193::1;3236:12;3217:18;:32::i;:::-;3259:49;3282:25;3259:22;:49::i;:::-;3318:37;3335:19;3318:16;:37::i;:::-;3651:14:26::0;3647:99;;;3697:5;3681:21;;-1:-1:-1;;3681:21:26;;;3721:14;;-1:-1:-1;12730:36:330;;3721:14:26;;12718:2:330;12703:18;3721:14:26;;;;;;;3647:99;3269:483;3051:311:193;;;:::o;3762:401:201:-;2390:18;:16;:18::i;:::-;3876:7:::1;::::0;4025:37;;::::1;4024:62:::0;::::1;4016:97;;;;-1:-1:-1::0;;;4016:97:201::1;;;;;;;;;;;;4123:33;4140:15;4123:16;:33::i;:::-;3836:327;3762:401:::0;:::o;5471:485:193:-;1288:1:194;2960:30:201;2984:5;2960:23;:30::i;:::-;5711:15:193::1;;::::0;::::1;:11:::0;:15:::1;:::i;:::-;713:22:188;727:7;713:13;:22::i;:::-;705:53;;;;-1:-1:-1::0;;;705:53:188::1;;;;;;;;;;;;1419:44:193::2;::::0;-1:-1:-1;;;1419:44:193;;5755:11;;-1:-1:-1;;;;;1419:17:193::2;:31;::::0;::::2;::::0;:44:::2;::::0;5755:11;;1419:44:::2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1411:75;;;;-1:-1:-1::0;;;1411:75:193::2;;;;;;;;;;;;5812:11:::0;1621:43:::3;;;::::0;;::::3;::::0;::::3;5812:11:::0;1621:43:::3;:::i;:::-;1613:89;;;;-1:-1:-1::0;;;1613:89:193::3;;;;;;;;;;;;5884:65:::4;;;::::0;;::::4;::::0;::::4;5912:11:::0;5884:65:::4;:::i;:::-;5925:23;5884:27;:65::i;11685:185::-:0;-1:-1:-1;;;;;;;;;;;;;;;;;11825:19:193;:38;11845:17;:11;:15;:17::i;:::-;11825:38;;;;;;;;;;;;;;-1:-1:-1;11825:38:193;11818:45;;;;;;;;;-1:-1:-1;;;;;11818:45:193;;;;-1:-1:-1;;;11818:45:193;;;;;;;;;;;;;-1:-1:-1;;11685:185:193:o;6002:429::-;1432:1:194;2960:30:201;2984:5;2960:23;:30::i;:::-;6215:15:193::1;;::::0;::::1;:11:::0;:15:::1;:::i;:::-;713:22:188;727:7;713:13;:22::i;:::-;705:53;;;;-1:-1:-1::0;;;705:53:188::1;;;;;;;;;;;;1419:44:193::2;::::0;-1:-1:-1;;;1419:44:193;;6259:11;;-1:-1:-1;;;;;1419:17:193::2;:31;::::0;::::2;::::0;:44:::2;::::0;6259:11;;1419:44:::2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1411:75;;;;-1:-1:-1::0;;;1411:75:193::2;;;;;;;;;;;;6316:11:::0;1621:43:::3;;;::::0;;::::3;::::0;::::3;6316:11:::0;1621:43:::3;:::i;:::-;1613:89;;;;-1:-1:-1::0;;;1613:89:193::3;;;;;;;;;;;;6382:42:::4;;;::::0;;::::4;::::0;::::4;6404:11:::0;6382:42:::4;:::i;:::-;;;::::0;;::::4;::::0;::::4;6417:6:::0;6382:42:::4;:::i;:::-;:21;:42::i;10428:194::-:0;10535:4;10558:57;10597:17;:11;:15;:17::i;:::-;10558:29;;:38;:57::i;:::-;10551:64;10428:194;-1:-1:-1;;10428:194:193:o;11916:395::-;12024:12;12079:11;12104:12;-1:-1:-1;;;;;12104:36:193;;12141:11;12104:49;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;12167:33;;;;;;;;12188:11;12167:33;:::i;:::-;12214:39;;;;;;;;12241:11;12214:39;:::i;:::-;-1:-1:-1;;;;;12214:67:193;;12282:11;12214:80;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;12214:80:193;;;;;;;;;;;;:::i;:::-;12055:249;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;12048:256;;11916:395;;;:::o;1031:106:189:-;1079:13;1111:19;:8;:17;:19::i;:::-;1104:26;;1031:106;:::o;4199:85:201:-;2390:18;:16;:18::i;:::-;4249:28:::1;-1:-1:-1::0;;4249:16:201::1;:28::i;:::-;4199:85::o:0;4523:902:193:-;1132:1:194;2960:30:201;2984:5;2960:23;:30::i;:::-;4704:15:193::1;;::::0;::::1;:11:::0;:15:::1;:::i;:::-;713:22:188;727:7;713:13;:22::i;:::-;705:53;;;;-1:-1:-1::0;;;705:53:188::1;;;;;;;;;;;;1419:44:193::2;::::0;-1:-1:-1;;;1419:44:193;;4748:11;;-1:-1:-1;;;;;1419:17:193::2;:31;::::0;::::2;::::0;:44:::2;::::0;4748:11;;1419:44:::2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1411:75;;;;-1:-1:-1::0;;;1411:75:193::2;;;;;;;;;;;;4805:11:::0;1621:43:::3;;;::::0;;::::3;::::0;::::3;4805:11:::0;1621:43:::3;:::i;:::-;1613:89;;;;-1:-1:-1::0;;;1613:89:193::3;;;;;;;;;;;;4832:22:::4;4857:17;:15;;::::0;;::::4;::::0;::::4;:11:::0;:15:::4;:::i;:::-;;:17::i;:::-;4993:41;::::0;;;:25:::4;:41;::::0;;;;;;4986:48;;-1:-1:-1;;;;;;4986:48:193::4;::::0;;5049:43;4832:42;;-1:-1:-1;5049:43:193::4;::::0;::::4;::::0;5080:11;;5049:43:::4;:::i;:::-;;;;;;;;5155:35;::::0;;;:19:::4;:35;::::0;;;;;;5148:42;;-1:-1:-1;;;;;;5148:42:193;;;5205:37;::::4;::::0;::::4;::::0;5230:11;;5205:37:::4;:::i;:::-;;;;;;;;5310:52;:29;5347:14:::0;5310:36:::4;:52::i;:::-;;5377:41;5406:11;5377:41;;;;;;:::i;:::-;;;;;;;;4822:603;1496:1:::3;768::188::2;3000::201::1;4523:902:193::0;;:::o;2064:101:20:-;1334:13;:11;:13::i;:::-;2128:30:::1;2155:1;2128:18;:30::i;11442:197:193:-:0;11545:24;11588:25;:44;11614:17;:11;:15;:17::i;:::-;11588:44;;;;;;;;;;;-1:-1:-1;11588:44:193;;-1:-1:-1;;;;;11588:44:193;;11442:197;-1:-1:-1;;11442:197:193:o;13134:141::-;13204:7;13230:38;:29;:36;:38::i;12357:578::-;12410:16;12428;12456:14;12473:29;:20;:27;:29::i;:::-;12456:46;;12512:25;12554:6;12540:21;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;12540:21:193;;12512:49;;12571:38;12626:6;12612:21;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;12612:21:193;-1:-1:-1;12571:62:193;-1:-1:-1;12649:9:193;12644:234;12668:6;12664:1;:10;12644:234;;;12696:15;;12745:26;:20;12769:1;12745:23;:26::i;:::-;12695:76;;;;12799:7;12785:8;12794:1;12785:11;;;;;;;;:::i;:::-;;;;;;:21;;;;;12847:20;12820:21;12842:1;12820:24;;;;;;;;:::i;:::-;-1:-1:-1;;;;;12820:47:193;;;:24;;;;;;;;;;;:47;-1:-1:-1;;12676:3:193;;12644:234;;;-1:-1:-1;12896:8:193;;12906:21;;-1:-1:-1;12357:578:193;-1:-1:-1;;12357:578:193:o;9861:521::-;9927:20;9959:14;9976:38;:29;:36;:38::i;:::-;9959:55;;10024:33;10078:6;10060:25;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;;;;;;;10060:25:193;;;;;;;;;;;;;;;-1:-1:-1;10024:61:193;-1:-1:-1;10101:9:193;10096:250;10120:6;10116:1;:10;10096:250;;;10147:22;10172:35;:29;10205:1;10172:32;:35::i;:::-;10147:60;;10221:30;10254:37;10276:14;-1:-1:-1;;;;;;;;;;;;;;;;;;703:137:183;;;;;;;;;767:2;750:19;;;703:137;;;;;;;;;;;559:288;10254:37:193;10221:70;;10324:11;10306:12;10319:1;10306:15;;;;;;;;:::i;:::-;;;;;;;;;;:29;-1:-1:-1;;10128:3:193;;10096:250;;;-1:-1:-1;10363:12:193;9861:521;-1:-1:-1;;9861:521:193:o;3489:988::-;1132:1:194;2960:30:201;2984:5;2960:23;:30::i;:::-;3771:15:193::1;;::::0;::::1;:11:::0;:15:::1;:::i;:::-;713:22:188;727:7;713:13;:22::i;:::-;705:53;;;;-1:-1:-1::0;;;705:53:188::1;;;;;;;;;;;;1419:44:193::2;::::0;-1:-1:-1;;;1419:44:193;;3815:11;;-1:-1:-1;;;;;1419:17:193::2;:31;::::0;::::2;::::0;:44:::2;::::0;3815:11;;1419:44:::2;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;1411:75;;;;-1:-1:-1::0;;;1411:75:193::2;;;;;;;;;;;;3992:33:::3;3939:49;::::0;-1:-1:-1;;;3939:49:193;;-1:-1:-1;;;;;3939:12:193::3;:36;::::0;::::3;::::0;:49:::3;::::0;3976:11;;3939:49:::3;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;:86;;;;;;;;:::i;:::-;::::0;3931:112:::3;;;;-1:-1:-1::0;;;3931:112:193::3;;;;;;;;;;;;4111:52;4145:17;:15;;::::0;;::::3;::::0;::::3;:11:::0;:15:::3;:::i;:17::-;4111:29;::::0;:33:::3;:52::i;:::-;4103:99;;;;-1:-1:-1::0;;;4103:99:193::3;;;;;;;;;;;;4217:41;4246:11;4217:41;;;;;;:::i;:::-;;;;;;;;4314:65;;;::::0;;::::3;::::0;::::3;4342:11:::0;4314:65:::3;:::i;:::-;4428:42;;;::::0;;::::3;::::0;::::3;4450:11:::0;4428:42:::3;:::i;:::-;;;::::0;;::::3;::::0;::::3;4463:6:::0;4428:42:::3;:::i;7704:150::-:0;1334:13:20;:11;:13::i;:::-;7805:42:193::1;7828:18;7805:22;:42::i;:::-;7704:150:::0;:::o;10668:728::-;10799:20;10853:8;10839:10;:22;;10831:47;;;;-1:-1:-1;;;10831:47:193;;;;;;;;;;;;10908:38;:29;:36;:38::i;:::-;10896:8;:50;;10888:78;;;;-1:-1:-1;;;10888:78:193;;;;;;;;;;;;10977:14;10994:21;11005:10;10994:8;:21;:::i;:::-;10977:38;;11025:33;11079:6;11061:25;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;;;;;;;;;;;;;11061:25:193;;;;;;;;;;;;;;;-1:-1:-1;11025:61:193;-1:-1:-1;11102:9:193;11097:263;11121:6;11117:1;:10;11097:263;;;11148:22;11173:48;11206:14;11219:1;11206:10;:14;:::i;:::-;11173:29;;:32;:48::i;:::-;11148:73;;11235:30;11268:37;11290:14;-1:-1:-1;;;;;;;;;;;;;;;;;;703:137:183;;;;;;;;;767:2;750:19;;;703:137;;;;;;;;;;;559:288;11268:37:193;11235:70;;11338:11;11320:12;11333:1;11320:15;;;;;;;;:::i;:::-;;;;;;;;;;:29;-1:-1:-1;;11129:3:193;;11097:263;;;-1:-1:-1;11377:12:193;10668:728;-1:-1:-1;;;;10668:728:193:o;7223:435::-;1334:13:20;:11;:13::i;:::-;1568:1:194::1;2960:30:201;2984:5;2960:23;:30::i;:::-;7379:9:193::2;7374:278;7394:19:::0;;::::2;7374:278;;;7434:15;7452:8;;7461:1;7452:11;;;;;;;:::i;:::-;;;;;;;7434:29;;7523:36;7551:7;7523:20;:27;;:36;;;;:::i;:::-;7515:70;;;;-1:-1:-1::0;;;7515:70:193::2;;;;;;;;;;;;7605:36;::::0;6919:25:330;;;7605:36:193::2;::::0;6907:2:330;6892:18;7605:36:193::2;;;;;;;-1:-1:-1::0;7415:3:193::2;;7374:278;;2314:198:20::0;1334:13;:11;:13::i;:::-;-1:-1:-1;;;;;2402:22:20;::::1;2394:73;;;::::0;-1:-1:-1;;;2394:73:20;;16455:2:330;2394:73:20::1;::::0;::::1;16437:21:330::0;16494:2;16474:18;;;16467:30;16533:34;16513:18;;;16506:62;-1:-1:-1;;;16584:18:330;;;16577:36;16630:19;;2394:73:20::1;16253:402:330::0;2394:73:20::1;2477:28;2496:8;2477:18;:28::i;4320:454:201:-:0;2558:20;:18;:20::i;:::-;4438:7:::1;::::0;4632:20;::::1;4609:16:::0;::::1;4583:43:::0;::::1;4582:71;4574:106;;;;-1:-1:-1::0;;;4574:106:201::1;;;;;;;;;;;;4690:7;:25:::0;;;4730:37:::1;::::0;6919:25:330;;;4739:10:201::1;::::0;4730:37:::1;::::0;6907:2:330;6892:18;4730:37:201::1;;;;;;;4398:376;4320:454:::0;:::o;1599:130:20:-;1513:6;;-1:-1:-1;;;;;1513:6:20;929:10:35;1662:23:20;1654:68;;;;-1:-1:-1;;;1654:68:20;;16862:2:330;1654:68:20;;;16844:21:330;;;16881:18;;;16874:30;16940:34;16920:18;;;16913:62;16992:18;;1654:68:20;16660:356:330;3380:133:201;5065:7;;5036:1;:10;;;;5065:14;;;5064:24;3464:42;;;;-1:-1:-1;;;3464:42:201;;;;;;;;;;;10152:182:84;10241:4;10264:63;10268:3;10288;-1:-1:-1;;;;;10302:23:84;;10264:3;:63::i;:::-;10257:70;;10152:182;;;;;;:::o;2666:187:20:-;2758:6;;;-1:-1:-1;;;;;2774:17:20;;;-1:-1:-1;;;;;;2774:17:20;;;;;;;2806:40;;2758:6;;;2774:17;2758:6;;2806:40;;2739:16;;2806:40;2729:124;2666:187;:::o;9473:265:193:-;9594:1;9573:18;:22;;;9565:60;;;;-1:-1:-1;;;9565:60:193;;;;;;;;;;;;9635:19;:40;;-1:-1:-1;;9635:40:193;;;;;;;;;;9690:41;;7782:42:330;;;9690:41:193;;7770:2:330;7755:18;9690:41:193;;;;;;;9473:265;:::o;5200:157:201:-;5281:7;:22;;;5318:32;;6919:25:330;;;5325:10:201;;5318:32;;6907:2:330;6892:18;5318:32:201;;;;;;;5200:157;:::o;3014:117::-;3074:35;;-1:-1:-1;;;3074:35:201;;3098:10;3074:35;;;5206:51:330;3074:14:201;-1:-1:-1;;;;;3074:23:201;;;;5179:18:330;;3074:35:201;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;3066:58;;;;-1:-1:-1;;;3066:58:201;;;;;;;;;;;1080:175:188;1175:73;;-1:-1:-1;;;1175:73:188;;-1:-1:-1;;;;;17268:32:330;;;1175:73:188;;;17250:51:330;1213:10:188;17317:18:330;;;17310:60;1233:4:188;17386:18:330;;;17379:60;1152:4:188;1240:7;;-1:-1:-1;;;;;;1240:7:188;17455:18:330;;;17448:61;1152:4:188;1175:20;:28;;;;;;17222:19:330;;1175:73:188;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;8190:316:193:-;8397:23;8350:25;:44;8376:17;:11;:15;:17::i;:::-;8350:44;;;;;;;;;;;;:70;;;;;-1:-1:-1;;;;;8350:70:193;;;;;-1:-1:-1;;;;;8350:70:193;;;;;;8435:64;8462:11;8475:23;8435:64;;;;;;;:::i;:::-;;;;;;;;8190:316;;:::o;399:154:183:-;472:7;523:2;:6;;;538:2;:5;;;531:13;;506:39;;;;;;;;18099:2:330;18095:15;;;;-1:-1:-1;;18091:53:330;18079:66;;18201:3;18179:16;-1:-1:-1;;;;;;18175:59:330;18170:2;18161:12;;18154:81;18260:2;18251:12;;17924:345;506:39:183;;;;;;;;;;;;;498:48;;;:::i;8838:374:193:-;8974:25;;;;:30;;;;:82;;-1:-1:-1;9037:19:193;;9008:25;;;;9037:19;;;;9008:48;;;;8974:82;8953:139;;;;-1:-1:-1;;;8953:139:193;;;;;;;;;;;;9143:6;9102:19;:38;9122:17;:11;:15;:17::i;:::-;9102:38;;;;;;;;;;;;;;-1:-1:-1;9102:38:193;:47;;;;;;;;;;;-1:-1:-1;;;9102:47:193;-1:-1:-1;;;;;;9102:47:193;;;-1:-1:-1;;;;;9102:47:193;;;;;;;;;;;;;9164:41;;;;;9185:11;;9198:6;;9164:41;:::i;6420:138:85:-;6500:4;4351:19;;;:12;;;:19;;;;;;:24;;6523:28;4255:127;2081:405:37;2140:13;2165:11;2179:16;2190:4;2179:10;:16::i;:::-;2303:14;;;2314:2;2303:14;;;;;;;;;2165:30;;-1:-1:-1;2283:17:37;;2303:14;;;;;;;;;-1:-1:-1;;;2393:16:37;;;-1:-1:-1;2438:4:37;2429:14;;2422:28;;;;-1:-1:-1;2393:16:37;2081:405::o;6210:129:85:-;6283:4;6306:26;6314:3;6326:5;6306:7;:26::i;6639:115::-;6702:7;6728:19;6736:3;4545:18;;4463:107;10942:120:84;11011:7;11037:18;11044:3;11037:6;:18::i;11399:232::-;11479:7;;;;11538:21;11541:3;11553:5;11538:2;:21::i;:::-;11507:52;;-1:-1:-1;11507:52:84;-1:-1:-1;;;11399:232:84;;;;;;:::o;7096:129:85:-;7170:7;7196:22;7200:3;7212:5;7196:3;:22::i;5919:123::-;5989:4;6012:23;6017:3;6029:5;6012:4;:23::i;10493:139:84:-;10570:4;10593:32;10600:3;10620;10593:6;:32::i;3137:125:201:-;3213:14;-1:-1:-1;;;;;3213:23:201;;:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;-1:-1:-1;;;;;3199:39:201;:10;-1:-1:-1;;;;;3199:39:201;;3191:64;;;;-1:-1:-1;;;3191:64:201;;;;;;;;;;;2543:174:84;2635:4;2651:16;;;:11;;;:16;;;;;:24;;;2692:18;2651:3;2663;2692:13;:18::i;2558:245:37:-;2619:7;2691:4;2655:40;;2718:2;2709:11;;2705:69;;;2743:20;;-1:-1:-1;;;2743:20:37;;;;;;;;;;;2786:1388:85;2852:4;2989:19;;;:12;;;:19;;;;;;3023:15;;3019:1149;;3392:21;3416:14;3429:1;3416:10;:14;:::i;:::-;3464:18;;3392:38;;-1:-1:-1;3444:17:85;;3464:22;;3485:1;;3464:22;:::i;:::-;3444:42;;3518:13;3505:9;:26;3501:398;;3551:17;3571:3;:11;;3583:9;3571:22;;;;;;;;:::i;:::-;;;;;;;;;3551:42;;3722:9;3693:3;:11;;3705:13;3693:26;;;;;;;;:::i;:::-;;;;;;;;;;;;:38;;;;3805:23;;;:12;;;:23;;;;;:36;;;3501:398;3977:17;;:3;;:17;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;4069:3;:12;;:19;4082:5;4069:19;;;;;;;;;;;4062:26;;;4110:4;4103:11;;;;;;;3019:1149;4152:5;4145:12;;;;;3358:123:84;3430:7;3456:18;:3;:16;:18::i;3834:191::-;3917:7;;;3959:19;:3;3972:5;3959:12;:19::i;:::-;4001:16;;;;:11;;;;;:16;;;;;;;;;3834:191;-1:-1:-1;;;;3834:191:84:o;4912:118:85:-;4979:7;5005:3;:11;;5017:5;5005:18;;;;;;;;:::i;:::-;;;;;;;;;4998:25;;4912:118;;;;:::o;2214:404::-;2277:4;4351:19;;;:12;;;:19;;;;;;2293:319;;-1:-1:-1;2335:23:85;;;;;;;;:11;:23;;;;;;;;;;;;;2515:18;;2493:19;;;:12;;;:19;;;;;;:40;;;;2547:11;;2293:319;-1:-1:-1;2596:5:85;2589:12;;2885:164:84;2965:4;2988:16;;;:11;;;:16;;;;;2981:23;;;3021:21;2988:3;3000;3021:16;:21::i;14:367:330:-;77:8;87:6;141:3;134:4;126:6;122:17;118:27;108:55;;159:1;156;149:12;108:55;-1:-1:-1;182:20:330;;225:18;214:30;;211:50;;;257:1;254;247:12;211:50;294:4;286:6;282:17;270:29;;354:3;347:4;337:6;334:1;330:14;322:6;318:27;314:38;311:47;308:67;;;371:1;368;361:12;386:768;508:6;516;524;532;585:2;573:9;564:7;560:23;556:32;553:52;;;601:1;598;591:12;553:52;641:9;628:23;674:18;666:6;663:30;660:50;;;706:1;703;696:12;660:50;745:70;807:7;798:6;787:9;783:22;745:70;:::i;:::-;834:8;;-1:-1:-1;719:96:330;-1:-1:-1;;922:2:330;907:18;;894:32;951:18;938:32;;935:52;;;983:1;980;973:12;935:52;1022:72;1086:7;1075:8;1064:9;1060:24;1022:72;:::i;:::-;386:768;;;;-1:-1:-1;1113:8:330;-1:-1:-1;;;;386:768:330:o;1159:131::-;-1:-1:-1;;;;;1234:31:330;;1224:42;;1214:70;;1280:1;1277;1270:12;1295:163;1362:20;;1422:10;1411:22;;1401:33;;1391:61;;1448:1;1445;1438:12;1391:61;1295:163;;;:::o;1463:439::-;1539:6;1547;1555;1608:2;1596:9;1587:7;1583:23;1579:32;1576:52;;;1624:1;1621;1614:12;1576:52;1663:9;1650:23;1682:31;1707:5;1682:31;:::i;:::-;1732:5;-1:-1:-1;1756:37:330;1789:2;1774:18;;1756:37;:::i;:::-;1463:439;;1746:47;;-1:-1:-1;;;1866:2:330;1851:18;;;;1838:32;;1463:439::o;1907:226::-;1966:6;2019:2;2007:9;1998:7;1994:23;1990:32;1987:52;;;2035:1;2032;2025:12;1987:52;-1:-1:-1;2080:23:330;;1907:226;-1:-1:-1;1907:226:330:o;2138:159::-;2202:5;2247:2;2238:6;2233:3;2229:16;2225:25;2222:45;;;2263:1;2260;2253:12;2222:45;-1:-1:-1;2285:6:330;2138:159;-1:-1:-1;2138:159:330:o;2302:417::-;2437:6;2445;2498:2;2486:9;2477:7;2473:23;2469:32;2466:52;;;2514:1;2511;2504:12;2466:52;2537:58;2587:7;2576:9;2537:58;:::i;:::-;2527:68;;2645:2;2634:9;2630:18;2617:32;2658:31;2683:5;2658:31;:::i;:::-;2708:5;2698:15;;;2302:417;;;;;:::o;2724:127::-;2785:10;2780:3;2776:20;2773:1;2766:31;2816:4;2813:1;2806:15;2840:4;2837:1;2830:15;2856:275;2927:2;2921:9;2992:2;2973:13;;-1:-1:-1;;2969:27:330;2957:40;;3027:18;3012:34;;3048:22;;;3009:62;3006:88;;;3074:18;;:::i;:::-;3110:2;3103:22;2856:275;;-1:-1:-1;2856:275:330:o;3136:578::-;3194:5;3242:4;3230:9;3225:3;3221:19;3217:30;3214:50;;;3260:1;3257;3250:12;3214:50;3313:4;3307:11;;;3345:17;;3392:18;3377:34;;3413:22;;;3374:62;3371:88;;;3439:18;;:::i;:::-;3475:4;3468:24;3510:6;-1:-1:-1;3510:6:330;3540:23;;3572:33;3540:23;3572:33;:::i;:::-;3614:23;;3670:37;3703:2;3688:18;;3670:37;:::i;:::-;3665:2;3657:6;3653:15;3646:62;;3136:578;;;;:::o;3719:237::-;3809:6;3862:2;3850:9;3841:7;3837:23;3833:32;3830:52;;;3878:1;3875;3868:12;3830:52;3901:49;3942:7;3931:9;3901:49;:::i;3961:201::-;4048:12;;-1:-1:-1;;;;;4044:38:330;4032:51;;4136:4;4125:16;;;4119:23;4144:10;4115:40;4099:14;;4092:64;3961:201::o;4167:278::-;4373:2;4358:18;;4385:54;4362:9;4421:6;4385:54;:::i;4450:390::-;4589:6;4597;4650:3;4638:9;4629:7;4625:23;4621:33;4618:53;;;4667:1;4664;4657:12;4618:53;4690:58;4740:7;4729:9;4690:58;:::i;:::-;4680:68;;4767:67;4826:7;4821:2;4810:9;4806:18;4767:67;:::i;:::-;4757:77;;4450:390;;;;;:::o;5268:248::-;5360:6;5413:2;5401:9;5392:7;5388:23;5384:32;5381:52;;;5429:1;5426;5419:12;5381:52;5452:58;5502:7;5491:9;5452:58;:::i;5521:288::-;5562:3;5600:5;5594:12;5627:6;5622:3;5615:19;5683:6;5676:4;5669:5;5665:16;5658:4;5653:3;5649:14;5643:47;5735:1;5728:4;5719:6;5714:3;5710:16;5706:27;5699:38;5798:4;5791:2;5787:7;5782:2;5774:6;5770:15;5766:29;5761:3;5757:39;5753:50;5746:57;;;5521:288;;;;:::o;5814:217::-;5961:2;5950:9;5943:21;5924:4;5981:44;6021:2;6010:9;6006:18;5998:6;5981:44;:::i;6499:269::-;6556:6;6609:2;6597:9;6588:7;6584:23;6580:32;6577:52;;;6625:1;6622;6615:12;6577:52;6664:9;6651:23;6714:4;6707:5;6703:16;6696:5;6693:27;6683:55;;6734:1;6731;6724:12;7835:1171;8103:2;8115:21;;;8185:13;;8088:18;;;8207:22;;;8055:4;;8298;8286:17;;;8260:2;8245:18;;;8055:4;8331:173;8345:6;8342:1;8339:13;8331:173;;;8406:13;;8394:26;;8449:4;8477:17;;;;8440:14;;;;8367:1;8360:9;8331:173;;;-1:-1:-1;;8542:19:330;;;8535:4;8520:20;;;8513:49;;;;8612:13;;8634:21;;;8673:14;;;;-1:-1:-1;8712:17:330;;;8749:1;8759:219;8775:8;8770:3;8767:17;8759:219;;;8848:15;;-1:-1:-1;;;;;8844:41:330;8830:56;;8919:4;8908:16;;;;8949:19;;;;8882:1;8794:11;8759:219;;;-1:-1:-1;8995:5:330;;7835:1171;-1:-1:-1;;;;;;7835:1171:330:o;9247:702::-;9499:2;9511:21;;;9581:13;;9484:18;;;9603:22;;;9451:4;;9682:15;;;9656:2;9641:18;;;9451:4;9725:198;9739:6;9736:1;9733:13;9725:198;;;9788:55;9839:3;9830:6;9824:13;9788:55;:::i;:::-;9910:2;9898:15;;;;;9872:2;9863:12;;;;;9761:1;9754:9;9725:198;;;-1:-1:-1;9940:3:330;;9247:702;-1:-1:-1;;;;;9247:702:330:o;9954:559::-;10136:6;10144;10152;10205:3;10193:9;10184:7;10180:23;10176:33;10173:53;;;10222:1;10219;10212:12;10173:53;10245:58;10295:7;10284:9;10245:58;:::i;:::-;10235:68;;10353:2;10342:9;10338:18;10325:32;10366:31;10391:5;10366:31;:::i;:::-;10416:5;-1:-1:-1;10440:67:330;10499:7;10494:2;10479:18;;10440:67;:::i;:::-;10430:77;;9954:559;;;;;:::o;10518:184::-;10576:6;10629:2;10617:9;10608:7;10604:23;10600:32;10597:52;;;10645:1;10642;10635:12;10597:52;10668:28;10686:9;10668:28;:::i;10707:346::-;10775:6;10783;10836:2;10824:9;10815:7;10811:23;10807:32;10804:52;;;10852:1;10849;10842:12;10804:52;-1:-1:-1;;10897:23:330;;;11017:2;11002:18;;;10989:32;;-1:-1:-1;10707:346:330:o;11058:437::-;11144:6;11152;11205:2;11193:9;11184:7;11180:23;11176:32;11173:52;;;11221:1;11218;11211:12;11173:52;11261:9;11248:23;11294:18;11286:6;11283:30;11280:50;;;11326:1;11323;11316:12;11280:50;11365:70;11427:7;11418:6;11407:9;11403:22;11365:70;:::i;:::-;11454:8;;11339:96;;-1:-1:-1;11058:437:330;-1:-1:-1;;;;11058:437:330:o;11500:247::-;11559:6;11612:2;11600:9;11591:7;11587:23;11583:32;11580:52;;;11628:1;11625;11618:12;11580:52;11667:9;11654:23;11686:31;11711:5;11686:31;:::i;11752:127::-;11813:10;11808:3;11804:20;11801:1;11794:31;11844:4;11841:1;11834:15;11868:4;11865:1;11858:15;12777:296;12879:5;12866:19;12894:33;12919:7;12894:33;:::i;:::-;-1:-1:-1;;;;;12948:33:330;12936:46;;13055:10;13018:35;13047:4;13036:16;;13018:35;:::i;:::-;13014:52;13007:4;13002:3;12998:14;12991:76;12777:296;;:::o;13078:273::-;13276:2;13261:18;;13288:57;13265:9;13327:6;13288:57;:::i;13356:277::-;13423:6;13476:2;13464:9;13455:7;13451:23;13447:32;13444:52;;;13492:1;13489;13482:12;13444:52;13524:9;13518:16;13577:5;13570:13;13563:21;13556:5;13553:32;13543:60;;13599:1;13596;13589:12;13885:275;13970:6;14023:2;14011:9;14002:7;13998:23;13994:32;13991:52;;;14039:1;14036;14029:12;13991:52;14071:9;14065:16;14110:1;14103:5;14100:12;14090:40;;14126:1;14123;14116:12;14165:755;14244:6;14297:2;14285:9;14276:7;14272:23;14268:32;14265:52;;;14313:1;14310;14303:12;14265:52;14346:9;14340:16;14379:18;14371:6;14368:30;14365:50;;;14411:1;14408;14401:12;14365:50;14434:22;;14487:4;14479:13;;14475:27;-1:-1:-1;14465:55:330;;14516:1;14513;14506:12;14465:55;14549:2;14543:9;14575:18;14567:6;14564:30;14561:56;;;14597:18;;:::i;:::-;14639:57;14686:2;14663:17;;-1:-1:-1;;14659:31:330;14692:2;14655:40;14639:57;:::i;:::-;14719:6;14712:5;14705:21;14767:7;14762:2;14753:6;14749:2;14745:15;14741:24;14738:37;14735:57;;;14788:1;14785;14778:12;14735:57;14836:6;14831:2;14827;14823:11;14818:2;14811:5;14807:14;14801:42;14888:1;14863:18;;;14883:2;14859:27;14852:38;;;;14867:5;14165:755;-1:-1:-1;;;;14165:755:330:o;14925:127::-;14986:10;14981:3;14977:20;14974:1;14967:31;15017:4;15014:1;15007:15;15041:4;15038:1;15031:15;15057:796;15419:57;15466:9;15458:6;15419:57;:::i;:::-;15400:4;15506:1;15498:6;15495:13;15485:144;;15551:10;15546:3;15542:20;15539:1;15532:31;15586:4;15583:1;15576:15;15614:4;15611:1;15604:15;15485:144;15665:6;15660:2;15649:9;15645:18;15638:34;15681:63;15740:2;15729:9;15725:18;15717:6;15681:63;:::i;:::-;15781:3;15775;15764:9;15760:19;15753:32;15802:45;15842:3;15831:9;15827:19;15819:6;15802:45;:::i;:::-;15794:53;15057:796;-1:-1:-1;;;;;;15057:796:330:o;15858:127::-;15919:10;15914:3;15910:20;15907:1;15900:31;15950:4;15947:1;15940:15;15974:4;15971:1;15964:15;15990:128;16057:9;;;16078:11;;;16075:37;;;16092:18;;:::i;16123:125::-;16188:9;;;16209:10;;;16206:36;;;16222:18;;:::i;17520:399::-;17778:2;17763:18;;17790:54;17767:9;17826:6;17790:54;:::i;:::-;-1:-1:-1;;;;;17880:32:330;;;;17875:2;17860:18;;;;17853:60;17520:399;;-1:-1:-1;17520:399:330:o;18274:297::-;18392:12;;18439:4;18428:16;;;18422:23;;18392:12;18457:16;;18454:111;;;-1:-1:-1;;18531:4:330;18527:17;;;;18524:1;18520:25;18516:38;18505:50;;18274:297;-1:-1:-1;18274:297:330:o;18576:441::-;18872:3;18857:19;;18885:54;18861:9;18921:6;18885:54;:::i;:::-;18948:63;19007:2;18996:9;18992:18;18984:6;18948:63;:::i;19022:251::-;19092:6;19145:2;19133:9;19124:7;19120:23;19116:32;19113:52;;;19161:1;19158;19151:12;19113:52;19193:9;19187:16;19212:31;19237:5;19212:31;:::i;19278:127::-;19339:10;19334:3;19330:20;19327:1;19320:31;19370:4;19367:1;19360:15;19394:4;19391:1;19384:15",
+    "linkReferences": {},
+    "immutableReferences": {
+      "105178": [
+        {
+          "start": 742,
+          "length": 32
+        },
+        {
+          "start": 6103,
+          "length": 32
+        }
+      ],
+      "105240": [
+        {
+          "start": 2930,
+          "length": 32
+        }
+      ],
+      "107455": [
+        {
+          "start": 1006,
+          "length": 32
+        },
+        {
+          "start": 1938,
+          "length": 32
+        },
+        {
+          "start": 2338,
+          "length": 32
+        },
+        {
+          "start": 3077,
+          "length": 32
+        },
+        {
+          "start": 4217,
+          "length": 32
+        }
+      ],
+      "107459": [
+        {
+          "start": 647,
+          "length": 32
+        },
+        {
+          "start": 2601,
+          "length": 32
+        },
+        {
+          "start": 4386,
+          "length": 32
+        }
+      ],
+      "110862": [
+        {
+          "start": 896,
+          "length": 32
+        },
+        {
+          "start": 5899,
+          "length": 32
+        },
+        {
+          "start": 6811,
+          "length": 32
+        }
+      ]
+    }
+  },
+  "methodIdentifiers": {
+    "addChainIDsToWhitelist(uint256[],address[])": "04e98be3",
+    "allocationManager()": "ca8aa7c7",
+    "calculateOperatorTableBytes((address,uint32))": "41ee6d0e",
+    "createGenerationReservation((address,uint32),address,(address,uint32))": "d5044911",
+    "getActiveGenerationReservationCount()": "b186a60e",
+    "getActiveGenerationReservations()": "d09b978b",
+    "getActiveGenerationReservationsByRange(uint256,uint256)": "d9a6729e",
+    "getOperatorSetConfig((address,uint32))": "21fa7fdc",
+    "getOperatorTableCalculator((address,uint32))": "75e4b539",
+    "getSupportedChains()": "c4bffe2b",
+    "getTableUpdateCadence()": "ac505f4b",
+    "hasActiveGenerationReservation((address,uint32))": "36b200de",
+    "initialize(address,uint32,uint256)": "0f19aaef",
+    "keyRegistrar()": "3ec45c7e",
+    "owner()": "8da5cb5b",
+    "pause(uint256)": "136439dd",
+    "pauseAll()": "595c6a67",
+    "paused()": "5c975abb",
+    "paused(uint8)": "5ac86ab7",
+    "pauserRegistry()": "886f1195",
+    "permissionController()": "4657e26a",
+    "removeChainIDsFromWhitelist(uint256[])": "dfbd9dfd",
+    "removeGenerationReservation((address,uint32))": "6c55a37f",
+    "renounceOwnership()": "715018a6",
+    "setOperatorSetConfig((address,uint32),(address,uint32))": "277e1e62",
+    "setOperatorTableCalculator((address,uint32),address)": "1ca9142a",
+    "setTableUpdateCadence(uint32)": "d6db9e25",
+    "transferOwnership(address)": "f2fde38b",
+    "unpause(uint256)": "fabc1cbc",
+    "version()": "54fd4d50"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.27+commit.40a35a09\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract IAllocationManager\",\"name\":\"_allocationManager\",\"type\":\"address\"},{\"internalType\":\"contract IKeyRegistrar\",\"name\":\"_keyRegistrar\",\"type\":\"address\"},{\"internalType\":\"contract IPermissionController\",\"name\":\"_permissionController\",\"type\":\"address\"},{\"internalType\":\"contract IPauserRegistry\",\"name\":\"_pauserRegistry\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"_version\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"ArrayLengthMismatch\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"ChainIDAlreadyWhitelisted\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"ChainIDNotWhitelisted\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"CurrentlyPaused\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"EmptyChainIDsArray\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"GenerationReservationAlreadyExists\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"GenerationReservationDoesNotExist\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InputAddressZero\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidChainId\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidEndIndex\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidNewPausedStatus\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidOperatorSet\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidPermissions\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidRange\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidShortString\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidStalenessPeriod\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"InvalidTableUpdateCadence\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"KeyTypeNotSet\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyPauser\",\"type\":\"error\"},{\"inputs\":[],\"name\":\"OnlyUnpauser\",\"type\":\"error\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"str\",\"type\":\"string\"}],\"name\":\"StringTooLong\",\"type\":\"error\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"chainID\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"address\",\"name\":\"operatorTableUpdater\",\"type\":\"address\"}],\"name\":\"ChainIDAddedToWhitelist\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"chainID\",\"type\":\"uint256\"}],\"name\":\"ChainIDRemovedFromWhitelist\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"indexed\":false,\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"GenerationReservationCreated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"indexed\":false,\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"GenerationReservationRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint8\",\"name\":\"version\",\"type\":\"uint8\"}],\"name\":\"Initialized\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"indexed\":false,\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"OperatorSetConfigRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"indexed\":false,\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"maxStalenessPeriod\",\"type\":\"uint32\"}],\"indexed\":false,\"internalType\":\"struct ICrossChainRegistryTypes.OperatorSetConfig\",\"name\":\"config\",\"type\":\"tuple\"}],\"name\":\"OperatorSetConfigSet\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"indexed\":false,\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"OperatorTableCalculatorRemoved\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"indexed\":false,\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"indexed\":false,\"internalType\":\"contract IOperatorTableCalculator\",\"name\":\"operatorTableCalculator\",\"type\":\"address\"}],\"name\":\"OperatorTableCalculatorSet\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"newPausedStatus\",\"type\":\"uint256\"}],\"name\":\"Paused\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint32\",\"name\":\"tableUpdateCadence\",\"type\":\"uint32\"}],\"name\":\"TableUpdateCadenceSet\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"account\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"newPausedStatus\",\"type\":\"uint256\"}],\"name\":\"Unpaused\",\"type\":\"event\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"chainIDs\",\"type\":\"uint256[]\"},{\"internalType\":\"address[]\",\"name\":\"operatorTableUpdaters\",\"type\":\"address[]\"}],\"name\":\"addChainIDsToWhitelist\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"allocationManager\",\"outputs\":[{\"internalType\":\"contract IAllocationManager\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"calculateOperatorTableBytes\",\"outputs\":[{\"internalType\":\"bytes\",\"name\":\"\",\"type\":\"bytes\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"internalType\":\"contract IOperatorTableCalculator\",\"name\":\"operatorTableCalculator\",\"type\":\"address\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"maxStalenessPeriod\",\"type\":\"uint32\"}],\"internalType\":\"struct ICrossChainRegistryTypes.OperatorSetConfig\",\"name\":\"config\",\"type\":\"tuple\"}],\"name\":\"createGenerationReservation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getActiveGenerationReservationCount\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getActiveGenerationReservations\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"startIndex\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"endIndex\",\"type\":\"uint256\"}],\"name\":\"getActiveGenerationReservationsByRange\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"getOperatorSetConfig\",\"outputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"maxStalenessPeriod\",\"type\":\"uint32\"}],\"internalType\":\"struct ICrossChainRegistryTypes.OperatorSetConfig\",\"name\":\"\",\"type\":\"tuple\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"getOperatorTableCalculator\",\"outputs\":[{\"internalType\":\"contract IOperatorTableCalculator\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getSupportedChains\",\"outputs\":[{\"internalType\":\"uint256[]\",\"name\":\"\",\"type\":\"uint256[]\"},{\"internalType\":\"address[]\",\"name\":\"\",\"type\":\"address[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTableUpdateCadence\",\"outputs\":[{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"hasActiveGenerationReservation\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"initialOwner\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"initialTableUpdateCadence\",\"type\":\"uint32\"},{\"internalType\":\"uint256\",\"name\":\"initialPausedStatus\",\"type\":\"uint256\"}],\"name\":\"initialize\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"keyRegistrar\",\"outputs\":[{\"internalType\":\"contract IKeyRegistrar\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newPausedStatus\",\"type\":\"uint256\"}],\"name\":\"pause\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pauseAll\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint8\",\"name\":\"index\",\"type\":\"uint8\"}],\"name\":\"paused\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"paused\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"pauserRegistry\",\"outputs\":[{\"internalType\":\"contract IPauserRegistry\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"permissionController\",\"outputs\":[{\"internalType\":\"contract IPermissionController\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256[]\",\"name\":\"chainIDs\",\"type\":\"uint256[]\"}],\"name\":\"removeChainIDsFromWhitelist\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"}],\"name\":\"removeGenerationReservation\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"renounceOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"components\":[{\"internalType\":\"address\",\"name\":\"owner\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"maxStalenessPeriod\",\"type\":\"uint32\"}],\"internalType\":\"struct ICrossChainRegistryTypes.OperatorSetConfig\",\"name\":\"config\",\"type\":\"tuple\"}],\"name\":\"setOperatorSetConfig\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"components\":[{\"internalType\":\"address\",\"name\":\"avs\",\"type\":\"address\"},{\"internalType\":\"uint32\",\"name\":\"id\",\"type\":\"uint32\"}],\"internalType\":\"struct OperatorSet\",\"name\":\"operatorSet\",\"type\":\"tuple\"},{\"internalType\":\"contract IOperatorTableCalculator\",\"name\":\"operatorTableCalculator\",\"type\":\"address\"}],\"name\":\"setOperatorTableCalculator\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint32\",\"name\":\"tableUpdateCadence\",\"type\":\"uint32\"}],\"name\":\"setTableUpdateCadence\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newPausedStatus\",\"type\":\"uint256\"}],\"name\":\"unpause\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"version\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Layr Labs, Inc.\",\"details\":\"Manages operator table calculations, transport destinations, and operator set configurations for cross-chain operations\",\"errors\":{\"ArrayLengthMismatch()\":[{\"details\":\"Error code: 0xa24a13a6\"}],\"ChainIDAlreadyWhitelisted()\":[{\"details\":\"Error code: 0x497ec636\"}],\"ChainIDNotWhitelisted()\":[{\"details\":\"Error code: 0xb3f92ba1\"}],\"CurrentlyPaused()\":[{\"details\":\"Thrown when currently paused.\"}],\"EmptyChainIDsArray()\":[{\"details\":\"Error code: 0x8631a075\"}],\"GenerationReservationAlreadyExists()\":[{\"details\":\"Error code: 0x18834615\"}],\"GenerationReservationDoesNotExist()\":[{\"details\":\"Error code: 0x9a575d52\"}],\"InputAddressZero()\":[{\"details\":\"Thrown when a null address input is provided.\"}],\"InvalidChainId()\":[{\"details\":\"Error code: 0x7a47c9a2\"}],\"InvalidEndIndex()\":[{\"details\":\"A valid end index is defined as `endIndex` <= `getActiveGenerationReservationCount()` in `getActiveGenerationReservationsByRange`Error Code: 0xb68d84c0\"}],\"InvalidNewPausedStatus()\":[{\"details\":\"Thrown when invalid `newPausedStatus` is provided.\"}],\"InvalidOperatorSet()\":[{\"details\":\"Error code: 0x7ec5c154We require valid operator sets (existing in AllocationManager) to ensure cross-chain operations are performed on legitimate operator configurations\"}],\"InvalidPermissions()\":[{\"details\":\"Thrown when the caller is not allowed to call a function on behalf of an account.\"}],\"InvalidRange()\":[{\"details\":\"A valid range is defined as `startIndex` <= `endIndex` in `getActiveGenerationReservationsByRange`Error Code: 0x561ce9bb\"}],\"InvalidStalenessPeriod()\":[{\"details\":\"Error code: 0x5c8c9062We enforce valid staleness periods (0 or >= table update cadence) to ensure certificates are not prematurely invalidated between table updates\"}],\"InvalidTableUpdateCadence()\":[{\"details\":\"Error code: 0xb6cc70d8\"}],\"KeyTypeNotSet()\":[{\"details\":\"Error code: 0xe57cacbdWe require operator sets to have configured curve types so the multichain protocol can properly decode the operator table\"}],\"OnlyPauser()\":[{\"details\":\"Thrown when caller is not pauser.\"}],\"OnlyUnpauser()\":[{\"details\":\"Thrown when caller is not unpauser.\"}]},\"events\":{\"Initialized(uint8)\":{\"details\":\"Triggered when the contract has been initialized or reinitialized.\"}},\"kind\":\"dev\",\"methods\":{\"addChainIDsToWhitelist(uint256[],address[])\":{\"details\":\"msg.sender must be the owner of the CrossChainRegistryReverts for:      - \\\"Ownable: caller is not the owner\\\": Caller is not the owner of the contract      - CurrentlyPaused: Chain whitelisting is paused      - ArrayLengthMismatch: The chainIDs and operatorTableUpdaters arrays have different lengths      - InvalidChainId: Any chainID is zero      - ChainIDAlreadyWhitelisted: Any chainID is already whitelistedEmits the following events:      - ChainIDAddedToWhitelist: When each chainID is successfully added to the whitelist\",\"params\":{\"chainIDs\":\"the chainIDs to add to the whitelist\",\"operatorTableUpdaters\":\"the operatorTableUpdaters for each whitelisted chainID\"}},\"calculateOperatorTableBytes((address,uint32))\":{\"details\":\"You should check if an operatorSet has an active generation reservation prior to calling this methodThis function aggregates data from multiple sources for cross-chain transportReverts when the call to the operatorTableCalculator contract call fails\",\"params\":{\"operatorSet\":\"the operatorSet to calculate the operator table for\"},\"returns\":{\"_0\":\"the encoded operatorTableBytes containing:         - operatorSet details         - curve type from KeyRegistrar         - operator set configuration         - calculated operator table from the calculator contract\"}},\"constructor\":{\"details\":\"Initializes the CrossChainRegistry with immutable dependencies\",\"params\":{\"_allocationManager\":\"The allocation manager for operator set validation\",\"_keyRegistrar\":\"The key registrar for operator set curve type validation\",\"_pauserRegistry\":\"The pauser registry for pause functionality\",\"_permissionController\":\"The permission controller for access control\",\"_version\":\"The semantic version of the contract\"}},\"createGenerationReservation((address,uint32),address,(address,uint32))\":{\"details\":\"Tables are transported at a cadence of `tableUpdateCadence` seconds. The `maxStalenessPeriod` is used to determine the maximummsg.sender must be an authorized caller for operatorSet.avsOnce a generation reservation is created, the operator table will be transported to all chains that are whitelistedIt is expected that the AVS has:      - Deployed or is using a generalizable `OperatorTableCalculator` to calculate its operator's stake weights      - Set the `KeyType` for the operatorSet in the `KeyRegistrar`, even if the AVS is not using the `KeyRegistrar` for operator key management           - Valid Key Types are given in the `IKeyRegistrarTypes.CurveType` enum. The `KeyType` must not be `NONE`      - Created an operatorSet in the `AllocationManager`Reverts for:      - CurrentlyPaused: Generation reservations are paused      - InvalidPermissions: Caller is not an authorized caller for operatorSet.avs      - InvalidOperatorSet: The operatorSet does not exist in the AllocationManager      - KeyTypeNotSet: The key type is not set for the operatorSet in the KeyRegistrar      - GenerationReservationAlreadyExists: A generation reservation already exists for the operatorSet      - InvalidStalenessPeriod: The maxStalenessPeriod is invalidEmits the following events:      - GenerationReservationCreated: When the generation reservation is successfully created      - OperatorTableCalculatorSet: When the operator table calculator is set for the operatorSet      - OperatorSetConfigSet: When the operator set config is set for the operatorSet\",\"params\":{\"config\":\"the config to set for the operatorSet, which includes the owner of the operatorSet and the max staleness period\",\"operatorSet\":\"the operatorSet to make a reservation for\",\"operatorTableCalculator\":\"the address of the operatorTableCalculator. This contract is deployed (or a template is used) by the AVS                                to calculate the stake weights for the operatorSet. See `IOperatorTableCalculator` for more details\"}},\"getActiveGenerationReservationCount()\":{\"details\":\"This function can be used in conjunction with the paginated version of `getActiveGenerationReservations`      to iterate over all active generation reservations\",\"returns\":{\"_0\":\"The number of active generation reservations\"}},\"getActiveGenerationReservations()\":{\"returns\":{\"_0\":\"An array of operatorSets with active generationReservations\"}},\"getActiveGenerationReservationsByRange(uint256,uint256)\":{\"details\":\"Reverts for:      - InvalidRange: startIndex is greater than endIndex      - InvalidEndIndex: endIndex is greater than the length of the active generation reservations array\",\"params\":{\"endIndex\":\"the end index of the range, exclusive\",\"startIndex\":\"the start index of the range, inclusive\"},\"returns\":{\"_0\":\"An array of operatorSets with active generationReservations\"}},\"getOperatorSetConfig((address,uint32))\":{\"details\":\"You should check if an operatorSet has an active generation reservation prior to calling this method\",\"params\":{\"operatorSet\":\"the operatorSet to get the operatorSetConfig for\"},\"returns\":{\"_0\":\"The operatorSetConfig for the given operatorSet\"}},\"getOperatorTableCalculator((address,uint32))\":{\"details\":\"You should check if an operatorSet has an active generation reservation prior to calling this method\",\"params\":{\"operatorSet\":\"the operatorSet to get the operatorTableCalculator for\"},\"returns\":{\"_0\":\"The operatorTableCalculator for the given operatorSet\"}},\"getSupportedChains()\":{\"returns\":{\"_0\":\"An array of chainIDs that are supported by the CrossChainRegistry\",\"_1\":\"An array of operatorTableUpdaters corresponding to each chainID\"}},\"getTableUpdateCadence()\":{\"details\":\"The table update cadence is applicable to all whitelisted chains, and is the      frequency at which operator tables are expected to be updated on all destination chains\",\"returns\":{\"_0\":\"The table update cadence, in seconds\"}},\"hasActiveGenerationReservation((address,uint32))\":{\"params\":{\"operatorSet\":\"the operatorSet to check\"},\"returns\":{\"_0\":\"True if the operatorSet has an active generation reservation, false otherwise\"}},\"initialize(address,uint32,uint256)\":{\"params\":{\"initialOwner\":\"The initial owner of the contract\",\"initialPausedStatus\":\"The initial paused status bitmap\",\"initialTableUpdateCadence\":\"The initial table update cadence\"}},\"owner()\":{\"details\":\"Returns the address of the current owner.\"},\"pause(uint256)\":{\"details\":\"This function can only pause functionality, and thus cannot 'unflip' any bit in `_paused` from 1 to 0.\",\"params\":{\"newPausedStatus\":\"represents the new value for `_paused` to take, which means it may flip several bits at once.\"}},\"removeChainIDsFromWhitelist(uint256[])\":{\"details\":\"msg.sender must be the owner of the CrossChainRegistryReverts for:      - \\\"Ownable: caller is not the owner\\\": Caller is not the owner of the contract      - CurrentlyPaused: Chain whitelisting is paused      - ChainIDNotWhitelisted: Any chainID is not currently whitelistedEmits the following events:      - ChainIDRemovedFromWhitelist: When each chainID is successfully removed from the whitelist\",\"params\":{\"chainIDs\":\"the chainIDs to remove from the whitelist\"}},\"removeGenerationReservation((address,uint32))\":{\"details\":\"msg.sender must be an authorized caller for operatorSet.avsReverts for:      - CurrentlyPaused: Generation reservations are paused      - InvalidPermissions: Caller is not an authorized caller for operatorSet.avs      - InvalidOperatorSet: The operatorSet does not exist in the AllocationManager      - GenerationReservationDoesNotExist: A generation reservation does not exist for the operatorSetEmits the following events:      - OperatorTableCalculatorRemoved: When the operator table calculator is removed      - OperatorSetConfigRemoved: When the operator set config is removed      - GenerationReservationRemoved: When the generation reservation is removed\",\"params\":{\"operatorSet\":\"the operatorSet to remove\"}},\"renounceOwnership()\":{\"details\":\"Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner.\"},\"setOperatorSetConfig((address,uint32),(address,uint32))\":{\"details\":\"msg.sender must be an authorized caller for operatorSet.avsoperatorSet must have an active generation reservationThe max staleness period is NOT checkpointed and is applied globally regardless of the reference timestamp of a certificateReverts for:      - CurrentlyPaused: Setting the operatorSetConfig is paused      - InvalidPermissions: Caller is not an authorized caller for operatorSet.avs      - InvalidOperatorSet: The operatorSet does not exist in the AllocationManager      - GenerationReservationDoesNotExist: A generation reservation does not exist for the operatorSet      - InvalidStalenessPeriod: The maxStalenessPeriod is invalidEmits the following events:      - OperatorSetConfigSet: When the operator set config is successfully set\",\"params\":{\"config\":\"the config to set, which includes the owner of the operatorSet and the max staleness period\",\"operatorSet\":\"the operatorSet to set the operatorSetConfig for\"}},\"setOperatorTableCalculator((address,uint32),address)\":{\"details\":\"msg.sender must be an authorized caller for operatorSet.avsoperatorSet must have an active reservationReverts for:      - CurrentlyPaused: Setting the operatorTableCalculator is paused      - InvalidPermissions: Caller is not an authorized caller for operatorSet.avs      - InvalidOperatorSet: The operatorSet does not exist in the AllocationManager      - GenerationReservationDoesNotExist: A generation reservation does not exist for the operatorSetEmits the following events:      - OperatorTableCalculatorSet: When the operator table calculator is successfully set\",\"params\":{\"operatorSet\":\"the operatorSet whose operatorTableCalculator is desired to be set\",\"operatorTableCalculator\":\"the contract to call to calculate the operator table\"}},\"setTableUpdateCadence(uint32)\":{\"details\":\"msg.sender must be the owner of the CrossChainRegistryThe table update cadence cannot be 0Reverts for:      - \\\"Ownable: caller is not the owner\\\": Caller is not the owner of the contract      - InvalidTableUpdateCadence: The tableUpdateCadence is zeroEmits the following events:      - TableUpdateCadenceSet: When the table update cadence is successfully setThe table update cadence is weekly on mainnet and daily on testnet\",\"params\":{\"tableUpdateCadence\":\"the table update cadence\"}},\"transferOwnership(address)\":{\"details\":\"Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner.\"},\"unpause(uint256)\":{\"details\":\"This function can only unpause functionality, and thus cannot 'flip' any bit in `_paused` from 0 to 1.\",\"params\":{\"newPausedStatus\":\"represents the new value for `_paused` to take, which means it may flip several bits at once.\"}},\"version()\":{\"returns\":{\"_0\":\"The version string in SemVer format (e.g., \\\"1.1.1\\\")\"}}},\"title\":\"CrossChainRegistry\",\"version\":1},\"userdoc\":{\"errors\":{\"ArrayLengthMismatch()\":[{\"notice\":\"Thrown when the lengths between two arrays are not the same\"}],\"ChainIDAlreadyWhitelisted()\":[{\"notice\":\"Thrown when a chain ID is already whitelisted\"}],\"ChainIDNotWhitelisted()\":[{\"notice\":\"Thrown when a chain ID is not whitelisted\"}],\"EmptyChainIDsArray()\":[{\"notice\":\"Thrown when the chainIDs array is empty\"}],\"GenerationReservationAlreadyExists()\":[{\"notice\":\"Thrown when a generation reservation already exists for the operator set\"}],\"GenerationReservationDoesNotExist()\":[{\"notice\":\"Thrown when a generation reservation does not exist for the operator set\"}],\"InvalidChainId()\":[{\"notice\":\"Thrown when the chainId is invalid\"}],\"InvalidEndIndex()\":[{\"notice\":\"Thrown when the end index is invalid for the `getActiveGenerationReservations` function\"}],\"InvalidOperatorSet()\":[{\"notice\":\"Thrown when the operator set is not valid\"}],\"InvalidRange()\":[{\"notice\":\"Thrown when the range is invalid for the `getActiveGenerationReservations` function\"}],\"InvalidStalenessPeriod()\":[{\"notice\":\"Thrown when the staleness period set by an operatorSet is invalid\"}],\"InvalidTableUpdateCadence()\":[{\"notice\":\"Thrown when the table update cadence is invalid\"}],\"KeyTypeNotSet()\":[{\"notice\":\"Thrown when the key type is not set for the operatorSet\"}]},\"events\":{\"ChainIDAddedToWhitelist(uint256,address)\":{\"notice\":\"Emitted when a chainID is added to the whitelist\"},\"ChainIDRemovedFromWhitelist(uint256)\":{\"notice\":\"Emitted when a chainID is removed from the whitelist\"},\"GenerationReservationCreated((address,uint32))\":{\"notice\":\"Emitted when a generation reservation is created\"},\"GenerationReservationRemoved((address,uint32))\":{\"notice\":\"Emitted when a generation reservation is removed\"},\"OperatorSetConfigRemoved((address,uint32))\":{\"notice\":\"Emitted when an operatorSetConfig is removed, when a generation reservation is removed\"},\"OperatorSetConfigSet((address,uint32),(address,uint32))\":{\"notice\":\"Emitted when an operatorSetConfig is set\"},\"OperatorTableCalculatorRemoved((address,uint32))\":{\"notice\":\"Emitted when an operatorTableCalculator is removed, when a generation reservation is removed\"},\"OperatorTableCalculatorSet((address,uint32),address)\":{\"notice\":\"Emitted when an operatorTableCalculator is set\"},\"Paused(address,uint256)\":{\"notice\":\"Emitted when the pause is triggered by `account`, and changed to `newPausedStatus`.\"},\"TableUpdateCadenceSet(uint32)\":{\"notice\":\"Emitted when the table update cadence is set\"},\"Unpaused(address,uint256)\":{\"notice\":\"Emitted when the pause is lifted by `account`, and changed to `newPausedStatus`.\"}},\"kind\":\"user\",\"methods\":{\"addChainIDsToWhitelist(uint256[],address[])\":{\"notice\":\"Adds chainIDs to the whitelist of chainIDs that are transported to by the multichain protocol\"},\"allocationManager()\":{\"notice\":\"The AllocationManager contract for EigenLayer\"},\"calculateOperatorTableBytes((address,uint32))\":{\"notice\":\"Calculates the operatorTableBytes for a given operatorSet\"},\"createGenerationReservation((address,uint32),address,(address,uint32))\":{\"notice\":\"Creates a generation reservation, which transports the operator table of an operatorSet to all whitelisted chains\"},\"getActiveGenerationReservationCount()\":{\"notice\":\"Gets the number of active generation reservations\"},\"getActiveGenerationReservations()\":{\"notice\":\"Gets the active generation reservations\"},\"getActiveGenerationReservationsByRange(uint256,uint256)\":{\"notice\":\"Gets the active generation reservations by range\"},\"getOperatorSetConfig((address,uint32))\":{\"notice\":\"Gets the operatorSetConfig for a given operatorSet\"},\"getOperatorTableCalculator((address,uint32))\":{\"notice\":\"Gets the operatorTableCalculator for a given operatorSet\"},\"getSupportedChains()\":{\"notice\":\"Gets the list of chains that are supported by the CrossChainRegistry\"},\"getTableUpdateCadence()\":{\"notice\":\"Gets the table update cadence, in seconds\"},\"hasActiveGenerationReservation((address,uint32))\":{\"notice\":\"Checks if a given operatorSet has an active generation reservation\"},\"initialize(address,uint32,uint256)\":{\"notice\":\"Initializes the contract with the initial paused status and owner\"},\"keyRegistrar()\":{\"notice\":\"The KeyRegistrar contract for EigenLayer\"},\"pause(uint256)\":{\"notice\":\"This function is used to pause an EigenLayer contract's functionality. It is permissioned to the `pauser` address, which is expected to be a low threshold multisig.\"},\"pauseAll()\":{\"notice\":\"Alias for `pause(type(uint256).max)`.\"},\"paused()\":{\"notice\":\"Returns the current paused status as a uint256.\"},\"paused(uint8)\":{\"notice\":\"Returns 'true' if the `indexed`th bit of `_paused` is 1, and 'false' otherwise\"},\"pauserRegistry()\":{\"notice\":\"Address of the `PauserRegistry` contract that this contract defers to for determining access control (for pausing).\"},\"permissionController()\":{\"notice\":\"Pointer to the permission controller contract.\"},\"removeChainIDsFromWhitelist(uint256[])\":{\"notice\":\"Removes chainIDs from the whitelist of chainIDs\"},\"removeGenerationReservation((address,uint32))\":{\"notice\":\"Removes a generation reservation for a given operatorSet\"},\"setOperatorSetConfig((address,uint32),(address,uint32))\":{\"notice\":\"Sets the operatorSetConfig for a given operatorSet\"},\"setOperatorTableCalculator((address,uint32),address)\":{\"notice\":\"Sets the operatorTableCalculator for the operatorSet\"},\"setTableUpdateCadence(uint32)\":{\"notice\":\"Sets the table update cadence in seconds. This is the frequency at which operator tables are expected to be updated on all destination chains\"},\"unpause(uint256)\":{\"notice\":\"This function is used to unpause an EigenLayer contract's functionality. It is permissioned to the `unpauser` address, which is expected to be a high threshold multisig or governance contract.\"},\"version()\":{\"notice\":\"Returns the semantic version string of the contract.\"}},\"notice\":\"Implementation contract for managing cross-chain operator set configurations and generation reservations\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/contracts/multichain/CrossChainRegistry.sol\":\"CrossChainRegistry\"},\"evmVersion\":\"prague\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable-v4.9.0/\",\":@openzeppelin/=lib/openzeppelin-contracts-v4.9.0/\",\":ds-test/=lib/ds-test/src/\",\":erc4626-tests/=lib/openzeppelin-contracts-upgradeable-v4.9.0/lib/erc4626-tests/\",\":forge-std/=lib/forge-std/src/\",\":openzeppelin-contracts-upgradeable-v4.9.0/=lib/openzeppelin-contracts-upgradeable-v4.9.0/\",\":openzeppelin-contracts-v4.9.0/=lib/openzeppelin-contracts-v4.9.0/\",\":openzeppelin/=lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/\",\":zeus-templates/=lib/zeus-templates/src/\"]},\"sources\":{\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/access/OwnableUpgradeable.sol\":{\"keccak256\":\"0x4075622496acc77fd6d4de4cc30a8577a744d5c75afad33fdeacf1704d6eda98\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://99c8cb3cd19a44bbfb6612605affb7d8b06cee1f6aa9362a37a8672b4f7eeaf8\",\"dweb:/ipfs/QmasyxFDBUp7k5KFgfDWEzM8PYSKEq7GVznzMJ1VxVRF4B\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/proxy/utils/Initializable.sol\":{\"keccak256\":\"0x89be10e757d242e9b18d5a32c9fbe2019f6d63052bbe46397a430a1d60d7f794\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f103ee2e4aecd37aac6ceefe670709cdd7613dee25fa2d4d9feaf7fc0aaa155e\",\"dweb:/ipfs/QmRiNZLoJk5k3HPMYGPGjZFd2ke1ZxjhJZkM45Ec9GH9hv\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/AddressUpgradeable.sol\":{\"keccak256\":\"0x9c80f545915582e63fe206c6ce27cbe85a86fc10b9cd2a0e8c9488fb7c2ee422\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://310136ad60820af4177a11a61d77a3686faf5fca4942b600e08fc940db38396b\",\"dweb:/ipfs/QmbCzMNSTL7Zi7M4UCSqBrkHtp4jjxUnGbkneCZKdR1qeq\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/ContextUpgradeable.sol\":{\"keccak256\":\"0x963ea7f0b48b032eef72fe3a7582edf78408d6f834115b9feadd673a4d5bd149\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d6520943ea55fdf5f0bafb39ed909f64de17051bc954ff3e88c9e5621412c79c\",\"dweb:/ipfs/QmWZ4rAKTQbNG2HxGs46AcTXShsVytKeLs7CUCdCSv5N7a\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/ShortStringsUpgradeable.sol\":{\"keccak256\":\"0x4e34d967d14c25ef92ef1d4f7a8761949941f46c8f068923bd59d6e09c23b822\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a4643a5a7f8f7794f502d5fc6576ec09c10732680b93b44ca1899b6f32e7d5de\",\"dweb:/ipfs/QmVQShpVY4y2Z6XY4ErtkQeNpbGEAcAQXrBeKSti4rX4UB\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/StorageSlotUpgradeable.sol\":{\"keccak256\":\"0x07ac95acad040f1fb1f6120dd0aa5f702db69446e95f82613721879d30de0908\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a9df9de7b5da1d1bd3d4b6c073d0174bc4211db60e794a321c8cb5d4eae34685\",\"dweb:/ipfs/QmWe49zj65jayrCe9jZpoWhYUZ1RiwSxyU2s7SBZnMztVy\"]},\"lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/math/SafeCastUpgradeable.sol\":{\"keccak256\":\"0xcef50f95b43b038aa40aed25b62fc45906c681a5c1d504a4fdcf3bc6330a8d4b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ef883699a00970d5469e502514e2854704cd53d7a49825078aa807a2f056315c\",\"dweb:/ipfs/QmRjpN9oxgw6zHCVjfWNB9MzaYpNPPgqu7Rrwqwabmhpis\"]},\"lib/openzeppelin-contracts-v4.9.0/contracts/token/ERC20/IERC20.sol\":{\"keccak256\":\"0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5\",\"dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53\"]},\"lib/openzeppelin-contracts-v4.9.0/contracts/utils/math/Math.sol\":{\"keccak256\":\"0xe4455ac1eb7fc497bb7402579e7b4d64d928b846fce7d2b6fde06d366f21c2b3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://cc8841b3cd48ad125e2f46323c8bad3aa0e88e399ec62acb9e57efa7e7c8058c\",\"dweb:/ipfs/QmSqE4mXHA2BXW58deDbXE8MTcsL5JSKNDbm23sVQxRLPS\"]},\"lib/openzeppelin-contracts-v4.9.0/contracts/utils/structs/EnumerableMap.sol\":{\"keccak256\":\"0x7ebfe2422bc571599c2ec20577d7848e1e7a0acf85fa7c2d9636618bbbdf6fca\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://77fb3f64d470c92c3142e3c07d2f18ad78723a1f1e680a251dcde37e865d0636\",\"dweb:/ipfs/QmXAeNPRRGfNSRxi1d17QjkNTBZFemhiMzJVvEJgMWwqUW\"]},\"lib/openzeppelin-contracts-v4.9.0/contracts/utils/structs/EnumerableSet.sol\":{\"keccak256\":\"0x9f4357008a8f7d8c8bf5d48902e789637538d8c016be5766610901b4bba81514\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://20bf19b2b851f58a4c24543de80ae70b3e08621f9230eb335dc75e2d4f43f5df\",\"dweb:/ipfs/QmSYuH1AhvJkPK8hNvoPqtExBcgTB42pPRHgTHkS5c5zYW\"]},\"src/contracts/interfaces/IAVSRegistrar.sol\":{\"keccak256\":\"0x38c36608dbc6da249340c194d0d0afbe4060c5d81761132e94ac2d39cf884b86\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://6ff9f739a3ade8c2bf99939ff4a1814c7565edbe343d132e46c02d320a13182e\",\"dweb:/ipfs/QmRvpRPmVFZruQiS9Rd9H9nuU8aM7KjXZcK3HVQoSZx7C8\"]},\"src/contracts/interfaces/IAllocationManager.sol\":{\"keccak256\":\"0xc0d272c84e3c67c6398f73cb3676ba752d17d5db12cbd831a6ffaed1851b6343\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://b445b5ea97ca59cf7d10f48b50ee36b3af6588a8f5ed3960f6e55d70e8a0d651\",\"dweb:/ipfs/QmUpmdkpqL8swHauqvoowfLN5xePtRNfefeFeBogFbQV5R\"]},\"src/contracts/interfaces/ICrossChainRegistry.sol\":{\"keccak256\":\"0xae240a26fdb8db82b628bc3e0187c50596da31b9d4080a9e20213b95caf30c7e\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://11fbab9feff5bc18b82103142b60864d4a47d783d3a3fdce66e68e27bd7863c3\",\"dweb:/ipfs/QmUypELnNQo3rzTkYJBUugyr7At966t1jUfwsC5Ymqufzp\"]},\"src/contracts/interfaces/IKeyRegistrar.sol\":{\"keccak256\":\"0x73c064cefaffe11b80dd55aba654c608da3484bbc573f575e352f267c4f58aee\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://6f4d3e24ab3b99701ec2ee825e2575b168e5dcb2646800599eb18fba61685053\",\"dweb:/ipfs/QmT9LGAftNAQPZugfNsdYu8DWeXqAVCuDqHKUbV2rY9NT1\"]},\"src/contracts/interfaces/IOperatorTableCalculator.sol\":{\"keccak256\":\"0x0d15fae28a379f1b6b98a4446e2782b79f0441bb0476626a83de519a9c3366d0\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://9abd5cf881a5c747e6f5d9ad2acd7bba453a3ed0cf60f880e00246db31d61cbc\",\"dweb:/ipfs/QmcQvqk1BBQ7JJQzce5jBz46xZ8xovu9LyALnWuPFd9Ftd\"]},\"src/contracts/interfaces/IPausable.sol\":{\"keccak256\":\"0x0404f1db44005929899e00dcc50d553175951ff26c215c87215bbd92b4ebfde3\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://cdb88bff60663f3418d271c7db93c2867d767e31ec592690e7b2e1f1ba1589e8\",\"dweb:/ipfs/QmQfsZCiEqWYEFopZB5LvL9pq47Qba9EeMzeZcHN2e9ypc\"]},\"src/contracts/interfaces/IPauserRegistry.sol\":{\"keccak256\":\"0x705c371129ac08b9b035c1c1a1572a5e3a61b48dda8b7d8d974a7bfb88ecb7fc\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://bdb894c26fcf1b83024d006b0573663286e50d857c5dea89a9149552a971da72\",\"dweb:/ipfs/QmdqWnSPmeF9mV96uWMSN8AhVi64U818GRwFEqr6dP3UMD\"]},\"src/contracts/interfaces/IPermissionController.sol\":{\"keccak256\":\"0x5642a146907a9302553a6cf92d96d417ff90c679dd24eaf7c3408f831e4d838f\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://a661e690160100dc11646f9011275c996c571d4b7876ac2bdf9b05309c63096f\",\"dweb:/ipfs/QmXJfg7u89XUZ3DYcbo3zTyvWwCKuaUn26DDwFTmsgDoPg\"]},\"src/contracts/interfaces/ISemVerMixin.sol\":{\"keccak256\":\"0xa7cfe506856653310b402b73baca96af947897c02b5b35a310640443e1332791\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://e23941c3b825e02e3521dbbae63c5b58fb48d17125669fc0cd3c8d5a8c272d6e\",\"dweb:/ipfs/QmaPfH8XkpT1nsEdJe34YbQCwBf1Gq89EvUPvG1wPforZa\"]},\"src/contracts/interfaces/IStrategy.sol\":{\"keccak256\":\"0xabf10614af348e518e14b29de1ae88d79a2567b705edba118f2bf1ce28bd90b5\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://af2f7e00fe655b10402be84898ef83cdb5a6f8e3d466513f3fce71554782dc9e\",\"dweb:/ipfs/QmbQsEFf2Mgxuv75HVssgeFeprAbdFnwjWbAWd8Wn9ETXe\"]},\"src/contracts/libraries/BN254.sol\":{\"keccak256\":\"0x24cd24d441907f69ab7dbe002e06f656dd8434235cffd59c97b8438c6a9a98fc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://074aa5523e2fe3e6f1b74fb207e08b41d2f6de34412da10e81d7f0b4720942cc\",\"dweb:/ipfs/QmWvdpuvZGeKdEtzaCoAP2gvpggRBwh1cUs4fdWjV9DwW6\"]},\"src/contracts/libraries/OperatorSetLib.sol\":{\"keccak256\":\"0x551df2d7984470e6eaa774d058c3f2af0175044b720aa53a6a156c90881f1812\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://eedb749fda40d45b8803694665d96fb5bec3b010d25cff4baad6e796ac690e41\",\"dweb:/ipfs/QmUNG8gmC6CjrdazKbwqt7fyaBGNbqeEUA4iFka49egGZx\"]},\"src/contracts/libraries/SlashingLib.sol\":{\"keccak256\":\"0x65cdf662fb8842bcd8296d37e0ffb8e3f319645538f7031bf92288c36c21a469\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://18cf145d9bf509c85b148400e83e689dff62d47508121f1f78db5bed3ace5add\",\"dweb:/ipfs/QmZiso1MD1JtCVkBgVC7zy4gZ598bNt2re9YGkF5JfAM6L\"]},\"src/contracts/mixins/PermissionControllerMixin.sol\":{\"keccak256\":\"0xf915f1e416725ffd08686afab272bd7bda4c302c4fcde76769bfcdb3fbb01e67\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://4e9142d737ff326018272c71c79367322576a81edf08251fd5b36b7df15cd6d0\",\"dweb:/ipfs/QmPztJGoM4fkBK3ZnmHymuZUkUPkw112VdR2g25Q55Fiva\"]},\"src/contracts/mixins/SemVerMixin.sol\":{\"keccak256\":\"0xbc950c1589c05a76d7c0fec82ad11d15567e2cf8d98770a19963461603f99648\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://d483b91672739d608ea510bc1b0f486c13264a50c001c0fa9c909b0282e22546\",\"dweb:/ipfs/QmdByvG58PAG44LWhXKxyrLpHdsr8epaTcEGhfzhH7ssHc\"]},\"src/contracts/multichain/CrossChainRegistry.sol\":{\"keccak256\":\"0x659bd852ae78c545ccf24771bf422c17a1d2cdc155d1fb21d2582830adef8c9a\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://2c503e5fcc1adcdc37856f1fadc044cbbc1c993be3b81e8d25f650a8c77e929d\",\"dweb:/ipfs/QmX4wbFC8BDK8pFMyacwcFE7LNbx6cXSAYYBQsaFR7LzvA\"]},\"src/contracts/multichain/CrossChainRegistryStorage.sol\":{\"keccak256\":\"0xdcef54b3a9515aaa9482e6c19e508bf10520e91d720f13285627dfa70b12f61f\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://00483463e4442851f376733be7d8e1aaa292cd903bba04b06f0868f41c169611\",\"dweb:/ipfs/QmUGb6PevtLgnioGumMUyfxnxZBoBwM8VYNGLvtbw1t2ix\"]},\"src/contracts/permissions/Pausable.sol\":{\"keccak256\":\"0xd9a4094bdef1792abb5aa6a106146295ca723654cf43d1c19e65a29e09960446\",\"license\":\"BUSL-1.1\",\"urls\":[\"bzz-raw://f092e2e9d1e210b603ed534b94ba316a65aef2999445fa317b96ef5021287d99\",\"dweb:/ipfs/QmTcawZWGyCKykm6D61BrfSR8NLEj2YscK5sxQcKZ2mRvA\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.27+commit.40a35a09"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract IAllocationManager",
+              "name": "_allocationManager",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IKeyRegistrar",
+              "name": "_keyRegistrar",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IPermissionController",
+              "name": "_permissionController",
+              "type": "address"
+            },
+            {
+              "internalType": "contract IPauserRegistry",
+              "name": "_pauserRegistry",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "_version",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ArrayLengthMismatch"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ChainIDAlreadyWhitelisted"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "ChainIDNotWhitelisted"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "CurrentlyPaused"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "EmptyChainIDsArray"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "GenerationReservationAlreadyExists"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "GenerationReservationDoesNotExist"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InputAddressZero"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidChainId"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidEndIndex"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidNewPausedStatus"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidOperatorSet"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidPermissions"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidRange"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidShortString"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidStalenessPeriod"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "InvalidTableUpdateCadence"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "KeyTypeNotSet"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "OnlyPauser"
+        },
+        {
+          "inputs": [],
+          "type": "error",
+          "name": "OnlyUnpauser"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "str",
+              "type": "string"
+            }
+          ],
+          "type": "error",
+          "name": "StringTooLong"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "chainID",
+              "type": "uint256",
+              "indexed": false
+            },
+            {
+              "internalType": "address",
+              "name": "operatorTableUpdater",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "ChainIDAddedToWhitelist",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "chainID",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "ChainIDRemovedFromWhitelist",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ],
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "GenerationReservationCreated",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ],
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "GenerationReservationRemoved",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "version",
+              "type": "uint8",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Initialized",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ],
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "OperatorSetConfigRemoved",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ],
+              "indexed": false
+            },
+            {
+              "internalType": "struct ICrossChainRegistryTypes.OperatorSetConfig",
+              "name": "config",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "owner",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "maxStalenessPeriod",
+                  "type": "uint32"
+                }
+              ],
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "OperatorSetConfigSet",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ],
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "OperatorTableCalculatorRemoved",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ],
+              "indexed": false
+            },
+            {
+              "internalType": "contract IOperatorTableCalculator",
+              "name": "operatorTableCalculator",
+              "type": "address",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "OperatorTableCalculatorSet",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address",
+              "indexed": true
+            }
+          ],
+          "type": "event",
+          "name": "OwnershipTransferred",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "newPausedStatus",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Paused",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "tableUpdateCadence",
+              "type": "uint32",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "TableUpdateCadenceSet",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address",
+              "indexed": true
+            },
+            {
+              "internalType": "uint256",
+              "name": "newPausedStatus",
+              "type": "uint256",
+              "indexed": false
+            }
+          ],
+          "type": "event",
+          "name": "Unpaused",
+          "anonymous": false
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "chainIDs",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "address[]",
+              "name": "operatorTableUpdaters",
+              "type": "address[]"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "addChainIDsToWhitelist"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "allocationManager",
+          "outputs": [
+            {
+              "internalType": "contract IAllocationManager",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "calculateOperatorTableBytes",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "contract IOperatorTableCalculator",
+              "name": "operatorTableCalculator",
+              "type": "address"
+            },
+            {
+              "internalType": "struct ICrossChainRegistryTypes.OperatorSetConfig",
+              "name": "config",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "owner",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "maxStalenessPeriod",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "createGenerationReservation"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getActiveGenerationReservationCount",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getActiveGenerationReservations",
+          "outputs": [
+            {
+              "internalType": "struct OperatorSet[]",
+              "name": "",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "startIndex",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "endIndex",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getActiveGenerationReservationsByRange",
+          "outputs": [
+            {
+              "internalType": "struct OperatorSet[]",
+              "name": "",
+              "type": "tuple[]",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorSetConfig",
+          "outputs": [
+            {
+              "internalType": "struct ICrossChainRegistryTypes.OperatorSetConfig",
+              "name": "",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "owner",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "maxStalenessPeriod",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getOperatorTableCalculator",
+          "outputs": [
+            {
+              "internalType": "contract IOperatorTableCalculator",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getSupportedChains",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "address[]",
+              "name": "",
+              "type": "address[]"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "getTableUpdateCadence",
+          "outputs": [
+            {
+              "internalType": "uint32",
+              "name": "",
+              "type": "uint32"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "hasActiveGenerationReservation",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "initialOwner",
+              "type": "address"
+            },
+            {
+              "internalType": "uint32",
+              "name": "initialTableUpdateCadence",
+              "type": "uint32"
+            },
+            {
+              "internalType": "uint256",
+              "name": "initialPausedStatus",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "initialize"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "keyRegistrar",
+          "outputs": [
+            {
+              "internalType": "contract IKeyRegistrar",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "owner",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "newPausedStatus",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "pause"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "pauseAll"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "index",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "paused",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "paused",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "pauserRegistry",
+          "outputs": [
+            {
+              "internalType": "contract IPauserRegistry",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "permissionController",
+          "outputs": [
+            {
+              "internalType": "contract IPermissionController",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "chainIDs",
+              "type": "uint256[]"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "removeChainIDsFromWhitelist"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "removeGenerationReservation"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "renounceOwnership"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "struct ICrossChainRegistryTypes.OperatorSetConfig",
+              "name": "config",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "owner",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "maxStalenessPeriod",
+                  "type": "uint32"
+                }
+              ]
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setOperatorSetConfig"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "struct OperatorSet",
+              "name": "operatorSet",
+              "type": "tuple",
+              "components": [
+                {
+                  "internalType": "address",
+                  "name": "avs",
+                  "type": "address"
+                },
+                {
+                  "internalType": "uint32",
+                  "name": "id",
+                  "type": "uint32"
+                }
+              ]
+            },
+            {
+              "internalType": "contract IOperatorTableCalculator",
+              "name": "operatorTableCalculator",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setOperatorTableCalculator"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint32",
+              "name": "tableUpdateCadence",
+              "type": "uint32"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setTableUpdateCadence"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "transferOwnership"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "newPausedStatus",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "unpause"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "version",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "addChainIDsToWhitelist(uint256[],address[])": {
+            "details": "msg.sender must be the owner of the CrossChainRegistryReverts for:      - \"Ownable: caller is not the owner\": Caller is not the owner of the contract      - CurrentlyPaused: Chain whitelisting is paused      - ArrayLengthMismatch: The chainIDs and operatorTableUpdaters arrays have different lengths      - InvalidChainId: Any chainID is zero      - ChainIDAlreadyWhitelisted: Any chainID is already whitelistedEmits the following events:      - ChainIDAddedToWhitelist: When each chainID is successfully added to the whitelist",
+            "params": {
+              "chainIDs": "the chainIDs to add to the whitelist",
+              "operatorTableUpdaters": "the operatorTableUpdaters for each whitelisted chainID"
+            }
+          },
+          "calculateOperatorTableBytes((address,uint32))": {
+            "details": "You should check if an operatorSet has an active generation reservation prior to calling this methodThis function aggregates data from multiple sources for cross-chain transportReverts when the call to the operatorTableCalculator contract call fails",
+            "params": {
+              "operatorSet": "the operatorSet to calculate the operator table for"
+            },
+            "returns": {
+              "_0": "the encoded operatorTableBytes containing:         - operatorSet details         - curve type from KeyRegistrar         - operator set configuration         - calculated operator table from the calculator contract"
+            }
+          },
+          "constructor": {
+            "details": "Initializes the CrossChainRegistry with immutable dependencies",
+            "params": {
+              "_allocationManager": "The allocation manager for operator set validation",
+              "_keyRegistrar": "The key registrar for operator set curve type validation",
+              "_pauserRegistry": "The pauser registry for pause functionality",
+              "_permissionController": "The permission controller for access control",
+              "_version": "The semantic version of the contract"
+            }
+          },
+          "createGenerationReservation((address,uint32),address,(address,uint32))": {
+            "details": "Tables are transported at a cadence of `tableUpdateCadence` seconds. The `maxStalenessPeriod` is used to determine the maximummsg.sender must be an authorized caller for operatorSet.avsOnce a generation reservation is created, the operator table will be transported to all chains that are whitelistedIt is expected that the AVS has:      - Deployed or is using a generalizable `OperatorTableCalculator` to calculate its operator's stake weights      - Set the `KeyType` for the operatorSet in the `KeyRegistrar`, even if the AVS is not using the `KeyRegistrar` for operator key management           - Valid Key Types are given in the `IKeyRegistrarTypes.CurveType` enum. The `KeyType` must not be `NONE`      - Created an operatorSet in the `AllocationManager`Reverts for:      - CurrentlyPaused: Generation reservations are paused      - InvalidPermissions: Caller is not an authorized caller for operatorSet.avs      - InvalidOperatorSet: The operatorSet does not exist in the AllocationManager      - KeyTypeNotSet: The key type is not set for the operatorSet in the KeyRegistrar      - GenerationReservationAlreadyExists: A generation reservation already exists for the operatorSet      - InvalidStalenessPeriod: The maxStalenessPeriod is invalidEmits the following events:      - GenerationReservationCreated: When the generation reservation is successfully created      - OperatorTableCalculatorSet: When the operator table calculator is set for the operatorSet      - OperatorSetConfigSet: When the operator set config is set for the operatorSet",
+            "params": {
+              "config": "the config to set for the operatorSet, which includes the owner of the operatorSet and the max staleness period",
+              "operatorSet": "the operatorSet to make a reservation for",
+              "operatorTableCalculator": "the address of the operatorTableCalculator. This contract is deployed (or a template is used) by the AVS                                to calculate the stake weights for the operatorSet. See `IOperatorTableCalculator` for more details"
+            }
+          },
+          "getActiveGenerationReservationCount()": {
+            "details": "This function can be used in conjunction with the paginated version of `getActiveGenerationReservations`      to iterate over all active generation reservations",
+            "returns": {
+              "_0": "The number of active generation reservations"
+            }
+          },
+          "getActiveGenerationReservations()": {
+            "returns": {
+              "_0": "An array of operatorSets with active generationReservations"
+            }
+          },
+          "getActiveGenerationReservationsByRange(uint256,uint256)": {
+            "details": "Reverts for:      - InvalidRange: startIndex is greater than endIndex      - InvalidEndIndex: endIndex is greater than the length of the active generation reservations array",
+            "params": {
+              "endIndex": "the end index of the range, exclusive",
+              "startIndex": "the start index of the range, inclusive"
+            },
+            "returns": {
+              "_0": "An array of operatorSets with active generationReservations"
+            }
+          },
+          "getOperatorSetConfig((address,uint32))": {
+            "details": "You should check if an operatorSet has an active generation reservation prior to calling this method",
+            "params": {
+              "operatorSet": "the operatorSet to get the operatorSetConfig for"
+            },
+            "returns": {
+              "_0": "The operatorSetConfig for the given operatorSet"
+            }
+          },
+          "getOperatorTableCalculator((address,uint32))": {
+            "details": "You should check if an operatorSet has an active generation reservation prior to calling this method",
+            "params": {
+              "operatorSet": "the operatorSet to get the operatorTableCalculator for"
+            },
+            "returns": {
+              "_0": "The operatorTableCalculator for the given operatorSet"
+            }
+          },
+          "getSupportedChains()": {
+            "returns": {
+              "_0": "An array of chainIDs that are supported by the CrossChainRegistry",
+              "_1": "An array of operatorTableUpdaters corresponding to each chainID"
+            }
+          },
+          "getTableUpdateCadence()": {
+            "details": "The table update cadence is applicable to all whitelisted chains, and is the      frequency at which operator tables are expected to be updated on all destination chains",
+            "returns": {
+              "_0": "The table update cadence, in seconds"
+            }
+          },
+          "hasActiveGenerationReservation((address,uint32))": {
+            "params": {
+              "operatorSet": "the operatorSet to check"
+            },
+            "returns": {
+              "_0": "True if the operatorSet has an active generation reservation, false otherwise"
+            }
+          },
+          "initialize(address,uint32,uint256)": {
+            "params": {
+              "initialOwner": "The initial owner of the contract",
+              "initialPausedStatus": "The initial paused status bitmap",
+              "initialTableUpdateCadence": "The initial table update cadence"
+            }
+          },
+          "owner()": {
+            "details": "Returns the address of the current owner."
+          },
+          "pause(uint256)": {
+            "details": "This function can only pause functionality, and thus cannot 'unflip' any bit in `_paused` from 1 to 0.",
+            "params": {
+              "newPausedStatus": "represents the new value for `_paused` to take, which means it may flip several bits at once."
+            }
+          },
+          "removeChainIDsFromWhitelist(uint256[])": {
+            "details": "msg.sender must be the owner of the CrossChainRegistryReverts for:      - \"Ownable: caller is not the owner\": Caller is not the owner of the contract      - CurrentlyPaused: Chain whitelisting is paused      - ChainIDNotWhitelisted: Any chainID is not currently whitelistedEmits the following events:      - ChainIDRemovedFromWhitelist: When each chainID is successfully removed from the whitelist",
+            "params": {
+              "chainIDs": "the chainIDs to remove from the whitelist"
+            }
+          },
+          "removeGenerationReservation((address,uint32))": {
+            "details": "msg.sender must be an authorized caller for operatorSet.avsReverts for:      - CurrentlyPaused: Generation reservations are paused      - InvalidPermissions: Caller is not an authorized caller for operatorSet.avs      - InvalidOperatorSet: The operatorSet does not exist in the AllocationManager      - GenerationReservationDoesNotExist: A generation reservation does not exist for the operatorSetEmits the following events:      - OperatorTableCalculatorRemoved: When the operator table calculator is removed      - OperatorSetConfigRemoved: When the operator set config is removed      - GenerationReservationRemoved: When the generation reservation is removed",
+            "params": {
+              "operatorSet": "the operatorSet to remove"
+            }
+          },
+          "renounceOwnership()": {
+            "details": "Leaves the contract without owner. It will not be possible to call `onlyOwner` functions. Can only be called by the current owner. NOTE: Renouncing ownership will leave the contract without an owner, thereby disabling any functionality that is only available to the owner."
+          },
+          "setOperatorSetConfig((address,uint32),(address,uint32))": {
+            "details": "msg.sender must be an authorized caller for operatorSet.avsoperatorSet must have an active generation reservationThe max staleness period is NOT checkpointed and is applied globally regardless of the reference timestamp of a certificateReverts for:      - CurrentlyPaused: Setting the operatorSetConfig is paused      - InvalidPermissions: Caller is not an authorized caller for operatorSet.avs      - InvalidOperatorSet: The operatorSet does not exist in the AllocationManager      - GenerationReservationDoesNotExist: A generation reservation does not exist for the operatorSet      - InvalidStalenessPeriod: The maxStalenessPeriod is invalidEmits the following events:      - OperatorSetConfigSet: When the operator set config is successfully set",
+            "params": {
+              "config": "the config to set, which includes the owner of the operatorSet and the max staleness period",
+              "operatorSet": "the operatorSet to set the operatorSetConfig for"
+            }
+          },
+          "setOperatorTableCalculator((address,uint32),address)": {
+            "details": "msg.sender must be an authorized caller for operatorSet.avsoperatorSet must have an active reservationReverts for:      - CurrentlyPaused: Setting the operatorTableCalculator is paused      - InvalidPermissions: Caller is not an authorized caller for operatorSet.avs      - InvalidOperatorSet: The operatorSet does not exist in the AllocationManager      - GenerationReservationDoesNotExist: A generation reservation does not exist for the operatorSetEmits the following events:      - OperatorTableCalculatorSet: When the operator table calculator is successfully set",
+            "params": {
+              "operatorSet": "the operatorSet whose operatorTableCalculator is desired to be set",
+              "operatorTableCalculator": "the contract to call to calculate the operator table"
+            }
+          },
+          "setTableUpdateCadence(uint32)": {
+            "details": "msg.sender must be the owner of the CrossChainRegistryThe table update cadence cannot be 0Reverts for:      - \"Ownable: caller is not the owner\": Caller is not the owner of the contract      - InvalidTableUpdateCadence: The tableUpdateCadence is zeroEmits the following events:      - TableUpdateCadenceSet: When the table update cadence is successfully setThe table update cadence is weekly on mainnet and daily on testnet",
+            "params": {
+              "tableUpdateCadence": "the table update cadence"
+            }
+          },
+          "transferOwnership(address)": {
+            "details": "Transfers ownership of the contract to a new account (`newOwner`). Can only be called by the current owner."
+          },
+          "unpause(uint256)": {
+            "details": "This function can only unpause functionality, and thus cannot 'flip' any bit in `_paused` from 0 to 1.",
+            "params": {
+              "newPausedStatus": "represents the new value for `_paused` to take, which means it may flip several bits at once."
+            }
+          },
+          "version()": {
+            "returns": {
+              "_0": "The version string in SemVer format (e.g., \"1.1.1\")"
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "addChainIDsToWhitelist(uint256[],address[])": {
+            "notice": "Adds chainIDs to the whitelist of chainIDs that are transported to by the multichain protocol"
+          },
+          "allocationManager()": {
+            "notice": "The AllocationManager contract for EigenLayer"
+          },
+          "calculateOperatorTableBytes((address,uint32))": {
+            "notice": "Calculates the operatorTableBytes for a given operatorSet"
+          },
+          "createGenerationReservation((address,uint32),address,(address,uint32))": {
+            "notice": "Creates a generation reservation, which transports the operator table of an operatorSet to all whitelisted chains"
+          },
+          "getActiveGenerationReservationCount()": {
+            "notice": "Gets the number of active generation reservations"
+          },
+          "getActiveGenerationReservations()": {
+            "notice": "Gets the active generation reservations"
+          },
+          "getActiveGenerationReservationsByRange(uint256,uint256)": {
+            "notice": "Gets the active generation reservations by range"
+          },
+          "getOperatorSetConfig((address,uint32))": {
+            "notice": "Gets the operatorSetConfig for a given operatorSet"
+          },
+          "getOperatorTableCalculator((address,uint32))": {
+            "notice": "Gets the operatorTableCalculator for a given operatorSet"
+          },
+          "getSupportedChains()": {
+            "notice": "Gets the list of chains that are supported by the CrossChainRegistry"
+          },
+          "getTableUpdateCadence()": {
+            "notice": "Gets the table update cadence, in seconds"
+          },
+          "hasActiveGenerationReservation((address,uint32))": {
+            "notice": "Checks if a given operatorSet has an active generation reservation"
+          },
+          "initialize(address,uint32,uint256)": {
+            "notice": "Initializes the contract with the initial paused status and owner"
+          },
+          "keyRegistrar()": {
+            "notice": "The KeyRegistrar contract for EigenLayer"
+          },
+          "pause(uint256)": {
+            "notice": "This function is used to pause an EigenLayer contract's functionality. It is permissioned to the `pauser` address, which is expected to be a low threshold multisig."
+          },
+          "pauseAll()": {
+            "notice": "Alias for `pause(type(uint256).max)`."
+          },
+          "paused()": {
+            "notice": "Returns the current paused status as a uint256."
+          },
+          "paused(uint8)": {
+            "notice": "Returns 'true' if the `indexed`th bit of `_paused` is 1, and 'false' otherwise"
+          },
+          "pauserRegistry()": {
+            "notice": "Address of the `PauserRegistry` contract that this contract defers to for determining access control (for pausing)."
+          },
+          "permissionController()": {
+            "notice": "Pointer to the permission controller contract."
+          },
+          "removeChainIDsFromWhitelist(uint256[])": {
+            "notice": "Removes chainIDs from the whitelist of chainIDs"
+          },
+          "removeGenerationReservation((address,uint32))": {
+            "notice": "Removes a generation reservation for a given operatorSet"
+          },
+          "setOperatorSetConfig((address,uint32),(address,uint32))": {
+            "notice": "Sets the operatorSetConfig for a given operatorSet"
+          },
+          "setOperatorTableCalculator((address,uint32),address)": {
+            "notice": "Sets the operatorTableCalculator for the operatorSet"
+          },
+          "setTableUpdateCadence(uint32)": {
+            "notice": "Sets the table update cadence in seconds. This is the frequency at which operator tables are expected to be updated on all destination chains"
+          },
+          "unpause(uint256)": {
+            "notice": "This function is used to unpause an EigenLayer contract's functionality. It is permissioned to the `unpauser` address, which is expected to be a high threshold multisig or governance contract."
+          },
+          "version()": {
+            "notice": "Returns the semantic version string of the contract."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@openzeppelin-upgrades/=lib/openzeppelin-contracts-upgradeable-v4.9.0/",
+        "@openzeppelin/=lib/openzeppelin-contracts-v4.9.0/",
+        "ds-test/=lib/ds-test/src/",
+        "erc4626-tests/=lib/openzeppelin-contracts-upgradeable-v4.9.0/lib/erc4626-tests/",
+        "forge-std/=lib/forge-std/src/",
+        "openzeppelin-contracts-upgradeable-v4.9.0/=lib/openzeppelin-contracts-upgradeable-v4.9.0/",
+        "openzeppelin-contracts-v4.9.0/=lib/openzeppelin-contracts-v4.9.0/",
+        "openzeppelin/=lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/",
+        "zeus-templates/=lib/zeus-templates/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/contracts/multichain/CrossChainRegistry.sol": "CrossChainRegistry"
+      },
+      "evmVersion": "prague",
+      "libraries": {}
+    },
+    "sources": {
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/access/OwnableUpgradeable.sol": {
+        "keccak256": "0x4075622496acc77fd6d4de4cc30a8577a744d5c75afad33fdeacf1704d6eda98",
+        "urls": [
+          "bzz-raw://99c8cb3cd19a44bbfb6612605affb7d8b06cee1f6aa9362a37a8672b4f7eeaf8",
+          "dweb:/ipfs/QmasyxFDBUp7k5KFgfDWEzM8PYSKEq7GVznzMJ1VxVRF4B"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/proxy/utils/Initializable.sol": {
+        "keccak256": "0x89be10e757d242e9b18d5a32c9fbe2019f6d63052bbe46397a430a1d60d7f794",
+        "urls": [
+          "bzz-raw://f103ee2e4aecd37aac6ceefe670709cdd7613dee25fa2d4d9feaf7fc0aaa155e",
+          "dweb:/ipfs/QmRiNZLoJk5k3HPMYGPGjZFd2ke1ZxjhJZkM45Ec9GH9hv"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/AddressUpgradeable.sol": {
+        "keccak256": "0x9c80f545915582e63fe206c6ce27cbe85a86fc10b9cd2a0e8c9488fb7c2ee422",
+        "urls": [
+          "bzz-raw://310136ad60820af4177a11a61d77a3686faf5fca4942b600e08fc940db38396b",
+          "dweb:/ipfs/QmbCzMNSTL7Zi7M4UCSqBrkHtp4jjxUnGbkneCZKdR1qeq"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/ContextUpgradeable.sol": {
+        "keccak256": "0x963ea7f0b48b032eef72fe3a7582edf78408d6f834115b9feadd673a4d5bd149",
+        "urls": [
+          "bzz-raw://d6520943ea55fdf5f0bafb39ed909f64de17051bc954ff3e88c9e5621412c79c",
+          "dweb:/ipfs/QmWZ4rAKTQbNG2HxGs46AcTXShsVytKeLs7CUCdCSv5N7a"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/ShortStringsUpgradeable.sol": {
+        "keccak256": "0x4e34d967d14c25ef92ef1d4f7a8761949941f46c8f068923bd59d6e09c23b822",
+        "urls": [
+          "bzz-raw://a4643a5a7f8f7794f502d5fc6576ec09c10732680b93b44ca1899b6f32e7d5de",
+          "dweb:/ipfs/QmVQShpVY4y2Z6XY4ErtkQeNpbGEAcAQXrBeKSti4rX4UB"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/StorageSlotUpgradeable.sol": {
+        "keccak256": "0x07ac95acad040f1fb1f6120dd0aa5f702db69446e95f82613721879d30de0908",
+        "urls": [
+          "bzz-raw://a9df9de7b5da1d1bd3d4b6c073d0174bc4211db60e794a321c8cb5d4eae34685",
+          "dweb:/ipfs/QmWe49zj65jayrCe9jZpoWhYUZ1RiwSxyU2s7SBZnMztVy"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-upgradeable-v4.9.0/contracts/utils/math/SafeCastUpgradeable.sol": {
+        "keccak256": "0xcef50f95b43b038aa40aed25b62fc45906c681a5c1d504a4fdcf3bc6330a8d4b",
+        "urls": [
+          "bzz-raw://ef883699a00970d5469e502514e2854704cd53d7a49825078aa807a2f056315c",
+          "dweb:/ipfs/QmRjpN9oxgw6zHCVjfWNB9MzaYpNPPgqu7Rrwqwabmhpis"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-v4.9.0/contracts/token/ERC20/IERC20.sol": {
+        "keccak256": "0x287b55befed2961a7eabd7d7b1b2839cbca8a5b80ef8dcbb25ed3d4c2002c305",
+        "urls": [
+          "bzz-raw://bd39944e8fc06be6dbe2dd1d8449b5336e23c6a7ba3e8e9ae5ae0f37f35283f5",
+          "dweb:/ipfs/QmPV3FGYjVwvKSgAXKUN3r9T9GwniZz83CxBpM7vyj2G53"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-v4.9.0/contracts/utils/math/Math.sol": {
+        "keccak256": "0xe4455ac1eb7fc497bb7402579e7b4d64d928b846fce7d2b6fde06d366f21c2b3",
+        "urls": [
+          "bzz-raw://cc8841b3cd48ad125e2f46323c8bad3aa0e88e399ec62acb9e57efa7e7c8058c",
+          "dweb:/ipfs/QmSqE4mXHA2BXW58deDbXE8MTcsL5JSKNDbm23sVQxRLPS"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-v4.9.0/contracts/utils/structs/EnumerableMap.sol": {
+        "keccak256": "0x7ebfe2422bc571599c2ec20577d7848e1e7a0acf85fa7c2d9636618bbbdf6fca",
+        "urls": [
+          "bzz-raw://77fb3f64d470c92c3142e3c07d2f18ad78723a1f1e680a251dcde37e865d0636",
+          "dweb:/ipfs/QmXAeNPRRGfNSRxi1d17QjkNTBZFemhiMzJVvEJgMWwqUW"
+        ],
+        "license": "MIT"
+      },
+      "lib/openzeppelin-contracts-v4.9.0/contracts/utils/structs/EnumerableSet.sol": {
+        "keccak256": "0x9f4357008a8f7d8c8bf5d48902e789637538d8c016be5766610901b4bba81514",
+        "urls": [
+          "bzz-raw://20bf19b2b851f58a4c24543de80ae70b3e08621f9230eb335dc75e2d4f43f5df",
+          "dweb:/ipfs/QmSYuH1AhvJkPK8hNvoPqtExBcgTB42pPRHgTHkS5c5zYW"
+        ],
+        "license": "MIT"
+      },
+      "src/contracts/interfaces/IAVSRegistrar.sol": {
+        "keccak256": "0x38c36608dbc6da249340c194d0d0afbe4060c5d81761132e94ac2d39cf884b86",
+        "urls": [
+          "bzz-raw://6ff9f739a3ade8c2bf99939ff4a1814c7565edbe343d132e46c02d320a13182e",
+          "dweb:/ipfs/QmRvpRPmVFZruQiS9Rd9H9nuU8aM7KjXZcK3HVQoSZx7C8"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IAllocationManager.sol": {
+        "keccak256": "0xc0d272c84e3c67c6398f73cb3676ba752d17d5db12cbd831a6ffaed1851b6343",
+        "urls": [
+          "bzz-raw://b445b5ea97ca59cf7d10f48b50ee36b3af6588a8f5ed3960f6e55d70e8a0d651",
+          "dweb:/ipfs/QmUpmdkpqL8swHauqvoowfLN5xePtRNfefeFeBogFbQV5R"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/ICrossChainRegistry.sol": {
+        "keccak256": "0xae240a26fdb8db82b628bc3e0187c50596da31b9d4080a9e20213b95caf30c7e",
+        "urls": [
+          "bzz-raw://11fbab9feff5bc18b82103142b60864d4a47d783d3a3fdce66e68e27bd7863c3",
+          "dweb:/ipfs/QmUypELnNQo3rzTkYJBUugyr7At966t1jUfwsC5Ymqufzp"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IKeyRegistrar.sol": {
+        "keccak256": "0x73c064cefaffe11b80dd55aba654c608da3484bbc573f575e352f267c4f58aee",
+        "urls": [
+          "bzz-raw://6f4d3e24ab3b99701ec2ee825e2575b168e5dcb2646800599eb18fba61685053",
+          "dweb:/ipfs/QmT9LGAftNAQPZugfNsdYu8DWeXqAVCuDqHKUbV2rY9NT1"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IOperatorTableCalculator.sol": {
+        "keccak256": "0x0d15fae28a379f1b6b98a4446e2782b79f0441bb0476626a83de519a9c3366d0",
+        "urls": [
+          "bzz-raw://9abd5cf881a5c747e6f5d9ad2acd7bba453a3ed0cf60f880e00246db31d61cbc",
+          "dweb:/ipfs/QmcQvqk1BBQ7JJQzce5jBz46xZ8xovu9LyALnWuPFd9Ftd"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IPausable.sol": {
+        "keccak256": "0x0404f1db44005929899e00dcc50d553175951ff26c215c87215bbd92b4ebfde3",
+        "urls": [
+          "bzz-raw://cdb88bff60663f3418d271c7db93c2867d767e31ec592690e7b2e1f1ba1589e8",
+          "dweb:/ipfs/QmQfsZCiEqWYEFopZB5LvL9pq47Qba9EeMzeZcHN2e9ypc"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IPauserRegistry.sol": {
+        "keccak256": "0x705c371129ac08b9b035c1c1a1572a5e3a61b48dda8b7d8d974a7bfb88ecb7fc",
+        "urls": [
+          "bzz-raw://bdb894c26fcf1b83024d006b0573663286e50d857c5dea89a9149552a971da72",
+          "dweb:/ipfs/QmdqWnSPmeF9mV96uWMSN8AhVi64U818GRwFEqr6dP3UMD"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IPermissionController.sol": {
+        "keccak256": "0x5642a146907a9302553a6cf92d96d417ff90c679dd24eaf7c3408f831e4d838f",
+        "urls": [
+          "bzz-raw://a661e690160100dc11646f9011275c996c571d4b7876ac2bdf9b05309c63096f",
+          "dweb:/ipfs/QmXJfg7u89XUZ3DYcbo3zTyvWwCKuaUn26DDwFTmsgDoPg"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/ISemVerMixin.sol": {
+        "keccak256": "0xa7cfe506856653310b402b73baca96af947897c02b5b35a310640443e1332791",
+        "urls": [
+          "bzz-raw://e23941c3b825e02e3521dbbae63c5b58fb48d17125669fc0cd3c8d5a8c272d6e",
+          "dweb:/ipfs/QmaPfH8XkpT1nsEdJe34YbQCwBf1Gq89EvUPvG1wPforZa"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/interfaces/IStrategy.sol": {
+        "keccak256": "0xabf10614af348e518e14b29de1ae88d79a2567b705edba118f2bf1ce28bd90b5",
+        "urls": [
+          "bzz-raw://af2f7e00fe655b10402be84898ef83cdb5a6f8e3d466513f3fce71554782dc9e",
+          "dweb:/ipfs/QmbQsEFf2Mgxuv75HVssgeFeprAbdFnwjWbAWd8Wn9ETXe"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/libraries/BN254.sol": {
+        "keccak256": "0x24cd24d441907f69ab7dbe002e06f656dd8434235cffd59c97b8438c6a9a98fc",
+        "urls": [
+          "bzz-raw://074aa5523e2fe3e6f1b74fb207e08b41d2f6de34412da10e81d7f0b4720942cc",
+          "dweb:/ipfs/QmWvdpuvZGeKdEtzaCoAP2gvpggRBwh1cUs4fdWjV9DwW6"
+        ],
+        "license": "MIT"
+      },
+      "src/contracts/libraries/OperatorSetLib.sol": {
+        "keccak256": "0x551df2d7984470e6eaa774d058c3f2af0175044b720aa53a6a156c90881f1812",
+        "urls": [
+          "bzz-raw://eedb749fda40d45b8803694665d96fb5bec3b010d25cff4baad6e796ac690e41",
+          "dweb:/ipfs/QmUNG8gmC6CjrdazKbwqt7fyaBGNbqeEUA4iFka49egGZx"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/libraries/SlashingLib.sol": {
+        "keccak256": "0x65cdf662fb8842bcd8296d37e0ffb8e3f319645538f7031bf92288c36c21a469",
+        "urls": [
+          "bzz-raw://18cf145d9bf509c85b148400e83e689dff62d47508121f1f78db5bed3ace5add",
+          "dweb:/ipfs/QmZiso1MD1JtCVkBgVC7zy4gZ598bNt2re9YGkF5JfAM6L"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/mixins/PermissionControllerMixin.sol": {
+        "keccak256": "0xf915f1e416725ffd08686afab272bd7bda4c302c4fcde76769bfcdb3fbb01e67",
+        "urls": [
+          "bzz-raw://4e9142d737ff326018272c71c79367322576a81edf08251fd5b36b7df15cd6d0",
+          "dweb:/ipfs/QmPztJGoM4fkBK3ZnmHymuZUkUPkw112VdR2g25Q55Fiva"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/mixins/SemVerMixin.sol": {
+        "keccak256": "0xbc950c1589c05a76d7c0fec82ad11d15567e2cf8d98770a19963461603f99648",
+        "urls": [
+          "bzz-raw://d483b91672739d608ea510bc1b0f486c13264a50c001c0fa9c909b0282e22546",
+          "dweb:/ipfs/QmdByvG58PAG44LWhXKxyrLpHdsr8epaTcEGhfzhH7ssHc"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/multichain/CrossChainRegistry.sol": {
+        "keccak256": "0x659bd852ae78c545ccf24771bf422c17a1d2cdc155d1fb21d2582830adef8c9a",
+        "urls": [
+          "bzz-raw://2c503e5fcc1adcdc37856f1fadc044cbbc1c993be3b81e8d25f650a8c77e929d",
+          "dweb:/ipfs/QmX4wbFC8BDK8pFMyacwcFE7LNbx6cXSAYYBQsaFR7LzvA"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/multichain/CrossChainRegistryStorage.sol": {
+        "keccak256": "0xdcef54b3a9515aaa9482e6c19e508bf10520e91d720f13285627dfa70b12f61f",
+        "urls": [
+          "bzz-raw://00483463e4442851f376733be7d8e1aaa292cd903bba04b06f0868f41c169611",
+          "dweb:/ipfs/QmUGb6PevtLgnioGumMUyfxnxZBoBwM8VYNGLvtbw1t2ix"
+        ],
+        "license": "BUSL-1.1"
+      },
+      "src/contracts/permissions/Pausable.sol": {
+        "keccak256": "0xd9a4094bdef1792abb5aa6a106146295ca723654cf43d1c19e65a29e09960446",
+        "urls": [
+          "bzz-raw://f092e2e9d1e210b603ed534b94ba316a65aef2999445fa317b96ef5021287d99",
+          "dweb:/ipfs/QmTcawZWGyCKykm6D61BrfSR8NLEj2YscK5sxQcKZ2mRvA"
+        ],
+        "license": "BUSL-1.1"
+      }
+    },
+    "version": 1
+  },
+  "id": 193
+}
