@@ -104,7 +104,7 @@
   ],
   "upgrade": "v1.7.0-v1.8.0-multichain-hourglass-combined",
   "upgradePath": "script/releases/v1.7.0-v1.8.0-multichain-hourglass-combined",
-  "phase": "multisig_wait_signers",
+  "phase": "complete",
   "chainId": 560048,
   "startTime": "Thu Nov 13 2025 12:38:04 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1763055484.394
