@@ -1,7 +1,7 @@
 {
   "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
   "env": "preprod-hoodi",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "multisig",
@@ -62,10 +62,20 @@
       "id": 6
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x130a4e1838103aeaefd7c92d3c2056f12b1b4a260937495795a37d2b6b279fb5",
+      "multisig": "0x011aF0ABDBcffBF879de4E1F1F8e346bDCAc0653",
+      "confirmed": true,
+      "immediateExecutionHash": "0x8c4a9d3adc968b200edbe1fd652cf656fb4211faf03fd7eaa92a4e547d22b479"
+    }
+  ],
   "upgrade": "v1.9.0-slashing-ux",
   "upgradePath": "script/releases/v1.9.0-slashing-ux",
-  "phase": "",
+  "phase": "eoa_validate",
   "chainId": 560048,
   "startTime": "Fri Nov 14 2025 00:02:52 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1763096572.567
