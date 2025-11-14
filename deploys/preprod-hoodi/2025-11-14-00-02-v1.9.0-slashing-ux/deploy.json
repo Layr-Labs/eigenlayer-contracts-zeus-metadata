@@ -1,7 +1,7 @@
 {
   "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
   "env": "preprod-hoodi",
-  "segmentId": 3,
+  "segmentId": 4,
   "segments": [
     {
       "type": "multisig",
@@ -200,12 +200,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.9.0-slashing-ux",
   "upgradePath": "script/releases/v1.9.0-slashing-ux",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 560048,
   "startTime": "Fri Nov 14 2025 00:02:52 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1763096572.567
