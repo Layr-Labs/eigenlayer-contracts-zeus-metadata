@@ -93,11 +93,119 @@
       "multisig": "0x011aF0ABDBcffBF879de4E1F1F8e346bDCAc0653",
       "confirmed": true,
       "immediateExecutionHash": "0x231a9069b82dcb70d3c3fc01dbe6e0497544456eeb2af9e2af3a1f3b1f685fab"
+    },
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x7dD1f099C67eDB7B02d6F8CDB7C410E0E5616e94",
+          "contract": "PermissionController_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xA2aB2633860028aCD58Ce624987fb44D9E6DC25b",
+          "contract": "KeyRegistrar_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x784C22Dc3a428573aaF8Bb4445F17e912E93B05B",
+          "contract": "AllocationManagerView_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x8E8AE8a3066dc688737C6c57CDB43bcEC22E51B8",
+          "contract": "AllocationManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x4289020fEc1263E1c692385c5dFAd9207882546f",
+          "contract": "AVSDirectory_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xa7d18Ceffb55C696a6BAfd8C9e4bE5dd278a4922",
+          "contract": "DelegationManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x5d78d44aE92bF5C588930B4948D8DbCb93344830",
+          "contract": "ReleaseManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x39AE642593D1b5Dd0EA15BBDC79efe89187b3404",
+          "contract": "RewardsCoordinator_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x53324BF7342E7b6Ce4932E99d77394a03494f1D2",
+          "contract": "StrategyManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x9825EA658Ec5b1289d79ED6BBfa3f767BD8Faaba",
+          "contract": "EigenPodManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xadDbeCDF8104C0779ea36B66C0CFcF03368f63b7",
+          "contract": "EigenPod_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x6E186392d1b66B8856089501064d2FaCC8cabE56",
+          "contract": "EigenStrategy_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x6bea9e0C0DFF4F106a4Ace56DDB97B8347409372",
+          "contract": "StrategyBase_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x61c37B6d2038d109eb559BDE78fA4774b414Cc5b",
+          "contract": "StrategyBaseTVLLimits_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x0DdfD5EcCe2839f0Dee738Dfd9d8B3Bb1Ac45407",
+          "contract": "StrategyFactory_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x52Ef3Be295710Ef5d442cA8629BFf88771f2A9df",
+          "contract": "BN254CertificateVerifier_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xFE122980402CF1a53376f6B5dD45845d40B9eeeE",
+          "contract": "CrossChainRegistry_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x047E114155770f4F040Eea389de7dF498e4d9b42",
+          "contract": "ECDSACertificateVerifier_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x7d7fE54ea366C46c38bBe21D0a5961F13202D2e1",
+          "contract": "OperatorTableUpdater_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x8fb62B6496F9D8A4eD0B7fc77B51134f583480d2",
+          "contract": "TaskMailbox_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
     }
   ],
   "upgrade": "v1.9.0-slashing-ux",
   "upgradePath": "script/releases/v1.9.0-slashing-ux",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 560048,
   "startTime": "Fri Nov 14 2025 00:02:52 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1763096572.567
