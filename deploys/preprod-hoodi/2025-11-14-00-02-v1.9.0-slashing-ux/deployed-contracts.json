@@ -11,6 +11,18 @@
         "segment": 0,
         "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
       }
+    },
+    {
+      "address": "0x1777b9248A475CF9ddbE81c0A9195cDf7CF30E18",
+      "contract": "ProtocolRegistry_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x51fc339de929f2d2f887b1173b4e329956444f341a9e1f5a35973f83f5d1ca23",
+      "lastUpdatedIn": {
+        "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 1,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
     }
   ]
 }
