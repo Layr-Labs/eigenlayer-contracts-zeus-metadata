@@ -1,7 +1,7 @@
 {
   "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
   "env": "preprod-hoodi",
-  "segmentId": 4,
+  "segmentId": 5,
   "segments": [
     {
       "type": "multisig",
@@ -201,6 +201,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xf5cbaf4d273415ec715e2ff99629c89b6c2531e770d06450aae81b6998978f2c",
+      "multisig": "0x88A001Dc1E5C7470c1CC44f455AF45458850024E",
+      "confirmed": true,
+      "immediateExecutionHash": "0xd768e81cf4f87437a7bfe332c0ebc366312d7d3b1c5dcd70ee32bf8827e4aa58"
     }
   ],
   "upgrade": "v1.9.0-slashing-ux",
