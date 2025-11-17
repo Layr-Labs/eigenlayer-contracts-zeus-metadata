@@ -1,6 +1,6 @@
 {
   "id": "preprod-hoodi",
-  "deployedVersion": "1.8.1",
+  "deployedVersion": "1.9.0",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -196,12 +196,12 @@
         }
       },
       "EigenPod_Impl": {
-        "address": "0x67482666771e82C9a73BB9e9A22B2B597f448BBf",
+        "address": "0xadDbeCDF8104C0779ea36B66C0CFcF03368f63b7",
         "contract": "EigenPod_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xc40476fb448e7e37efae858bfc8c5384efc741705497780322d6a56e542589a3",
+        "deployedBytecodeHash": "0xb3b4beb7b9411d5b8a4354b87b76f143826d04e92a1169dc7954d807e6182aa1",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -220,12 +220,12 @@
         }
       },
       "StrategyBase_Impl": {
-        "address": "0x275cCf9Be51f4a6C94aBa6114cdf2a4c45B9cb27",
+        "address": "0x6bea9e0C0DFF4F106a4Ace56DDB97B8347409372",
         "contract": "StrategyBase_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x6100710554d5e095500e7abdd78b041d8a88fed001d81e78e27d5369fe4df81c",
+        "deployedBytecodeHash": "0x58101d2e5a305235bcf13a0d3d29bb19d88274e33ac69d06e71e737c6bf24eac",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -244,146 +244,146 @@
         }
       },
       "DelegationManager_Impl": {
-        "address": "0x4500927874Ad41538c1bEF2F5278E7a86DF6bce8",
+        "address": "0xa7d18Ceffb55C696a6BAfd8C9e4bE5dd278a4922",
         "contract": "DelegationManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x15eb11e1ae8a9211293f976eca95c530f68720d3ecddc388710bfd9d7ae1ee09",
+        "deployedBytecodeHash": "0xab832bab995a804e1f81d19cb5bf8fcdf08fc7ad6e7b05f7971d0beb58bd152c",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "StrategyManager_Impl": {
-        "address": "0x25B0767fBE27240bf4787e58D125F90bb53214b4",
+        "address": "0x53324BF7342E7b6Ce4932E99d77394a03494f1D2",
         "contract": "StrategyManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xedf6f98b0991f0ee7a56fddd9da3ad12e70358dcd5d2fe2bc1c1aab118c8d6b0",
+        "deployedBytecodeHash": "0x93718b314250cdee58f3f3605737daa76eb2cb8e1d490fec5551e72a0e41002b",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "AllocationManager_Impl": {
-        "address": "0xf5bbBb0d421b329F7AdD5b0e5760a23c57D4D01A",
+        "address": "0x8E8AE8a3066dc688737C6c57CDB43bcEC22E51B8",
         "contract": "AllocationManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x28283e67aef96b5a77e072d78edd6e0c37caad534483587a5f166654e4026761",
+        "deployedBytecodeHash": "0x3ead2e2763a75499339089b577b5feedccebc1dcee31e90a981bd07bd21cf0c5",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "RewardsCoordinator_Impl": {
-        "address": "0xBd44b5E2516dE98FF04388B75753Be587cE52650",
+        "address": "0x39AE642593D1b5Dd0EA15BBDC79efe89187b3404",
         "contract": "RewardsCoordinator_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x36bc2abc52f9e924ae93812aa89f876cd815c02202a13bf6f4aec07683754fa4",
+        "deployedBytecodeHash": "0xa640417ca79a05f3f43ffff38d4b05931c59e6df1bbdc9b7a78ab76440aa3932",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "AVSDirectory_Impl": {
-        "address": "0x46d1B8747741f17F763a1dEeD090E38D9c1F7C0E",
+        "address": "0x4289020fEc1263E1c692385c5dFAd9207882546f",
         "contract": "AVSDirectory_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x45925c60a0b0b2fa16ad1e7a7a9e8ee2d059804db0a1671413f5800e66737e0e",
+        "deployedBytecodeHash": "0xe84ab978e410e7f4d8e392a3b648166dba18a6a7444f16d164cf863e20dc6a98",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "EigenPodManager_Impl": {
-        "address": "0x94650e09a471CEF96e7966cabf26718FBf352697",
+        "address": "0x9825EA658Ec5b1289d79ED6BBfa3f767BD8Faaba",
         "contract": "EigenPodManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x0e7d6770c0302414c92e3e389c1fb0be41f06a08f2ff5cb7effc18ccb436f768",
+        "deployedBytecodeHash": "0x0b84361273c1b08204d639517afe025c415deff5c4cd89c04cd4d2e982108323",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "StrategyFactory_Impl": {
-        "address": "0x43252609bff8a13dFe5e057097f2f45A24387a84",
+        "address": "0x0DdfD5EcCe2839f0Dee738Dfd9d8B3Bb1Ac45407",
         "contract": "StrategyFactory_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x04794f74ee370e1111cbf21fa987fc3d9b95fefa9e30a5b22fe8b5d45f3bf0c9",
+        "deployedBytecodeHash": "0x246ed4654f7bc29004a76b924e8f5579a38405585eb3e13e9ec25718267c2bf2",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "EigenStrategy_Impl": {
-        "address": "0x72fbf0EAb2Ec57189ee103Fb681D3055a254783D",
+        "address": "0x6E186392d1b66B8856089501064d2FaCC8cabE56",
         "contract": "EigenStrategy_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x565406b36233e43402e995648c3df5f84c61818f58384417f52503c75f1bf9c9",
+        "deployedBytecodeHash": "0x682748b3de0ed25db3a44e610e2dffe0755621b2e4db70ddb06d5a13ab29b771",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "PermissionController_Impl": {
-        "address": "0xFea2FDc33ebEC1429BdC9C35fE03F5fdaDb86c6A",
+        "address": "0x7dD1f099C67eDB7B02d6F8CDB7C410E0E5616e94",
         "contract": "PermissionController_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xd9ebf5ee7256ec0dc9443dfcc4847e1868af0cf90d6cea1ea6377ceae85e6b89",
+        "deployedBytecodeHash": "0xa504180307978d2c55fa9f1f468404032c79a6baae8e20c92bd3d1dac6841e0c",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "KeyRegistrar_Impl": {
-        "address": "0xbe33b1d0d5262059bf33B41a07AE7b5A0F4Ae1f8",
+        "address": "0xA2aB2633860028aCD58Ce624987fb44D9E6DC25b",
         "contract": "KeyRegistrar_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x79eee62b15dafce1e71900b12be7a530c557d8bea08f90c8c7d85dc272d08ef2",
+        "deployedBytecodeHash": "0x95516332de773712746c3d1c316f956f16cf587d564a9b2f17e86bdedd293fd6",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "ReleaseManager_Impl": {
-        "address": "0x3d6cB9720DF6aa801B38492D579E799c658eF2Aa",
+        "address": "0x5d78d44aE92bF5C588930B4948D8DbCb93344830",
         "contract": "ReleaseManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x8d51864097e240e35467b60fff9047c07a68d60f59c63dcc3553dac013e27be5",
+        "deployedBytecodeHash": "0xca7733cc96bd4b2aa6707ba416ddff64a1b72d9765a4f4d57379adc7ddacfe4e",
         "lastUpdatedIn": {
-          "name": "2025-11-07-17-02-v1.6.0-protocol-from-scratch",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "CrossChainRegistry_Impl": {
-        "address": "0x2D492266E23B0455b0CABB9B2B445a26C5BCc4d8",
+        "address": "0xFE122980402CF1a53376f6B5dD45845d40B9eeeE",
         "contract": "CrossChainRegistry_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x721f61b9d12bb4561de1d201be2acc4b3a82b909f916f6af128bf9e01e2d0bb7",
+        "deployedBytecodeHash": "0x5e6a1223c54887532569df10dd2f5984d7a5d1c5adf30dcdd5d93db33c1f9428",
         "lastUpdatedIn": {
-          "name": "2025-11-10-12-32-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
-          "segment": 0,
+          "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
@@ -460,56 +460,104 @@
         }
       },
       "OperatorTableUpdater_Impl": {
-        "address": "0x967e7A0ce5bAB978c8DF1A180a9CD6DaAb5C453C",
+        "address": "0x7d7fE54ea366C46c38bBe21D0a5961F13202D2e1",
         "contract": "OperatorTableUpdater_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x76bff53979c9fe2b86582e114a84711c7acd61a6698f38bf420b595f86ecba12",
+        "deployedBytecodeHash": "0xa4c3e62c555862f59f01c1af5ed7c5b5d02eea1bde6882cd1e9a80c6008f9d33",
         "lastUpdatedIn": {
-          "name": "2025-11-10-12-32-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
-          "segment": 2,
+          "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "ECDSACertificateVerifier_Impl": {
-        "address": "0x644a97d1830b714ed1D929736a969513318e91eF",
+        "address": "0x047E114155770f4F040Eea389de7dF498e4d9b42",
         "contract": "ECDSACertificateVerifier_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xeaed212556c8d7104aff5f6258e81459bbcd9d9961a2b9709f3da285afd5b411",
+        "deployedBytecodeHash": "0x7d1dcd76c5f9454192aea660471944d34d90edce4c62dba707af4c4efd23d1c6",
         "lastUpdatedIn": {
-          "name": "2025-11-10-12-32-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
-          "segment": 2,
+          "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "BN254CertificateVerifier_Impl": {
-        "address": "0xa67c1936e60082609b43924C874b208f636ceb43",
+        "address": "0x52Ef3Be295710Ef5d442cA8629BFf88771f2A9df",
         "contract": "BN254CertificateVerifier_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xc0060b2daaf06cf876a32272e519681fab911d6a176393cbe6ee210f16cb0e3d",
+        "deployedBytecodeHash": "0x0b4e022da0d4fb8174035ae9f467b80aa8289fc4011342aad9e0b204b364bde3",
         "lastUpdatedIn": {
-          "name": "2025-11-10-12-32-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
-          "segment": 2,
+          "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "TaskMailbox_Impl": {
-        "address": "0x0CeD0D21D5214004aA5cB93a03299114F753D547",
+        "address": "0x8fb62B6496F9D8A4eD0B7fc77B51134f583480d2",
         "contract": "TaskMailbox_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x592e2c975fd92f0cd5194248759927534883fd985bcaff9a7e4e9458e68c48e5",
+        "deployedBytecodeHash": "0x66355deb211f9bba06f3d16becf8650e4f3f185f3103b254d6b8f4db57ba160e",
         "lastUpdatedIn": {
-          "name": "2025-11-10-12-32-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
           "phase": "eoa_wait_confirm",
-          "segment": 2,
+          "segment": 3,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "ProtocolRegistry_Proxy": {
+        "address": "0xA614E817Ee1FbEEa6F551Ab8AA27935360f7f45E",
+        "contract": "ProtocolRegistry_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x51fc339de929f2d2f887b1173b4e329956444f341a9e1f5a35973f83f5d1ca23",
+        "lastUpdatedIn": {
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
+          "phase": "multisig_start",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "ProtocolRegistry_Impl": {
+        "address": "0x1777b9248A475CF9ddbE81c0A9195cDf7CF30E18",
+        "contract": "ProtocolRegistry_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x51fc339de929f2d2f887b1173b4e329956444f341a9e1f5a35973f83f5d1ca23",
+        "lastUpdatedIn": {
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
+          "phase": "eoa_wait_confirm",
+          "segment": 1,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "AllocationManagerView_Impl": {
+        "address": "0x784C22Dc3a428573aaF8Bb4445F17e912E93B05B",
+        "contract": "AllocationManagerView_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0xfe73cec06634469c70003ca0af4f2eb960b9a8bfa967c1557f978f84810e4026",
+        "lastUpdatedIn": {
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
+          "phase": "eoa_wait_confirm",
+          "segment": 3,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "StrategyBaseTVLLimits_Impl": {
+        "address": "0x61c37B6d2038d109eb559BDE78fA4774b414Cc5b",
+        "contract": "StrategyBaseTVLLimits_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x3cce67e4dc64bf39d64caf42dc1dcf9c1e6116cee207e9998cd7ae4d214a0d05",
+        "lastUpdatedIn": {
+          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
+          "phase": "eoa_wait_confirm",
+          "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       }
     },
     "instances": []
   },
-  "latestDeployedCommit": "31aade2fc3bf6e2c0160cc2e7c7be1a6017296e5",
+  "latestDeployedCommit": "7a6f055a61dd8c76e5805737627ecd95dde4a7e4",
   "chainId": 560048
 }
