@@ -1,0 +1,20 @@
+{
+  "name": "rewards-v2.2-v1.10.0",
+  "from": "1.9.0",
+  "to": "1.10.0",
+  "phases": [
+    {
+      "type": "eoa",
+      "filename": "1-deployRewardsCoordinatorImpl.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueRewardsCoordinatorUpgrade.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "3-executeRewardsCoordinatorUpgrade.s.sol"
+    }
+  ],
+  "commit": "6d210565370ffef835154adc54a7eb29963c7e8f"
+}
