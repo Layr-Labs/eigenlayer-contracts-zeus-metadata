@@ -1,6 +1,6 @@
 {
   "id": "preprod-hoodi",
-  "deployedVersion": "1.9.0",
+  "deployedVersion": "1.10.0",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -280,14 +280,14 @@
         }
       },
       "RewardsCoordinator_Impl": {
-        "address": "0x39AE642593D1b5Dd0EA15BBDC79efe89187b3404",
+        "address": "0xABd4368C44B15BEaDE8730E379dB69D04Dc2b843",
         "contract": "RewardsCoordinator_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xa640417ca79a05f3f43ffff38d4b05931c59e6df1bbdc9b7a78ab76440aa3932",
+        "deployedBytecodeHash": "0xd13447750daf7123ec048f17d3323ee97f9ec9a7ff399f028c0cd16b3dde9edf",
         "lastUpdatedIn": {
-          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
+          "name": "2025-11-21-20-35-v1.10.0-rewards-v2.2",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
+          "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
@@ -558,6 +558,6 @@
     },
     "instances": []
   },
-  "latestDeployedCommit": "7a6f055a61dd8c76e5805737627ecd95dde4a7e4",
+  "latestDeployedCommit": "b4b78b19108a237523561a13c4c86b7d32754ef2",
   "chainId": 560048
 }
