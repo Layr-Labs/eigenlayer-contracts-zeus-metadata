@@ -19,10 +19,24 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0xB225894A46f7613F1464B00324148465CeafA7f2",
+          "contract": "RewardsCoordinator_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.10.0-rewards-v2.2",
   "upgradePath": "script/releases/v1.10.0-rewards-v2.2",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 560048,
   "startTime": "Fri Nov 21 2025 19:43:51 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1763772231.035

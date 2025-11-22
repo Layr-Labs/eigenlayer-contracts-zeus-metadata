@@ -1,0 +1,10 @@
+{
+  "mutations": [
+    {
+      "prev": 2592000,
+      "next": 63072000,
+      "name": "REWARDS_COORDINATOR_MAX_FUTURE_LENGTH",
+      "internalType": 2
+    }
+  ]
+}
