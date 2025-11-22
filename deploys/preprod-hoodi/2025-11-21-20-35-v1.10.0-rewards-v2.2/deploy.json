@@ -22,7 +22,7 @@
   "metadata": [],
   "upgrade": "v1.10.0-rewards-v2.2",
   "upgradePath": "script/releases/v1.10.0-rewards-v2.2",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 560048,
   "startTime": "Fri Nov 21 2025 20:35:12 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1763775312.519
