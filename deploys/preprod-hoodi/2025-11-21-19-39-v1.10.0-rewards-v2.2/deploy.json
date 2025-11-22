@@ -1,0 +1,29 @@
+{
+  "name": "2025-11-21-19-39-v1.10.0-rewards-v2.2",
+  "env": "preprod-hoodi",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployRewardsCoordinatorImpl.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueRewardsCoordinatorUpgrade.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-executeRewardsCoordinatorUpgrade.s.sol",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.10.0-rewards-v2.2",
+  "upgradePath": "script/releases/v1.10.0-rewards-v2.2",
+  "phase": "",
+  "chainId": 560048,
+  "startTime": "Fri Nov 21 2025 19:39:54 GMT-0500 (Eastern Standard Time)",
+  "startTimestamp": 1763771994.142
+}
