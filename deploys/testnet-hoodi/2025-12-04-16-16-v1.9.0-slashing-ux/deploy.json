@@ -65,7 +65,7 @@
   "metadata": [],
   "upgrade": "v1.9.0-slashing-ux",
   "upgradePath": "script/releases/v1.9.0-slashing-ux",
-  "phase": "",
+  "phase": "multisig_start",
   "chainId": 560048,
   "startTime": "Thu Dec 04 2025 16:16:11 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1764882971.306
