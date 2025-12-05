@@ -65,11 +65,39 @@
       "multisig": "0xA591635DE4C254BD3fa9C9Db9000eA6488344C28",
       "confirmed": true,
       "immediateExecutionHash": "0xed367835107cdfc94d61b54d2061245116d5710cbfb737a327835fa59b5c27d6"
+    },
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x59B11b191B572888703E150E45F5015e0fFcf525",
+          "contract": "BN254CertificateVerifier_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xEE41826B7D5B89e7F5eED6a831b4eFD69FC9ca1A",
+          "contract": "ECDSACertificateVerifier_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x65147e9916152C1EbdBaD8A6f3e145b4BDeE2D6F",
+          "contract": "OperatorTableUpdater_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x46CFA3C2eaDe97D53739120b87A63F739B9616db",
+          "contract": "TaskMailbox_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
     }
   ],
   "upgrade": "v1.9.0-slashing-ux-destination",
   "upgradePath": "script/releases/v1.9.0-slashing-ux-destination",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 84532,
   "startTime": "Fri Dec 05 2025 00:05:54 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1764911154.555
