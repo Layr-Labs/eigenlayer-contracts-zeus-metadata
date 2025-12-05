@@ -71,11 +71,24 @@
       "multisig": "0xA591635DE4C254BD3fa9C9Db9000eA6488344C28",
       "confirmed": true,
       "immediateExecutionHash": "0x1353589a68d960eb90decdbfead788d599c1e7db54a2be7376f1f2a21db6fcd7"
+    },
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x78e1827aF8633BD8E5220c4A54D4Dd3B22345139",
+          "contract": "ProtocolRegistry_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
     }
   ],
   "upgrade": "v1.9.0-slashing-ux",
   "upgradePath": "script/releases/v1.9.0-slashing-ux",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 11155111,
   "startTime": "Thu Dec 04 2025 23:31:41 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1764909101.088
