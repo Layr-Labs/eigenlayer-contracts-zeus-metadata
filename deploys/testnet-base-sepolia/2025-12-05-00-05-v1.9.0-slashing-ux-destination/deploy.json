@@ -102,11 +102,20 @@
       "multisig": "0x4ACA7e09eF90612941A9185A6690Dbe9e39aae8f",
       "confirmed": true,
       "immediateExecutionHash": "0x90a2cfe011ffe4a9f95da297da1833b998628f3b8d28736adaee16c4c1efba4d"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x7e465e7cb4cf01fd2779fe8f2a308cb11d22e0d4535eb7d28afe8e123bc37875",
+      "multisig": "0xf96adA2BF73A6f8Df1dbe21F52cb0Cfd63d3032D",
+      "confirmed": true,
+      "immediateExecutionHash": "0xc434ef7688f4ab6b95f102f8d679360086027b44dbcd213dfd8e7da9f3d0f07b"
     }
   ],
   "upgrade": "v1.9.0-slashing-ux-destination",
   "upgradePath": "script/releases/v1.9.0-slashing-ux-destination",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 84532,
   "startTime": "Fri Dec 05 2025 00:05:54 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1764911154.555
