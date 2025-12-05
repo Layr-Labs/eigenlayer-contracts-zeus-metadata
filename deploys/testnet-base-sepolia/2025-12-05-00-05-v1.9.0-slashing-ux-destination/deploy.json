@@ -1,7 +1,7 @@
 {
   "name": "2025-12-05-00-05-v1.9.0-slashing-ux-destination",
   "env": "testnet-base-sepolia",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "multisig",
@@ -34,10 +34,20 @@
       "id": 5
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x1503af817f0ab4c82d3691ca45d98f6ce97bc45d636cb9613034f51f81e68a21",
+      "multisig": "0xA591635DE4C254BD3fa9C9Db9000eA6488344C28",
+      "confirmed": true,
+      "immediateExecutionHash": "0x678d19d3de399ee0cb11ac269da1d8a65b68c3a10061e25a53b1b77a91098be5"
+    }
+  ],
   "upgrade": "v1.9.0-slashing-ux-destination",
   "upgradePath": "script/releases/v1.9.0-slashing-ux-destination",
-  "phase": "",
+  "phase": "eoa_validate",
   "chainId": 84532,
   "startTime": "Fri Dec 05 2025 00:05:54 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1764911154.555

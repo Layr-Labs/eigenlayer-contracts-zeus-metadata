@@ -1,0 +1,16 @@
+{
+  "contracts": [
+    {
+      "address": "0xfF2dF19481cC4d7fB30698e78c3aeEc3b1265e1e",
+      "contract": "ProtocolRegistry_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0xe73022ca21d83a65412ecb25abcbff98ae2afbf8d3ef054fb62d9a1d6452ce99",
+      "lastUpdatedIn": {
+        "name": "2025-12-05-00-05-v1.9.0-slashing-ux-destination",
+        "phase": "multisig_start",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}
