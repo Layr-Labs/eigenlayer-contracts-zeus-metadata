@@ -1,6 +1,6 @@
 {
   "id": "testnet-base-sepolia",
-  "deployedVersion": "1.8.1",
+  "deployedVersion": "1.9.0",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -64,36 +64,36 @@
         }
       },
       "OperatorTableUpdater_Impl": {
-        "address": "0x42583067658071247ec8CE0A516A58f682002d07",
+        "address": "0x65147e9916152C1EbdBaD8A6f3e145b4BDeE2D6F",
         "contract": "OperatorTableUpdater_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x4ff74cafddb85220447340b8d9963b0fd76206379043c59118c26a09a92468da",
+        "deployedBytecodeHash": "0x32a1e00b69e4c85433e6460c03bdbea8443a89e0e6299d56d8035f22990060c4",
         "lastUpdatedIn": {
-          "name": "2025-08-28-16-24-v1.8.0-multichain-testnet-final",
+          "name": "2025-12-05-00-05-v1.9.0-slashing-ux-destination",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "ECDSACertificateVerifier_Impl": {
-        "address": "0x885C0CC8118E428a2C04de58A93eB15Ed4F0e064",
+        "address": "0xEE41826B7D5B89e7F5eED6a831b4eFD69FC9ca1A",
         "contract": "ECDSACertificateVerifier_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x59c56f0220ea8d1417df8b786b04cc1fce0ca0cdb5544b6e327d6e601d96c966",
+        "deployedBytecodeHash": "0x79ccf53e15362472030a457809f7824a408006f74a1985afadc22df8f545d22d",
         "lastUpdatedIn": {
-          "name": "2025-08-28-16-24-v1.8.0-multichain-testnet-final",
+          "name": "2025-12-05-00-05-v1.9.0-slashing-ux-destination",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "BN254CertificateVerifier_Impl": {
-        "address": "0x5ae8152fb88c26ff9ca5C014c94fca3c68029349",
+        "address": "0x59B11b191B572888703E150E45F5015e0fFcf525",
         "contract": "BN254CertificateVerifier_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x482e15100b37d9883a1c36ff7cfaaf5b02c9f7397bb40763b05bae675b43ee36",
+        "deployedBytecodeHash": "0x573eb852d474822ce3cd3311d1a998b158c61fdfa712d114f5890b3020c89ce5",
         "lastUpdatedIn": {
-          "name": "2025-08-28-16-24-v1.8.0-multichain-testnet-final",
+          "name": "2025-12-05-00-05-v1.9.0-slashing-ux-destination",
           "phase": "eoa_wait_confirm",
           "segment": 3,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -112,20 +112,44 @@
         }
       },
       "TaskMailbox_Impl": {
-        "address": "0x4B1481fFF061A0099408e71702b40Fe0932080Bc",
+        "address": "0x46CFA3C2eaDe97D53739120b87A63F739B9616db",
         "contract": "TaskMailbox_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x1d4cc5d3708c5697ff71cc06fb92601f47ffacca031c6c7105dce13dafcfc652",
+        "deployedBytecodeHash": "0xc038998a9ff271ffedbf1baffd246c30a31d814ddc1b54fc4bc4d1899c1b1c71",
         "lastUpdatedIn": {
-          "name": "2025-09-22-16-20-v1.8.1-hourglass-testnet-replay-fix",
+          "name": "2025-12-05-00-05-v1.9.0-slashing-ux-destination",
           "phase": "eoa_wait_confirm",
+          "segment": 3,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "ProtocolRegistry_Proxy": {
+        "address": "0xfF2dF19481cC4d7fB30698e78c3aeEc3b1265e1e",
+        "contract": "ProtocolRegistry_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0xe73022ca21d83a65412ecb25abcbff98ae2afbf8d3ef054fb62d9a1d6452ce99",
+        "lastUpdatedIn": {
+          "name": "2025-12-05-00-05-v1.9.0-slashing-ux-destination",
+          "phase": "multisig_start",
           "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "ProtocolRegistry_Impl": {
+        "address": "0xcC305562B01bec562D13A40ef8781e313AFE7940",
+        "contract": "ProtocolRegistry_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0xe73022ca21d83a65412ecb25abcbff98ae2afbf8d3ef054fb62d9a1d6452ce99",
+        "lastUpdatedIn": {
+          "name": "2025-12-05-00-05-v1.9.0-slashing-ux-destination",
+          "phase": "eoa_wait_confirm",
+          "segment": 1,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       }
     },
     "instances": []
   },
-  "latestDeployedCommit": "8bdc90929fa28f37c7126a8851edfa7947e2ea0f",
+  "latestDeployedCommit": "1564be7b5ac19af78ef58cd3b153bd88ef9fcad4",
   "chainId": 84532
 }
