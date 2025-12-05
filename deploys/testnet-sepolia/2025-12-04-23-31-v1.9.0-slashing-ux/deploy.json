@@ -1,7 +1,7 @@
 {
   "name": "2025-12-04-23-31-v1.9.0-slashing-ux",
   "env": "testnet-sepolia",
-  "segmentId": 4,
+  "segmentId": 5,
   "segments": [
     {
       "type": "multisig",
@@ -201,6 +201,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xd30c92068a51cc89f51c2bb840415259af9b8a687368085931ab593f3d1ab878",
+      "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
+      "confirmed": true,
+      "immediateExecutionHash": "0x40fe4c1aac0b5cd241c8b52259c9a06ffb5354970cf09553ca0dc890bbc6ff8e"
     }
   ],
   "upgrade": "v1.9.0-slashing-ux",
