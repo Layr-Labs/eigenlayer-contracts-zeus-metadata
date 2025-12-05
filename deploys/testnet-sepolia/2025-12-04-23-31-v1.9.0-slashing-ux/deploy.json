@@ -1,7 +1,7 @@
 {
   "name": "2025-12-04-23-31-v1.9.0-slashing-ux",
   "env": "testnet-sepolia",
-  "segmentId": 1,
+  "segmentId": 3,
   "segments": [
     {
       "type": "multisig",
@@ -83,12 +83,21 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xbfc4c6c29f9cc7dd6600fed3cb020afa86294032b492a07669384b5cb9708f6a",
+      "multisig": "0xA591635DE4C254BD3fa9C9Db9000eA6488344C28",
+      "confirmed": true,
+      "immediateExecutionHash": "0x895fc08bcfc126b990c13ada9cae8f6f1374656facc6a234833cb44b6b3950d4"
     }
   ],
   "upgrade": "v1.9.0-slashing-ux",
   "upgradePath": "script/releases/v1.9.0-slashing-ux",
-  "phase": "eoa_wait_confirm",
+  "phase": "eoa_validate",
   "chainId": 11155111,
   "startTime": "Thu Dec 04 2025 23:31:41 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1764909101.088
