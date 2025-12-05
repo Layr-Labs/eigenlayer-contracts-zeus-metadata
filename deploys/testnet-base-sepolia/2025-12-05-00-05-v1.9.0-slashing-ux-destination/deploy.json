@@ -47,7 +47,7 @@
   ],
   "upgrade": "v1.9.0-slashing-ux-destination",
   "upgradePath": "script/releases/v1.9.0-slashing-ux-destination",
-  "phase": "eoa_validate",
+  "phase": "eoa_start",
   "chainId": 84532,
   "startTime": "Fri Dec 05 2025 00:05:54 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1764911154.555
