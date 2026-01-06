@@ -71,11 +71,20 @@
       "multisig": "0x88A001Dc1E5C7470c1CC44f455AF45458850024E",
       "confirmed": true,
       "immediateExecutionHash": "0x29206c2f27cc053035643efee924ef5a8266f4c76908f49c4ac4ba582bcc994d"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x9cf3a4a25fbb17c9a5615c7c0acb3053717bef284352be04a456e0d694420f95",
+      "multisig": "0x0132adD08860485Cf243B473aB0E912154C565C3",
+      "confirmed": true,
+      "immediateExecutionHash": "0x9b7a3feafaa57cc310ea3872edc4807a14108f8c0ce2fcbc697638faf0adee1a"
     }
   ],
   "upgrade": "v1.11.0-duration-vault",
   "upgradePath": "script/releases/v1.11.0-duration-vault",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 560048,
   "startTime": "Tue Jan 06 2026 16:13:35 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1767734015.948
