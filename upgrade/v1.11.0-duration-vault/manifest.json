@@ -1,0 +1,20 @@
+{
+  "name": "duration-vault-strategy",
+  "from": ">=1.10.0",
+  "to": "1.11.0",
+  "phases": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol"
+    },
+    {
+      "type": "multisig",
+      "filename": "3-completeUpgrade.s.sol"
+    }
+  ],
+  "commit": "bcb070730cdb14cc5abab86e081c43ba210db80e"
+}
