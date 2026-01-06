@@ -1,7 +1,7 @@
 {
   "name": "2026-01-06-16-13-v1.11.0-duration-vault",
   "env": "preprod-hoodi",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -61,12 +61,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.11.0-duration-vault",
   "upgradePath": "script/releases/v1.11.0-duration-vault",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 560048,
   "startTime": "Tue Jan 06 2026 16:13:35 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1767734015.948
