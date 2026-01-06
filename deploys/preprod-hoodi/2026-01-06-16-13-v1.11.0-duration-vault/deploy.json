@@ -22,7 +22,7 @@
   "metadata": [],
   "upgrade": "v1.11.0-duration-vault",
   "upgradePath": "script/releases/v1.11.0-duration-vault",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 560048,
   "startTime": "Tue Jan 06 2026 16:13:35 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1767734015.948
