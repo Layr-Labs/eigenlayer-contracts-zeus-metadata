@@ -1,0 +1,29 @@
+{
+  "name": "2026-01-06-16-13-v1.11.0-duration-vault",
+  "env": "preprod-hoodi",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-completeUpgrade.s.sol",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.11.0-duration-vault",
+  "upgradePath": "script/releases/v1.11.0-duration-vault",
+  "phase": "",
+  "chainId": 560048,
+  "startTime": "Tue Jan 06 2026 16:13:35 GMT-0500 (Eastern Standard Time)",
+  "startTimestamp": 1767734015.948
+}
