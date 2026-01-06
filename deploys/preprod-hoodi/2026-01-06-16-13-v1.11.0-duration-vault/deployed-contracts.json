@@ -1,0 +1,88 @@
+{
+  "contracts": [
+    {
+      "address": "0x28ec08Ac867d16165B77b1Ae897fB3a34EB9ebD8",
+      "contract": "StrategyManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x4dd5de10067981f20f6394768b83fc5511be1fb8140ebe3d49d4aad26f05a259",
+      "lastUpdatedIn": {
+        "name": "2026-01-06-16-13-v1.11.0-duration-vault",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xDf871DA49f0B51a4cb34aa4eCfAf00619F976b3D",
+      "contract": "EigenStrategy_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xa1eb519354fe5221de3002dbe519e948bf2ef472ea41de9f5bcc957c8522ed96",
+      "lastUpdatedIn": {
+        "name": "2026-01-06-16-13-v1.11.0-duration-vault",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xc2F33EF7FD09B00E61f62E63FD84FB27c0Aa194C",
+      "contract": "StrategyBase_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x08596fdfe8c80bb9a1573a6d10fbb10a580bd3b0cadeb53fe9375f5bae8e0b40",
+      "lastUpdatedIn": {
+        "name": "2026-01-06-16-13-v1.11.0-duration-vault",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x86094872Df7833F3e0211D770574dc522452e0B5",
+      "contract": "StrategyBaseTVLLimits_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x7053ef2a4d7f281155fe094ba8aa66a8968a814fcf30fb0dedff2d71e338ca76",
+      "lastUpdatedIn": {
+        "name": "2026-01-06-16-13-v1.11.0-duration-vault",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x0b08F8df209d586c5F565641431D9c74ce7fF944",
+      "contract": "DurationVaultStrategy_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x50ff0db6da87f686cddb3086af2327f9dd2b2431b6aa8b7dcf12d4bccf216102",
+      "lastUpdatedIn": {
+        "name": "2026-01-06-16-13-v1.11.0-duration-vault",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xDa8Db52b0364b697b0DB08A955fe7d02b555F893",
+      "contract": "DurationVaultStrategy_Beacon",
+      "singleton": true,
+      "deployedBytecodeHash": "0x50ff0db6da87f686cddb3086af2327f9dd2b2431b6aa8b7dcf12d4bccf216102",
+      "lastUpdatedIn": {
+        "name": "2026-01-06-16-13-v1.11.0-duration-vault",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x62Eb01C4d1B938A3Ac9cB77843Da4bfa63172B95",
+      "contract": "StrategyFactory_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x5aa6f397345b18d449be42be4e61d0b6baae84d69b676baadc8cc5ac1ecadd01",
+      "lastUpdatedIn": {
+        "name": "2026-01-06-16-13-v1.11.0-duration-vault",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}
