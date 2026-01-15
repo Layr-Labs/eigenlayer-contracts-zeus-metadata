@@ -1,0 +1,29 @@
+{
+  "name": "2026-01-15-17-31-v1.11.0-duration-vault",
+  "env": "testnet-sepolia",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployContracts.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-completeUpgrade.s.sol",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.11.0-duration-vault",
+  "upgradePath": "script/releases/v1.11.0-duration-vault",
+  "phase": "",
+  "chainId": 11155111,
+  "startTime": "Thu Jan 15 2026 17:31:44 GMT-0500 (Eastern Standard Time)",
+  "startTimestamp": 1768516304.235
+}
