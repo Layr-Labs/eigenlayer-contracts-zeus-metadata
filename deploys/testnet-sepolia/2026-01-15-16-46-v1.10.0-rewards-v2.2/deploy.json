@@ -1,7 +1,7 @@
 {
   "name": "2026-01-15-16-46-v1.10.0-rewards-v2.2",
   "env": "testnet-sepolia",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -31,12 +31,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.10.0-rewards-v2.2",
   "upgradePath": "script/releases/v1.10.0-rewards-v2.2",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 11155111,
   "startTime": "Thu Jan 15 2026 16:46:58 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1768513618.491
