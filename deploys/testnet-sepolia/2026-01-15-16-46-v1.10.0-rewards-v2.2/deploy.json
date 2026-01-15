@@ -1,7 +1,7 @@
 {
   "name": "2026-01-15-16-46-v1.10.0-rewards-v2.2",
   "env": "testnet-sepolia",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -32,6 +32,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xe8b8ead1dc2cc1f311e17a7aa4c903f5ea91c887a6d3d0766d870ba0001ae572",
+      "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
+      "confirmed": true,
+      "immediateExecutionHash": "0x8934de9b9905df893bc6c88342d3961fef8cb77a04831320ece67a2a7cb3fd47"
     }
   ],
   "upgrade": "v1.10.0-rewards-v2.2",
