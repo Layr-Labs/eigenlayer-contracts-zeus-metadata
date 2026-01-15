@@ -22,7 +22,7 @@
   "metadata": [],
   "upgrade": "v1.11.0-am-pr-upgrade",
   "upgradePath": "script/releases/v1.11.0-am-pr-upgrade",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 560048,
   "startTime": "Thu Jan 15 2026 09:36:17 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1768487777.96
