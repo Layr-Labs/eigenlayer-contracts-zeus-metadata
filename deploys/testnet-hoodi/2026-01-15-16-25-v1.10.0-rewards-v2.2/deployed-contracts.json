@@ -1,0 +1,16 @@
+{
+  "contracts": [
+    {
+      "address": "0x35a8198E98cB76f1DD81D977fBd2a8F2a62C0525",
+      "contract": "RewardsCoordinator_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x984ddce0922377bf94a568567726a0900ab8f8842febe74cc4441101bb74e00f",
+      "lastUpdatedIn": {
+        "name": "2026-01-15-16-25-v1.10.0-rewards-v2.2",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}
