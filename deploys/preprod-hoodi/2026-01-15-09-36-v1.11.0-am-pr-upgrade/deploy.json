@@ -51,11 +51,20 @@
       "multisig": "0x88A001Dc1E5C7470c1CC44f455AF45458850024E",
       "confirmed": true,
       "immediateExecutionHash": "0x15569d959c0b90f22bf6143755ac7e2768eb8f33c0b6d248ce8e7baec2b4f3c6"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x3e4c269b441d31f40ddc758797d7885a37c6e767ba33dd55988b185731049a4c",
+      "multisig": "0x0132adD08860485Cf243B473aB0E912154C565C3",
+      "confirmed": true,
+      "immediateExecutionHash": "0x26aa697af56cb90b98cdef1bd71e4f19e759709bc4ffdef74671967db3ecbbc5"
     }
   ],
   "upgrade": "v1.11.0-am-pr-upgrade",
   "upgradePath": "script/releases/v1.11.0-am-pr-upgrade",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 560048,
   "startTime": "Thu Jan 15 2026 09:36:17 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1768487777.96
