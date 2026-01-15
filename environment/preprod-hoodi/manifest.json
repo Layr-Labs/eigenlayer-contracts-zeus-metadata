@@ -268,14 +268,14 @@
         }
       },
       "AllocationManager_Impl": {
-        "address": "0x8E8AE8a3066dc688737C6c57CDB43bcEC22E51B8",
+        "address": "0x5f89E43dd9D6235152bfe1084faaEDa4E7638762",
         "contract": "AllocationManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x3ead2e2763a75499339089b577b5feedccebc1dcee31e90a981bd07bd21cf0c5",
+        "deployedBytecodeHash": "0x1136d0552ccace084c357d6913a478cfb111f9d4deace197d544db38c998fcc2",
         "lastUpdatedIn": {
-          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
+          "name": "2026-01-15-09-36-v1.11.0-am-pr-upgrade",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
+          "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
@@ -520,26 +520,26 @@
         }
       },
       "ProtocolRegistry_Impl": {
-        "address": "0x1777b9248A475CF9ddbE81c0A9195cDf7CF30E18",
+        "address": "0xAC26bF44CAdC666DF44D10efc9df225Ff6496937",
         "contract": "ProtocolRegistry_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x51fc339de929f2d2f887b1173b4e329956444f341a9e1f5a35973f83f5d1ca23",
+        "deployedBytecodeHash": "0xe73022ca21d83a65412ecb25abcbff98ae2afbf8d3ef054fb62d9a1d6452ce99",
         "lastUpdatedIn": {
-          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
+          "name": "2026-01-15-09-36-v1.11.0-am-pr-upgrade",
           "phase": "eoa_wait_confirm",
-          "segment": 1,
+          "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "AllocationManagerView_Impl": {
-        "address": "0x784C22Dc3a428573aaF8Bb4445F17e912E93B05B",
+        "address": "0xd43d232bB5258D51838A59937D393EB37C46698e",
         "contract": "AllocationManagerView_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xfe73cec06634469c70003ca0af4f2eb960b9a8bfa967c1557f978f84810e4026",
+        "deployedBytecodeHash": "0x901ca70f59e0e08c23bec29997b496777e4a9da7623837e249a676e35f62a1f0",
         "lastUpdatedIn": {
-          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
+          "name": "2026-01-15-09-36-v1.11.0-am-pr-upgrade",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
+          "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
@@ -582,6 +582,6 @@
     },
     "instances": []
   },
-  "latestDeployedCommit": "bcb070730cdb14cc5abab86e081c43ba210db80e",
+  "latestDeployedCommit": "a861d3d5e0bac9fda738c8fb7dca2c7296ed05fd",
   "chainId": 560048
 }
