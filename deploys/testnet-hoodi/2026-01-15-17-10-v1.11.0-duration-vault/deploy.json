@@ -19,10 +19,54 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x1B76a41b1128a5Cd92dAE7C4c0DEC0bfe12B0f62",
+          "contract": "StrategyManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xd318ECAcaf8998FB4508FA07159B758253FbcaE8",
+          "contract": "EigenStrategy_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xa621Ebb0Df923e87e9C527C9fC55b9C6F6E0063A",
+          "contract": "StrategyBase_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x65e50E44bc7A19e9b01bc3A888b9BA9DA0828483",
+          "contract": "StrategyBaseTVLLimits_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x3d93987C62b4B5532c97b9633F96d44a27dFD455",
+          "contract": "DurationVaultStrategy_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x3b151817B7C2B7e047B6086084665426D85D366B",
+          "contract": "DurationVaultStrategy_Beacon",
+          "singleton": true
+        },
+        {
+          "address": "0x0d824D128eb5bBF5a0dEDD7D58332a00de57A3f3",
+          "contract": "StrategyFactory_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.11.0-duration-vault",
   "upgradePath": "script/releases/v1.11.0-duration-vault",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 560048,
   "startTime": "Thu Jan 15 2026 17:10:06 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1768515006.877
