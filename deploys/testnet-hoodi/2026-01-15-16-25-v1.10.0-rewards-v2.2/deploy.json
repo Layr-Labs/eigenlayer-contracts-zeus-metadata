@@ -1,7 +1,7 @@
 {
   "name": "2026-01-15-16-25-v1.10.0-rewards-v2.2",
   "env": "testnet-hoodi",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -32,6 +32,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xb7d138f63c2756b19256164ec6b7312d92c2a6b06d3c9184d6941b89db608c60",
+      "multisig": "0x8eA6C3Cca1c96967F7B164FfaA5fabede10311A9",
+      "confirmed": true,
+      "immediateExecutionHash": "0xe95b77a3fcc61a164cdfbe57d3fb50d7563697acb9c0405273418e91d7bdab24"
     }
   ],
   "upgrade": "v1.10.0-rewards-v2.2",
