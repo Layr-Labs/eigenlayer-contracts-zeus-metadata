@@ -1,7 +1,7 @@
 {
   "name": "2026-01-16-12-31-v1.12.0-incentive-council",
   "env": "preprod-hoodi",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -44,12 +44,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.12.0-incentive-council",
   "upgradePath": "script/releases/v1.12.0-incentive-council",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 560048,
   "startTime": "Fri Jan 16 2026 12:31:42 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1768584702.836
