@@ -83,7 +83,7 @@
   ],
   "upgrade": "init-deploy",
   "upgradePath": "script/deploy/init-deploy",
-  "phase": "multisig_wait_signers",
+  "phase": "multisig_execute",
   "chainId": 1,
   "startTime": "Fri Sep 26 2025 11:20:22 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1758900022.374
