@@ -1,0 +1,29 @@
+{
+  "name": "2026-01-16-11-10-v1.11.0-am-pr-upgrade",
+  "env": "testnet-hoodi",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployCoreContracts.s.sol",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-completeUpgrade.s.sol",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.11.0-am-pr-upgrade",
+  "upgradePath": "script/releases/v1.11.0-am-pr-upgrade",
+  "phase": "",
+  "chainId": 560048,
+  "startTime": "Fri Jan 16 2026 11:10:23 GMT-0500 (Eastern Standard Time)",
+  "startTimestamp": 1768579823.288
+}
