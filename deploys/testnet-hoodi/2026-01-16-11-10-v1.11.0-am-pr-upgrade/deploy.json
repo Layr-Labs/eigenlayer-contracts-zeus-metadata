@@ -1,7 +1,7 @@
 {
   "name": "2026-01-16-11-10-v1.11.0-am-pr-upgrade",
   "env": "testnet-hoodi",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -42,6 +42,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x97e3c4abeb4aaf90a1b15ba9d180941667f3434896ae093c74cb789b412155b2",
+      "multisig": "0x8eA6C3Cca1c96967F7B164FfaA5fabede10311A9",
+      "confirmed": true,
+      "immediateExecutionHash": "0xf6ac06d49ed3a0d5422139146f6d6a9c7d71d59bfc48f40883667a4927fee26e"
     }
   ],
   "upgrade": "v1.11.0-am-pr-upgrade",
