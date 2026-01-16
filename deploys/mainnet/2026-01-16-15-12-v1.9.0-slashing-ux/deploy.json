@@ -1,7 +1,7 @@
 {
   "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
   "env": "mainnet",
-  "segmentId": 3,
+  "segmentId": 4,
   "segments": [
     {
       "type": "multisig",
@@ -198,12 +198,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.9.0-slashing-ux",
   "upgradePath": "script/releases/v1.9.0-slashing-ux",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 1,
   "startTime": "Fri Jan 16 2026 15:12:12 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1768594332.711
