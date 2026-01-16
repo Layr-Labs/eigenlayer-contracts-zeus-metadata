@@ -1,7 +1,7 @@
 {
   "name": "2026-01-16-11-33-v1.11.0-am-pr-upgrade",
   "env": "testnet-sepolia",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -42,6 +42,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xe07e645c3f228937762cafea79f4892831228c0d1b58faa512dcdd16a8c363c9",
+      "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
+      "confirmed": true,
+      "immediateExecutionHash": "0xe9b3f87634d7966be69ca503464dc2d5b4dc77e2458f3f38d4968fe2d5032367"
     }
   ],
   "upgrade": "v1.11.0-am-pr-upgrade",
