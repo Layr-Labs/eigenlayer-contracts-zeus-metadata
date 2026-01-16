@@ -1,6 +1,6 @@
 {
   "id": "preprod-hoodi",
-  "deployedVersion": "1.11.0",
+  "deployedVersion": "1.12.0",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -280,12 +280,12 @@
         }
       },
       "RewardsCoordinator_Impl": {
-        "address": "0xABd4368C44B15BEaDE8730E379dB69D04Dc2b843",
+        "address": "0x3C872A52f941Aecf26E8f31A159C8ffA62FB4BDD",
         "contract": "RewardsCoordinator_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xd13447750daf7123ec048f17d3323ee97f9ec9a7ff399f028c0cd16b3dde9edf",
+        "deployedBytecodeHash": "0xae876995bfa750baeb84f7ff384335acbb9666841d590dce2ac42919f0d2b093",
         "lastUpdatedIn": {
-          "name": "2025-11-21-20-35-v1.10.0-rewards-v2.2",
+          "name": "2026-01-16-12-31-v1.12.0-incentive-council",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -578,10 +578,34 @@
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
+      },
+      "EmissionsController_Impl": {
+        "address": "0xd56dbF0971802663f95F8B8C9265207e178E3f94",
+        "contract": "EmissionsController_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x766089f2b0ed81943152c094188d025ee603ad2c81db7730d085afd579905588",
+        "lastUpdatedIn": {
+          "name": "2026-01-16-12-31-v1.12.0-incentive-council",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "EmissionsController_Proxy": {
+        "address": "0x3B0D95bDf43f686242CD9c7C3aEDA6eA8FE590e1",
+        "contract": "EmissionsController_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x766089f2b0ed81943152c094188d025ee603ad2c81db7730d085afd579905588",
+        "lastUpdatedIn": {
+          "name": "2026-01-16-12-31-v1.12.0-incentive-council",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
       }
     },
     "instances": []
   },
-  "latestDeployedCommit": "a861d3d5e0bac9fda738c8fb7dca2c7296ed05fd",
+  "latestDeployedCommit": "80c924e1a3ac35a606533c866f84d8969eb269f5",
   "chainId": 560048
 }
