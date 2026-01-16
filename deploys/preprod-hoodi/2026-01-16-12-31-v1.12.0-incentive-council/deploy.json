@@ -1,7 +1,7 @@
 {
   "name": "2026-01-16-12-31-v1.12.0-incentive-council",
   "env": "preprod-hoodi",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -45,6 +45,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xd4e8bd51ca96816ff4ea094b053802a29c322da75169b8acc872ffacdd2f1ef4",
+      "multisig": "0x88A001Dc1E5C7470c1CC44f455AF45458850024E",
+      "confirmed": true,
+      "immediateExecutionHash": "0x165adba642e37abcc9e90def75b4ea13a5a386472203ea17338ba1cc0d68776e"
     }
   ],
   "upgrade": "v1.12.0-incentive-council",
