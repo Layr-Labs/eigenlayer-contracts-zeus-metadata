@@ -1,0 +1,40 @@
+{
+  "contracts": [
+    {
+      "address": "0x1eC8e50a946468fb1DeA58656608006Ee96ce3B6",
+      "contract": "AllocationManagerView_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x901ca70f59e0e08c23bec29997b496777e4a9da7623837e249a676e35f62a1f0",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-11-10-v1.11.0-am-pr-upgrade",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x3e61d10Eb35843AF85cA677274F16FA30CBAeA5F",
+      "contract": "AllocationManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x1136d0552ccace084c357d6913a478cfb111f9d4deace197d544db38c998fcc2",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-11-10-v1.11.0-am-pr-upgrade",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x4eFf57b1DaA60FEAcd816a16B5B583F0aF681cd2",
+      "contract": "ProtocolRegistry_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xe73022ca21d83a65412ecb25abcbff98ae2afbf8d3ef054fb62d9a1d6452ce99",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-11-10-v1.11.0-am-pr-upgrade",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}
