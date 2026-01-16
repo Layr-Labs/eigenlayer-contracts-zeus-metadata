@@ -242,15 +242,15 @@
         }
       },
       "AllocationManager_Impl": {
-        "address": "0x680F74237F6D547602dF39a22641800A80aABFC9",
+        "address": "0xF488a050313c031B6C084eC08c4013E063257551",
         "contract": "AllocationManager_Impl",
         "singleton": true,
         "deployedBytecodeHash": "0x1136d0552ccace084c357d6913a478cfb111f9d4deace197d544db38c998fcc2",
         "lastUpdatedIn": {
-          "name": "2025-12-04-23-31-v1.9.0-slashing-ux",
+          "name": "2026-01-16-11-18-v1.11.0-am-pr-upgrade",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
-          "signer": "0xcb89F955f1bF918577cd84e733fA08C397919a8C"
+          "segment": 0,
+          "signer": "0x55b493AACFda9797511B5beA0b52fc2BFa599D0E"
         }
       },
       "PermissionController_Impl": {
@@ -564,27 +564,27 @@
         }
       },
       "ProtocolRegistry_Impl": {
-        "address": "0x78e1827aF8633BD8E5220c4A54D4Dd3B22345139",
+        "address": "0xF314b7A2a6b9E23b092A7A7448A64D0842d3B2EB",
         "contract": "ProtocolRegistry_Impl",
         "singleton": true,
         "deployedBytecodeHash": "0xe73022ca21d83a65412ecb25abcbff98ae2afbf8d3ef054fb62d9a1d6452ce99",
         "lastUpdatedIn": {
-          "name": "2025-12-04-23-31-v1.9.0-slashing-ux",
+          "name": "2026-01-16-11-18-v1.11.0-am-pr-upgrade",
           "phase": "eoa_wait_confirm",
-          "segment": 1,
-          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+          "segment": 0,
+          "signer": "0x55b493AACFda9797511B5beA0b52fc2BFa599D0E"
         }
       },
       "AllocationManagerView_Impl": {
-        "address": "0xc52B81788a237A21C5F2A544673eEfE117560Fb9",
+        "address": "0xef672be92784Da9b0425B8908f36c823F75DCDa5",
         "contract": "AllocationManagerView_Impl",
         "singleton": true,
         "deployedBytecodeHash": "0x901ca70f59e0e08c23bec29997b496777e4a9da7623837e249a676e35f62a1f0",
         "lastUpdatedIn": {
-          "name": "2025-12-04-23-31-v1.9.0-slashing-ux",
+          "name": "2026-01-16-11-18-v1.11.0-am-pr-upgrade",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
-          "signer": "0xcb89F955f1bF918577cd84e733fA08C397919a8C"
+          "segment": 0,
+          "signer": "0x55b493AACFda9797511B5beA0b52fc2BFa599D0E"
         }
       },
       "DurationVaultStrategy_Impl": {
@@ -614,6 +614,6 @@
     },
     "instances": []
   },
-  "latestDeployedCommit": "eb09ca46d0d8c6a9cb9bc74bfcd583d55a51c04c",
+  "latestDeployedCommit": "a861d3d5e0bac9fda738c8fb7dca2c7296ed05fd",
   "chainId": 11155111
 }
