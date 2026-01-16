@@ -1,7 +1,7 @@
 {
   "name": "2026-01-16-09-57-v1.11.0-duration-vault",
   "env": "testnet-sepolia",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -62,6 +62,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x36caffce4439ec3061db341bafa60be594b95752dd7f6b40c463f52bb435abdf",
+      "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
+      "confirmed": true,
+      "immediateExecutionHash": "0x35edadd20d4106d8701a090b4c95691d14b5a1f7f65f1be88def3cecd9f18aeb"
     }
   ],
   "upgrade": "v1.11.0-duration-vault",
