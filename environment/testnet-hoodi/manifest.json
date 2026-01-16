@@ -253,12 +253,12 @@
         }
       },
       "AllocationManager_Impl": {
-        "address": "0x3e61d10Eb35843AF85cA677274F16FA30CBAeA5F",
+        "address": "0xe1b7A1249C71b538CC183B0080FfC3eFD02BFfB9",
         "contract": "AllocationManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x1136d0552ccace084c357d6913a478cfb111f9d4deace197d544db38c998fcc2",
+        "deployedBytecodeHash": "0xf668a497586c6057c5215a18b5a30c947b1d51b7959ab50f4d8f9119a1030411",
         "lastUpdatedIn": {
-          "name": "2026-01-16-11-10-v1.11.0-am-pr-upgrade",
+          "name": "2026-01-16-11-36-v1.11.0-am-pr-upgrade",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -564,24 +564,24 @@
         }
       },
       "ProtocolRegistry_Impl": {
-        "address": "0x4eFf57b1DaA60FEAcd816a16B5B583F0aF681cd2",
+        "address": "0xEb3CDe433CEd38fEe69073658061A1D6A7DE7841",
         "contract": "ProtocolRegistry_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xe73022ca21d83a65412ecb25abcbff98ae2afbf8d3ef054fb62d9a1d6452ce99",
+        "deployedBytecodeHash": "0x50d9b330693cd48b64d061cb0e80629bac2ea1eed26f56a635ef3542c3fd1cb7",
         "lastUpdatedIn": {
-          "name": "2026-01-16-11-10-v1.11.0-am-pr-upgrade",
+          "name": "2026-01-16-11-36-v1.11.0-am-pr-upgrade",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "AllocationManagerView_Impl": {
-        "address": "0x1eC8e50a946468fb1DeA58656608006Ee96ce3B6",
+        "address": "0x7f86fdf7422c0aC807e013C533db632da86Ea5A1",
         "contract": "AllocationManagerView_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x901ca70f59e0e08c23bec29997b496777e4a9da7623837e249a676e35f62a1f0",
+        "deployedBytecodeHash": "0x667ab1af22198e8962972b05e1c8fc6b3b91d535cbacfdcd5098456762e72125",
         "lastUpdatedIn": {
-          "name": "2026-01-16-11-10-v1.11.0-am-pr-upgrade",
+          "name": "2026-01-16-11-36-v1.11.0-am-pr-upgrade",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
