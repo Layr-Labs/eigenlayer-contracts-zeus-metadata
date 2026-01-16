@@ -23,6 +23,246 @@
         "segment": 1,
         "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
       }
+    },
+    {
+      "address": "0x36dd260AbF606172875E6B5B7A96B435DC74EEd2",
+      "contract": "PermissionController_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xda4f953c57a35fe570a6a3937f74930a380e0e42695c0d02c40abc58d21768c9",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x0f939726Ab8514c13546804311149a8CC244C219",
+      "contract": "KeyRegistrar_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x0063cf828124d0a336c108c37b557a8057a5b03bc20ed2d6c2824b8be3d5f6c9",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x0D4e5723daAD06510CFd6864b8eB8a08CF0c4a34",
+      "contract": "AllocationManagerView_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x667ab1af22198e8962972b05e1c8fc6b3b91d535cbacfdcd5098456762e72125",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0xdA2A68D318A571dD550F2EcbCb09bf50497e97C4",
+      "contract": "AllocationManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xf668a497586c6057c5215a18b5a30c947b1d51b7959ab50f4d8f9119a1030411",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0xcD35Cef328b496fA9d70a8d7C34EF3434614862b",
+      "contract": "AVSDirectory_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x5d8f4586514644fc1e5c05f793ada7858ac2c30166f10c56bb400ef0dfba9407",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0xE7022a128Acd4C6cad7aFf6FA874D61f984BcE75",
+      "contract": "DelegationManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xaf9a04ecbb6b82cd8b0b8342d6fafb56c43eb58691caa8863bb3b3be557a84f2",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0xD0cb07Df397b122bB7ebaA453356F21f8Ff813bd",
+      "contract": "ReleaseManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x45a31c243408ba60538f5aea5b53560642d2691ba7fb8c972f9ae583ca686d32",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x788E38bCe16Cd96E5588559703469efBA3Afb0cF",
+      "contract": "RewardsCoordinator_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x2fb9fe8e4ae2f65b240cab189a4dc2eaf81a862a951c22a9773a328b94fc8eef",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0xE09d4a1717C936ef021e14E72328128268B0CC3c",
+      "contract": "StrategyManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x83f902ae4b8f1a1f6ea0a17983fe079e239559ed31ed23a86ace210353416668",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0xd22dd829779ADBf3869fb224F703452f7F95E9dB",
+      "contract": "EigenPodManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x17287f78a20280e2630db9efef4fc403411f2204f9c1ac40107cc740e0eef079",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x53cC2D82E08370Fe1e44a96f69CEc7d5b54ae868",
+      "contract": "EigenPod_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x1e0fedbec021731e3dcb651acba0776066f82ccabf38a7f3d2026a38103e29b4",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x4a0aee93BE6C87B227cA0B450E15245631233532",
+      "contract": "EigenStrategy_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x2ec97677d0c28f358cc7a287074be5e314b145362b9f0059b5580f52fef318cb",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0xd33AAccc7E1a29Bc8E09Af55F8fa6fF3301e2780",
+      "contract": "StrategyBase_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xe7c93596ab1ede535062303005f9c15511a094451d6e66c12711943aac32c238",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0xb8d2cc94A9d2a8Fd7fF499fbE64B0B209212DBa7",
+      "contract": "StrategyBaseTVLLimits_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xea8947407b8f8e6c4915abc81f776d6977e9b8a943d54eed02eac7210d945b10",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x5194D2a6A0900796903503926E9CF775b926c8AF",
+      "contract": "StrategyFactory_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xc5f73f282b0f805d752eed2bae1bbf4468f0ba1bce08505bf104369899f579e8",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x9907690007b7ECFE1E03F96beca1a957faE3eaD2",
+      "contract": "BN254CertificateVerifier_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x573eb852d474822ce3cd3311d1a998b158c61fdfa712d114f5890b3020c89ce5",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0xdc2354FaDd4bf0f9857038381917D0089880642C",
+      "contract": "CrossChainRegistry_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x08fd344a1bc4ac5f2ef5a7935c3c3324c3037b271231f9dc995fee20f71d09c7",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x2d52c39461795835b1F8F6cD242f4955AaC040dC",
+      "contract": "ECDSACertificateVerifier_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x79ccf53e15362472030a457809f7824a408006f74a1985afadc22df8f545d22d",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0x8c4F429e6d884899ebf4602bd2691920B056adF7",
+      "contract": "OperatorTableUpdater_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x32a1e00b69e4c85433e6460c03bdbea8443a89e0e6299d56d8035f22990060c4",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
+    },
+    {
+      "address": "0xA2A9D0F957D81A0f8134F68803240f1CAD81c55e",
+      "contract": "TaskMailbox_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xc038998a9ff271ffedbf1baffd246c30a31d814ddc1b54fc4bc4d1899c1b1c71",
+      "lastUpdatedIn": {
+        "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+        "phase": "eoa_wait_confirm",
+        "segment": 3,
+        "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+      }
     }
   ]
 }
