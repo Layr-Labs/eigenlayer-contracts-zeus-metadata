@@ -19,10 +19,34 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0x55b493AACFda9797511B5beA0b52fc2BFa599D0E",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x9BFA4f8443c6e6A3E2B94A55A9fb83a4E9331099",
+          "contract": "AllocationManagerView_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x87cffb49a29d4dC1C0842c70a75eDBa9B62e4f31",
+          "contract": "AllocationManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x832F4761ab4584FB967c08921A9C6a0a2D09d4e9",
+          "contract": "ProtocolRegistry_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.11.0-am-pr-upgrade",
   "upgradePath": "script/releases/v1.11.0-am-pr-upgrade",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 11155111,
   "startTime": "Fri Jan 16 2026 11:33:06 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1768581186.253
