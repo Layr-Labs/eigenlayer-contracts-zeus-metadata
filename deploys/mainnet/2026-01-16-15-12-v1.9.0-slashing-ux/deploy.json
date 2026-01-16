@@ -95,7 +95,7 @@
   ],
   "upgrade": "v1.9.0-slashing-ux",
   "upgradePath": "script/releases/v1.9.0-slashing-ux",
-  "phase": "multisig_wait_signers",
+  "phase": "multisig_execute",
   "chainId": 1,
   "startTime": "Fri Jan 16 2026 15:12:12 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1768594332.711
