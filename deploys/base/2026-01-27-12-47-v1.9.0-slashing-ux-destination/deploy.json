@@ -63,11 +63,39 @@
       "gnosisTransactionHash": "0xeb05614d2d8ca212b31ea6ee2d1fdd1b4ff96248701208adb67486d0e0866c18",
       "multisig": "0xa3053EF25F1F7d9D55a7655372B8a31D0f40eCA9",
       "confirmed": true
+    },
+    {
+      "type": "eoa",
+      "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0xc6c7a63518d0150D57C6b00CDC7F13eB4b275D7d",
+          "contract": "BN254CertificateVerifier_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xf2cC35A48561c2344577489a0873339F5B7E025F",
+          "contract": "ECDSACertificateVerifier_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x792FfeA0D8734695670697f8b9f03DE3F666419D",
+          "contract": "OperatorTableUpdater_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x6eD28c7dfEa8F70a7edec02A1E295DA6307Fc1bd",
+          "contract": "TaskMailbox_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
     }
   ],
   "upgrade": "v1.9.0-slashing-ux-destination",
   "upgradePath": "script/releases/v1.9.0-slashing-ux-destination",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 8453,
   "startTime": "Tue Jan 27 2026 12:47:23 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1769536043.199
