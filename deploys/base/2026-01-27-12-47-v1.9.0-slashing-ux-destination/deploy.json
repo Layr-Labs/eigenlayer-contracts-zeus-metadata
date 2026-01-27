@@ -34,10 +34,19 @@
       "id": 5
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "multisig",
+      "signer": "0x792e42f05E87Fb9D8b8F9FdFC598B1de20507964",
+      "signerType": "gnosis.api.ledger",
+      "gnosisTransactionHash": "0x86774df73c2c349cf7d743c989764ff7f4a32f555e3b0a3c56de0c6add61f78e",
+      "multisig": "0xa3053EF25F1F7d9D55a7655372B8a31D0f40eCA9",
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.9.0-slashing-ux-destination",
   "upgradePath": "script/releases/v1.9.0-slashing-ux-destination",
-  "phase": "",
+  "phase": "multisig_wait_signers",
   "chainId": 8453,
   "startTime": "Tue Jan 27 2026 12:47:23 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1769536043.199
