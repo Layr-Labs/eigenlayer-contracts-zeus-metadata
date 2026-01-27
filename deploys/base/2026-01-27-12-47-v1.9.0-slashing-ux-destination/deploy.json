@@ -1,7 +1,7 @@
 {
   "name": "2026-01-27-12-47-v1.9.0-slashing-ux-destination",
   "env": "base",
-  "segmentId": 4,
+  "segmentId": 5,
   "segments": [
     {
       "type": "multisig",
@@ -98,12 +98,12 @@
       "signerType": "gnosis.api.ledger",
       "gnosisTransactionHash": "0x7eeb01e432ac3db6488734d3266e637197c13b05b29f8649f1d7ec99b85e76e4",
       "multisig": "0x8eD55c7640497Db15aC32c698c1a06E2E604d865",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.9.0-slashing-ux-destination",
   "upgradePath": "script/releases/v1.9.0-slashing-ux-destination",
-  "phase": "multisig_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 8453,
   "startTime": "Tue Jan 27 2026 12:47:23 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1769536043.199
