@@ -99,11 +99,19 @@
       "gnosisTransactionHash": "0x7eeb01e432ac3db6488734d3266e637197c13b05b29f8649f1d7ec99b85e76e4",
       "multisig": "0x8eD55c7640497Db15aC32c698c1a06E2E604d865",
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xdC541e2B4adD96888b2C79006F49A9748A4f1bDF",
+      "signerType": "gnosis.api.ledger",
+      "gnosisTransactionHash": "0xba6e5c73fccc39db1aed51a3a9580ec97ee8142f3e0eccd5ef3fdb58db6ab5b0",
+      "multisig": "0x841B988aaEafce13b6456ff34015FBc42Aedb7e6",
+      "confirmed": false
     }
   ],
   "upgrade": "v1.9.0-slashing-ux-destination",
   "upgradePath": "script/releases/v1.9.0-slashing-ux-destination",
-  "phase": "multisig_start",
+  "phase": "multisig_wait_signers",
   "chainId": 8453,
   "startTime": "Tue Jan 27 2026 12:47:23 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1769536043.199
