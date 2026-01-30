@@ -1,6 +1,6 @@
 {
   "id": "base",
-  "deployedVersion": "1.8.1",
+  "deployedVersion": "1.9.0",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -76,56 +76,80 @@
         }
       },
       "OperatorTableUpdater_Impl": {
-        "address": "0xEd18bAa093164fF477996c4b957F806b4A0ffdA9",
+        "address": "0x792FfeA0D8734695670697f8b9f03DE3F666419D",
         "contract": "OperatorTableUpdater_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x13cae3713e5c1009271a5bc5c88584974188e2928118c25b24632389cd196936",
+        "deployedBytecodeHash": "0x32a1e00b69e4c85433e6460c03bdbea8443a89e0e6299d56d8035f22990060c4",
         "lastUpdatedIn": {
-          "name": "2025-09-24-17-07-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "name": "2026-01-27-12-47-v1.9.0-slashing-ux-destination",
           "phase": "eoa_wait_confirm",
-          "segment": 2,
+          "segment": 3,
           "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
         }
       },
       "ECDSACertificateVerifier_Impl": {
-        "address": "0x3cf9F2F82AAB604C347ec03A5C642D6a9eac1b3C",
+        "address": "0xf2cC35A48561c2344577489a0873339F5B7E025F",
         "contract": "ECDSACertificateVerifier_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x59c56f0220ea8d1417df8b786b04cc1fce0ca0cdb5544b6e327d6e601d96c966",
+        "deployedBytecodeHash": "0x79ccf53e15362472030a457809f7824a408006f74a1985afadc22df8f545d22d",
         "lastUpdatedIn": {
-          "name": "2025-09-24-17-07-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "name": "2026-01-27-12-47-v1.9.0-slashing-ux-destination",
           "phase": "eoa_wait_confirm",
-          "segment": 2,
+          "segment": 3,
           "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
         }
       },
       "BN254CertificateVerifier_Impl": {
-        "address": "0x48F0a11AADc9c687410A3664A4fDD61DAf6904Ec",
+        "address": "0xc6c7a63518d0150D57C6b00CDC7F13eB4b275D7d",
         "contract": "BN254CertificateVerifier_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x482e15100b37d9883a1c36ff7cfaaf5b02c9f7397bb40763b05bae675b43ee36",
+        "deployedBytecodeHash": "0x573eb852d474822ce3cd3311d1a998b158c61fdfa712d114f5890b3020c89ce5",
         "lastUpdatedIn": {
-          "name": "2025-09-24-17-07-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "name": "2026-01-27-12-47-v1.9.0-slashing-ux-destination",
           "phase": "eoa_wait_confirm",
-          "segment": 2,
+          "segment": 3,
           "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
         }
       },
       "TaskMailbox_Impl": {
-        "address": "0x9c2A1F3a47b2f6607a8511DF753F7B8Ca952c84A",
+        "address": "0x6eD28c7dfEa8F70a7edec02A1E295DA6307Fc1bd",
         "contract": "TaskMailbox_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x1d4cc5d3708c5697ff71cc06fb92601f47ffacca031c6c7105dce13dafcfc652",
+        "deployedBytecodeHash": "0xc038998a9ff271ffedbf1baffd246c30a31d814ddc1b54fc4bc4d1899c1b1c71",
         "lastUpdatedIn": {
-          "name": "2025-09-24-17-07-v1.7.0-v1.8.0-multichain-hourglass-combined",
+          "name": "2026-01-27-12-47-v1.9.0-slashing-ux-destination",
           "phase": "eoa_wait_confirm",
-          "segment": 2,
+          "segment": 3,
+          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+        }
+      },
+      "ProtocolRegistry_Proxy": {
+        "address": "0x27a84740FdDed5B7D66d9bb6E5d1DEA6eb0C0129",
+        "contract": "ProtocolRegistry_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x50d9b330693cd48b64d061cb0e80629bac2ea1eed26f56a635ef3542c3fd1cb7",
+        "lastUpdatedIn": {
+          "name": "2026-01-27-12-47-v1.9.0-slashing-ux-destination",
+          "phase": "multisig_start",
+          "segment": 0,
+          "signer": "0x792e42f05E87Fb9D8b8F9FdFC598B1de20507964"
+        }
+      },
+      "ProtocolRegistry_Impl": {
+        "address": "0x069f49Be653522fd3F806920f3C21b15F351f9bC",
+        "contract": "ProtocolRegistry_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x50d9b330693cd48b64d061cb0e80629bac2ea1eed26f56a635ef3542c3fd1cb7",
+        "lastUpdatedIn": {
+          "name": "2026-01-27-12-47-v1.9.0-slashing-ux-destination",
+          "phase": "eoa_wait_confirm",
+          "segment": 1,
           "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
         }
       }
     },
     "instances": []
   },
-  "latestDeployedCommit": "31aade2fc3bf6e2c0160cc2e7c7be1a6017296e5",
+  "latestDeployedCommit": "80b74fa3b9908190fa6d8396778d1896a4bfb4dc",
   "chainId": 8453
 }

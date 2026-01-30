@@ -106,12 +106,12 @@
       "signerType": "gnosis.api.ledger",
       "gnosisTransactionHash": "0xba6e5c73fccc39db1aed51a3a9580ec97ee8142f3e0eccd5ef3fdb58db6ab5b0",
       "multisig": "0x841B988aaEafce13b6456ff34015FBc42Aedb7e6",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.9.0-slashing-ux-destination",
   "upgradePath": "script/releases/v1.9.0-slashing-ux-destination",
-  "phase": "multisig_wait_confirm",
+  "phase": "complete",
   "chainId": 8453,
   "startTime": "Tue Jan 27 2026 12:47:23 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1769536043.199
