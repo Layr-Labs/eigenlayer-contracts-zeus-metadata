@@ -1,7 +1,7 @@
 {
   "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
   "env": "mainnet",
-  "segmentId": 5,
+  "segmentId": 6,
   "segments": [
     {
       "type": "multisig",
@@ -206,12 +206,20 @@
       "signerType": "gnosis.api.ledger",
       "gnosisTransactionHash": "0xa4939092716a1d319985f484fdcf6de27e292de248ee686da136b0db95c492eb",
       "multisig": "0xBE1685C81aA44FF9FB319dD389addd9374383e90",
-      "confirmed": false
+      "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xc5280E368648b0e192b355c7d8330593bA7af700",
+      "signerType": "gnosis.api.ledger",
+      "gnosisTransactionHash": "0xfc753fae401d782e8befeee0c4b22711825abc7052416d23c5f1fc04d79c1fb5",
+      "multisig": "0x461854d84ee845f905e0ecf6c288ddeeb4a9533f",
+      "confirmed": true
     }
   ],
   "upgrade": "v1.9.0-slashing-ux",
   "upgradePath": "script/releases/v1.9.0-slashing-ux",
-  "phase": "multisig_start",
+  "phase": "script_run",
   "chainId": 1,
   "startTime": "Fri Jan 16 2026 15:12:12 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1768594332.711
