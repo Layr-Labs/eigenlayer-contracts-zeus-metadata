@@ -1,0 +1,28 @@
+{
+  "contracts": [
+    {
+      "address": "0x92DF4da39Fe6f6c039C0c6d5DA3cd481D641aAf8",
+      "contract": "EmissionsController_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x629a57dd80e9a2634b1b253a6355c70ed08efe7a53c1578825f52ba2eea4fb28",
+      "lastUpdatedIn": {
+        "name": "2026-02-05-12-20-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x8E97626c3466B4bDB8EDce6bc458AfA36785D89A",
+      "contract": "RewardsCoordinator_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xd0934d0a036e832a16658ccfcfa3639a7852bff8cbe84082496dcdc5b3fb4219",
+      "lastUpdatedIn": {
+        "name": "2026-02-05-12-20-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}
