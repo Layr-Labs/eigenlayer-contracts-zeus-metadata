@@ -41,7 +41,7 @@
   "multichainDeployerMultisig": "0xA591635DE4C254BD3fa9C9Db9000eA6488344C28",
   "proxyAdmin": "0x56E88cb4f0136fC27D95499dE4BE2acf47946Fa1",
   "beigenProxyAdmin": "0x1a26B23a004C512350d7Dd89056655A80b850199",
-  "incentiveCouncilMultisig": "0xF7Da00b0F4084cc4E85F9a9Ea26A86464a68De95",
+  "incentiveCouncilMultisig": "0x7E649F414cdB5714de959b09EbC5f5DbafaF4988",
   "legacyTokenHopper": "0x0000000000000000000000000000000000000000",
   "SLASH_ESCROW_DELAY": 5,
   "slashEscrowProxyAdmin": "0x18dc7D96d26b4F43ac464349D5D4af0310Ca966b",
