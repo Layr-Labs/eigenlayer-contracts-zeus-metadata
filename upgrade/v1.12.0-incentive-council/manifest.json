@@ -1,6 +1,6 @@
 {
   "name": "incentives-emissions-controller",
-  "from": ">=1.9.0",
+  "from": ">=1.11.0",
   "to": "1.12.0",
   "phases": [
     {
@@ -19,5 +19,5 @@
       "description": "Execute the upgrade after timelock delay"
     }
   ],
-  "commit": "80c924e1a3ac35a606533c866f84d8969eb269f5"
+  "commit": "6e1ef52afc81444511c8373993893ebcc73c860b"
 }
