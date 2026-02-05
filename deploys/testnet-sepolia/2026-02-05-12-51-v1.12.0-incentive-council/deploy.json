@@ -22,10 +22,34 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x5F20ecD2241C154a9412b45Ac24BdfeC40448F52",
+          "contract": "EmissionsController_Proxy",
+          "singleton": true
+        },
+        {
+          "address": "0xa20362c963DEDA73d652E0E9cd8133cED2d389Df",
+          "contract": "EmissionsController_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x5Ac1705931E999aa267167DaE57b41fA690bFF61",
+          "contract": "RewardsCoordinator_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.12.0-incentive-council",
   "upgradePath": "script/releases/v1.12.0-incentive-council",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 11155111,
   "startTime": "Thu Feb 05 2026 12:51:01 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1770313861.214
