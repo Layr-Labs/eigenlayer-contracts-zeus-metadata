@@ -54,11 +54,20 @@
       "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
       "confirmed": true,
       "immediateExecutionHash": "0xd48f3df34e5ad09f857cf36beb77cc978023dd929643e0dd100cc4a0e33aca59"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0xb11e8555f5e37230675ae558f539b885bb8fa6e7434bf4fd93ec35dcd9df4d11",
+      "multisig": "0x8eA6C3Cca1c96967F7B164FfaA5fabede10311A9",
+      "confirmed": true,
+      "immediateExecutionHash": "0x10b79a1346475040e28365616a428872687e6509f872971f9c04afc26020e38d"
     }
   ],
   "upgrade": "v1.12.0-incentive-council",
   "upgradePath": "script/releases/v1.12.0-incentive-council",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 11155111,
   "startTime": "Thu Feb 05 2026 12:51:01 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1770313861.214
