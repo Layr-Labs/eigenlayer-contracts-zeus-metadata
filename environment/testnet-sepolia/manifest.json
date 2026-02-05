@@ -1,6 +1,6 @@
 {
   "id": "testnet-sepolia",
-  "deployedVersion": "1.11.0",
+  "deployedVersion": "1.12.0",
   "contracts": {
     "static": {
       "BackingEigen_Proxy": {
@@ -230,12 +230,12 @@
         }
       },
       "RewardsCoordinator_Impl": {
-        "address": "0xA518479dd419ad182746B231920A314B4b1b64f5",
+        "address": "0x5Ac1705931E999aa267167DaE57b41fA690bFF61",
         "contract": "RewardsCoordinator_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x984ddce0922377bf94a568567726a0900ab8f8842febe74cc4441101bb74e00f",
+        "deployedBytecodeHash": "0xd0934d0a036e832a16658ccfcfa3639a7852bff8cbe84082496dcdc5b3fb4219",
         "lastUpdatedIn": {
-          "name": "2026-01-15-16-46-v1.10.0-rewards-v2.2",
+          "name": "2026-02-05-12-51-v1.12.0-incentive-council",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -610,10 +610,34 @@
           "segment": 0,
           "signer": "0x5F929e52B196335182fFA360ED659B220D36f748"
         }
+      },
+      "EmissionsController_Proxy": {
+        "address": "0x5F20ecD2241C154a9412b45Ac24BdfeC40448F52",
+        "contract": "EmissionsController_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0x629a57dd80e9a2634b1b253a6355c70ed08efe7a53c1578825f52ba2eea4fb28",
+        "lastUpdatedIn": {
+          "name": "2026-02-05-12-51-v1.12.0-incentive-council",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "EmissionsController_Impl": {
+        "address": "0xa20362c963DEDA73d652E0E9cd8133cED2d389Df",
+        "contract": "EmissionsController_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x629a57dd80e9a2634b1b253a6355c70ed08efe7a53c1578825f52ba2eea4fb28",
+        "lastUpdatedIn": {
+          "name": "2026-02-05-12-51-v1.12.0-incentive-council",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
       }
     },
     "instances": []
   },
-  "latestDeployedCommit": "a861d3d5e0bac9fda738c8fb7dca2c7296ed05fd",
+  "latestDeployedCommit": "0187856e29ee447c8a7ef37ae95ae557c99401fb",
   "chainId": 11155111
 }
