@@ -1,0 +1,32 @@
+{
+  "name": "2026-02-05-11-45-v1.12.0-incentive-council",
+  "env": "preprod-hoodi",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployImplementations.s.sol",
+      "description": "Deploy new RewardsCoordinator and EmissionsController implementations",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "description": "Queue upgrade to deploy EmissionsController proxy and upgrade both contracts to new implementations",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-completeUpgrade.s.sol",
+      "description": "Execute the upgrade after timelock delay",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.12.0-incentive-council",
+  "upgradePath": "script/releases/v1.12.0-incentive-council",
+  "phase": "",
+  "chainId": 560048,
+  "startTime": "Thu Feb 05 2026 11:45:55 GMT-0500 (Eastern Standard Time)",
+  "startTimestamp": 1770309955.079
+}
