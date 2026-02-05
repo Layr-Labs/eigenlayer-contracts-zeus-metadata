@@ -1,7 +1,7 @@
 {
   "name": "2026-02-05-12-51-v1.12.0-incentive-council",
   "env": "testnet-sepolia",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -45,6 +45,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x07fc2891a232db38439c58a0a87e3a02961c0112d24ec7825fa34316b4620d8f",
+      "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
+      "confirmed": true,
+      "immediateExecutionHash": "0xd48f3df34e5ad09f857cf36beb77cc978023dd929643e0dd100cc4a0e33aca59"
     }
   ],
   "upgrade": "v1.12.0-incentive-council",
