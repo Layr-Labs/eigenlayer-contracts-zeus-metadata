@@ -1,7 +1,7 @@
 {
   "name": "2026-03-02-14-33-v1.12.0-incentive-council",
   "env": "mainnet",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -87,12 +87,12 @@
       "signerType": "gnosis.api.ledger",
       "gnosisTransactionHash": "0xc27492f7eb7ca67b7f20ebfecc51f7ca64031875072c58411b07ff6199684245",
       "multisig": "0xBE1685C81aA44FF9FB319dD389addd9374383e90",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.12.0-incentive-council",
   "upgradePath": "script/releases/v1.12.0-incentive-council",
-  "phase": "multisig_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 1,
   "startTime": "Mon Mar 02 2026 14:33:27 GMT-0500 (Eastern Standard Time)",
   "startTimestamp": 1772480007.345
