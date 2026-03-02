@@ -1,0 +1,124 @@
+{
+  "contracts": [
+    {
+      "address": "0x619F988b4EA2f896ED068d84cE6F52550d6acE84",
+      "contract": "EmissionsController_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0xe2a12a5d409bbcccfe18ee3531f0b17217e2af6ddecb2cdc9166f29edea92e02",
+      "lastUpdatedIn": {
+        "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+      }
+    },
+    {
+      "address": "0x29Db9526F3A95F3059A5d3a9A05B611eBA7dcA01",
+      "contract": "EmissionsController_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xe2a12a5d409bbcccfe18ee3531f0b17217e2af6ddecb2cdc9166f29edea92e02",
+      "lastUpdatedIn": {
+        "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+      }
+    },
+    {
+      "address": "0xa0673C53980665a706352412D2538bA005403C26",
+      "contract": "RewardsCoordinator_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xfdb0dff47673430c3eaa254483cd88e76c6878cb30ff9447c3f8fcef5f2a62b0",
+      "lastUpdatedIn": {
+        "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+      }
+    },
+    {
+      "address": "0x88582996b70FDd7C4f16e3Fde7B53858FcE0d394",
+      "contract": "StrategyManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x3f93f021d7186532401e784405063696f7834854f0baea1f0ef0f21f1f0684ff",
+      "lastUpdatedIn": {
+        "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+      }
+    },
+    {
+      "address": "0x509Aadb99487182b21fF4E9e7Eb362a9Ea8E8f40",
+      "contract": "EigenStrategy_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xa1eb519354fe5221de3002dbe519e948bf2ef472ea41de9f5bcc957c8522ed96",
+      "lastUpdatedIn": {
+        "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+      }
+    },
+    {
+      "address": "0x8F6be4A906376bB4481E78cBF6FC783Cc0f8D1Ce",
+      "contract": "StrategyBase_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x08596fdfe8c80bb9a1573a6d10fbb10a580bd3b0cadeb53fe9375f5bae8e0b40",
+      "lastUpdatedIn": {
+        "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+      }
+    },
+    {
+      "address": "0xB427E2Eb4Bb33eE3f1ee72dc9e347e8625a72230",
+      "contract": "StrategyBaseTVLLimits_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x7053ef2a4d7f281155fe094ba8aa66a8968a814fcf30fb0dedff2d71e338ca76",
+      "lastUpdatedIn": {
+        "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+      }
+    },
+    {
+      "address": "0xC355123d0a51b4B5185aA7f21150904CEE3EAC97",
+      "contract": "DurationVaultStrategy_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x307b737fc62b586fdeacc525fa4c5bcd5423e1f5663e857d139daf8733dc1312",
+      "lastUpdatedIn": {
+        "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+      }
+    },
+    {
+      "address": "0x0fCE0A591D96BB76883323eF555867111E2050a9",
+      "contract": "DurationVaultStrategy_Beacon",
+      "singleton": true,
+      "deployedBytecodeHash": "0x307b737fc62b586fdeacc525fa4c5bcd5423e1f5663e857d139daf8733dc1312",
+      "lastUpdatedIn": {
+        "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+      }
+    },
+    {
+      "address": "0x315BCD0f31EF8b1124382f3acab3913f791C09E7",
+      "contract": "StrategyFactory_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x1d30ad272de4d80ca5df0ccfac1c004cb3ce1875d553fa97c58691611575c82b",
+      "lastUpdatedIn": {
+        "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+      }
+    }
+  ]
+}

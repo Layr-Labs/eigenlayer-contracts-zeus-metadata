@@ -1,0 +1,10 @@
+{
+  "mutations": [
+    {
+      "prev": 6048000,
+      "next": 63072000,
+      "name": "REWARDS_COORDINATOR_MAX_REWARDS_DURATION",
+      "internalType": 2
+    }
+  ]
+}
