@@ -1,6 +1,6 @@
 {
   "id": "mainnet",
-  "deployedVersion": "1.9.0",
+  "deployedVersion": "1.12.0",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -114,15 +114,15 @@
         }
       },
       "RewardsCoordinator_Impl": {
-        "address": "0x788E38bCe16Cd96E5588559703469efBA3Afb0cF",
+        "address": "0xa0673C53980665a706352412D2538bA005403C26",
         "contract": "RewardsCoordinator_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x2fb9fe8e4ae2f65b240cab189a4dc2eaf81a862a951c22a9773a328b94fc8eef",
+        "deployedBytecodeHash": "0xfdb0dff47673430c3eaa254483cd88e76c6878cb30ff9447c3f8fcef5f2a62b0",
         "lastUpdatedIn": {
-          "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+          "name": "2026-03-02-14-33-v1.12.0-incentive-council",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
-          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+          "segment": 0,
+          "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
         }
       },
       "EigenStrategy_Proxy": {
@@ -136,15 +136,15 @@
         }
       },
       "EigenStrategy_Impl": {
-        "address": "0x4a0aee93BE6C87B227cA0B450E15245631233532",
+        "address": "0x509Aadb99487182b21fF4E9e7Eb362a9Ea8E8f40",
         "contract": "EigenStrategy_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x2ec97677d0c28f358cc7a287074be5e314b145362b9f0059b5580f52fef318cb",
+        "deployedBytecodeHash": "0xa1eb519354fe5221de3002dbe519e948bf2ef472ea41de9f5bcc957c8522ed96",
         "lastUpdatedIn": {
-          "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+          "name": "2026-03-02-14-33-v1.12.0-incentive-council",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
-          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+          "segment": 0,
+          "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
         }
       },
       "Eigen_Proxy": {
@@ -200,15 +200,15 @@
         }
       },
       "StrategyBase_Impl": {
-        "address": "0xd33AAccc7E1a29Bc8E09Af55F8fa6fF3301e2780",
+        "address": "0x8F6be4A906376bB4481E78cBF6FC783Cc0f8D1Ce",
         "contract": "StrategyBase_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xe7c93596ab1ede535062303005f9c15511a094451d6e66c12711943aac32c238",
+        "deployedBytecodeHash": "0x08596fdfe8c80bb9a1573a6d10fbb10a580bd3b0cadeb53fe9375f5bae8e0b40",
         "lastUpdatedIn": {
-          "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+          "name": "2026-03-02-14-33-v1.12.0-incentive-council",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
-          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+          "segment": 0,
+          "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
         }
       },
       "StrategyManager_Proxy": {
@@ -222,15 +222,15 @@
         }
       },
       "StrategyManager_Impl": {
-        "address": "0xE09d4a1717C936ef021e14E72328128268B0CC3c",
+        "address": "0x88582996b70FDd7C4f16e3Fde7B53858FcE0d394",
         "contract": "StrategyManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x83f902ae4b8f1a1f6ea0a17983fe079e239559ed31ed23a86ace210353416668",
+        "deployedBytecodeHash": "0x3f93f021d7186532401e784405063696f7834854f0baea1f0ef0f21f1f0684ff",
         "lastUpdatedIn": {
-          "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+          "name": "2026-03-02-14-33-v1.12.0-incentive-council",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
-          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+          "segment": 0,
+          "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
         }
       },
       "StrategyFactory_Proxy": {
@@ -244,27 +244,27 @@
         }
       },
       "StrategyFactory_Impl": {
-        "address": "0x5194D2a6A0900796903503926E9CF775b926c8AF",
+        "address": "0x315BCD0f31EF8b1124382f3acab3913f791C09E7",
         "contract": "StrategyFactory_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xc5f73f282b0f805d752eed2bae1bbf4468f0ba1bce08505bf104369899f579e8",
+        "deployedBytecodeHash": "0x1d30ad272de4d80ca5df0ccfac1c004cb3ce1875d553fa97c58691611575c82b",
         "lastUpdatedIn": {
-          "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+          "name": "2026-03-02-14-33-v1.12.0-incentive-council",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
-          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+          "segment": 0,
+          "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
         }
       },
       "StrategyBaseTVLLimits_Impl": {
-        "address": "0xb8d2cc94A9d2a8Fd7fF499fbE64B0B209212DBa7",
+        "address": "0xB427E2Eb4Bb33eE3f1ee72dc9e347e8625a72230",
         "contract": "StrategyBaseTVLLimits_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xea8947407b8f8e6c4915abc81f776d6977e9b8a943d54eed02eac7210d945b10",
+        "deployedBytecodeHash": "0x7053ef2a4d7f281155fe094ba8aa66a8968a814fcf30fb0dedff2d71e338ca76",
         "lastUpdatedIn": {
-          "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+          "name": "2026-03-02-14-33-v1.12.0-incentive-council",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
-          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+          "segment": 0,
+          "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
         }
       },
       "PermissionController_Impl": {
@@ -554,6 +554,54 @@
           "segment": 3,
           "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
         }
+      },
+      "EmissionsController_Proxy": {
+        "address": "0x619F988b4EA2f896ED068d84cE6F52550d6acE84",
+        "contract": "EmissionsController_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0xe2a12a5d409bbcccfe18ee3531f0b17217e2af6ddecb2cdc9166f29edea92e02",
+        "lastUpdatedIn": {
+          "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+        }
+      },
+      "EmissionsController_Impl": {
+        "address": "0x29Db9526F3A95F3059A5d3a9A05B611eBA7dcA01",
+        "contract": "EmissionsController_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0xe2a12a5d409bbcccfe18ee3531f0b17217e2af6ddecb2cdc9166f29edea92e02",
+        "lastUpdatedIn": {
+          "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+        }
+      },
+      "DurationVaultStrategy_Impl": {
+        "address": "0xC355123d0a51b4B5185aA7f21150904CEE3EAC97",
+        "contract": "DurationVaultStrategy_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0x307b737fc62b586fdeacc525fa4c5bcd5423e1f5663e857d139daf8733dc1312",
+        "lastUpdatedIn": {
+          "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+        }
+      },
+      "DurationVaultStrategy_Beacon": {
+        "address": "0x0fCE0A591D96BB76883323eF555867111E2050a9",
+        "contract": "DurationVaultStrategy_Beacon",
+        "singleton": true,
+        "deployedBytecodeHash": "0x307b737fc62b586fdeacc525fa4c5bcd5423e1f5663e857d139daf8733dc1312",
+        "lastUpdatedIn": {
+          "name": "2026-03-02-14-33-v1.12.0-incentive-council",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
+        }
       }
     },
     "instances": [
@@ -691,6 +739,6 @@
       }
     ]
   },
-  "latestDeployedCommit": "80b74fa3b9908190fa6d8396778d1896a4bfb4dc",
+  "latestDeployedCommit": "40634b3382fd16c18fa492b9f1cab7f5a7294aff",
   "chainId": 1
 }
