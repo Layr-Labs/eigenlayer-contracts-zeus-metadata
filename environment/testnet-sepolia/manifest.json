@@ -1,6 +1,6 @@
 {
   "id": "testnet-sepolia",
-  "deployedVersion": "1.12.0",
+  "deployedVersion": "1.12.1",
   "contracts": {
     "static": {
       "BackingEigen_Proxy": {
@@ -588,15 +588,15 @@
         }
       },
       "DurationVaultStrategy_Impl": {
-        "address": "0x89df4270df350DAdcEb5428140985f1a9076a055",
+        "address": "0x1FFEFf24963E6b20D8cd236124721E071CAb62F2",
         "contract": "DurationVaultStrategy_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x6cc615237180ff274a4f8dfebdd0ac2e483bfb9eb843c4efaa4368d24852aa44",
+        "deployedBytecodeHash": "0x307b737fc62b586fdeacc525fa4c5bcd5423e1f5663e857d139daf8733dc1312",
         "lastUpdatedIn": {
-          "name": "2026-01-16-09-57-v1.11.0-duration-vault",
+          "name": "2026-04-08-09-59-v1.12.1-duration-vault-patch",
           "phase": "eoa_wait_confirm",
           "segment": 0,
-          "signer": "0x5F929e52B196335182fFA360ED659B220D36f748"
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "DurationVaultStrategy_Beacon": {
@@ -638,6 +638,6 @@
     },
     "instances": []
   },
-  "latestDeployedCommit": "0187856e29ee447c8a7ef37ae95ae557c99401fb",
+  "latestDeployedCommit": "19f4cec432389cbbc0022dd888d3ccadbfa9a16e",
   "chainId": 11155111
 }
