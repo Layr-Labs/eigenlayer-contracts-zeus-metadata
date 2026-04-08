@@ -1,0 +1,32 @@
+{
+  "name": "2026-04-08-09-59-v1.12.1-duration-vault-patch",
+  "env": "testnet-sepolia",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployImplementations.s.sol",
+      "description": "Deploy updated DurationVaultStrategy implementation (intended for testnet-sepolia)",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "description": "Queue UpgradeableBeacon upgrade for DurationVaultStrategy",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-completeUpgrade.s.sol",
+      "description": "Execute beacon upgrade after timelock delay",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.12.1-duration-vault-patch",
+  "upgradePath": "script/releases/v1.12.1-duration-vault-patch",
+  "phase": "",
+  "chainId": 11155111,
+  "startTime": "Wed Apr 08 2026 09:59:58 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1775656798.989
+}
