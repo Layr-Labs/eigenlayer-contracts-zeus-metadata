@@ -1,7 +1,7 @@
 {
   "name": "2026-04-08-09-59-v1.12.1-duration-vault-patch",
   "env": "testnet-sepolia",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -34,12 +34,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.12.1-duration-vault-patch",
   "upgradePath": "script/releases/v1.12.1-duration-vault-patch",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 11155111,
   "startTime": "Wed Apr 08 2026 09:59:58 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1775656798.989
