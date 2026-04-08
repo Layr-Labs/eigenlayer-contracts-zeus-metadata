@@ -22,10 +22,24 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x1FFEFf24963E6b20D8cd236124721E071CAb62F2",
+          "contract": "DurationVaultStrategy_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.12.1-duration-vault-patch",
   "upgradePath": "script/releases/v1.12.1-duration-vault-patch",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 11155111,
   "startTime": "Wed Apr 08 2026 09:59:58 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1775656798.989
