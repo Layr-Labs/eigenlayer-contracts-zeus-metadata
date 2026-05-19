@@ -22,10 +22,34 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0x72447Fea3354F525263F36544A548982e64F230C",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x0a6E2Dd024D06e9bC5682494D66ebe8E5e3E420A",
+          "contract": "StrategyManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x55A727986CB041B987a138139756E7c4B80D8083",
+          "contract": "StrategyFactory_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xb549fDF0E90249379B3Ba47b0807a22a7860775b",
+          "contract": "DurationVaultStrategy_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.13.0-slash-resolution-delay",
   "upgradePath": "script/releases/v1.13.0-slash-resolution-delay",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 560048,
   "startTime": "Tue May 19 2026 13:46:22 GMT-0600 (Central Standard Time)",
   "startTimestamp": 1779219982.828
