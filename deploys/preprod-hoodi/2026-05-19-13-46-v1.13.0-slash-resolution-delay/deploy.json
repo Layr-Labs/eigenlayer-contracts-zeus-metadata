@@ -1,7 +1,7 @@
 {
   "name": "2026-05-19-13-46-v1.13.0-slash-resolution-delay",
   "env": "preprod-hoodi",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -44,12 +44,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.13.0-slash-resolution-delay",
   "upgradePath": "script/releases/v1.13.0-slash-resolution-delay",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 560048,
   "startTime": "Tue May 19 2026 13:46:22 GMT-0600 (Central Standard Time)",
   "startTimestamp": 1779219982.828
