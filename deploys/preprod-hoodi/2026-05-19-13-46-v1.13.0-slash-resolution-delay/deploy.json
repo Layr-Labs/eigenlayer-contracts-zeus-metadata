@@ -54,11 +54,20 @@
       "multisig": "0x88A001Dc1E5C7470c1CC44f455AF45458850024E",
       "confirmed": true,
       "immediateExecutionHash": "0x45a818cc7cc9c80920f3dd453fcf217fa3a8ca78deee33594e39c7f08f6c9268"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x0e3978f6957afafc7dc60f007b4a85c91a472fcd73198ca1fd4c1b72ce2f2017",
+      "multisig": "0x0132adD08860485Cf243B473aB0E912154C565C3",
+      "confirmed": true,
+      "immediateExecutionHash": "0x3ab42c6b565e56f72f8c699b4abd46e71db2f93984061672553759bb5bb7b370"
     }
   ],
   "upgrade": "v1.13.0-slash-resolution-delay",
   "upgradePath": "script/releases/v1.13.0-slash-resolution-delay",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 560048,
   "startTime": "Tue May 19 2026 13:46:22 GMT-0600 (Central Standard Time)",
   "startTimestamp": 1779219982.828
