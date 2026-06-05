@@ -19,5 +19,5 @@
       "description": "Execute StrategyManager proxy upgrade after timelock delay"
     }
   ],
-  "commit": "617207afe52a53638871d3b83534a0c85303e90d"
+  "commit": "ed0988a73cc30f00a3030e30eea292cfd3071492"
 }
