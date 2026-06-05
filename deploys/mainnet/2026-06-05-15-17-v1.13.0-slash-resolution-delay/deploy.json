@@ -1,0 +1,32 @@
+{
+  "name": "2026-06-05-15-17-v1.13.0-slash-resolution-delay",
+  "env": "mainnet",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployImplementations.s.sol",
+      "description": "Deploy StrategyManager implementation with slash resolution delay",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "description": "Queue StrategyManager proxy upgrade",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-completeUpgrade.s.sol",
+      "description": "Execute StrategyManager proxy upgrade after timelock delay",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.13.0-slash-resolution-delay",
+  "upgradePath": "script/releases/v1.13.0-slash-resolution-delay",
+  "phase": "",
+  "chainId": 1,
+  "startTime": "Fri Jun 05 2026 15:17:50 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1780687070.202
+}
