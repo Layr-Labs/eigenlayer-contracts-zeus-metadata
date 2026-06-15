@@ -1,7 +1,7 @@
 {
   "name": "2026-06-05-15-17-v1.13.0-slash-resolution-delay",
   "env": "mainnet",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -52,12 +52,12 @@
       "signerType": "gnosis.api.ledger",
       "gnosisTransactionHash": "0xfe1174ec3bfe82bc44580f4a66aecf963a1d2c19c2d9701cc56454c66b63cf2a",
       "multisig": "0xBE1685C81aA44FF9FB319dD389addd9374383e90",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.13.0-slash-resolution-delay",
   "upgradePath": "script/releases/v1.13.0-slash-resolution-delay",
-  "phase": "multisig_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 1,
   "startTime": "Fri Jun 05 2026 15:17:50 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1780687070.202
