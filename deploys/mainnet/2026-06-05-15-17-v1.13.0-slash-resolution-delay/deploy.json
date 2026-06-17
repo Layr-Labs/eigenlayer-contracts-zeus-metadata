@@ -65,7 +65,7 @@
   ],
   "upgrade": "v1.13.0-slash-resolution-delay",
   "upgradePath": "script/releases/v1.13.0-slash-resolution-delay",
-  "phase": "multisig_execute",
+  "phase": "multisig_wait_confirm",
   "chainId": 1,
   "startTime": "Fri Jun 05 2026 15:17:50 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1780687070.202
