@@ -1,6 +1,6 @@
 {
   "name": "slash-resolution-delay-v1.13.0",
-  "from": "1.12.0",
+  "from": "1.12.1",
   "to": "1.13.0",
   "phases": [
     {
@@ -19,5 +19,5 @@
       "description": "Execute StrategyManager proxy upgrade after timelock delay"
     }
   ],
-  "commit": "ed0988a73cc30f00a3030e30eea292cfd3071492"
+  "commit": "ed9d181ddfb1a17ac0362f4a56733815479ed284"
 }
