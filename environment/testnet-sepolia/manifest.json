@@ -1,6 +1,6 @@
 {
   "id": "testnet-sepolia",
-  "deployedVersion": "1.12.1",
+  "deployedVersion": "1.13.0",
   "contracts": {
     "static": {
       "BackingEigen_Proxy": {
@@ -194,15 +194,15 @@
         }
       },
       "StrategyManager_Impl": {
-        "address": "0x7D59F252Bd32733f8850c50bF6BB2e46BF37E6F1",
+        "address": "0xEc3f9aa7aD05839814e83D4cDB68C2D1Fb15A0BB",
         "contract": "StrategyManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x4dd5de10067981f20f6394768b83fc5511be1fb8140ebe3d49d4aad26f05a259",
+        "deployedBytecodeHash": "0xbb6b5484185af7accea71fb37b7a86132aa68e9e98ba83f99bb79d2d00d5495c",
         "lastUpdatedIn": {
-          "name": "2026-01-16-09-57-v1.11.0-duration-vault",
+          "name": "2026-07-16-15-57-v1.13.0-slash-resolution-delay",
           "phase": "eoa_wait_confirm",
           "segment": 0,
-          "signer": "0x5F929e52B196335182fFA360ED659B220D36f748"
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "AVSDirectory_Impl": {
@@ -266,15 +266,15 @@
         }
       },
       "StrategyFactory_Impl": {
-        "address": "0x3f98d8B9CFa2102aD340C19648E8BB3C06fbc5Ac",
+        "address": "0xB275ff3C356935eD523E67929aC94CA747D3351c",
         "contract": "StrategyFactory_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x77b5c80cb90941d30b70fc50bec512428d71d2f1f7a4ce60aace186c07c0694f",
+        "deployedBytecodeHash": "0xc99c5ff2db3eb96de8cd62bf95e2cb16b7ef26c96b219df3bd8160d707356e84",
         "lastUpdatedIn": {
-          "name": "2026-01-16-09-57-v1.11.0-duration-vault",
+          "name": "2026-07-16-15-57-v1.13.0-slash-resolution-delay",
           "phase": "eoa_wait_confirm",
           "segment": 0,
-          "signer": "0x5F929e52B196335182fFA360ED659B220D36f748"
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
       "StrategyBaseTVLLimits_Impl": {
@@ -588,12 +588,12 @@
         }
       },
       "DurationVaultStrategy_Impl": {
-        "address": "0x1FFEFf24963E6b20D8cd236124721E071CAb62F2",
+        "address": "0x4f1e5dc8B5F6EFe9A020Cc0C631bF8A9bA5977Dc",
         "contract": "DurationVaultStrategy_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x307b737fc62b586fdeacc525fa4c5bcd5423e1f5663e857d139daf8733dc1312",
+        "deployedBytecodeHash": "0x39febf2042225f7d2780d2971113f299c43a2a813abbf467d924532bc3babde1",
         "lastUpdatedIn": {
-          "name": "2026-04-08-09-59-v1.12.1-duration-vault-patch",
+          "name": "2026-07-16-15-57-v1.13.0-slash-resolution-delay",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -638,6 +638,6 @@
     },
     "instances": []
   },
-  "latestDeployedCommit": "19f4cec432389cbbc0022dd888d3ccadbfa9a16e",
+  "latestDeployedCommit": "ed9d181ddfb1a17ac0362f4a56733815479ed284",
   "chainId": 11155111
 }
