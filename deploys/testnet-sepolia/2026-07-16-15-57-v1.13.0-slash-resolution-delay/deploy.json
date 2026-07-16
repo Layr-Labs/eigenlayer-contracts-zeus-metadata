@@ -22,10 +22,34 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0xEc3f9aa7aD05839814e83D4cDB68C2D1Fb15A0BB",
+          "contract": "StrategyManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xB275ff3C356935eD523E67929aC94CA747D3351c",
+          "contract": "StrategyFactory_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x4f1e5dc8B5F6EFe9A020Cc0C631bF8A9bA5977Dc",
+          "contract": "DurationVaultStrategy_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.13.0-slash-resolution-delay",
   "upgradePath": "script/releases/v1.13.0-slash-resolution-delay",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 11155111,
   "startTime": "Thu Jul 16 2026 15:57:55 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1784188675.552
