@@ -1,0 +1,32 @@
+{
+  "name": "2026-08-17-16-51-v1.13.1-rounding-bug-fix",
+  "env": "mainnet",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployImplementations.s.sol",
+      "description": "Precompute and register the undeployed DelegationManager implementation address",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "description": "Queue DelegationManager proxy upgrade and protocol registry version bump",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-completeUpgrade.s.sol",
+      "description": "Atomically deploy DelegationManager with CREATE2 and execute the proxy upgrade",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.13.1-rounding-bug-fix",
+  "upgradePath": "script/releases/v1.13.1-rounding-bug-fix",
+  "phase": "",
+  "chainId": 1,
+  "startTime": "Mon Aug 17 2026 16:51:49 GMT-0400 (Eastern Daylight Time)",
+  "startTimestamp": 1786999909.11
+}
