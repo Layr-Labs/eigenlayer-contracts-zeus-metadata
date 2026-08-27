@@ -43,11 +43,19 @@
       "gnosisTransactionHash": "0xd0d4de2539423e193dcb4de793c69bad715b5f78eb5f4e52a889c82c1feb4232",
       "multisig": "0xBE1685C81aA44FF9FB319dD389addd9374383e90",
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0x10d6CE86113D00CcF071D02C5289e420a14C963F",
+      "signerType": "gnosis.api.ledger",
+      "gnosisTransactionHash": "0xc32ac046ffab8cec6f0662ddc61c215c6a163ef8947791bbeff765a906537e3b",
+      "multisig": "0x461854d84Ee845F905e0eCf6C288DDEEb4A9533F",
+      "confirmed": false
     }
   ],
   "upgrade": "v1.13.1-rounding-bug-fix",
   "upgradePath": "script/releases/v1.13.1-rounding-bug-fix",
-  "phase": "multisig_start",
+  "phase": "multisig_wait_signers",
   "chainId": 1,
   "startTime": "Mon Aug 17 2026 16:51:49 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1786999909.11
