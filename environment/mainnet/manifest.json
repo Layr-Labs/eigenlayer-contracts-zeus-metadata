@@ -1,6 +1,6 @@
 {
   "id": "mainnet",
-  "deployedVersion": "1.13.0",
+  "deployedVersion": "1.13.1",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -92,15 +92,15 @@
         }
       },
       "DelegationManager_Impl": {
-        "address": "0xE7022a128Acd4C6cad7aFf6FA874D61f984BcE75",
+        "address": "0x6a8BEd4062C895130E2d09bA442D3eCEAd5Df6c2",
         "contract": "DelegationManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xaf9a04ecbb6b82cd8b0b8342d6fafb56c43eb58691caa8863bb3b3be557a84f2",
+        "deployedBytecodeHash": "0x1a5032ddc5ff75afe64ee5e9b15579d9d523cd51ed26f9f71eab67db67146510",
         "lastUpdatedIn": {
-          "name": "2026-01-16-15-12-v1.9.0-slashing-ux",
+          "name": "2026-08-17-16-51-v1.13.1-rounding-bug-fix",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
-          "signer": "0xF2D7291715D222e5C0A1a433BAC7B609A9D32907"
+          "segment": 0,
+          "signer": "0x9B0098A38548b8B71473B0123A38B90bd882d49E"
         }
       },
       "RewardsCoordinator_Proxy": {
@@ -739,6 +739,6 @@
       }
     ]
   },
-  "latestDeployedCommit": "ed0988a73cc30f00a3030e30eea292cfd3071492",
+  "latestDeployedCommit": "feae3c7a23afbbdf3a5b2fbab02cf0c5ebba307a",
   "chainId": 1
 }

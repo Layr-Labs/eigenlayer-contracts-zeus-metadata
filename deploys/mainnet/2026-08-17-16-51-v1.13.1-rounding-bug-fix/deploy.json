@@ -50,12 +50,12 @@
       "signerType": "gnosis.api.ledger",
       "gnosisTransactionHash": "0xc32ac046ffab8cec6f0662ddc61c215c6a163ef8947791bbeff765a906537e3b",
       "multisig": "0x461854d84Ee845F905e0eCf6C288DDEEb4A9533F",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.13.1-rounding-bug-fix",
   "upgradePath": "script/releases/v1.13.1-rounding-bug-fix",
-  "phase": "multisig_wait_confirm",
+  "phase": "complete",
   "chainId": 1,
   "startTime": "Mon Aug 17 2026 16:51:49 GMT-0400 (Eastern Daylight Time)",
   "startTimestamp": 1786999909.11
