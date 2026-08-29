@@ -50,12 +50,12 @@
       "signerType": "gnosis.api.eoa",
       "gnosisTransactionHash": "0x40bd64cf4132a3c5ad190938f4df04cf5ed0267be251a3ba1f4bfd27c48fd7dd",
       "multisig": "0x0132adD08860485Cf243B473aB0E912154C565C3",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.13.1-rounding-bug-fix",
   "upgradePath": "script/releases/v1.13.1-rounding-bug-fix",
-  "phase": "multisig_wait_confirm",
+  "phase": "complete",
   "chainId": 560048,
   "startTime": "Sat Aug 29 2026 08:23:31 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1787963011.611
