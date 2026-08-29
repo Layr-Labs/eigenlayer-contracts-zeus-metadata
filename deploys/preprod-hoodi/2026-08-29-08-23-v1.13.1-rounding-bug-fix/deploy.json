@@ -1,7 +1,7 @@
 {
   "name": "2026-08-29-08-23-v1.13.1-rounding-bug-fix",
   "env": "preprod-hoodi",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -42,12 +42,12 @@
       "signerType": "gnosis.api.eoa",
       "gnosisTransactionHash": "0x1fac59a2675ebfbdfd24a7ae6b098e124e219bc38ba0550b36299eac4567731e",
       "multisig": "0x88A001Dc1E5C7470c1CC44f455AF45458850024E",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.13.1-rounding-bug-fix",
   "upgradePath": "script/releases/v1.13.1-rounding-bug-fix",
-  "phase": "multisig_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 560048,
   "startTime": "Sat Aug 29 2026 08:23:31 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1787963011.611
