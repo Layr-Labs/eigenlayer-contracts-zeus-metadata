@@ -1,7 +1,7 @@
 {
   "name": "2026-08-29-08-01-v1.13.1-rounding-bug-fix",
   "env": "testnet-sepolia",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -42,12 +42,12 @@
       "signerType": "gnosis.api.eoa",
       "gnosisTransactionHash": "0xf5a40e5dbadead6ee9567768be539dee7736be658880204c7c30e7304bff5b3c",
       "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.13.1-rounding-bug-fix",
   "upgradePath": "script/releases/v1.13.1-rounding-bug-fix",
-  "phase": "multisig_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 11155111,
   "startTime": "Sat Aug 29 2026 08:01:10 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1787961670.907
