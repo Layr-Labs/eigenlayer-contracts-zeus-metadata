@@ -43,11 +43,20 @@
       "gnosisTransactionHash": "0xf5a40e5dbadead6ee9567768be539dee7736be658880204c7c30e7304bff5b3c",
       "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x624e00fe1dae5626b7d08a926bba9c5fddb6c557f006d6097394548d679b82c1",
+      "multisig": "0x8eA6C3Cca1c96967F7B164FfaA5fabede10311A9",
+      "confirmed": true,
+      "immediateExecutionHash": "0xc2025bfefbda10b6b1008d4edf841b22b8589eee7c1f7bc0d5a4b353a450985f"
     }
   ],
   "upgrade": "v1.13.1-rounding-bug-fix",
   "upgradePath": "script/releases/v1.13.1-rounding-bug-fix",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 11155111,
   "startTime": "Sat Aug 29 2026 08:01:10 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1787961670.907
