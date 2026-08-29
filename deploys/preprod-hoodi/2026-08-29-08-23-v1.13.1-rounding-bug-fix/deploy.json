@@ -25,7 +25,7 @@
   "metadata": [],
   "upgrade": "v1.13.1-rounding-bug-fix",
   "upgradePath": "script/releases/v1.13.1-rounding-bug-fix",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 560048,
   "startTime": "Sat Aug 29 2026 08:23:31 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1787963011.611
