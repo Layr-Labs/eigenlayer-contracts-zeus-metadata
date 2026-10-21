@@ -1,7 +1,7 @@
 {
   "name": "2026-10-21-19-38-v1.14.0-disable-burn",
   "env": "preprod-hoodi",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -50,6 +50,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x50908dc2675566103c4696b9bd96eccb552660e5bd87151b7cdb7c2f7e111d9f",
+      "multisig": "0x88A001Dc1E5C7470c1CC44f455AF45458850024E",
+      "confirmed": true,
+      "immediateExecutionHash": "0xf91df2c603bd2b18e10c9022c5865a6c02bad08fbfc5ab8d44365a9ad51ccb62"
     }
   ],
   "upgrade": "v1.14.0-disable-burn",
