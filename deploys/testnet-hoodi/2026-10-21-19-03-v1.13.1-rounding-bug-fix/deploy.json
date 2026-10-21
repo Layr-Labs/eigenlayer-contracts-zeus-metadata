@@ -1,7 +1,7 @@
 {
   "name": "2026-10-21-19-03-v1.13.1-rounding-bug-fix",
   "env": "testnet-hoodi",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -35,6 +35,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x8da28e3974b5d3f43fc2b3ee7f3d48ab5bd98777ac36ece0a65d8eed126c9f12",
+      "multisig": "0x8eA6C3Cca1c96967F7B164FfaA5fabede10311A9",
+      "confirmed": true,
+      "immediateExecutionHash": "0x307ba4ac49d54044055e92ba9c1369d9fdfced6ca245a2330e5debbb1137cf30"
     }
   ],
   "upgrade": "v1.13.1-rounding-bug-fix",
