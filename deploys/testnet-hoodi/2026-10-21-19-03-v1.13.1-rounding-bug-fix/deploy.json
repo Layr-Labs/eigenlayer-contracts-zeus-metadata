@@ -22,10 +22,24 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x5237eDa80c08256284c01E03B1903ab9b959726f",
+          "contract": "DelegationManager_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.13.1-rounding-bug-fix",
   "upgradePath": "script/releases/v1.13.1-rounding-bug-fix",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 560048,
   "startTime": "Wed Oct 21 2026 19:03:59 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1792580639.823
