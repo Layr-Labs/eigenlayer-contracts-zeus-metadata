@@ -25,7 +25,7 @@
   "metadata": [],
   "upgrade": "v1.14.0-disable-burn",
   "upgradePath": "script/releases/v1.14.0-disable-burn",
-  "phase": "",
+  "phase": "eoa_start",
   "chainId": 11155111,
   "startTime": "Wed Oct 21 2026 19:55:31 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1792583731.084
