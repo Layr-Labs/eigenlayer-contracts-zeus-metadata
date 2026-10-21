@@ -1,0 +1,32 @@
+{
+  "name": "2026-10-21-19-38-v1.14.0-disable-burn",
+  "env": "preprod-hoodi",
+  "segmentId": 0,
+  "segments": [
+    {
+      "type": "eoa",
+      "filename": "1-deployImplementations.s.sol",
+      "description": "Deploy DelegationManager, EigenPodManager, EigenPod, and EmissionsController implementations",
+      "id": 0
+    },
+    {
+      "type": "multisig",
+      "filename": "2-queueUpgrade.s.sol",
+      "description": "Queue core upgrades, bEIGEN burn permission, and protocol version shipment",
+      "id": 1
+    },
+    {
+      "type": "multisig",
+      "filename": "3-completeUpgrade.s.sol",
+      "description": "Execute and validate the v1.14.0 upgrade after the timelock delay",
+      "id": 2
+    }
+  ],
+  "metadata": [],
+  "upgrade": "v1.14.0-disable-burn",
+  "upgradePath": "script/releases/v1.14.0-disable-burn",
+  "phase": "",
+  "chainId": 560048,
+  "startTime": "Wed Oct 21 2026 19:38:43 GMT+0800 (Central Indonesia Time)",
+  "startTimestamp": 1792582723.385
+}
