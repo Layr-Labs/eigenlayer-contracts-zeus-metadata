@@ -1,7 +1,7 @@
 {
   "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
   "env": "testnet-hoodi",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -64,7 +64,7 @@
   ],
   "upgrade": "v1.13.0-slash-resolution-delay-hoodi",
   "upgradePath": "script/releases/v1.13.0-slash-resolution-delay-hoodi",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 560048,
   "startTime": "Wed Oct 21 2026 17:12:00 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1792573920.283
