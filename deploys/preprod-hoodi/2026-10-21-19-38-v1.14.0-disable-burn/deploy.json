@@ -59,11 +59,20 @@
       "multisig": "0x88A001Dc1E5C7470c1CC44f455AF45458850024E",
       "confirmed": true,
       "immediateExecutionHash": "0xf91df2c603bd2b18e10c9022c5865a6c02bad08fbfc5ab8d44365a9ad51ccb62"
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x0aa2571ed91b2c905b6a2b8900532cddac1bbfb886cfddfac770afced77c6fe9",
+      "multisig": "0x0132adD08860485Cf243B473aB0E912154C565C3",
+      "confirmed": true,
+      "immediateExecutionHash": "0x15519bf349350265099ebc15fa6782d10b15ebe582faf53a7622f49be603dff3"
     }
   ],
   "upgrade": "v1.14.0-disable-burn",
   "upgradePath": "script/releases/v1.14.0-disable-burn",
-  "phase": "multisig_start",
+  "phase": "complete",
   "chainId": 560048,
   "startTime": "Wed Oct 21 2026 19:38:43 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1792582723.385
