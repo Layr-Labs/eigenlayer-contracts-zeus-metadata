@@ -22,10 +22,49 @@
       "id": 2
     }
   ],
-  "metadata": [],
+  "metadata": [
+    {
+      "type": "eoa",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "transactions": [],
+      "deployments": [
+        {
+          "address": "0x821AE0aA0e65D52484a56D53f7d088e65AEEea42",
+          "contract": "StrategyManager_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x5cB19acd57C1e67142Dfe69B3c64853bD5AF5286",
+          "contract": "StrategyFactory_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x7d81d244874ea82bc6E80e90D643DA57825ab641",
+          "contract": "DurationVaultStrategy_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0x69AAE2D264254ebEc1b601fc9b7CBC031313856f",
+          "contract": "EmissionsController_Proxy",
+          "singleton": true
+        },
+        {
+          "address": "0xCf9b23f8EA4aeeE921444f2E54f9aA5571921C1f",
+          "contract": "EmissionsController_Impl",
+          "singleton": true
+        },
+        {
+          "address": "0xC2C0B90bBC8161A85521f6A4B316bf94a134B77B",
+          "contract": "RewardsCoordinator_Impl",
+          "singleton": true
+        }
+      ],
+      "confirmed": false
+    }
+  ],
   "upgrade": "v1.13.0-slash-resolution-delay-hoodi",
   "upgradePath": "script/releases/v1.13.0-slash-resolution-delay-hoodi",
-  "phase": "eoa_start",
+  "phase": "eoa_wait_confirm",
   "chainId": 560048,
   "startTime": "Wed Oct 21 2026 17:12:00 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1792573920.283

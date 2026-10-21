@@ -1,0 +1,76 @@
+{
+  "contracts": [
+    {
+      "address": "0x821AE0aA0e65D52484a56D53f7d088e65AEEea42",
+      "contract": "StrategyManager_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xbb6b5484185af7accea71fb37b7a86132aa68e9e98ba83f99bb79d2d00d5495c",
+      "lastUpdatedIn": {
+        "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x5cB19acd57C1e67142Dfe69B3c64853bD5AF5286",
+      "contract": "StrategyFactory_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xc99c5ff2db3eb96de8cd62bf95e2cb16b7ef26c96b219df3bd8160d707356e84",
+      "lastUpdatedIn": {
+        "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x7d81d244874ea82bc6E80e90D643DA57825ab641",
+      "contract": "DurationVaultStrategy_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x39febf2042225f7d2780d2971113f299c43a2a813abbf467d924532bc3babde1",
+      "lastUpdatedIn": {
+        "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0x69AAE2D264254ebEc1b601fc9b7CBC031313856f",
+      "contract": "EmissionsController_Proxy",
+      "singleton": true,
+      "deployedBytecodeHash": "0xb527df16b9d99a3033639e3de46497d41fd09014acf19f35522bb86e3c81f180",
+      "lastUpdatedIn": {
+        "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xCf9b23f8EA4aeeE921444f2E54f9aA5571921C1f",
+      "contract": "EmissionsController_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0xb527df16b9d99a3033639e3de46497d41fd09014acf19f35522bb86e3c81f180",
+      "lastUpdatedIn": {
+        "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    },
+    {
+      "address": "0xC2C0B90bBC8161A85521f6A4B316bf94a134B77B",
+      "contract": "RewardsCoordinator_Impl",
+      "singleton": true,
+      "deployedBytecodeHash": "0x66d0b3a60fca35c681cd97a00006c155ca8ba66aba2d7116e37db0f48f085c03",
+      "lastUpdatedIn": {
+        "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
+        "phase": "eoa_wait_confirm",
+        "segment": 0,
+        "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+      }
+    }
+  ]
+}
