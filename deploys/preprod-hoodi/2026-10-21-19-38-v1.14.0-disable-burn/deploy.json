@@ -1,7 +1,7 @@
 {
   "name": "2026-10-21-19-38-v1.14.0-disable-burn",
   "env": "preprod-hoodi",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -49,12 +49,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.14.0-disable-burn",
   "upgradePath": "script/releases/v1.14.0-disable-burn",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 560048,
   "startTime": "Wed Oct 21 2026 19:38:43 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1792582723.385
