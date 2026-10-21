@@ -1,6 +1,6 @@
 {
   "id": "testnet-hoodi",
-  "deployedVersion": "1.11.0",
+  "deployedVersion": "1.13.0",
   "contracts": {
     "static": {
       "BackingEigen_Proxy": {
@@ -205,12 +205,12 @@
         }
       },
       "StrategyManager_Impl": {
-        "address": "0x1B76a41b1128a5Cd92dAE7C4c0DEC0bfe12B0f62",
+        "address": "0x821AE0aA0e65D52484a56D53f7d088e65AEEea42",
         "contract": "StrategyManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x4dd5de10067981f20f6394768b83fc5511be1fb8140ebe3d49d4aad26f05a259",
+        "deployedBytecodeHash": "0xbb6b5484185af7accea71fb37b7a86132aa68e9e98ba83f99bb79d2d00d5495c",
         "lastUpdatedIn": {
-          "name": "2026-01-15-17-10-v1.11.0-duration-vault",
+          "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -241,12 +241,12 @@
         }
       },
       "RewardsCoordinator_Impl": {
-        "address": "0x35a8198E98cB76f1DD81D977fBd2a8F2a62C0525",
+        "address": "0xC2C0B90bBC8161A85521f6A4B316bf94a134B77B",
         "contract": "RewardsCoordinator_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x984ddce0922377bf94a568567726a0900ab8f8842febe74cc4441101bb74e00f",
+        "deployedBytecodeHash": "0x66d0b3a60fca35c681cd97a00006c155ca8ba66aba2d7116e37db0f48f085c03",
         "lastUpdatedIn": {
-          "name": "2026-01-15-16-25-v1.10.0-rewards-v2.2",
+          "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -277,12 +277,12 @@
         }
       },
       "StrategyFactory_Impl": {
-        "address": "0x0d824D128eb5bBF5a0dEDD7D58332a00de57A3f3",
+        "address": "0x5cB19acd57C1e67142Dfe69B3c64853bD5AF5286",
         "contract": "StrategyFactory_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x77b5c80cb90941d30b70fc50bec512428d71d2f1f7a4ce60aace186c07c0694f",
+        "deployedBytecodeHash": "0xc99c5ff2db3eb96de8cd62bf95e2cb16b7ef26c96b219df3bd8160d707356e84",
         "lastUpdatedIn": {
-          "name": "2026-01-15-17-10-v1.11.0-duration-vault",
+          "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -588,12 +588,12 @@
         }
       },
       "DurationVaultStrategy_Impl": {
-        "address": "0x3d93987C62b4B5532c97b9633F96d44a27dFD455",
+        "address": "0x7d81d244874ea82bc6E80e90D643DA57825ab641",
         "contract": "DurationVaultStrategy_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x6cc615237180ff274a4f8dfebdd0ac2e483bfb9eb843c4efaa4368d24852aa44",
+        "deployedBytecodeHash": "0x39febf2042225f7d2780d2971113f299c43a2a813abbf467d924532bc3babde1",
         "lastUpdatedIn": {
-          "name": "2026-01-15-17-10-v1.11.0-duration-vault",
+          "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -610,10 +610,34 @@
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
+      },
+      "EmissionsController_Proxy": {
+        "address": "0x69AAE2D264254ebEc1b601fc9b7CBC031313856f",
+        "contract": "EmissionsController_Proxy",
+        "singleton": true,
+        "deployedBytecodeHash": "0xb527df16b9d99a3033639e3de46497d41fd09014acf19f35522bb86e3c81f180",
+        "lastUpdatedIn": {
+          "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
+      },
+      "EmissionsController_Impl": {
+        "address": "0xCf9b23f8EA4aeeE921444f2E54f9aA5571921C1f",
+        "contract": "EmissionsController_Impl",
+        "singleton": true,
+        "deployedBytecodeHash": "0xb527df16b9d99a3033639e3de46497d41fd09014acf19f35522bb86e3c81f180",
+        "lastUpdatedIn": {
+          "name": "2026-10-21-17-11-v1.13.0-slash-resolution-delay-hoodi",
+          "phase": "eoa_wait_confirm",
+          "segment": 0,
+          "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
+        }
       }
     },
     "instances": []
   },
-  "latestDeployedCommit": "a861d3d5e0bac9fda738c8fb7dca2c7296ed05fd",
+  "latestDeployedCommit": "cdacc356cee7bf54016ae58528d5c4c3a441c013",
   "chainId": 560048
 }
