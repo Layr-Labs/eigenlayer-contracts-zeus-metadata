@@ -1,7 +1,7 @@
 {
   "name": "2026-10-21-19-55-v1.14.0-disable-burn",
   "env": "testnet-sepolia",
-  "segmentId": 1,
+  "segmentId": 2,
   "segments": [
     {
       "type": "eoa",
@@ -50,6 +50,15 @@
         }
       ],
       "confirmed": true
+    },
+    {
+      "type": "multisig",
+      "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479",
+      "signerType": "gnosis.onchain.eoa",
+      "gnosisTransactionHash": "0x4998406503a88f4e9d01ace880fc366dd5c6f1ca6d3247228b063c66ad1df9b7",
+      "multisig": "0xb094Ba769b4976Dc37fC689A76675f31bc4923b0",
+      "confirmed": true,
+      "immediateExecutionHash": "0x3bf9c8eb3d5e2186cb42edca5c1eba452f42adf111ad1ad8dab7629fd93ec861"
     }
   ],
   "upgrade": "v1.14.0-disable-burn",
