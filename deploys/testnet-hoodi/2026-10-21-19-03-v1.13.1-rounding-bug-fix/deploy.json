@@ -1,7 +1,7 @@
 {
   "name": "2026-10-21-19-03-v1.13.1-rounding-bug-fix",
   "env": "testnet-hoodi",
-  "segmentId": 0,
+  "segmentId": 1,
   "segments": [
     {
       "type": "eoa",
@@ -34,12 +34,12 @@
           "singleton": true
         }
       ],
-      "confirmed": false
+      "confirmed": true
     }
   ],
   "upgrade": "v1.13.1-rounding-bug-fix",
   "upgradePath": "script/releases/v1.13.1-rounding-bug-fix",
-  "phase": "eoa_wait_confirm",
+  "phase": "multisig_start",
   "chainId": 560048,
   "startTime": "Wed Oct 21 2026 19:03:59 GMT+0800 (Central Indonesia Time)",
   "startTimestamp": 1792580639.823
