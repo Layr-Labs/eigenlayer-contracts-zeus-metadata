@@ -1,6 +1,6 @@
 {
   "id": "preprod-hoodi",
-  "deployedVersion": "1.13.1",
+  "deployedVersion": "1.14.0",
   "contracts": {
     "static": {
       "PauserRegistry_Impl": {
@@ -196,14 +196,14 @@
         }
       },
       "EigenPod_Impl": {
-        "address": "0xadDbeCDF8104C0779ea36B66C0CFcF03368f63b7",
+        "address": "0xbb0D83716baEC9D56DB5796fA6f0a5feCE05B5B8",
         "contract": "EigenPod_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0xb3b4beb7b9411d5b8a4354b87b76f143826d04e92a1169dc7954d807e6182aa1",
+        "deployedBytecodeHash": "0x4e36c388c958c400180b61bcd80bf80fb2246a4aa22b4008a0471a67c95c4b89",
         "lastUpdatedIn": {
-          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
+          "name": "2026-10-21-19-38-v1.14.0-disable-burn",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
+          "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
@@ -244,12 +244,12 @@
         }
       },
       "DelegationManager_Impl": {
-        "address": "0x88D3055d03054196680a1b3Ed047AAAf15e37dAB",
+        "address": "0x03fEdeAa3d790ADE951b006dEdA138c1Df825AD7",
         "contract": "DelegationManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x1a5032ddc5ff75afe64ee5e9b15579d9d523cd51ed26f9f71eab67db67146510",
+        "deployedBytecodeHash": "0x019623f8fd0284dba2724debc014e0a30eb70ae8d3fbb81ad9ad11edd1c494bb",
         "lastUpdatedIn": {
-          "name": "2026-08-29-08-23-v1.13.1-rounding-bug-fix",
+          "name": "2026-10-21-19-38-v1.14.0-disable-burn",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -304,14 +304,14 @@
         }
       },
       "EigenPodManager_Impl": {
-        "address": "0x9825EA658Ec5b1289d79ED6BBfa3f767BD8Faaba",
+        "address": "0x991F0C3f443a09FeCD53446077fF3b83C3Ed2350",
         "contract": "EigenPodManager_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x0b84361273c1b08204d639517afe025c415deff5c4cd89c04cd4d2e982108323",
+        "deployedBytecodeHash": "0x9dde652fabff75d6b5f759e02d86c155bfa22d813e80f42ae56264476bbf32ab",
         "lastUpdatedIn": {
-          "name": "2025-11-14-00-02-v1.9.0-slashing-ux",
+          "name": "2026-10-21-19-38-v1.14.0-disable-burn",
           "phase": "eoa_wait_confirm",
-          "segment": 3,
+          "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
         }
       },
@@ -580,12 +580,12 @@
         }
       },
       "EmissionsController_Impl": {
-        "address": "0x92DF4da39Fe6f6c039C0c6d5DA3cd481D641aAf8",
+        "address": "0x5d51EfD6e0a0deD3052E1bFFd50b5Dd5390006C5",
         "contract": "EmissionsController_Impl",
         "singleton": true,
-        "deployedBytecodeHash": "0x629a57dd80e9a2634b1b253a6355c70ed08efe7a53c1578825f52ba2eea4fb28",
+        "deployedBytecodeHash": "0x205b48a2a70381ab3dd5caedfe6a9d3489753d11e3ee2e92481d830ccf9c04ed",
         "lastUpdatedIn": {
-          "name": "2026-02-05-12-20-v1.12.0-incentive-council",
+          "name": "2026-10-21-19-38-v1.14.0-disable-burn",
           "phase": "eoa_wait_confirm",
           "segment": 0,
           "signer": "0xDA29BB71669f46F2a779b4b62f03644A84eE3479"
@@ -606,6 +606,6 @@
     },
     "instances": []
   },
-  "latestDeployedCommit": "feae3c7a23afbbdf3a5b2fbab02cf0c5ebba307a",
+  "latestDeployedCommit": "c3de7cf580608280917421da86a496f7fd89d81d",
   "chainId": 560048
 }
